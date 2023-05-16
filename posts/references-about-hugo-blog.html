@@ -310,6 +310,7 @@ Umezane</span>
 <p><a href="https://ablo.ga/waline/">在 Hugo 主题 Stack 中轻松配置 Waline 评论系统</a></p>
 <p><a href="https://blog.freecrazy.cn/posts/2022/01/add-waline/">闲余悟道 - Hugo博客添加waline评论</a></p>
 <p><a href="https://guanqr.com/tech/website/introduction-and-basic-setting-of-waline/">Waline 评论系统的介绍与基础配置 | 荷戟独彷徨</a></p>
+<p><a href="https://mantyke.icu/posts/2021/comment/">Hugo | 为Blog增加评论区 | 小球飞鱼</a></p>
       </article>
     </div>
 
@@ -510,11 +511,7 @@ Share with</span>
     
       location: false
       DISABLE_USERAGENT: true
-    });
-  </script>
-</body>
-<style>
-  .waline-container {
+      const walineStyle =
       background-color: var(--card-background);
       border-radius: var(--card-border-radius);
       box-shadow: var(--shadow-l2);
@@ -523,8 +520,10 @@ Share with</span>
       --waline-theme-color: #797da5; 
       --waline-active-color: #999ecf;
       dark: 'html[data-theme="dark"]'
-    }
-    </style>
+    });
+  </script>
+</body>
+
       </div>
     
 

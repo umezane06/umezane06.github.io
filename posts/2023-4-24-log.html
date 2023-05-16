@@ -476,7 +476,7 @@ Share with</span>
       <div id="comments" class="article-card">
         
 
-  可以在这里评论（虽然实际上还是需要梯才能发出来...)
+  可以在这里评论（虽然实际上还是需要梯才能发出来和查看...)
 
 
 
@@ -504,10 +504,22 @@ Share with</span>
     ],
     
       location: false
+      DISABLE_USERAGENT: true
     });
   </script>
 </body>
-
+<style>
+  .waline-container {
+      background-color: var(--card-background);
+      border-radius: var(--card-border-radius);
+      box-shadow: var(--shadow-l2);
+      padding: var(--card-padding);
+         
+      --waline-theme-color: #797da5; 
+      --waline-active-color: #999ecf;
+      dark: 'html[data-theme="dark"]'
+    }
+    </style>
       </div>
     
 

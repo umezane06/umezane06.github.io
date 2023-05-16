@@ -504,15 +504,54 @@ Share with</span>
     init({
       el: '#waline',
       serverURL: 'https://waline1-1gfim5yh9-umezane06.vercel.app/',
-      
       emoji: [
       '//unpkg.com/@waline/emojis@1.1.0/weibo',
       '//unpkg.com/@waline/emojis@1.1.0/alus',
     ],
     
-      location: false
+      visitor: false
     });
   </script>
+  
+  <style>
+    .waline-container {
+      background-color: var(--card-background);
+      border-radius: var(--card-border-radius);
+      box-shadow: var(--shadow-l1);
+      padding: 2%;
+    }
+    .waline-container .vcount {
+      color: var(--card-text-color-main);
+    }
+    .v[data-class=v] .vcard {
+      flex: 1;
+      width: 0;
+      padding-bottom: 0.5em;
+  }
+  @media {
+    prefers-color-scheme}
+  
+     
+    :root {
+      --waline-theme-color: #797da5;  
+      --waline-active-color: #999ecf;  
+    
+    }
+  
+     
+    :root[data-scheme="dark"] {
+      --waline-theme-color: #acc6e0;
+      --waline-white: #34495e;  
+      --waline-active-color: #8ab1d8;
+      --waline-light-grey: #666;
+      --waline-dark-grey: #acc6e0;  
+      --waline-badge-color: #acc6e0;
+  
+  }
+  
+  
+  </style>
+  
 </body>
 
       </div>

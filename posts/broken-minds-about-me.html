@@ -511,10 +511,11 @@ Share with</span>
       '//unpkg.com/@waline/emojis@1.1.0/alus',
     ],
     
-      visitor: false
+    DISABLE_REGION: true
     });
   </script>
   
+
   <style>
     .waline-container {
       background-color: var(--card-background);
@@ -530,8 +531,10 @@ Share with</span>
       width: 0;
       padding-bottom: 0.5em;
   }
-  @media {
-    prefers-color-scheme}
+  @media (max-width: 580px){
+    .v[data-class=v] .vheader .vheader-item:not(:last-child) {
+        border-bottom: 1px solid rgba(237,237,237,.8);    
+    }}
   
      
     :root {
@@ -548,6 +551,26 @@ Share with</span>
       --waline-light-grey: #666;
       --waline-dark-grey: #acc6e0;  
       --waline-badge-color: #acc6e0;
+
+     
+      --waline-bq-color: #9b9c9c;  
+    
+     
+      --waline-info-bgcolor: #acc6e0;
+      --waline-info-color: #9b9c9c;
+  }
+
+  
+      .v[data-class="v"] .vcontent .vemoji {
+        width: 2.2em;  
+        margin: 0.25em;}
+    
+      .v[data-class=v] .vheader {
+        border-bottom: 1px solid rgba(237,237,237,.8);   
+          }
+      .v[data-class=v] .vpanel {
+        border-radius: 8px;  
+  
   
   }
   

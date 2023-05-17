@@ -6,24 +6,14 @@
     <description>Recent content on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 May 2023 23:00:12 +0800</lastBuildDate><atom:link href="https://umezane06.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 May 2023 23:00:12 +0800</lastBuildDate><atom:link href="https://umezane06.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>多合一全平台&#43;可分享书签系统 - Raindrop.io（个人体验向）</title>
+      <title>【杂物推荐】全平台书签管理&#43;稍后再看工具 - Raindrop.io</title>
       <link>https://umezane06.github.io/posts/about-radrop-io.html</link>
-      <pubDate>Tue, 16 May 2023 23:00:12 +0800</pubDate>
+      <pubDate>Wed, 17 May 2023 23:00:12 +0800</pubDate>
       
       <guid>https://umezane06.github.io/posts/about-radrop-io.html</guid>
-      <description>&lt;p&gt;依然是因为注意力问题导致的日程管理能力实在太感人了才会变得越来越效率厨！！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>代码测试</title>
-      <link>https://umezane06.github.io/posts/textttt.html</link>
-      <pubDate>Tue, 16 May 2023 20:38:07 +0800</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/textttt.html</guid>
-      <description>只是测试一下代码块
-# 初始化仓库 git init # 将所有内容添加到 git git add . # 提交到 git 本地 git commit -m &amp;#34;我的博客第一次提交&amp;#34; # 关联到远程 git，注意这里需要写你自己的 git 地址 git remote add origin https://github.com/codeshellme/codeshellme.github.io.git # 推送到远程 git git push origin master </description>
+      <description>&lt;p&gt;呕心沥血发言：依然是因为注意力问题导致的日程管理能力实在太感人了人才会变得越来越效率厨！！&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,16 +44,7 @@
     </item>
     
     <item>
-      <title>视频嵌入测试</title>
-      <link>https://umezane06.github.io/posts/video-text.html</link>
-      <pubDate>Sun, 14 May 2023 16:17:00 +0800</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/video-text.html</guid>
-      <description>&lt;p&gt;只是测试一下嵌入视频&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>【记录】东方系列1v1弹幕对战模式的元祖模板（暂挖个坑）</title>
+      <title>【体验向记录】东方系列1v1弹幕对战游戏模式的元祖模板（暂挖个坑）</title>
       <link>https://umezane06.github.io/posts/touhou-1v1-danmaku-game-modes-meta-template.html</link>
       <pubDate>Tue, 09 May 2023 21:32:00 +0800</pubDate>
       

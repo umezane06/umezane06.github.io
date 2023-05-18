@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>绝对概括的切面</title>
+    <title>Posts on 绝对概括的切面</title>
     <link>https://umezane06.github.io/posts.html</link>
-    <description>Recent content on 绝对概括的切面</description>
+    <description>Recent content in Posts on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 May 2023 16:34:12 +0800</lastBuildDate><atom:link href="https://umezane06.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -70,75 +70,6 @@
       <guid>https://umezane06.github.io/posts/why-the-fuk-i-didnt-use-wordpress.html</guid>
       <description>。。。早知道我还是选wordpress好了！！！
 （整个过程真的就是，像往常一样，别人都在用翅膀飞我基本是在用头飞的这种感觉</description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>https://umezane06.github.io/posts/highlight-syntax.html</link>
-      <pubDate>Thu, 30 Apr 2020 16:01:23 +0800</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/highlight-syntax.html</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloWorld&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax</title>
-      <link>https://umezane06.github.io/posts/markdown-syntax.html</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/markdown-syntax.html</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://umezane06.github.io/posts/rich-content.html</link>
-      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/rich-content.html</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CJK Unicode Test</title>
-      <link>https://umezane06.github.io/posts/cjk-test.html</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0800</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/cjk-test.html</guid>
-      <description>&lt;p&gt;The following is part of the CJK text, this page is for test use only.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Content</title>
-      <link>https://umezane06.github.io/posts/placeholder-content.html</link>
-      <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/placeholder-content.html</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emojis Support</title>
-      <link>https://umezane06.github.io/posts/emoji-support.html</link>
-      <pubDate>Thu, 28 Mar 2019 12:24:47 +0100</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/emoji-support.html</guid>
-      <description>Emoji can be enabled in a Hugo project in a number of ways. The emojify function can be called directly in templates or Inline Shortcodes.
-To enable emoji globally, set enableEmoji to true in your site’s configuration and then you can type emoji shorthand codes directly in content files; e.g.
-🙈 🙈 🙉 🙉 🙊 🙊 The Emoji cheat sheet is a useful reference for emoji shorthand codes.
-N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://umezane06.github.io/posts/math-typesetting.html</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umezane06.github.io/posts/math-typesetting.html</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
   </channel>

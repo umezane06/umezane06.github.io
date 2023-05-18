@@ -5,6 +5,16 @@
     <link>https://umezane06.github.io/categories.html</link>
     <description>Recent content in Categories on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://umezane06.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Apr 2020 16:01:23 +0800</lastBuildDate><atom:link href="https://umezane06.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://umezane06.github.io/categories/syntax-highlighting.html</link>
+      <pubDate>Thu, 30 Apr 2020 16:01:23 +0800</pubDate>
+      
+      <guid>https://umezane06.github.io/categories/syntax-highlighting.html</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 绝对概括的切面</title>
-    <link>https://umezane06.github.io/posts.html</link>
+    <link>https://umezane06.github.io/posts/</link>
     <description>Recent content in Posts on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 May 2023 16:34:12 +0800</lastBuildDate><atom:link href="https://umezane06.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【杂物推荐】全平台书签管理&#43;稍后再看工具 - Raindrop.io</title>
-      <link>https://umezane06.github.io/posts/about-raindrop-io.html</link>
+      <link>https://umezane06.github.io/posts/about-raindrop-io/</link>
       <pubDate>Thu, 18 May 2023 16:34:12 +0800</pubDate>
       
-      <guid>https://umezane06.github.io/posts/about-raindrop-io.html</guid>
+      <guid>https://umezane06.github.io/posts/about-raindrop-io/</guid>
       <description>&lt;p&gt;呕心沥血发言：依然是因为注意力问题导致的日程管理能力实在太感人了人才会变得越来越效率厨啊！！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>建blog途中参考的各种资料</title>
-      <link>https://umezane06.github.io/posts/references-about-hugo-blog.html</link>
+      <link>https://umezane06.github.io/posts/references-about-hugo-blog/</link>
       <pubDate>Tue, 16 May 2023 20:03:00 +0800</pubDate>
       
-      <guid>https://umezane06.github.io/posts/references-about-hugo-blog.html</guid>
+      <guid>https://umezane06.github.io/posts/references-about-hugo-blog/</guid>
       <description>&lt;p&gt;但就算看了这么多也还是时常搞崩，惨烈&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>【综合随记】收集一些平时的支离破碎发言（音乐相关）</title>
-      <link>https://umezane06.github.io/posts/broken-minds-about-music.html</link>
+      <link>https://umezane06.github.io/posts/broken-minds-about-music/</link>
       <pubDate>Sun, 14 May 2023 17:41:00 +0800</pubDate>
       
-      <guid>https://umezane06.github.io/posts/broken-minds-about-music.html</guid>
+      <guid>https://umezane06.github.io/posts/broken-minds-about-music/</guid>
       <description>&lt;p&gt;只是个人在平时的探索发呆中产生的各种不负责任迷思并不代表专业性&lt;s&gt;（简称同人女思维）&lt;/s&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>【综合随记】收集一些平时的支离破碎发言</title>
-      <link>https://umezane06.github.io/posts/broken-minds-about-me.html</link>
+      <link>https://umezane06.github.io/posts/broken-minds-about-me/</link>
       <pubDate>Sun, 14 May 2023 17:40:00 +0800</pubDate>
       
-      <guid>https://umezane06.github.io/posts/broken-minds-about-me.html</guid>
+      <guid>https://umezane06.github.io/posts/broken-minds-about-me/</guid>
       <description>&lt;p&gt;在其余sns平台碎念的怪话的综合提取）&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>【体验向记录】东方系列1v1弹幕对战游戏模式的元祖模板（暂挖个坑）</title>
-      <link>https://umezane06.github.io/posts/touhou-1v1-danmaku-game-modes-meta-template.html</link>
+      <link>https://umezane06.github.io/posts/touhou-1v1-danmaku-game-modes-meta-template/</link>
       <pubDate>Tue, 09 May 2023 21:32:00 +0800</pubDate>
       
-      <guid>https://umezane06.github.io/posts/touhou-1v1-danmaku-game-modes-meta-template.html</guid>
+      <guid>https://umezane06.github.io/posts/touhou-1v1-danmaku-game-modes-meta-template/</guid>
       <description>没错这是坑先放置一下。。。。
 不把网站搞完结果就没法写这个，惨啊</description>
     </item>
     
     <item>
       <title>虽然页面方面还是没弄好，但先记录一下</title>
-      <link>https://umezane06.github.io/posts/2023-4-24-log.html</link>
+      <link>https://umezane06.github.io/posts/2023-4-24-log/</link>
       <pubDate>Mon, 24 Apr 2023 21:53:00 +0800</pubDate>
       
-      <guid>https://umezane06.github.io/posts/2023-4-24-log.html</guid>
+      <guid>https://umezane06.github.io/posts/2023-4-24-log/</guid>
       <description>&lt;p&gt;在搬了住所后边头大地折腾这个破网页边焦虑现实状况的重复纠缠物&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>感想是代码零基础的人真的不要找没可视化后端的框架服务来建blog</title>
-      <link>https://umezane06.github.io/posts/why-the-fuk-i-didnt-use-wordpress.html</link>
+      <link>https://umezane06.github.io/posts/why-the-fuk-i-didnt-use-wordpress/</link>
       <pubDate>Wed, 12 Apr 2023 19:31:00 +0800</pubDate>
       
-      <guid>https://umezane06.github.io/posts/why-the-fuk-i-didnt-use-wordpress.html</guid>
+      <guid>https://umezane06.github.io/posts/why-the-fuk-i-didnt-use-wordpress/</guid>
       <description>。。。早知道我还是选wordpress好了！！！
 （整个过程真的就是，像往常一样，别人都在用翅膀飞我基本是在用头飞的这种感觉</description>
     </item>

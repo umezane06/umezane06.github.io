@@ -1,0 +1,8 @@
+div.content img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.center-image {
+    text-align: center;
+}

@@ -54,10 +54,7 @@ function populateResults(result){
           
           start = mvalue.indices[0][0]-summaryInclude>0?mvalue.indices[0][0]-summaryInclude:0;
           end = mvalue.indices[0][1]+summaryInclude<contents.length?mvalue.indices[0][1]+summaryInclude:contents.length;
-          if (snippet.length < 1) {
-            snippet += contents.substring(0, summaryInclude * 2);
-          }
-          
+          snippet += contents.substring(start,end);
           snippetHighlights.push(mvalue.value.substring(mvalue.indices[0][0],mvalue.indices[0][1]-mvalue.indices[0][0]+1));
         }
       });

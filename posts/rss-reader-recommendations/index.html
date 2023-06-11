@@ -157,7 +157,19 @@
         </ul>
       </nav>
       <div class="theme-selector">
-        <button class="button is-text" id="theme-selector-button" title="toggle theme">
+        
+      </section> 
+      <div>
+        <div id="search-results">
+        
+        <form action="https://umezane06.github.io/search">
+          <input id="search-query" name="s" placeholder="请输入你想搜索的内容"/>
+         </form>
+         </div> 
+      </div>
+      </section>
+      
+      <button class="button is-text" id="theme-selector-button" title="toggle theme">
           <span class="label icon">
 
 
@@ -403,7 +415,93 @@ Umezane</span>
 </ul>
       </article>
     </div>
-
+    <div class="post-content">
+      <blockquote>
+<p>网络，传播，不同阶层群体关心着的不同信息随机从身旁的每一处冲刷而过，哪一条又或将成为对头脑细胞与没有尽头的时间路径中产生某项关键化学反应的直接影响源？</p>
+</blockquote>
+<p>——2022.8.17</p>
+<h1 id="前言">前言</h1>
+<p>在之前分享 raindrop 那个软件的时候也说了，当前的信息碎片化时代，为了不被大数据推来的潮水一样的信息流碎片裹挟而去而淹没了自己的大脑，也该适当性地做出自我筛选，挑出自己会想看的东西来摄入才是。</p>
+<p>关于RSS的整体概念就不在这里赘述了，总的来说就是让你能在一个地方订阅多种网站服务的这么一种工具。本文推荐的正是通过这个服务得到的众多聚合内容的查看载体——RSS阅读器。一个用起来舒服的阅读端对于阅读体验来说也是个好的添花项。关于订阅源获取相关的问题可以参考<a href="https://sspai.com/post/75340">这篇文章</a>。</p>
+<p><em>注：这里的推荐目前大部分都不考虑多端同步问题，要同步只能靠定期导出opml文件或者手动去每个端补充新订阅源。原因就是，能使的那些个带同步服务的主流阅读器每个对使用功能又有很多限制还不好用，要自建对普通用户门槛好像也有些高（反正我是还不知道怎么折腾）。所以只是单纯来推荐几个用起来比较舒服的。。</em></p>
+<h1 id="pc端">PC端</h1>
+<h3 id="fluent-reader客户端--github下载页httpsgithubcomyang991178fluent-readerreleases">Fluent Reader（客户端）  <a href="https://github.com/yang991178/fluent-reader/releases">Github下载页</a></h3>
+<p><img src="../../images/fluent_reader.png" alt="预览图"></p>
+<p>看了半天好像pc端上相对好用限制不大的客户端向阅读器也就fluent reader了。虽然它声称全平台支持但是要特别注意，只有电脑端上的客户端（其余系统不清楚，我是windows），才支持导入本地rss源！！！其他移动端均无法自由导入其他订阅源，只能从现有的几个主流rss客户端账号里导入并同步&hellip;&hellip;（吃过ios的亏）</p>
+<p>其他感觉就没啥好说的了，毕竟电脑端看网页比移动端舒服多了也不用思考什么乱七八糟的，用就是了，缺点就是配置不太行的话它的动效会有些卡卡的。</p>
+<h3 id="webfollow-网页端支持多端同步--httpswebfollowcc">Webfollow （网页端）（支持多端同步）  <a href="https://webfollow.cc/">https://webfollow.cc/</a></h3>
+<p><img src="../../images/webfollow.png" alt="预览图"></p>
+<p>多端同步果然是个问题，所以在找客户端是同时也有在试着找一些网页上的RSS阅读器服务，感觉这个用起来算是还可以的，但似乎因为这还是个非常近期才出现的项目所以还是有挺多地方用起来有些毛病（如，经常很短时间内就需要重新登录，登录后的网络访问情况不稳定，以及界面排序时间有些混乱的问题），但值得展望一下。</p>
+<p>除了订阅功能外站内还配有其他用户的订阅流以及一些热门订阅源的探索功能，在看自己的之外也可以看到其他的内容。</p>
+<h1 id="安卓端">安卓端</h1>
+<h3 id="plenary--谷歌商店下载httpsplaygooglecomstoreappsdetailsidcomspiansplenary">Plenary  <a href="https://play.google.com/store/apps/details?id=com.spians.plenary">谷歌商店下载</a></h3>
+<p><img src="../../images/plenary.jpg" alt="预览图"></p>
+<p>特点：</p>
+<ul>
+<li>
+<p>可以将文章备份成本地页面离线查看，支持google Drive &amp; Dropbox云同步（需购买高级版）</p>
+</li>
+<li>
+<p>内里自带一些国家的新闻rss源（当然，并没有大陆的，不过有香港那边的）</p>
+</li>
+<li>
+<p>支持本地搜索，可在文章里画高亮标记（虽然只能在保存过了本地备份的文章里用。自从用了raindrop.io后就把收藏包括标记都给转移到那边去了，可以看看之前的<a href="https://umezane06.github.io/posts/about-raindrop-io/">推荐文章</a>）</p>
+</li>
+<li>
+<p>可离线阅读未查看文章的文本内容</p>
+</li>
+<li>
+<p>支持独立的播客订阅模式</p>
+</li>
+</ul>
+<p>比较可惜的是这个项目好像已经好几年都没声音了。。。里面的中文翻译也偏机翻。</p>
+<h3 id="feeder--f-droid下载httpsf-droidorgzh_hanspackagescomnononsenseappsfeeder">Feeder  <a href="https://f-droid.org/zh_Hans/packages/com.nononsenseapps.feeder/">F-Droid下载</a></h3>
+<p><img src="../../images/feeder.jpg" alt="预览图"></p>
+<p>特点：</p>
+<ul>
+<li>
+<p>完全自由开源，可无限制随意导出导入订阅</p>
+</li>
+<li>
+<p>解析 HTML 并以原生文字视图显示（所以在使用hamibot订阅方式下的微信公众号订阅时获取原文效果比上款阅读器更好，上款甚至读取不出来）</p>
+</li>
+<li>
+<p>可离线阅读未查看文章的文本内容</p>
+</li>
+</ul>
+<p>差不多是个人认为的安卓端最简洁文字向RSS阅读器了，该有功能都有，原文读取上效果也很好。只不过在播客订阅上可能还是稍有欠缺，在这方面有需求的建议还是右转<a href="https://moon.fm/">MOON FM</a>，是个专门的播客管理客户端。</p>
+<p><s>然后不知道为什么好像两个软件的文字转语音功能其实都是没法用的状态，或许只支持英文吧&hellip;</s></p>
+<h1 id="ios端主ipad">IOS端（主ipad）</h1>
+<h3 id="netnewswire-官网下载httpsnetnewswirecom-iosmac">NetNewsWire <a href="https://netnewswire.com/">官网下载</a> （IOS+MAC）</h3>
+<p><img src="../../images/NetNewsWire.PNG" alt="预览图 横"></p>
+<center>横屏模式</center>
+<p><img src="../../images/NetNewsWire1.JPG" alt="预览图 竖"></p>
+<center>竖屏模式</center>
+<p>其实平时也不会很频繁地开电脑，因为久坐好累。阅读的需求便转移到了平板电脑上。</p>
+<p>这个阅读器也是比较简洁向的一款，并且也是免费开源的。特点也不知道该说是啥，很基础的功能都有，本地订阅也有，界面分布也很均匀，其余就没什么大特色了。网上很多人提到界面体验比较苹果原生，个人没什么这方面追求所以也比较无所谓。。。只能说是一款免费好用的，不想盯着小屏幕的时候可以用的阅读器客户端之一了。</p>
+<h1 id="结语">结语</h1>
+<p>总之要推荐的东西就这么多了。在订阅源方面除了webfollow那个站的github那边提供的<a href="https://github.com/weekend-project-space/top-rss-list">top-rss-list</a>之外，还可以看看同样在github上的一份<a href="https://github.com/timqian/chinese-independent-blogs">中文独立博客列表</a>之类的。希望大家都能开拓视野学到更多的东西！</p>
+<hr>
+<p>提及资料：</p>
+<ul>
+<li>
+<p><a href="https://sspai.com/post/75340">2022 年还能用的 RSS 源，微信公众号也有！ - 奔跑中的奶酪</a></p>
+</li>
+<li>
+<p><a href="https://umezane06.github.io/posts/about-raindrop-io/">【杂物推荐】全平台书签管理+稍后再看工具 - Raindrop.io</a></p>
+</li>
+<li>
+<p><a href="https://moon.fm/">MOON.FM  Enjoy the pleasure of discovery</a></p>
+</li>
+<li>
+<p><a href="https://github.com/weekend-project-space/top-rss-list">top-rss-list</a></p>
+</li>
+<li>
+<p><a href="https://github.com/timqian/chinese-independent-blogs">中文独立博客列表</a></p>
+</li>
+</ul>
+    </div>
+    
     
       <div class="meta article-card">
     <div class="row">

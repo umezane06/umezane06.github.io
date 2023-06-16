@@ -20,7 +20,6 @@ other = "Previous"
 other = "READ MORE"
 
 [readingTime]
-one = "a min to read"
 other = "{{ .Count }} mins to read"
 
 [comment]

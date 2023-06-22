@@ -6,7 +6,16 @@
     <description>Recent content on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Jun 2023 05:36:00 +0800</lastBuildDate><atom:link href="https://umezane06.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jun 2023 00:36:00 +0800</lastBuildDate><atom:link href="https://umezane06.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【随记】近况</title>
+      <link>https://umezane06.github.io/posts/2023-6-22-log/</link>
+      <pubDate>Fri, 23 Jun 2023 00:36:00 +0800</pubDate>
+      
+      <guid>https://umezane06.github.io/posts/2023-6-22-log/</guid>
+      <description>&lt;p&gt;你会发现你仍然无法找到现实的出口，即便本来就像是从未来过。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【杂物推荐】各端RSS阅读器个人向推荐</title>
       <link>https://umezane06.github.io/posts/rss-reader-recommendations/</link>
@@ -90,7 +99,7 @@
       <guid>https://umezane06.github.io/about/</guid>
       <description>=梅实/umezane 只是在延伸至无尽广阔领域的线上四处游走
 其他各种sns等东西的综合传送门 因为各种原因处于一种长期的停滞休眠期，在无法停止的频发崩溃中仍然在试图摄入边缘角落的各种信息。
-完全是个人博客，将平时到处摄入的各种碎片进行一个综合提取的性质，大部分只是无聊的随想吧。
+完全是个人博客，将平时到处摄入的各种碎片进行一个综合提取的性质，大部分只是无聊的随想和收集物吧。
 友链：
 this terrible chamber </description>
     </item>
@@ -121,7 +130,13 @@ this terrible chamber </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://umezane06.github.io/search/</guid>
-      <description></description>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```
+Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.
+Edit layouts/_default/index.JSON This exposes the values in /index.json i.e. add category ``` &amp;hellip; &amp;ldquo;contents&amp;rdquo;:{{ .</description>
     </item>
     
   </channel>

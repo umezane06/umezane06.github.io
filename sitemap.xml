@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://plumdebris.eu.org/posts/2023.11.2-log/</loc>
+    <lastmod>2023-11-02T17:38:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/posts/</loc>
+    <lastmod>2023-11-02T17:38:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/</loc>
+    <lastmod>2023-11-02T17:38:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/</loc>
+    <lastmod>2023-11-02T17:38:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/%E9%9A%8F%E8%AE%B0/</loc>
+    <lastmod>2023-11-02T17:38:00+08:00</lastmod>
+  </url><url>
     <loc>https://plumdebris.eu.org/posts/freeform-men/</loc>
     <lastmod>2023-10-31T22:20:00+08:00</lastmod>
   </url><url>
@@ -11,19 +26,10 @@
     <loc>https://plumdebris.eu.org/tags/hard-nrg/</loc>
     <lastmod>2023-10-31T22:20:00+08:00</lastmod>
   </url><url>
-    <loc>https://plumdebris.eu.org/posts/</loc>
-    <lastmod>2023-10-31T22:20:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/tags/</loc>
-    <lastmod>2023-10-31T22:20:00+08:00</lastmod>
-  </url><url>
     <loc>https://plumdebris.eu.org/tags/%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2023-10-31T22:20:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/tags/%E7%BB%98%E5%9B%BE/</loc>
-    <lastmod>2023-10-31T22:20:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/</loc>
     <lastmod>2023-10-31T22:20:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/tags/%E9%9F%B3%E4%B9%90/</loc>
@@ -48,9 +54,6 @@
     <lastmod>2023-09-29T16:27:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/posts/music-for-me/</loc>
-    <lastmod>2023-09-14T15:32:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/tags/%E9%9A%8F%E8%AE%B0/</loc>
     <lastmod>2023-09-14T15:32:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/about/</loc>
@@ -139,8 +142,6 @@
   </url><url>
     <loc>https://plumdebris.eu.org/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
     <lastmod>2023-04-12T19:31:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/posts/2023.11.2-log/</loc>
   </url><url>
     <loc>https://plumdebris.eu.org/archives/</loc>
   </url><url>

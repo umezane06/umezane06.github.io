@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 绝对概括的切面</title>
+    <link>https://plumdebris.eu.org/tags/hugo/</link>
+    <description>Recent content in Hugo on 绝对概括的切面</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 May 2023 20:03:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【记录】建blog途中参考的各种资料</title>
+      <link>https://plumdebris.eu.org/posts/references-about-hugo-blog/</link>
+      <pubDate>Tue, 16 May 2023 20:03:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/references-about-hugo-blog/</guid>
+      <description>&lt;p&gt;但就算看了这么多也还是时常搞崩，惨烈&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

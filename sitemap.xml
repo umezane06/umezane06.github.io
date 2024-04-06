@@ -2,25 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://plumdebris.eu.org/posts/broken-minds-about-me/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/posts/broken-minds-about-music/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/freeform-hardcore/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/hard-nrg/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/posts/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/%E9%9A%8F%E8%AE%B0/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/tags/%E9%9F%B3%E4%B9%90/</loc>
+    <lastmod>2024-04-06T14:45:00+08:00</lastmod>
+  </url><url>
     <loc>https://plumdebris.eu.org/posts/2024-4-5-log/</loc>
     <lastmod>2024-04-05T18:26:00+08:00</lastmod>
   </url><url>
-    <loc>https://plumdebris.eu.org/posts/</loc>
-    <lastmod>2024-04-05T18:26:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/tags/</loc>
-    <lastmod>2024-04-05T18:26:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/</loc>
-    <lastmod>2024-04-05T18:26:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/tags/%E9%9A%8F%E8%AE%B0/</loc>
-    <lastmod>2024-04-05T18:26:00+08:00</lastmod>
-  </url><url>
     <loc>https://plumdebris.eu.org/posts/2023-end/</loc>
-    <lastmod>2023-12-30T16:03:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/tags/freeform-hardcore/</loc>
     <lastmod>2023-12-30T16:03:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/posts/2023.11.2-log/</loc>
@@ -29,16 +44,7 @@
     <loc>https://plumdebris.eu.org/posts/freeformer-doujin-art/</loc>
     <lastmod>2023-10-31T22:20:00+08:00</lastmod>
   </url><url>
-    <loc>https://plumdebris.eu.org/tags/hard-nrg/</loc>
-    <lastmod>2023-10-31T22:20:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/tags/%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2023-10-31T22:20:00+08:00</lastmod>
-  </url><url>
     <loc>https://plumdebris.eu.org/tags/%E7%BB%98%E5%9B%BE/</loc>
-    <lastmod>2023-10-31T22:20:00+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/tags/%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2023-10-31T22:20:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/posts/how-to-find-music/</loc>
@@ -80,9 +86,6 @@
     <loc>https://plumdebris.eu.org/posts/plutchik-wheel/</loc>
     <lastmod>2023-07-09T20:37:00+08:00</lastmod>
   </url><url>
-    <loc>https://plumdebris.eu.org/posts/broken-minds-about-music/</loc>
-    <lastmod>2023-07-05T14:09:00+08:00</lastmod>
-  </url><url>
     <loc>https://plumdebris.eu.org/posts/digest-2023-6-28/</loc>
     <lastmod>2023-06-28T20:06:12+08:00</lastmod>
   </url><url>
@@ -91,9 +94,6 @@
   </url><url>
     <loc>https://plumdebris.eu.org/tags/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2023-06-28T20:06:12+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/posts/broken-minds-about-me/</loc>
-    <lastmod>2023-06-28T20:04:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/posts/2023-6-22-log/</loc>
     <lastmod>2023-06-23T00:36:00+08:00</lastmod>

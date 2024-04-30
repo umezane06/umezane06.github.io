@@ -6,14 +6,18 @@
     <description>Recent content in Hugo on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 May 2023 20:03:00 +0800</lastBuildDate>
-    <atom:link href="https://plumdebris.eu.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 May 2023 20:03:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【记录】建blog途中参考的各种资料</title>
       <link>https://plumdebris.eu.org/posts/references-about-hugo-blog/</link>
       <pubDate>Tue, 16 May 2023 20:03:00 +0800</pubDate>
+      
       <guid>https://plumdebris.eu.org/posts/references-about-hugo-blog/</guid>
-      <description>&lt;p&gt;但就算看了这么多也还是时常搞崩，惨烈&lt;/p&gt;</description>
+      <description>&lt;p&gt;但就算看了这么多也还是时常搞崩，惨烈&lt;/p&gt;
+&lt;p&gt;足以证明这东西完全就是到处拼拼凑凑的产物,悲之剧&lt;/p&gt;
+&lt;p&gt;试着把raindrop.io的收藏夹直接嵌入了进来，评论系统相关的子分类不知道为什么没跟主文件夹分开需要点more来看不然会很乱。。。&lt;/p&gt;
+&lt;iframe style=&#34;border: 0; width: 100%; height: 550px;&#34; allowfullscreen frameborder=&#34;0&#34; src=&#34;https://raindrop.io/umezane/hugo-34155805/embed/theme=auto&#34;&gt;&lt;/iframe&gt;</description>
     </item>
+    
   </channel>
 </rss>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -95,6 +96,12 @@ pre > code mark {
   color: var(--theme-text);
   padding: 0 1rem;
   margin: 0 -1rem; }
+
+.highlight {
+  max-height: 300px;
+  /* 这里设置代码块的最大高度为300像素 */
+  overflow: auto;
+  /* 如果代码块超出了最大高度，启用垂直滚动条 */ }
 
 kbd {
   display: inline-block;
@@ -554,6 +561,12 @@ pre > code mark {
   padding: 0 1rem;
   margin: 0 -1rem; }
 
+.highlight {
+  max-height: 300px;
+  /* 这里设置代码块的最大高度为300像素 */
+  overflow: auto;
+  /* 如果代码块超出了最大高度，启用垂直滚动条 */ }
+
 kbd {
   display: inline-block;
   padding: 0.25rem;
@@ -755,6 +768,12 @@ body:not(.theme-dark),
   --theme-red: #d13438;
   --theme-purple: #5c2e91;
   --theme-cyan: #0099bc; }
+  body:not(.theme-dark) #back-to-top,
+  .theme-light #back-to-top {
+    --background-color: rgba(116, 116, 116, 0.5); }
+  body:not(.theme-dark) #back-to-top:before,
+  .theme-light #back-to-top:before {
+    border-color: #000000; }
 
 .theme-dark {
   --theme-background: black;
@@ -794,6 +813,12 @@ body:not(.theme-dark),
   --theme-red: #d13438;
   --theme-purple: #5c2e91;
   --theme-cyan: #0099bc; }
+  .theme-dark #back-to-top {
+    --background-color: rgba(245, 245, 245, 0.5); }
+  .theme-dark #back-to-top:before {
+    border-color: #000000; }
+  .theme-dark #back-to-top:hover:before {
+    border-color: #000000; }
   .theme-dark .highlight {
     --theme-blue: #569cd6;
     --theme-green: #57a64a; }
@@ -841,6 +866,12 @@ body:not(.theme-dark),
     --theme-red: #d13438;
     --theme-purple: #5c2e91;
     --theme-cyan: #0099bc; }
+    body:not(.theme-light) #back-to-top {
+      --background-color: rgba(245, 245, 245, 0.5); }
+    body:not(.theme-light) #back-to-top:before {
+      border-color: #000000; }
+    body:not(.theme-light) #back-to-top:hover:before {
+      border-color: #000000; }
     body:not(.theme-light) .highlight {
       --theme-blue: #569cd6;
       --theme-green: #57a64a; }

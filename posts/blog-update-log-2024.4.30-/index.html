@@ -11,7 +11,7 @@
   
 
 
-<head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head lang="en">
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="HandheldFriendly" content="True" />
@@ -22,7 +22,7 @@
   <meta name="author" content="Umezane">
   <meta name="keywords" content="折腾">
   <title>【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 | 绝对概括的切面</title>
-  <link rel="canonical" href="http://localhost:1313/posts/blog-update-log-2024.4.30-/" />
+  <link rel="canonical" href="https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/" />
   
 
   
@@ -31,7 +31,7 @@
   <meta property="og:title" content="【折腾】虽然不怎么写但还是突然想水一篇博客装修记录" />
   <meta property="og:site_name" content="绝对概括的切面" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:url" content="http://localhost:1313/posts/blog-update-log-2024.4.30-/" />
+  <meta property="og:url" content="https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/" />
   <meta property="og:locale" content="en" />
 
   
@@ -46,11 +46,11 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 | 绝对概括的切面" />
   <meta name="twitter:description" content="这东西怎么全是偷的.jpg" />
-  <meta name="twitter:domain" content="http://localhost:1313/posts/blog-update-log-2024.4.30-/" />
+  <meta name="twitter:domain" content="https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/" />
 
   
   
-    <link rel="icon" href="http://localhost:1313/favicon.ico">
+    <link rel="icon" href="https://plumdebris.eu.org/favicon.ico">
   
   
   
@@ -66,10 +66,13 @@
   
 
   
-    <link rel="stylesheet" href="http://localhost:1313/style.css" rel="preload stylesheet" as="style"/>
+    
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.49fd9a3ba247fa283cf05b4cfecc4481d9cf91ca3306d0b1b36a2e15f930735c.css" integrity="sha256-Sf2aO6JH&#43;ig88FtM/sxEgdnPkcozBtCxs2ouFfkwc1w=" rel="preload stylesheet" as="style"/>
   
 
   
+  
+    
   
 </head>
 
@@ -117,7 +120,7 @@
 
 </button>
       <div class="navbar-brand">
-        <a class="logo navbar-button" href="http://localhost:1313/" title="绝对概括的切面">
+        <a class="logo navbar-button" href="https://plumdebris.eu.org/" title="绝对概括的切面">
           <span>绝对概括的切面</span>
         </a>
       </div>  
@@ -195,17 +198,17 @@
   
 
 <li >
-  <a href="http://localhost:1313/">Home</a>
+  <a href="https://plumdebris.eu.org/">Home</a>
 </li>
 
 
 <li >
-  <a href="http://localhost:1313/posts/">Posts</a>
+  <a href="https://plumdebris.eu.org/posts/">Posts</a>
 </li>
 
 
 <li class="active">
-  <a href="http://localhost:1313/posts/blog-update-log-2024.4.30-/">【折腾】虽然不怎么写但还是突然想水一篇博客装修记录</a>
+  <a href="https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/">【折腾】虽然不怎么写但还是突然想水一篇博客装修记录</a>
 </li>
 
 </ol>
@@ -410,8 +413,8 @@ Umezane</span>
 </span></span><span class="line"><span class="cl">&lt;/script&gt;
 </span></span></code></pre></div><p>按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色（自己的路径是/assets/css/theme.scss）</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl">  #back-to-top <span class="nb">{</span>--background-color: rgba(116, 116, 116, 0.5);<span class="nb">}</span> /* 按钮背景 */
-</span></span><span class="line"><span class="cl">  #back-to-top:before <span class="nb">{</span>border-color: #000000;<span class="nb">}</span> /* 光标触碰按钮前的箭头颜色 */
-</span></span><span class="line"><span class="cl">   #back-to-top:hover:before <span class="nb">{</span>border-color: var(--accent-color);<span class="nb">}</span> /* 光标触碰按钮后的箭头颜色 */
+</span></span><span class="line"><span class="cl">  #back-to-top:before <span class="nb">{</span>border-color: #000000;<span class="nb">}</span> /* 光标接触到按钮前的箭头颜色 */
+</span></span><span class="line"><span class="cl">   #back-to-top:hover:before <span class="nb">{</span>border-color: var(--accent-color);<span class="nb">}</span> /* 光标接触到按钮后的箭头颜色 */
 </span></span></code></pre></div><h1 id="限制代码块高度">限制代码块高度</h1>
 <p>就在复制粘贴上面内容的时候才发现这主题并没有限制代码块高度你写多长就是多长，很碍事很影响阅读，于是又现折腾了半天</p>
 <p>在用来显示代码块的css/scss文件（本主题为/assets/css/main.scss）里添加</p>
@@ -419,19 +422,45 @@ Umezane</span>
 </span></span><span class="line"><span class="cl">  max-height: 300px; /* 这里设置代码块的最大高度为300像素 */
 </span></span><span class="line"><span class="cl">  overflow: auto; /* 如果代码块超出了最大高度，启用垂直滚动条 */
 </span></span><span class="line"><span class="cl"><span class="nb">}</span>
-</span></span></code></pre></div><p><s>想顺便给代码块加上高亮但是试了很多方法死活不生效也不知道问题出在哪于是放弃了</s></p>
+</span></span></code></pre></div><p><s>想顺便给代码块加上代码高亮但是试了很多方法死活不生效也不知道问题出在哪于是放弃了</s></p>
 <h1 id="给网站加个cloudflare代理">给网站加个Cloudflare代理</h1>
-<p>把网站本地库迁移到新电脑上后发现站子在墙内突然访问不了了，拖了好一阵时间后看见这位友友的帖子<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>就也想着给自己网站上个代理试试
-参考资料：</p>
+<p>把网站本地库迁移到新电脑上后发现站子在墙内突然访问不了了，拖了好一阵时间后看见这位友友的帖子<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>就也想着给自己网站上个代理试试</p>
+<p>踩坑：按照帖子说明把域名服务商的nameserver改成cloudflare给的，待几分钟连接成功也把SSL/TLS 加密模式勾选为 “完全”后浅测试一下发现国内能访问就兴高采烈地跑去修其他东西了，结果后来才发现光这样搞国外ip就访问不了了果然还是得添加A记录(&hellip;)（*原先的CNAME记录需删除）不过我的站不是像原博主一样拿vercel部署的就随便猜了一个github的ip（如185.199.108.153）结果居然就成了，挺好（</p>
+<h1 id="修改博客的rss输出">修改博客的Rss输出</h1>
+<p>也是迁移后出现的问题，测试后发现rss输出不显示文章内章节小标题了</p>
+<p>按照这个方法<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>顺手把rss输出改成全文输出了。</p>
+<h1 id="一些修废了和至今都没能实现没力气弄的功能可能算是在挖坑">一些修废了和至今都没能实现/没力气弄的功能（可能算是在挖坑</h1>
+<ul>
+<li>
+<p>waline评论邮件提醒：一直在怀疑是不是我用的tutanota邮箱注册了账号的关系（它没有smtp这东西），想改成用outlook邮箱接收邮件结果配置老半天都没反应不知道哪出了问题所以拖很久都没弄。今天想试试重新拿outlook邮箱注册个账号结果它莫名其妙不给注册导致主账号能看见的此系统的账号栏里就多了一个删也删不掉的幽灵账号在那里&hellip;在试着修修变量重新部署的时候还出现了不知道哪个东西可能有版本差而报了错的问题，整个人已昏厥在地上。感觉一段时间内都不想再碰这个东西了实在没精力弄了。。。</p>
+</li>
+<li>
+<p>搜索功能：以前试着配了，不懂代码不知道搜索框放哪好，摸索到位置后移动端好像又显示不了（跟这个主题只能在pc端看见的夜间模式一样神秘，但我真不会修），还搜不了中文干脆还是删了。不知道以后还有没有新的教程能让我抄一下，至少今天是没有力气弄了（&hellip;&hellip;</p>
+</li>
+<li>
+<p>给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义</p>
+</li>
+<li>
+<p>给waline多加点萌表情比如blob之类的：没精力了下次吧</p>
+</li>
+</ul>
+<h1 id="随便废话一些">随便废话一些</h1>
+<p>本来是想给网络友人看我的同人图顺便就想大装修一下网站但一不小心就修了一整天好累啊.jpg</p>
+<p>不懂代码人建站真的就是缝缝补补又一年</p>
+<p>参考资料：</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
-<p>[小白hugo博客装修笔记（1）&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.blain.top/p/renovation/#%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8%E6%8C%89%E9%92%AE">小白hugo博客装修笔记（1）</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
 <p><a href="https://naturaleki.one/post/%E8%8A%B1%E8%B4%B92400%E8%93%9D%E4%BD%BF%E7%94%A8%E4%BA%86%E5%9F%9F%E5%90%8D%E8%BD%AC%E7%A7%BB%E5%A4%8D%E6%B4%BB%E6%9C%AF/">花费 2400 蓝使用了域名转移复活术 - 天堂错误文件
 </a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>[hugo RSS 修改成全文输出 | yangpeiyuan]
+(<a href="https://yangpeiyuan.com/posts/full-text-hugo-rss-feed/">https://yangpeiyuan.com/posts/full-text-hugo-rss-feed/</a>)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -488,7 +517,7 @@ Published At</span><time>2024-04-30 18:08 CST</time>
 Tagged with</span>
         <ul class="tags">
         
-          <li class="hashed-tag"><a href="http://localhost:1313/tags/%E6%8A%98%E8%85%BE">折腾</a></li>
+          <li class="hashed-tag"><a href="https://plumdebris.eu.org/tags/%E6%8A%98%E8%85%BE">折腾</a></li>
         
         </ul>
       </div>
@@ -524,7 +553,7 @@ Share with</span>
         title="share to fediverse"
         rel="noopener noreferrer"
         aria-label="share 【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 on fediverse"
-        href="https://beta.s2f.kytta.dev/?text=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95&amp;url=http%3A%2F%2Flocalhost%3A1313%2Fposts%2Fblog-update-log-2024.4.30-%2F&amp;title=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95">
+        href="https://beta.s2f.kytta.dev/?text=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2Fblog-update-log-2024.4.30-%2F&amp;title=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95">
         
 
 
@@ -551,7 +580,7 @@ Share with</span>
         title="share to twitter"
         rel="noopener noreferrer"
         aria-label="share 【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 on twitter"
-        href="https://twitter.com/intent/tweet/?text=%e3%80%90%e6%8a%98%e8%85%be%e3%80%91%e8%99%bd%e7%84%b6%e4%b8%8d%e6%80%8e%e4%b9%88%e5%86%99%e4%bd%86%e8%bf%98%e6%98%af%e7%aa%81%e7%84%b6%e6%83%b3%e6%b0%b4%e4%b8%80%e7%af%87%e5%8d%9a%e5%ae%a2%e8%a3%85%e4%bf%ae%e8%ae%b0%e5%bd%95&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fblog-update-log-2024.4.30-%2f">
+        href="https://twitter.com/intent/tweet/?text=%e3%80%90%e6%8a%98%e8%85%be%e3%80%91%e8%99%bd%e7%84%b6%e4%b8%8d%e6%80%8e%e4%b9%88%e5%86%99%e4%bd%86%e8%bf%98%e6%98%af%e7%aa%81%e7%84%b6%e6%83%b3%e6%b0%b4%e4%b8%80%e7%af%87%e5%8d%9a%e5%ae%a2%e8%a3%85%e4%bf%ae%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2fplumdebris.eu.org%2fposts%2fblog-update-log-2024.4.30-%2f">
         
 
 
@@ -578,7 +607,7 @@ Share with</span>
         title="share to weibo"
         rel="noopener noreferrer"
         aria-label="share 【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 on weibo"
-        href="https://service.weibo.com/share/share.php?text=%e3%80%90%e6%8a%98%e8%85%be%e3%80%91%e8%99%bd%e7%84%b6%e4%b8%8d%e6%80%8e%e4%b9%88%e5%86%99%e4%bd%86%e8%bf%98%e6%98%af%e7%aa%81%e7%84%b6%e6%83%b3%e6%b0%b4%e4%b8%80%e7%af%87%e5%8d%9a%e5%ae%a2%e8%a3%85%e4%bf%ae%e8%ae%b0%e5%bd%95&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fblog-update-log-2024.4.30-%2f&title=%e3%80%90%e6%8a%98%e8%85%be%e3%80%91%e8%99%bd%e7%84%b6%e4%b8%8d%e6%80%8e%e4%b9%88%e5%86%99%e4%bd%86%e8%bf%98%e6%98%af%e7%aa%81%e7%84%b6%e6%83%b3%e6%b0%b4%e4%b8%80%e7%af%87%e5%8d%9a%e5%ae%a2%e8%a3%85%e4%bf%ae%e8%ae%b0%e5%bd%95">
+        href="https://service.weibo.com/share/share.php?text=%e3%80%90%e6%8a%98%e8%85%be%e3%80%91%e8%99%bd%e7%84%b6%e4%b8%8d%e6%80%8e%e4%b9%88%e5%86%99%e4%bd%86%e8%bf%98%e6%98%af%e7%aa%81%e7%84%b6%e6%83%b3%e6%b0%b4%e4%b8%80%e7%af%87%e5%8d%9a%e5%ae%a2%e8%a3%85%e4%bf%ae%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2fplumdebris.eu.org%2fposts%2fblog-update-log-2024.4.30-%2f&title=%e3%80%90%e6%8a%98%e8%85%be%e3%80%91%e8%99%bd%e7%84%b6%e4%b8%8d%e6%80%8e%e4%b9%88%e5%86%99%e4%bd%86%e8%bf%98%e6%98%af%e7%aa%81%e7%84%b6%e6%83%b3%e6%b0%b4%e4%b8%80%e7%af%87%e5%8d%9a%e5%ae%a2%e8%a3%85%e4%bf%ae%e8%ae%b0%e5%bd%95">
         
 
 
@@ -747,7 +776,7 @@ Share with</span>
   
 <div class="header-text"><center>
   
-  <a class="nav-link navbar-button" href="http://localhost:1313/index.xml" type="application/rss+xml">
+  <a class="nav-link navbar-button" href="https://plumdebris.eu.org/index.xml" type="application/rss+xml">
     
     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>  RSS 
 
@@ -769,7 +798,7 @@ Share with</span>
 </script>
 
 
-<script defer src="http://localhost:1313/js/main.min.22edf5bac5dfa68a0215a42702e2a71503d57bedadc157af46b990895734f033.js" integrity="sha256-Iu31usXfpooCFaQnAuKnFQPVe+2twVevRrmQiVc08DM=" crossorigin="anonymous" async></script>
+<script defer src="https://plumdebris.eu.org/js/main.min.22edf5bac5dfa68a0215a42702e2a71503d57bedadc157af46b990895734f033.js" integrity="sha256-Iu31usXfpooCFaQnAuKnFQPVe+2twVevRrmQiVc08DM=" crossorigin="anonymous" async></script>
 
 
     <link

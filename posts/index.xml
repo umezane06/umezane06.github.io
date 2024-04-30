@@ -6,7 +6,175 @@
     <description>Recent content in Posts on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Apr 2024 18:08:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Apr 2024 22:16:03 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【折腾】虽然不怎么写但还是突然想水一篇博客装修记录</title>
+      <link>https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/</link>
+      <pubDate>Tue, 30 Apr 2024 18:08:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/</guid>
+      <description>&lt;p&gt;这东西怎么全是偷的.jpg&lt;/p&gt;
+&lt;h1 id=&#34;给博客添加回到顶部按钮&#34;&gt;给博客添加回到顶部按钮&lt;/h1&gt;
+&lt;p&gt;（参考&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）按照自己博客主题的结构在/layouts/partials/footer.html下添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;!--返回顶部按钮 --&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;a href=&amp;#34;#&amp;#34; id=&amp;#34;back-to-top&amp;#34; title=&amp;#34;返回顶部&amp;#34;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;!--返回顶部CSS --&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    display: none;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    position: fixed;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    bottom: 20px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    right: 55px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    width: 55px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    height: 55px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    border-radius: 7px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    background-color: rgba(64, 158, 255, 0.5);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    box-shadow: var(--shadow-l2);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    font-size: 30px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    text-align: center;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    line-height: 50px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cursor: pointer;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  #back-to-top:before &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    content: &amp;#39; &amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    display: inline-block;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    position: relative;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    top: 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    transform: rotate(135deg);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    height: 10px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    width: 10px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    border-width: 0 0 2px 2px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    border-color: var(--back-to-top-color);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    border-style: solid;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  #back-to-top:hover:before &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    border-color: #2674e0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 在屏幕宽度小于 768 像素时，钮位置调整 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (max-width: 768px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      bottom: 20px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      right: 20px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      width: 40px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      height: 40px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      font-size: 10px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 在屏幕宽度大于等于 1024 像素时，按钮位置调整 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (min-width: 1024px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      bottom: 20px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      right: 40px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 在屏幕宽度大于等于 1280 像素时，按钮位置调整 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (min-width: 1280px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      bottom: 20px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      right: 55px;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 目录显示时，隐藏按钮 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (min-width: 1536px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      visibility: hidden;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;!--返回顶部JS --&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;script&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  function backToTop() &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    document.documentElement.scrollIntoView(&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      behavior: &amp;#39;smooth&amp;#39;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  window.onload = function () &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let scrollTop =
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      this.document.documentElement.scrollTop || this.document.body.scrollTop
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let totopBtn = this.document.getElementById(&amp;#39;back-to-top&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    if (scrollTop &amp;gt; 0) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      totopBtn.style.display = &amp;#39;inline&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; else &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      totopBtn.style.display = &amp;#39;none&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  window.onscroll = function () &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let scrollTop =
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      this.document.documentElement.scrollTop || this.document.body.scrollTop
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let totopBtn = this.document.getElementById(&amp;#39;back-to-top&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    if (scrollTop &amp;lt; 200) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      totopBtn.style.display = &amp;#39;none&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; else &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      totopBtn.style.display = &amp;#39;inline&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      totopBtn.addEventListener(&amp;#39;click&amp;#39;, backToTop, false)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/script&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色（自己的路径是/assets/css/theme.scss）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;--background-color: rgba(116, 116, 116, 0.5);&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; /* 按钮背景 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  #back-to-top:before &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;border-color: #000000;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; /* 光标接触到按钮前的箭头颜色 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   #back-to-top:hover:before &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;border-color: var(--accent-color);&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; /* 光标接触到按钮后的箭头颜色 */
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;限制代码块高度&#34;&gt;限制代码块高度&lt;/h1&gt;
+&lt;p&gt;就在复制粘贴上面内容的时候才发现这主题并没有限制代码块高度你写多长就是多长，很碍事很影响阅读，于是又现折腾了半天&lt;/p&gt;
+&lt;p&gt;在用来显示代码块的css/scss文件（本主题为/assets/css/main.scss）里添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.highlight &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  max-height: 300px; /* 这里设置代码块的最大高度为300像素 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  overflow: auto; /* 如果代码块超出了最大高度，启用垂直滚动条 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;s&gt;想顺便给代码块加上代码高亮但是试了很多方法死活不生效也不知道问题出在哪于是放弃了&lt;/s&gt;&lt;/p&gt;
+&lt;h1 id=&#34;给网站加个cloudflare代理&#34;&gt;给网站加个Cloudflare代理&lt;/h1&gt;
+&lt;p&gt;把网站本地库迁移到新电脑上后发现站子在墙内突然访问不了了，拖了好一阵时间后看见这位友友的帖子&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;就也想着给自己网站上个代理试试&lt;/p&gt;
+&lt;p&gt;踩坑：按照帖子说明把域名服务商的nameserver改成cloudflare给的，待几分钟连接成功也把SSL/TLS 加密模式勾选为 “完全”后浅测试一下发现国内能访问就兴高采烈地跑去修其他东西了，结果后来才发现光这样搞国外ip就访问不了了果然还是得添加A记录(&amp;hellip;)（*原先的CNAME记录需删除）不过我的站不是像原博主一样拿vercel部署的就随便猜了一个github的ip（如185.199.108.153）结果居然就成了，挺好（&lt;/p&gt;
+&lt;h1 id=&#34;修改博客的rss输出&#34;&gt;修改博客的Rss输出&lt;/h1&gt;
+&lt;p&gt;也是迁移后出现的问题，测试后发现rss输出不显示文章内章节小标题了&lt;/p&gt;
+&lt;p&gt;按照这个方法&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;顺手把rss输出改成全文输出了。&lt;/p&gt;
+&lt;h1 id=&#34;一些修废了和至今都没能实现没力气弄的功能可能算是在挖坑&#34;&gt;一些修废了和至今都没能实现/没力气弄的功能（可能算是在挖坑&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;waline评论邮件提醒：一直在怀疑是不是我用的tutanota邮箱注册了账号的关系（它没有smtp这东西），想改成用outlook邮箱接收邮件结果配置老半天都没反应不知道哪出了问题所以拖很久都没弄。今天想试试重新拿outlook邮箱注册个账号结果它莫名其妙不给注册导致主账号能看见的此系统的账号栏里就多了一个删也删不掉的幽灵账号在那里&amp;hellip;在试着修修变量重新部署的时候还出现了不知道哪个东西可能有版本差而报了错的问题，整个人已昏厥在地上。感觉一段时间内都不想再碰这个东西了实在没精力弄了。。。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;搜索功能：以前试着配了，不懂代码不知道搜索框放哪好，摸索到位置后移动端好像又显示不了（跟这个主题只能在pc端看见的夜间模式一样神秘，但我真不会修），还搜不了中文干脆还是删了。不知道以后还有没有新的教程能让我抄一下，至少今天是没有力气弄了（&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;随便废话一些&#34;&gt;随便废话一些&lt;/h1&gt;
+&lt;p&gt;本来是想给网络友人看我的同人图顺便就想大装修一下网站但一不小心就修了一整天好累啊.jpg&lt;/p&gt;
+&lt;p&gt;不懂代码人建站真的就是缝缝补补又一年&lt;/p&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.blain.top/p/renovation/#%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8%E6%8C%89%E9%92%AE&#34;&gt;小白hugo博客装修笔记（1）&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://naturaleki.one/post/%E8%8A%B1%E8%B4%B92400%E8%93%9D%E4%BD%BF%E7%94%A8%E4%BA%86%E5%9F%9F%E5%90%8D%E8%BD%AC%E7%A7%BB%E5%A4%8D%E6%B4%BB%E6%9C%AF/&#34;&gt;花费 2400 蓝使用了域名转移复活术 - 天堂错误文件
+&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;[hugo RSS 修改成全文输出 | yangpeiyuan]
+(&lt;a href=&#34;https://yangpeiyuan.com/posts/full-text-hugo-rss-feed/&#34;&gt;https://yangpeiyuan.com/posts/full-text-hugo-rss-feed/&lt;/a&gt;)&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+    </item>
+    
     <item>
       <title>【更新】个人认为比较重要的关于一些Freeform Hardcore音乐场景、厂牌、制作人的关系图</title>
       <link>https://plumdebris.eu.org/posts/freeform-hardcore-relationship-diagram/</link>
@@ -1376,257 +1544,6 @@
 &lt;/p&gt;
 &lt;p&gt;6.16：结果现在发现搞wordpress建要在服务器维护上作折腾，也一样麻烦，，，&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>【同人】私心放置于此的一些比较重要的freeform相关同人涂鸦（不间断更新）</title>
-      <link>https://plumdebris.eu.org/posts/doujin-art-about-freeform/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://plumdebris.eu.org/posts/doujin-art-about-freeform/</guid>
-      <description>&lt;p&gt;&lt;em&gt;~浮游着各种个人情绪~&lt;/em&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;p&gt;  &lt;summary&gt;Japan Scene&lt;/summary&gt;&lt;/p&gt;
-&lt;p&gt;  &lt;p&gt; 
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_0627%281%29.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_0627%281%29.PNG&#34; alt=&#34;Nanosecond Eternity&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_0628%281%29.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_0628%281%29.PNG&#34; alt=&#34;Nanosecond Eternity2&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2022.4.30]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为Betwixt &amp;amp; Between唯一的个人专辑「Nanosecond Eternity」的封面&amp;amp;背封角色同人图。(&lt;a href=&#34;https://www.discogs.com/release/2623090-Betwixt-Between-Nanosecond-Eternity/image/SW1hZ2U6MjYwMTQzNTI=&#34;&gt;Discogs&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1368.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1368.PNG&#34; alt=&#34;RIP B&amp;amp;amp;B&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[2023.9.17] B&amp;amp;B逝世11周年.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1941.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1941.PNG&#34; alt=&#34;間&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2024.4.17]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;因为突然想起4.29是b的生日所以试着涂了一下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_0227.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_0227.PNG&#34; alt=&#34;Druggy&amp;amp;rsquo;s Acid Rack1&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2021.10.31]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;*此为社团&lt;a href=&#34;https://www.discogs.com/label/88485-Druggys-Acid-Rack&#34;&gt;「Druggy&amp;rsquo;s Acid Rack」&lt;/a&gt;以及LV4的BMS曲目&lt;a href=&#34;https://www.bilibili.com/video/BV1e7411Z7DS/&#34;&gt;「Angel Dust」&lt;/a&gt;的看板娘&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_0936.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_0936.PNG&#34; alt=&#34;Druggy&amp;amp;rsquo;s Acid Rack2&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2022.12.29]&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1640.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1640.PNG&#34; alt=&#34;Druggy&amp;amp;rsquo;s Acid Rack3&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.11.11]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为DAR专辑&lt;a href=&#34;https://www.discogs.com/release/1042770-Various-Psychedelic-Sensation&#34;&gt;「Psychedelic Sensation」 (2007)&lt;/a&gt;封面同人&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1645.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1645.PNG&#34; alt=&#34;Druggy&amp;amp;rsquo;s Acid Rack4&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.11.14]&lt;/p&gt;
- &lt;/p&gt;
-&lt;/details&gt;
-&lt;details&gt;
-&lt;p&gt;  &lt;summary&gt;各种综合涂鸦和不知道怎么分类的图&lt;/summary&gt;&lt;/p&gt;
-&lt;p&gt;  &lt;p&gt;
-
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1517.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1517.PNG&#34; alt=&#34;Nu energy&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/export202310141420476981.png&#34;&gt;
-&lt;img src=&#34;../images/export202310141420476981.png&#34; alt=&#34;Nu energy&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.10.12]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为英国厂牌&lt;a href=&#34;https://www.discogs.com/label/4122-Nu-Energy&#34;&gt;「Nu Energy Collective」&lt;/a&gt;宣传用的两个角色，红色的那位在以前的厂牌官方网站上，绿色的那位是子厂牌&lt;a href=&#34;https://www.discogs.com/label/15578-Relentless-Vinyl&#34;&gt;Relentless Vinyl&lt;/a&gt;黑胶封面上的.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1564.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1564.PNG&#34; alt=&#34;alek&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.10.26]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;基本是在临摹照片和logo的alek涂鸦.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1572.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1572.PNG&#34; alt=&#34;Freeform men&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.10.27]&lt;/p&gt;
-&lt;p&gt;左：&lt;a href=&#34;https://www.discogs.com/artist/400503-Guld&#34;&gt;Guld&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在日本策划开办了连续很多届名为 「NRGetic Romancer」 的音乐活动（同时也作为厂牌发行了一些曲子），对于 Freeform Hardcore 和一些 Hard Trance 等音乐在日本的传播起到了很大作用，坚持着名为&amp;quot;NRG&amp;quot; (energy) 的一系列理念音乐风格。是 Betwixt &amp;amp; Between（中间）的亲友。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;中：&lt;a href=&#34;https://www.discogs.com/artist/198963-Betwixt-Between&#34;&gt;Betwixt &amp;amp; Between&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;日本的同人音乐制作人。曾经从属于同人音乐社团「Hardcore Tano*C」，在2012年因为抑郁症自杀。是当时的日本人中少有的做 Freeform 的制作人，曲子充斥着强烈的感情和个人风格。是 NRGetic Romancer 的主要DJ之一。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;右：&lt;a href=&#34;https://www.discogs.com/artist/163549-Alek-Sz%C3%A1hala&#34;&gt;Alek Száhala&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;有名的芬兰 Freeform 制作人。其独特的曲子风格影响了众多硬舞曲制作人，是 FINRG （芬兰的音乐厂牌 &lt;a href=&#34;https://www.discogs.com/label/18845-FINRG-Recordings&#34;&gt;「FINRG Recordings」&lt;/a&gt;，后人均以其厂牌名来称呼芬兰人制作的这些更加黑暗凶猛的 Freeform ）的重要代表人物之一。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1601.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1601.PNG&#34; alt=&#34;alek &amp;amp;amp; guld&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.11.5]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;也是临摹照片（alek &amp;amp; guld）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1664.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1664.PNG&#34; alt=&#34;大头（萌妹）&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1663.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1663.PNG&#34; alt=&#34;大头（制作人）&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.11.12]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;突发奇想画了一套各种知名制作人的图准备印点贴纸和挂件自娱自乐一下并送点给朋友（在&lt;a href=&#34;https://plumdebris.eu.org/posts/2023-end/&#34;&gt;【随记】2023的结束&lt;/a&gt;里提到过。&amp;hellip;..不过我当时发帖的时候根本就没讲啥好话啊真的是💀）。已被朋友在不知情的情况下发到finrg discord，在后来终于想起来用discord加一下社区后看到时cringe了一晚上.jpg&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1940.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1940.PNG&#34; alt=&#34;Ephemanent&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2024.4.24]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为中国同人音乐社团&lt;a href=&#34;https://space.bilibili.com/2004994075/dynamic&#34;&gt;「Thoughost」&lt;/a&gt;在2024日本春M3/中国电则市场Dizzymart上发售的Freeform专辑「Ephemanent」的同人图&lt;/li&gt;
-&lt;/ul&gt;
- &lt;/p&gt;
-&lt;/details&gt;
-&lt;details&gt;
-&lt;p&gt;  &lt;summary&gt;FINRG但为什么大部分图都只是alek&lt;/summary&gt;&lt;/p&gt;
-&lt;p&gt;  &lt;p&gt; 
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1086.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1086.PNG&#34; alt=&#34;Afternoon Owl&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.5.28]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;「Alek Száhala - Afternoon Owl」的印象曲绘涂鸦&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1600.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1600.PNG&#34; alt=&#34;Unicorn Grove&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.11.5]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;「Alek Száhala - Unicorn Grove」的印象曲绘涂鸦&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1602.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1602.PNG&#34; alt=&#34;alek&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.11.7]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;(^ ^;)(鹿)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../images/IMG_1614.PNG&#34;&gt;
-&lt;img src=&#34;../images/IMG_1614.PNG&#34; alt=&#34;alek on christmas&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;[2023.11.7]&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;只是觉得一个圣诞节set里alek logo的鹿（但现在我还是在思考这究竟是鹿还是。。山羊？）戴上了小帽子很萌（嗯 &lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;</description>
     </item>
     
   </channel>

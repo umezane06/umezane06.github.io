@@ -768,6 +768,9 @@ body:not(.theme-dark),
   --theme-red: #d13438;
   --theme-purple: #5c2e91;
   --theme-cyan: #0099bc; }
+  body:not(.theme-dark) a[rel="me"][href="https://me.ns.ci/@ExistingPixles"],
+  .theme-light a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
+    color: #171717; }
   body:not(.theme-dark) #back-to-top,
   .theme-light #back-to-top {
     --background-color: rgba(116, 116, 116, 0.5); }
@@ -813,6 +816,8 @@ body:not(.theme-dark),
   --theme-red: #d13438;
   --theme-purple: #5c2e91;
   --theme-cyan: #0099bc; }
+  .theme-dark a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
+    color: #e3e3e3; }
   .theme-dark #back-to-top {
     --background-color: rgba(245, 245, 245, 0.5); }
   .theme-dark #back-to-top:before {
@@ -866,6 +871,8 @@ body:not(.theme-dark),
     --theme-red: #d13438;
     --theme-purple: #5c2e91;
     --theme-cyan: #0099bc; }
+    body:not(.theme-light) a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
+      color: #e3e3e3; }
     body:not(.theme-light) #back-to-top {
       --background-color: rgba(245, 245, 245, 0.5); }
     body:not(.theme-light) #back-to-top:before {
@@ -1838,7 +1845,3 @@ div.content img {
 
 .center-image {
   text-align: center; }
-
-/* 修改Mastodon链接的颜色为黑色 */
-a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
-  color: black; }

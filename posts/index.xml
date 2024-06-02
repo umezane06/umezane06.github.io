@@ -1872,12 +1872,3 @@
     
   </channel>
 </rss>
-<item>
-  <title>Posts</title>
-  <link>https://plumdebris.eu.org/posts/</link>
-  <description></description>
-  <content:encoded>&lt;![CDATA[]]></content:encoded>
-  
-  <guid>https://plumdebris.eu.org/posts/</guid>
-  <pubDate>Fri, 31 May 2024 14:41:00 CST</pubDate>
-</item>

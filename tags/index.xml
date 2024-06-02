@@ -207,12 +207,3 @@
     
   </channel>
 </rss>
-<item>
-  <title>Tags</title>
-  <link>https://plumdebris.eu.org/tags/</link>
-  <description></description>
-  <content:encoded>&lt;![CDATA[]]></content:encoded>
-  
-  <guid>https://plumdebris.eu.org/tags/</guid>
-  <pubDate>Mon, 06 May 2024 19:56:00 CST</pubDate>
-</item>

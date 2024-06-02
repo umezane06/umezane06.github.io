@@ -146,3 +146,12 @@
     
   </channel>
 </rss>
+<item>
+  <title>RSS</title>
+  <link>https://plumdebris.eu.org/tags/rss/</link>
+  <description></description>
+  <content:encoded>&lt;![CDATA[]]></content:encoded>
+  
+  <guid>https://plumdebris.eu.org/tags/rss/</guid>
+  <pubDate>Sun, 11 Jun 2023 05:36:00 CST</pubDate>
+</item>

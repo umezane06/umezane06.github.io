@@ -8,3 +8,15 @@
     <language>en</language><atom:link href="https://plumdebris.eu.org/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
+<item>
+  <title>Archives</title>
+  <link>https://plumdebris.eu.org/archives/</link>
+  <description>You can change archives page details above.
+Keep this file saft to ensure Hugo generate the archives page.</description>
+  <content:encoded>&lt;![CDATA[&lt;p&gt;You can change archives page details above.&lt;/p&gt;
+&lt;p&gt;Keep this file saft to ensure Hugo generate the archives page.&lt;/p&gt;
+]]></content:encoded>
+  
+  <guid>https://plumdebris.eu.org/archives/</guid>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+</item>

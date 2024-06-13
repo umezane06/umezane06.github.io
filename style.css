@@ -818,6 +818,8 @@ body:not(.theme-dark),
   --theme-cyan: #0099bc; }
   .theme-dark a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
     color: #e3e3e3; }
+  .theme-dark #share-to-fediverse {
+    color: #c7c7c7; }
   .theme-dark #back-to-top {
     --background-color: rgba(245, 245, 245, 0.5); }
   .theme-dark #back-to-top:before {
@@ -873,6 +875,8 @@ body:not(.theme-dark),
     --theme-cyan: #0099bc; }
     body:not(.theme-light) a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
       color: #e3e3e3; }
+    body:not(.theme-light) #share-to-fediverse {
+      color: #c7c7c7; }
     body:not(.theme-light) #back-to-top {
       --background-color: rgba(245, 245, 245, 0.5); }
     body:not(.theme-light) #back-to-top:before {
@@ -1838,10 +1842,23 @@ div.content img {
     display: none; } }
 
 /* db-card -------- end */
-div.content img {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important; }
+.figure {
+  display: inline-block;
+  text-align: center;
+  margin: 1em 0; }
 
-.center-image {
-  text-align: center; }
+.figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
+.figure figcaption {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #555; }
+
+/* 使文章中的图片在页面上显示时都具有相同的宽度 */
+.post-content img[loading="lazy"] {
+  width: 100%;
+  height: auto; }

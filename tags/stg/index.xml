@@ -14,15 +14,17 @@
       
       <guid>https://plumdebris.eu.org/posts/touhou-1v1-danmaku-game-modes-meta-template/</guid>
       <description>&lt;p&gt;也是因为最近东方兽王园体验版发布了，这个弹幕对战的游戏模式也又给盘活引起讨论了呢。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/R.png&#34;&gt;
-&lt;img src=&#34;../../images/R.png&#34; alt=&#34;配图来自《ADK魂》游戏合辑&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;center&gt;配图来自《ADK魂》游戏合辑&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/R.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/R.png&#34; alt=&#34;配图来自《ADK魂》游戏合辑&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;配图来自《ADK魂》游戏合辑&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
 &lt;h1 id=&#34;引言&#34;&gt;引言&lt;/h1&gt;
 &lt;p&gt;于是乎在体验版刚发售那几天就看着有人提起了个叫《梦幻小妖精》的游戏。查了一下后发现这款游戏其实可以算得上是此类游戏模式的鼻祖，而 zun 做的梦时空和花映冢，实际上完全算是基于这款游戏之上的同人作（）&lt;/p&gt;
 &lt;p&gt;正好闲着就顺便把游戏本体找来玩了一玩，并考察了一下此游戏和我们熟知的那两款东方 project 弹幕对战作相互有关联的地方，是个挺有意思的发现与体验。&lt;/p&gt;
@@ -30,101 +32,124 @@
 &lt;h1 id=&#34;与东方梦时空的各种相关联之处&#34;&gt;与东方梦时空的各种相关联之处&lt;/h1&gt;
 &lt;p&gt;如果在稍微能用一些的搜索引擎中直接搜索“梦幻小妖精”这个国内主流译名，首先能看到的除了完全不写游戏本身原名的百度百科外也有着一些杂乱 rom 下载网页和游戏流程之类的视频（也直球出现了梦时空 thb wiki 页面），可以让人一窥游戏本身的内容。&lt;/p&gt;
 &lt;p&gt;所以，实际上它的名字是&lt;strong&gt;“ティンクルスタースプライツ/Twinkle Star Sprites”&lt;/strong&gt;，为 ADK 公司于 1996 年于 SNK 的 MVS 基板上推出的街机游戏。（这里想吐槽一下，为啥就日文 wiki 没把 96 年上市这年份写上啊） 恰巧的是，东方梦时空的发售日期正好就在这之后一年（1997.11.4）。&lt;/p&gt;
-&lt;p&gt;游戏的剧情是非常标准的某个 xx 大陆被黑暗笼罩，作为主角的妖精国公主ロードラン（Load Ran）去寻找&amp;quot;Twinkle Star&amp;quot;拯救这片地方的日式幻想世界风故事线。在最初的街机作中有着 13 组不同的可操作角色（在后来的世嘉土星平台新作中添加了一位中华风老师的新角色），在梦时空中，有好些个角色的攻击方式和形象多多少少都（非常明显地）受到了这些人物的影响。在下面我会放些对比 gif 来让人更好地观察这些可能的相似点（由于图片截取和工具原因图未能对齐请见谅）。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/Snipaste_2023-05-22_12-15-28.png&#34;&gt;
-&lt;img src=&#34;../../images/Snipaste_2023-05-22_12-15-28.png&#34; alt=&#34;首先是主角与魔理沙的骑扫把点阵图对比&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;首先是主角与魔理沙的骑扫把点阵图对比&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e9%ad%94%e7%90%86%e6%b2%99.gif&#34;&gt;
-&lt;img src=&#34;../../images/%e9%ad%94%e7%90%86%e6%b2%99.gif&#34; alt=&#34;アーサー・シュミット（Arthur Schmitt）与魔理沙&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;游戏中的アーサー・シュミット（Arthur Schmitt）与梦时空魔理沙的Charge Attack对比（看见熟悉的火箭背包了吗？）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e7%81%b5%e6%a2%a6.gif&#34;&gt;
-&lt;img src=&#34;../../images/%e7%81%b5%e6%a2%a6.gif&#34; alt=&#34;メヴィウス（Mevious，此作魔王）親衛隊三人与灵梦&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;メヴィウス（Mevious，此作魔王）親衛隊与灵梦&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e5%b0%8f%e5%85%94%e5%a7%ac.gif&#34;&gt;
-&lt;img src=&#34;../../images/%e5%b0%8f%e5%85%94%e5%a7%ac.gif&#34; alt=&#34;ヤン・ヤンヤン（Yan Yanyang，同时为此角色经常发出的声音。。）与小兔姬&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;ヤン・ヤンヤン（Yan Yanyang，名字同样也是此角色经常发出的声音。。）与小兔姬（没有算上花的妖梦是因为妖梦的斩击c1是近距离的）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e7%8c%ab%e5%a8%98%e5%92%8c%e5%85%94%e5%a8%98.gif&#34;&gt;
-&lt;img src=&#34;../../images/%e7%8c%ab%e5%a8%98%e5%92%8c%e5%85%94%e5%a8%98.gif&#34; alt=&#34;マッキー&amp;amp;amp;ペンテル(Macky &amp;amp;amp; Pentell)&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e6%a2%a6%e7%be%8e%e5%92%8c%e9%93%83%e4%bb%99.gif&#34;&gt;
-&lt;img src=&#34;../../images/%e6%a2%a6%e7%be%8e%e5%92%8c%e9%93%83%e4%bb%99.gif&#34; alt=&#34;梦美和铃仙&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;マッキー&amp;amp;ペンテル(Macky &amp;amp; Pentell)与梦美和铃仙（意外地延伸到了花映塚的设计）（图片合成问题，拆成两张图来放）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e7%90%86%e9%a6%99%e5%ad%90.gif&#34;&gt;
-&lt;img src=&#34;../../images/%e7%90%86%e9%a6%99%e5%ad%90.gif&#34; alt=&#34;メモリー（memory）女王与理香子&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;メモリー（memory）女王与理香子（可能有些牵强？）（火箭背包拥有者来啦）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e5%a6%96%e7%b2%be%e5%8f%8c%e5%ad%90%e7%9a%84%e9%ad%94%e7%82%ae.gif&#34;&gt;
-&lt;img src=&#34;../../images/%e5%a6%96%e7%b2%be%e5%8f%8c%e5%ad%90%e7%9a%84%e9%ad%94%e7%82%ae.gif&#34; alt=&#34;妖精双子的魔炮（？）&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
-&lt;p&gt;最后就放一个妖精双子ティンカー&amp;amp;リンカー（Tinker &amp;amp; Linker）的广域激光即魔炮bomb吧！&lt;/p&gt;
+&lt;p&gt;游戏的剧情是非常标准的某个 xx 大陆被黑暗笼罩，作为主角的妖精国公主ロードラン（Load Ran）去寻找&amp;quot;Twinkle Star&amp;quot;拯救这片地方的日式幻想世界风故事线。在最初的街机作中有着 13 组不同的可操作角色（在后来的世嘉土星平台新作中添加了一位中华风老师的新角色），在梦时空中，有好些个角色的攻击方式和形象多多少少都（非常明显地）受到了这些人物的影响。在下面我会放些对比 gif 来让人更好地观察这些可能的相似点。&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e4%b8%bb%e8%a7%92%e5%92%8c%e9%ad%94%e7%90%86%e6%b2%99.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e4%b8%bb%e8%a7%92%e5%92%8c%e9%ad%94%e7%90%86%e6%b2%99.png&#34; alt=&#34;首先是主角与魔理沙的骑扫把点阵图对比&#34; width=&#34;&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;首先是主角与魔理沙的骑扫把点阵图对比&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e9%ad%94%e7%90%86%e6%b2%99.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e9%ad%94%e7%90%86%e6%b2%99.gif&#34; alt=&#34;游戏中的アーサー・シュミット（Arthur Schmitt）与梦时空魔理沙的Charge Attack对比（看见熟悉的火箭背包了吗？）&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;游戏中的アーサー・シュミット（Arthur Schmitt）与梦时空魔理沙的Charge Attack对比（看见熟悉的火箭背包了吗？）&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e7%81%b5%e6%a2%a6.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e7%81%b5%e6%a2%a6.gif&#34; alt=&#34;メヴィウス（Mevious，此作魔王）親衛隊三人与灵梦&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;メヴィウス（Mevious，此作魔王）親衛隊三人与灵梦&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e5%b0%8f%e5%85%94%e5%a7%ac.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e5%b0%8f%e5%85%94%e5%a7%ac.gif&#34; alt=&#34;ヤン・ヤンヤン（Yan Yanyang，名字同样也是此角色经常发出的声音。。）与小兔姬（没有算上花的妖梦是因为妖梦的斩击c1是近距离的）&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;ヤン・ヤンヤン（Yan Yanyang，名字同样也是此角色经常发出的声音。。）与小兔姬（没有算上花的妖梦是因为妖梦的斩击c1是近距离的）&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e7%8c%ab%e5%a8%98%e5%92%8c%e5%85%94%e5%a8%98.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e7%8c%ab%e5%a8%98%e5%92%8c%e5%85%94%e5%a8%98.gif&#34; alt=&#34;マッキー&amp;amp;ペンテル(Macky &amp;amp; Pentell)（猫娘和兔娘）&#34; width=&#34;&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;マッキー&amp;amp;ペンテル(Macky &amp;amp; Pentell)（猫娘和兔娘）&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e6%a2%a6%e7%be%8e%e5%92%8c%e9%93%83%e4%bb%99.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e6%a2%a6%e7%be%8e%e5%92%8c%e9%93%83%e4%bb%99.gif&#34; alt=&#34;以及梦美和铃仙（意外地延伸到了花映塚的设计）&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;以及梦美和铃仙（意外地延伸到了花映塚的设计）&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e7%90%86%e9%a6%99%e5%ad%90.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e7%90%86%e9%a6%99%e5%ad%90.gif&#34; alt=&#34;メモリー（memory）女王与理香子（可能有些牵强？）（火箭背包拥有者来啦）&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;メモリー（memory）女王与理香子（可能有些牵强？）（火箭背包拥有者来啦）&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e5%a6%96%e7%b2%be%e5%8f%8c%e5%ad%90%e7%9a%84%e9%ad%94%e7%82%ae.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e5%a6%96%e7%b2%be%e5%8f%8c%e5%ad%90%e7%9a%84%e9%ad%94%e7%82%ae.gif&#34; alt=&#34;最后就放一个妖精双子ティンカー&amp;amp;リンカー（Tinker &amp;amp; Linker）的广域激光即魔炮bomb吧！（虽然这个可能算是很多STG都有的设计了）&#34; width=&#34;&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;最后就放一个妖精双子ティンカー&amp;amp;リンカー（Tinker &amp;amp; Linker）的广域激光即魔炮bomb吧！（虽然这个可能算是很多STG都有的设计了）&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
 &lt;hr&gt;
 &lt;p&gt;可以从这些画面碎片中看见，梦时空的角色攻击方式，甚至是敌机爆破特效与场景（stage3的云朵与和最后一关与女王战斗时的相对可爱画风的敌机构成了梦时空除幽灵以外的其他所有杂鱼敌机的综合形象）都和这个致敬源有着很大的关联程度。&lt;/p&gt;
 &lt;p&gt;与东方有相关的东西其实也就到这里了，其他的攻击方式或者是bomb也就只是比较通常的街机式stg设计了。&lt;/p&gt;
 &lt;details&gt;
 &lt;p&gt;  &lt;summary&gt;*此处含有游戏剧情剧透（但感觉也没啥需要防剧透的必要，，）&lt;/summary&gt;
   &lt;p&gt;不过还有个地方值得一提的是，主角打败黑暗魔王获得了Twinkle Star之后后会进行一段变身动画转换形象成为有着“光之公主”称号的精灵形象。在官方设定中&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;主角ran是5000年前从同样危机中拯救了世界的这样的魔法战士的转世呢，而这个变身之后的战士的形象&amp;hellip;&amp;hellip;.就很让人容易想起隔壁美少女战士的水手v兼爱野美奈子不是嘛！&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://th.bing.com/th/id/OIP.paU_9c5Ci5tWUZoJPtiJxgHaFL?pid=ImgDet&amp;amp;rs=1#center&#34;&gt;
-&lt;img src=&#34;https://th.bing.com/th/id/OIP.paU_9c5Ci5tWUZoJPtiJxgHaFL?pid=ImgDet&amp;amp;rs=1#center&#34; alt=&#34;你好像美奈子啊&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e4%bd%a0%e5%a5%bd%e5%83%8f%e7%be%8e%e5%a5%88%e5%ad%90%e5%95%8a.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e4%bd%a0%e5%a5%bd%e5%83%8f%e7%be%8e%e5%a5%88%e5%ad%90%e5%95%8a.jpg&#34; alt=&#34;你好像美奈子啊&#34; width=&#34;&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;你好像美奈子啊&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
 &lt;p&gt;（土星的这个封面图就&amp;hellip;更像了&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://th.bing.com/th/id/R.dffeba6391fe557f066021088b2f282f?rik=JXCzlwtpHmujhw&amp;amp;pid=ImgRaw&amp;amp;r=0&#34;&gt;
-&lt;img src=&#34;https://th.bing.com/th/id/R.dffeba6391fe557f066021088b2f282f?rik=JXCzlwtpHmujhw&amp;amp;pid=ImgRaw&amp;amp;r=0&#34; alt=&#34;这图更像了啊&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/p&gt;&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e8%bf%99%e5%9b%be%e6%9b%b4%e5%83%8f%e4%ba%86%e5%95%8a.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e8%bf%99%e5%9b%be%e6%9b%b4%e5%83%8f%e4%ba%86%e5%95%8a.jpg&#34; alt=&#34;这图更像了啊&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;这图更像了啊&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
 &lt;/details&gt;
 &lt;h1 id=&#34;和东方project本身的其余相关联之处&#34;&gt;和东方project本身的其余相关联之处&lt;/h1&gt;
 &lt;p&gt;发现了这个事情后，在查资料的时候也发现zun有好些次提到了这个游戏，并亲口承认过梦时空就是梦幻小妖精（Twinkle Star Sprites）的衍生物&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
@@ -155,14 +180,18 @@
 &lt;p&gt;由于提到了梦时空，就，还是想把年初看见的一张图再往这里贴一下子（其实到现在都还没找着此图的来源和作者&amp;hellip;）。看见这张图后才了解到，旧五作，特别是梦时空，充斥的竹本泉与其余作品的neta可真是爆表了呀&amp;hellip;&amp;hellip;(所以也不要老是催人家重启各种旧作角色了啦！都是年轻时的阿宅味罢辽，，)&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;（还是怨念于为什么阿求的造型是直接照搬的别人的画&lt;/s&gt;&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;（但是这么一看就可以解释，求的紫发设计，或许确实也代表着其的身份性。作为旧作和新作相互连接的接口，此系列作品的历史的永远的观测者&amp;hellip;&amp;hellip;&lt;/s&gt;&lt;/p&gt;
-&lt;h2 id=&#34;从一个台湾匿名版那看见的欧美网友做的东方梦时空等其余作品-neta-合集的图片images原来全是netajpg&#34;&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-&lt;a data-fancybox=&#34;gallery&#34; href=&#34;../../images/%e5%8e%9f%e6%9d%a5%e5%85%a8%e6%98%afneta.jpg&#34;&gt;
-&lt;img src=&#34;../../images/%e5%8e%9f%e6%9d%a5%e5%85%a8%e6%98%afneta.jpg&#34; alt=&#34;从一个台湾匿名版那看见的欧美网友做的东方梦时空等其余作品 neta 合集的图片&#34;  /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/h2&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e5%8e%9f%e6%9d%a5%e5%85%a8%e6%98%afneta.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e5%8e%9f%e6%9d%a5%e5%85%a8%e6%98%afneta.jpg&#34; alt=&#34;一个欧美网友做的东方梦时空等其余作品 neta 合集的图片，但仍未找到来源&#34; width=&#34;80%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;一个欧美网友做的东方梦时空等其余作品 neta 合集的图片，但仍未找到来源&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+&lt;hr&gt;
 &lt;p&gt;参考资料：&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;

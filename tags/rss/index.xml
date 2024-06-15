@@ -34,6 +34,8 @@
     &lt;/figure&gt;
     
 &lt;/center&gt;
+
+
 &lt;p&gt;看了半天好像pc端上相对好用限制不大的客户端向阅读器也就fluent reader了。虽然它声称全平台支持但是要特别注意，只有电脑端上的客户端（其余系统不清楚，我是windows），才支持导入本地rss源！！！其他移动端均无法自由导入其他订阅源，只能从现有的几个主流rss客户端账号里导入并同步&amp;hellip;&amp;hellip;（吃过ios的亏）&lt;/p&gt;
 &lt;p&gt;其他感觉就没啥好说的了，毕竟电脑端看网页比移动端舒服多了也不用思考什么乱七八糟的，用就是了，缺点就是配置不太行的话它的动效会有些卡卡的。&lt;/p&gt;
 &lt;h2 id=&#34;webfollow-网页端支持多端同步--httpswebfollowcc&#34;&gt;Webfollow （网页端）（支持多端同步）  &lt;a href=&#34;https://webfollow.cc/&#34; target=&#34;_blank&#34; &gt;https://webfollow.cc/&lt;/a&gt;&lt;/h2&gt;
@@ -48,6 +50,8 @@
     &lt;/figure&gt;
     
 &lt;/center&gt;
+
+
 &lt;p&gt;多端同步果然是个问题，所以在找客户端是同时也有在试着找一些网页上的RSS阅读器服务，感觉这个用起来算是还可以的，但似乎因为这还是个非常近期才出现的项目所以还是有挺多地方用起来有些毛病（如，经常很短时间内就需要重新登录，登录后的网络访问情况不稳定，以及界面排序时间有些混乱的问题），但值得展望一下。&lt;/p&gt;
 &lt;p&gt;除了订阅功能外站内还配有其他用户的订阅流以及一些热门订阅源的探索功能，在看自己的之外也可以看到其他的内容。&lt;/p&gt;
 &lt;h1 id=&#34;安卓端&#34;&gt;安卓端&lt;/h1&gt;
@@ -63,6 +67,8 @@
     &lt;/figure&gt;
     
 &lt;/center&gt;
+
+
 &lt;p&gt;特点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -94,6 +100,8 @@
     &lt;/figure&gt;
     
 &lt;/center&gt;
+
+
 &lt;p&gt;特点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -121,6 +129,8 @@
     &lt;/figure&gt;
     
 &lt;/center&gt;
+
+
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
         &lt;a href=&#34;../../images/NetNewsWire1.Jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
@@ -132,6 +142,8 @@
     &lt;/figure&gt;
     
 &lt;/center&gt;
+
+
 &lt;p&gt;其实平时也不会很频繁地开电脑，因为久坐好累。阅读的需求便转移到了平板电脑上。&lt;/p&gt;
 &lt;p&gt;这个阅读器也是比较简洁向的一款，并且也是免费开源的。特点也不知道该说是啥，很基础的功能都有，本地订阅也有，界面分布也很均匀，其余就没什么大特色了。网上很多人提到界面体验比较苹果原生，个人没什么这方面追求所以也比较无所谓。。。只能说是一款免费好用的，不想盯着小屏幕的时候可以用的阅读器客户端之一了。&lt;/p&gt;
 &lt;h1 id=&#34;结语&#34;&gt;结语&lt;/h1&gt;

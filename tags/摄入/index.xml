@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>摄入 on 绝对概括的切面</title>
+    <link>https://plumdebris.eu.org/tags/%E6%91%84%E5%85%A5/</link>
+    <description>Recent content in 摄入 on 绝对概括的切面</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 02 Nov 2023 17:38:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/%E6%91%84%E5%85%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【随记】久违地又有了思考的空间...</title>
+      <link>https://plumdebris.eu.org/posts/2023.11.2-log/</link>
+      <pubDate>Thu, 02 Nov 2023 17:38:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/2023.11.2-log/</guid>
+      <description>&lt;p&gt;其实又对于自我认知有了些困惑，但意外地引发了一连串的思维奔逸（感觉像躁期&amp;hellip;.）总之随便记点东西。&lt;/p&gt;
+&lt;h1 id=&#34;让博客通过了mastodon的认证&#34;&gt;让博客通过了mastodon的认证！&lt;/h1&gt;
+&lt;p&gt;昨天上网冲浪看见一位博主提及便试着捣鼓了一下，看着绿勾感觉有点小自豪感（？）（虽然 neodb 直接就可以有认证页了，以因为对书影音目前仍没有什么特别的追求就和交流欲望就只是私底下用用&amp;hellip;）&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; alt=&#34;关于认证的地方&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;关于认证的地方&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;不知道是 4.0 版本更新后就改了还是 4.2 更新的，认证这栏现在成为了一个单独的明显的页面，确实让人更好找和理解了。&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png&#34; alt=&#34;在这之前...&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;在这之前...&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;还特地去找了版本更老的象站小号看看，原来以前只是在这个不起眼的小角落&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;于是具体要做的事情就是把 mastodon 提供的代码复制到你自己的网页代码里（在网页里会形成一个指向你 mastodon 界面的超链接），再重新更新一遍个人资料页的链接就成了。自己这边用的是 hugo 我就复制在主题里本来就让人放个人链接的地方了，就是链接莫名还是带颜色的版本和自己的主题不搭配，便改了一下 css &lt;s&gt;（然而其实完全不懂各种代码语言就连这么一小步都得求助一下 AI ，对我这样的小白真友好啊，，）&lt;/s&gt;&lt;/p&gt;
+&lt;h1 id=&#34;关于社交的郁闷&#34;&gt;关于社交的郁闷&lt;/h1&gt;
+&lt;p&gt;前日感觉是生理期激素波动的原因又狠狠地崩溃了，其基本问题似乎还是觉得自己喜欢的东西太边缘无人问津找不到同好&amp;amp;喜欢一件东西的方式和其他人根本不一样可能不被他人理解&amp;hellip;&amp;hellip;就又回到了神经发展的问题上。加上自己挖掘互联网远古音乐的一些经验，得到的结论是，人类作为社会动物构建成的一个又一个或大或小的社交圈总是有着一定的排外趋势，几乎所有都建立在运转着的社交圈上&amp;hellip;&amp;hellip;想要寻找一些失传媒体（联想至此视频：&lt;a href=&#34;https://www.bilibili.com/video/BV1fG411y72f/&#34; target=&#34;_blank&#34; &gt;【中字】什么是失传媒体？&lt;/a&gt;），在有些情况下说白了就是试图想要介入那些曾经存在或仍然存在着的社交小圈子&amp;hellip;在此之下也存在着各种会选择无私分享那些成果物的人，但这绝对不是全部人的思维。在“同人”的这个范围内更甚。现在我们都知道了同人作为一种志同道合的活动形式基本都是靠着各自的社交行为组成的小型圈子圈而发展起来的，但当这种文化有名到了一定程度，那些小而散的圈就会被整合成一种整体性的东西，被归纳成一个集合。彼时那些处在内里的小型关系链就会变得不再那么重要了。不禁让人思考起，那些专门关注“同人”这个概念的人们，其实在关注的又是些什么？经过了同人体系的那些不同的表达体裁，所产生的作品本身？还是在这个过程中产生的社交性？&amp;hellip;&amp;hellip;从我自己的角度真的只能这么僵硬地去理解了，或许这些本该就是自然而然就会同时产生的东西，为什么到了我这里就会产生需要硬去理解的成本呢&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;内容摄入&#34;&gt;内容摄入&lt;/h1&gt;
+&lt;p&gt;突然吐了这么多东西也不知该如何是好，决定发发近期都看了些什么&lt;/p&gt;
+&lt;p&gt;文章：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://solitorian.com/2023/07/longterm_fediverse_usage/&#34; target=&#34;_blank&#34; &gt;为什么选择长期留在Fediverse – 所歷托言&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;很好地说出一部分自己用 fedi 到现在的心声&lt;s&gt;（其实只是更好的满足了社交障碍壬想对着空气喊话的需要。。。）&lt;/s&gt;。这几年的经历让人会想要躲避一些周边嘈杂的环境，也更想要好好地说话不被各种平台夹掉&amp;hellip;&lt;/p&gt;
+&lt;p&gt;想法：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://g0v.social/@jimmyorz/110535801182540603&#34; target=&#34;_blank&#34; &gt;https://g0v.social/@jimmyorz/110535801182540603&lt;/a&gt;（圖&amp;amp;翻譯via魚漿夫婦）&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/8b2d1d51a425ac21.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/8b2d1d51a425ac21.png&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;虽然话题导向都跑到了社交媒体上（我会认为在现在这个时代下连社交媒体都不用了的人真的可以堪称是如所说的&amp;hellip;稳定态了）。&lt;/p&gt;
+&lt;p&gt;遥望以往还没有社交媒体的时候，人都该怎么生活&amp;hellip;&lt;s&gt;（感觉对于我这种谱系人会感觉很难）&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;音乐：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://renegadeandroid.bandcamp.com/album/the-good-times&#34; target=&#34;_blank&#34; &gt;The Good Times by RENEGADE ANDROiD&lt;/a&gt;&lt;/p&gt;
+&lt;iframe style=&#34;border: 0; width: 100%; height: 120px;&#34; src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1363685492/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/artwork=small/transparent=true/&#34; seamless&gt;&lt;a href=&#34;https://renegadeandroid.bandcamp.com/album/the-good-times&#34;&gt;The Good Times by RENEGADE ANDROiD&lt;/a&gt;&lt;/iframe&gt;
+&lt;p&gt;（Bandcamp需翻） (IDM / Drill &amp;amp; Bass )&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://music.163.com/album?id=174859213&#34; target=&#34;_blank&#34; &gt;Lst by Ruby My Dear&lt;/a&gt;&lt;/p&gt;
+&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=404 height=399 src=&#34;//music.163.com/outchain/player?type=1&amp;id=174859213&amp;auto=0&amp;height=430&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;(IDM / Drill &amp;amp; Bass )&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://music.163.com/album?id=72943941&#34; target=&#34;_blank&#34; &gt;The Dubplates Lp by Mellow Sonic&lt;/a&gt;&lt;/p&gt;
+&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=404 height=399 src=&#34;//music.163.com/outchain/player?type=1&amp;id=72943941&amp;auto=0&amp;height=43&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;( Atmosphere Jungle )&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【随记】近况 - 八月</title>
+      <link>https://plumdebris.eu.org/posts/2023-8-20-log-/</link>
+      <pubDate>Sun, 20 Aug 2023 18:26:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/2023-8-20-log-/</guid>
+      <description>&lt;p&gt;打转的每一日&lt;/p&gt;
+&lt;h1 id=&#34;近期音乐摄入&#34;&gt;近期音乐摄入：&lt;/h1&gt;
+&lt;p&gt;大致听完了&lt;a href=&#34;https://www.discogs.com/label/3016-Noom-Records&#34; target=&#34;_blank&#34; &gt;Noom Records&lt;/a&gt;这个厂牌的曲子（就当&lt;a href=&#34;https://music.163.com/playlist?id=4925703613&amp;amp;userid=67300238&#34; target=&#34;_blank&#34; &gt;网易云那边的歌单&lt;/a&gt;有把歌收集齐了吧）,主要风格为世纪末那会的古早Acid Hard Trance之类的，由于之前被推荐了似乎跟早期&lt;a href=&#34;https://https://plumdebris.eu.org/posts/what-is-freeform--nrg/&#34; target=&#34;_blank&#34; &gt;NRG&lt;/a&gt;有关联的曲子便去挖了一挖。还蛮多不错玩意的。就是实际上关于我想要的NRG向曲子其实好像不超过十位数&amp;hellip;&amp;hellip;（sad，追着几百首曲子薅已经够累&lt;/p&gt;
+&lt;h1 id=&#34;至少也断断续续地看了些书吧&#34;&gt;至少也断断续续地看了些书吧：&lt;/h1&gt;
+&lt;p&gt;（本来试着用了Neodb短代码卡片来呈现，但是不知道是不是neodb在2024四月份这阵子被墙了还是什么关系，换电脑迁移本地库的时候一直显示API连不上就去掉了&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://neodb.social/book/3Lellbdoz8yNGMnWIUHGjS&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;《工作、消费主义和新穷人》&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/36492120/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;《注意缺陷多动障碍与阿斯伯格综合征》&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://neodb.social/book/2gN0zw4PKfq3sqiQSruPoT&#34; target=&#34;_blank&#34; &gt;↑对于这本我写在neoDB的评价（8.19）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/10548813/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;《理解媒介：论人的延伸》&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在现在这个已经离探索期相去甚远的时间点再看阿斯伯格和ADHD相关内容只能够再度将过去的五万个触痛点引发得不到其他（暴论&lt;/p&gt;
+&lt;p&gt;因为在此之前搜寻到的资料量已经足够解释所有我曾经面对过的问题了，接下来该做的只会是继续生活，而不是持续性被过去发生的问题烦扰。&lt;/p&gt;
+&lt;p&gt;但是资料也好，案例也好，也始终无法解决这些根本差异性上的问题。就算不去管过去，未来也一定会面对更多这些微妙障碍带来的各种重复性。&lt;/p&gt;
+&lt;p&gt;我仍然是无法完全地对这些东西释怀的。&lt;/p&gt;
+&lt;p&gt;就像我现在也仍然不清楚，从书本中补充了我曾经未拥有过的各种“应当拥有”的认知后，我真的又能胜任这些文字所描述的一切行为动作吗。&lt;/p&gt;
+&lt;h1 id=&#34;发散式碎片&#34;&gt;发散式碎片：&lt;/h1&gt;
+&lt;p&gt;七月底到八月初，发现了&lt;a href=&#34;https://firewood.news&#34; target=&#34;_blank&#34; &gt;积薪&lt;/a&gt;和&lt;a href=&#34;https://www.zhubai.wiki/?utm_source=bestxtools.com&#34; target=&#34;_blank&#34; &gt;竹白百科&lt;/a&gt;两个可以收获更多个体的个人思考的站点（一个是独立博客收集站，一个是汇总竹白这个平台的newsletter内容的）&lt;/p&gt;
+&lt;p&gt;但仍然觉得疲累，往脑子里猛灌知识是一回事，事实上的这具肉体根本没有与此相符的体验记忆也是一回事。“不知道自己该做什么”这样的一种状态，真的是贯穿了自己一生的。但是反而回过头来真的试图规划，又会看到无穷无尽止不住的那些个效率逼，把自己的人生量化得透明无比&amp;hellip;&amp;hellip;但这也显然不是我想要的。&lt;/p&gt;
+&lt;p&gt;依然蹲在各种不同生活方式的夹缝里，看着面对不了的那些阴影覆盖处和大面积的体验空白————这就是当下那无边际的痛苦了&lt;/p&gt;
+&lt;p&gt;果然还是不能操之过急的吧&amp;hellip;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【阅读】评论尸 - 《互联网与中国后现代性呓语》 文章摘录段落选</title>
+      <link>https://plumdebris.eu.org/posts/digest-2023-6-28/</link>
+      <pubDate>Wed, 28 Jun 2023 20:06:12 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/digest-2023-6-28/</guid>
+      <description>&lt;p&gt;原文章地址：https://1q43.blog/post/782&lt;/p&gt;
+&lt;h1 id=&#34;互联网与中国后现代性呓语&#34;&gt;互联网与中国后现代性呓语&lt;/h1&gt;
+&lt;h2 id=&#34;评论尸&#34;&gt;评论尸&lt;/h2&gt;
+&lt;h2 id=&#34;2-文艺复兴还是封建复辟&#34;&gt;2. “文艺复兴”还是“封建复辟”？&lt;/h2&gt;
+&lt;h3 id=&#34;24-花手与汉服谁更代表传统&#34;&gt;2.4 花手与汉服，谁更代表传统？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;我们必须意识到，中国灿烂传统文化中的许多，是在当下人看来极不人道且落后的封建生产关系中产生的。再加之，中国的现代化进程是在近代史上伴随着列强的压迫而萌发的，后来又经历了轰轰烈烈的无产阶级革命。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因此&lt;strong&gt;我们的很多传统文化没有经历时间的洗礼，而直接从历史上被切断了。如今想要找回这些传统文化，找回中华民族的民族性，不可避免的也会导致部分情况下封建元素的复兴&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;27-拼多多是一种消费升级吗&#34;&gt;2.7 拼多多是一种消费升级吗？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;也就是说，他们对消费升级的诉求不是 10 年前买 3 元的袜子，现在买 15 元的袜子。而是 10 年前买 3 元的袜子，现在用 3 元买质量更好的袜子。因为在他们看来，随着各类生产资料的降价、生产技术的提高，同质量的袜子理应越来越便宜而不是越来越贵。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;28-谁在交智商税&#34;&gt;2.8 谁在交智商税？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;我们打开淘宝、京东、拼多多任何一个独立的商品页面，首先映入眼帘的往往是商品的“信息”。也就是一连串书面化的，经过市场营销包装的，突出产品特征与优点的文字。这些信息本质上是“符号标志”。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其次，在商品页里如果出现了人物，那么这个人物要么是权威专家，要么是明星代言。这些人，本质上是“专家系统”。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;210-危险但无法被革除的宗族文化&#34;&gt;2.10 危险，但无法被革除的宗族文化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;也就是说，我们应当允许孤寡老人在更广的范围内“认远房亲戚为自己的后代”，通过更自由地让渡遗产继承权来换取余生的体面生活。甚至不排除，通过开放反向的收养机制，让有能力的年轻人“收养”孤寡老人，用赡养义务交换老人的财产继承。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然而，任何认为依靠强制行政力和法律力量可以将宗族文化从农村叙事中彻底根除的人都应当记得，是有大量的人在“文革”的十年间里“不畏强权”、“不惜牺牲”的将这些封建残余保留下来。​因而再来一次依靠强制力的革除，也只会在未来埋下再一次复辟的种子。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;212-一个良善的分层社会&#34;&gt;2.12 一个良善的分层社会&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;如果我们一定要追着蜜雪冰城、拼多多、海伦司等通缩型消费升级品牌穷追猛打，只会加剧社会对经济强势群体的仇恨。因为批评甚至扼杀这类“略显低档”的品牌崛起，与“朱门酒肉臭，路有冻死骨”有极大的相似性。​另一方面，如果我们只强调喜茶、黑天鹅和精酿啤酒才算是“幸福生活”，则不免又让人陷入追求超出自身消费能力的消费主义。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;213-谁在反抗&#34;&gt;2.13 谁在反抗？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;所有人共同占有私有财产，这是平均主义思维在作怪。它要满足的是一种低层次的、贫穷的、需求不高的人的忌妒和贪欲。用普遍的私有财产来反对私有财产，满足平均占有、共同占有的欲望，甚至会以一种动物的形式表现出来，向非自然的、否定整个人类文明的简单状态倒退。”​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重视公平意味着机会的均等而非结果的均等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-现代性压迫与消费社会&#34;&gt;3. 现代性压迫与消费社会&lt;/h2&gt;
+&lt;h3 id=&#34;33-时间的暴政&#34;&gt;3.3 时间的暴政&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在马克思的话语体系中，时间的发明是一种“对象化”过程，它有助于我们理解、改造和利用自然，造福人类社会。我们实际上没法想象时间没有被发明的世界，我们究竟该如何实现现代化。因为自工业作为一种产业崛起以来，几乎一切的生产生活活动的底层都是一条被精确计时的流水线。​这意味着，时间本身就是一种对象化世界的工具。但这种工具被发明出来之后，最先和最广泛被对象化的就是人类自己，而对象化正是异化一词的本义&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;标准化时间的推广过程，就是一种对生活的异化过程。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果我们的健康问题是“使用工具”带来的，而并非“使用工具工作”。​我们就不得不承认，为我们带来痛苦的是现代化本身了。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;34-工作伦理为何失效&#34;&gt;3.4 工作伦理为何失效？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;未还清贷款的住宅地产，对持有者来说更像是牢房而并非是家。因为它会限制你的自由，让你不敢随意辞职，不敢反抗公司的加班策略，不能轻易离婚，不可以随时休息。​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;35-中国青年躺平与转移支付的内在关联&#34;&gt;3.5 中国青年躺平与转移支付的内在关联&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;因为，原本在一二线城市工作的人，无论是在自己的本城市躺平，还是去鹤岗那种地方“降级”躺平，都客观上为鹤岗的本地孩子提供了阶级晋升的机会。​这实际上缓解了大众普遍认为越发严重的另一问题——社会上升通道逐渐狭窄。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这形成了一种神奇的循环，鹤岗外的人来到鹤岗归园田居，而鹤岗的人依靠他们去鹤岗外发展奋斗。​从乡村及三四线城市“走出去”，一直是中国社会集体叙事中最有动力的一支。而赚了一笔小钱之后去过闲适的生活，又是几乎所有现代人心底的个人叙事。​当两者合二为一的时候，有什么不好呢？​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;齐格蒙特·鲍曼在他的《工作，消费与新穷人》一书中使用了一个非常直观且浅显易懂的框架来分析一个社会是属于“生产社会”还是“消费社会”。我们将书中的文字再进行一次精简，它大致可以被理解为：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;​如果我们在大多数情况下用工作去描述一个人，那么这就是一个生产社会。反之，如果我们在大多数情况下用一个人的生活方式去描述一个人，那么这就是一个消费社会。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正如我们之前所说，消费社会与生产社会的本质区别是“以生活方式”而非“生产方式”区分社会上的个体。消费主义者因此对消费主义进行批判：你想要购买的许多商品，都是“伪需求”和“智商税”，是被建构出来的。​但这种批判本身带有一种迷惑性，&lt;strong&gt;如果说一切由社会建构出来的需求都是“伪需求”，那么我们似乎应该退回到猴子时代。​&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;37-中国如何规训消费主义&#34;&gt;3.7 中国如何规训消费主义？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;苦行者否认消费能带来快乐，无论是昂贵的还是廉价的。他们为了满足某种禅修式的信仰而拒绝消费，并否定消费为人五感带来的自然快乐，并且妄图将这种苦行推广给所有人。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;消费主义者（包括豆瓣穷组的“低消费主义者”）就像是在奶茶店点不同甜度奶茶的人，有的人喜欢微甜，有的人喜欢半糖，有的人喜欢全糖。而苦行者完全在另一个轨道上叙事，他们像是在奶茶店要点无糖凉茶的人，以苦代甜来作为人生目标。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-快乐教育与快乐工作哪个是解药&#34;&gt;4. 快乐教育与快乐工作哪个是解药？&lt;/h2&gt;
+&lt;h3 id=&#34;41-教育现代化负外部性的起点&#34;&gt;4.1 教育：现代化负外部性的起点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;有一个形象化解释内卷的比喻是“电影院”，即在一个电影院中，如果有一个人站了起来，那么他后面的人为了看清屏幕也需要站起来。最后，整个电影院中的人都需要站起来，然而没有任何人因此受益。​如果我们将“教育”视为这个电影院，那么，教育的目的是什么？​“为中华之崛起而读书”。​教育是为了让电影院中的每个人都看清屏幕么？不，现代教育的目的其实就是为了让每个人都站起来。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;与强制分流性政策打配合的是对公有制教育以外的培训机构的打击，这彻底断绝了部分学生（主要是家长）“过分努力”的机会。也即，这套政策实际想要达到的效果是，筛选出那些努力程度不至于导致肥胖、近视、精神失常及其他扭曲身心的地步，也能获得良好成绩的学生。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;42-工作改革才是疗愈教育内卷的良药&#34;&gt;4.2 工作改革才是疗愈教育内卷的良药&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;如果一个人的脑中充满了符号标志与专家系统，他实际上失去了某种与话语体系之外的人共情的能力。​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;44-快乐教育还是快乐工作&#34;&gt;4.4 快乐教育，还是快乐工作？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;更重要的是，由于劳动力的流动性，&lt;strong&gt;打工人的心理状态在某种维度上是一种“公地悲剧”——一个现代人如果在职场中感受到了太多的精神压力，那么企业的最优策略是辞退或让他“自主离职”。而当他进入下一家企业的时候，下一家企业自然不会认为疗愈员工此前积累的精神创伤是自己应有的责任。​&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-尾声何以自处&#34;&gt;6. 尾声：何以自处？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;现代社会的总体问题是我们的一生都在被要求使用理性，并且随着社会的成熟，使用理性所带来的满足交付被不断的延期——我们的一生都处于一种大型的延迟满足里。​小初高教育时期，我们被告知考上好大学是此前一切努力的回报。但考上大学之后，我们又被告知要进入四大、互联网大厂、国际公司或政府公务员才算是好的结果。在进入这些工作单位之后，我们又被告知要全身心的投入到买房、结婚、生子和子女的教育之中，除此之外现在我们还要为退休金和老年生活去担忧。​理性运用的时间被无限期的延长，而那些重大的成果节点却并没有提供足够的正向反馈。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;既然现代性危机的根源是各不相同的人，总是不能完美的嵌入千篇一律的“机器”。那么就意味着现代性危机虽然普遍存在（共性\物性），但每个人的危机与解题思路都各不相同（个性\人性）。​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Tue, 30 Apr 2024 18:08:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>【折腾】虽然不怎么写但还是突然想水一篇博客装修记录</title>
+      <title>【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 ①</title>
       <link>https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/</link>
       <pubDate>Tue, 30 Apr 2024 18:08:00 +0800</pubDate>
       
@@ -54,8 +54,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    border-color: #2674e0;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 在屏幕宽度小于 768 像素时，钮位置调整 */
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (max-width: 768px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 在屏幕宽度小于相应像素时调整按钮大小 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (max-width: 转换成移动端时的网页宽度) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      bottom: 20px;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      right: 20px;
@@ -65,28 +65,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 在屏幕宽度大于等于 1024 像素时，按钮位置调整 */
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (min-width: 1024px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      bottom: 20px;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      right: 40px;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 在屏幕宽度大于等于 1280 像素时，按钮位置调整 */
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (min-width: 1280px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      bottom: 20px;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      right: 55px;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 目录显示时，隐藏按钮 */
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @media screen and (min-width: 1536px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #back-to-top &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      visibility: hidden;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/style&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;!--返回顶部JS --&amp;gt;
@@ -138,19 +116,27 @@
 &lt;h1 id=&#34;修改博客的rss输出&#34;&gt;修改博客的Rss输出&lt;/h1&gt;
 &lt;p&gt;也是迁移后出现的问题，测试后发现rss输出不显示文章内章节小标题了&lt;/p&gt;
 &lt;p&gt;按照这个方法&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;顺手把rss输出改成全文输出了。&lt;/p&gt;
+&lt;p&gt;主要是在主题路径里：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/theme/&amp;lt;your theme here&amp;gt;/layouts/&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;default/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;创建一个名为 rss.xml 的文件。（不知道有的主题会不会自带） （将 your theme here 替换为相应主题名称）&lt;/p&gt;
+&lt;p&gt;把相关代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;description&amp;gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;- .Summary | html -&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;lt;/description&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;改成&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;description&amp;gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;- .Content | html -&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;lt;/description&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;原文提到可能有时候可能会因为博客语言设置不是中文报错，但是我并没有遇到就暂时不管了。&lt;/p&gt;
 &lt;h1 id=&#34;一些修废了和至今都没能实现没力气弄的功能可能算是在挖坑&#34;&gt;一些修废了和至今都没能实现/没力气弄的功能（可能算是在挖坑&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;waline评论邮件提醒：一直在怀疑是不是我用的tutanota邮箱注册了账号的关系（它没有smtp这东西），想改成用outlook邮箱接收邮件结果配置老半天都没反应不知道哪出了问题所以拖很久都没弄。今天想试试重新拿outlook邮箱注册个账号结果它莫名其妙不给注册导致主账号能看见的此系统的账号栏里就多了一个删也删不掉的幽灵账号在那里&amp;hellip;在试着修修变量重新部署的时候还出现了不知道哪个东西可能有版本差而报了错的问题，整个人已昏厥在地上。感觉一段时间内都不想再碰这个东西了实在没精力弄了。。。&lt;/p&gt;
+&lt;p&gt;waline评论邮件提醒：各种原因导致配置老半天都没反应不知道哪出了问题所以拖很久都没弄。今天想试试重新拿outlook邮箱注册个账号结果它莫名其妙不给注册导致主账号能看见的此系统的账号栏里就多了一个删也删不掉的幽灵账号在那里&amp;hellip;在试着修修变量重新部署的时候还出现了不知道哪个东西可能有版本差而报了错的问题，整个人已昏厥在地上。感觉一段时间内都不想再碰这个东西了实在没精力弄了。。。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;搜索功能：以前试着配了，不懂代码不知道搜索框放哪好，摸索到位置后移动端好像又显示不了（跟这个主题只能在pc端看见的夜间模式一样神秘，但我真不会修），还搜不了中文干脆还是删了。不知道以后还有没有新的教程能让我抄一下，至少今天是没有力气弄了（&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/p&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/s&gt; (2024.9.24已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/p&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/s&gt; (2024.9.24已修)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;随便废话一些&#34;&gt;随便废话一些&lt;/h1&gt;
@@ -164,7 +150,7 @@
 &lt;p&gt;&lt;a href=&#34;https://www.blain.top/p/renovation/#%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8%E6%8C%89%E9%92%AE&#34; target=&#34;_blank&#34; &gt;小白hugo博客装修笔记（1）&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://naturaleki.one/post/%E8%8A%B1%E8%B4%B92400%E8%93%9D%E4%BD%BF%E7%94%A8%E4%BA%86%E5%9F%9F%E5%90%8D%E8%BD%AC%E7%A7%BB%E5%A4%8D%E6%B4%BB%E6%9C%AF/&#34; target=&#34;_blank&#34; &gt;花费 2400 蓝使用了域名转移复活术 - 天堂错误文件
+&lt;p&gt;&lt;a href=&#34;https://naturaleki.one/post/domain-repair/&#34; target=&#34;_blank&#34; &gt;花费 2400 蓝使用了域名转移复活术 - 天堂错误文件
 &lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34;&gt;
@@ -183,7 +169,7 @@
       <description>&lt;p&gt;救救代码白痴.jpg&lt;/p&gt;
 &lt;p&gt;为了维持这个缝缝补补又一年产物四处搜刮来的补丁。&lt;/p&gt;
 &lt;p&gt;试着把raindrop.io的收藏夹直接嵌入了进来，评论系统相关的子分类不知道为什么没跟主文件夹分开需要点more来看不然会很乱。。。&lt;/p&gt;
-&lt;iframe style=&#34;border: 0; width: 100%; height: 550px;&#34; allowfullscreen frameborder=&#34;0&#34; src=&#34;https://raindrop.io/umezane/hugo-34155805/embed/theme=auto&#34;&gt;&lt;/iframe&gt;</description>
+&lt;center&gt;&lt;iframe style=&#34;border: 0; width: 95%; height: 550px;&#34; allowfullscreen frameborder=&#34;0&#34; src=&#34;https://raindrop.io/umezane/hugo-34155805/embed/theme=auto&#34;&gt;&lt;/iframe&gt;&lt;/center&gt;</description>
     </item>
     
   </channel>

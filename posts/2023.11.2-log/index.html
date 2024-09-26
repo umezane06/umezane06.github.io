@@ -71,7 +71,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.1e36af8b10ae23403aa5ce30d97dba81be06affa03fff721ae982c12bfcfe13b.css" integrity="sha256-HjavixCuI0A6pc4w2X26gb4Gr/oD//chrpgsEr/P4Ts=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.6626a301cd07c34fe1a0ed96850076fc2028e873c9a4811f7dcb489b2a5e6662.css" integrity="sha256-ZiajAc0Hw0/hoO2WhQB2/CAo6HPJpIEffctImypeZmI=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -93,6 +93,15 @@
 
 <link rel="icon" type="image/png" href="../../path/to/favicon.png">
 <link rel="apple-touch-icon" href="../../path/to/apple-touch-icon.png">
+
+<style>
+
+  @font-face {
+    font-family: "澹雅明体C";
+    src: url("static/fonts/澹雅明体C.ttf") format("truetype");
+}
+  
+  </style>
 
 
   <body>
@@ -329,7 +338,7 @@ Umezane</span>
 <p>昨天上网冲浪看见一位博主提及便试着捣鼓了一下，看着绿勾感觉有点小自豪感（？）（虽然 neodb 直接就可以有认证页了，以因为对书影音目前仍没有什么特别的追求就和交流欲望就只是私底下用用&hellip;）</p>
 <center>
     <figure class="figure">
-        <a href="../../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png" data-fancybox="gallery">
+        <a href="../../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png" data-fancybox="gallery" data-touch="false">
             <img src="../../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png" alt="关于认证的地方" width="90%">
         </a>
         
@@ -343,7 +352,7 @@ Umezane</span>
 <p>不知道是 4.0 版本更新后就改了还是 4.2 更新的，认证这栏现在成为了一个单独的明显的页面，确实让人更好找和理解了。</p>
 <center>
     <figure class="figure">
-        <a href="../../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png" data-fancybox="gallery">
+        <a href="../../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png" data-fancybox="gallery" data-touch="false">
             <img src="../../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png" alt="在这之前..." width="90%">
         </a>
         
@@ -369,7 +378,7 @@ Umezane</span>
 <p><a href="https://g0v.social/@jimmyorz/110535801182540603" target="_blank" >https://g0v.social/@jimmyorz/110535801182540603</a>（圖&amp;翻譯via魚漿夫婦）</p>
 <center>
     <figure class="figure">
-        <a href="../../images/8b2d1d51a425ac21.png" data-fancybox="gallery">
+        <a href="../../images/8b2d1d51a425ac21.png" data-fancybox="gallery" data-touch="false">
             <img src="../../images/8b2d1d51a425ac21.png" alt="" width="90%">
         </a>
         
@@ -390,6 +399,81 @@ Umezane</span>
 <p><a href="https://music.163.com/album?id=72943941" target="_blank" >The Dubplates Lp by Mellow Sonic</a></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=404 height=399 src="//music.163.com/outchain/player?type=1&id=72943941&auto=0&height=43"></iframe>
 <p>( Atmosphere Jungle )</p>
+        <div id="toc-container" class="toc">
+    <div id="toc-toggle" class="toc-toggle">目录</div> 
+    <div id="toc-content" class="toc-content">
+      <div class="toc-header">
+        <p>目录</p>
+        <span id="toc-close" class="toc-close">-</span> 
+      </div>
+      <ul id="toc"></ul>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tocContainer = document.getElementById('toc-container');
+      const tocToggle = document.getElementById('toc-toggle');
+      const tocContent = document.getElementById('toc-content');
+      const tocClose = document.getElementById('toc-close');
+      const toc = document.getElementById('toc');
+
+
+    tocToggle.addEventListener('click', function () {
+    tocContainer.classList.add('toc-expanded');
+  });
+
+  
+    tocClose.addEventListener('click', function () {
+    tocContainer.classList.remove('toc-expanded');
+  });
+
+  
+      
+      const headers = document.querySelectorAll('h1:not(.title), h2, h3');
+      
+      if (headers.length === 0) {
+        tocContainer.style.display = 'none'; 
+      } else {
+        tocContainer.style.display = 'block'; 
+      }
+  
+      
+      const h1 = document.querySelector('.post-content h1');
+      if (h1) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h1.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+        a.textContent = '• ' + h1.textContent; 
+        li.appendChild(a);
+        toc.appendChild(li);
+      } 
+  
+      
+      headers.forEach(header => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        
+        
+        header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+        
+        a.href = '#' + header.id;
+        a.textContent = '• ' + header.textContent; 
+        li.appendChild(a);
+  
+        
+        if (header.tagName.toLowerCase() === 'h2') {
+          li.style.paddingLeft = '10px';
+        } else if (header.tagName.toLowerCase() === 'h3') {
+          li.style.paddingLeft = '20px';
+        }
+        
+        toc.appendChild(li);
+      });
+    });
+  </script>
+  
+
       </article>
     </div>
 
@@ -591,8 +675,9 @@ Share with</span>
       el: '#waline',
       serverURL: 'https://waline1-j5qfrnueb-umezane06.vercel.app/',
       emoji: [
-      '//unpkg.com/@waline/emojis@1.1.0/weibo',
       '//unpkg.com/@waline/emojis@1.1.0/alus',
+      '//cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+     
     ],
     
       visitor: false
@@ -615,36 +700,6 @@ Share with</span>
       width: 0;
       padding-bottom: 0.5em;
   }
-  @media (max-width: 580px){
-    .v[data-class=v] .vheader .vheader-item:not(:last-child) {
-        border-bottom: 1px solid rgba(237,237,237,.8);    
-    }}
-  
-     
-    :root {
-      --waline-theme-color: #797da5;  
-      --waline-active-color: #999ecf;  
-    
-    }
-  
-     
-    :root[body-class="theme-dark"] {
-      --waline-theme-color: #797da5;
-      --waline-white: #34495e;  
-      --waline-active-color: #8ab1d8;
-      --waline-light-grey: #666;
-      --waline-dark-grey: #acc6e0;  
-      --waline-badge-color: #acc6e0;
-      --waline-bg-color: #2d2d2d;
-
-     
-      --waline-bq-color: #9b9c9c;  
-    
-     
-      --waline-info-bgcolor: #acc6e0;
-      --waline-info-color: #9b9c9c;
-  }
-
   
       .v[data-class="v"] .vcontent .vemoji {
         width: 2.5em;  
@@ -658,6 +713,9 @@ Share with</span>
   
   
   }
+  
+
+  
   
   
   </style>
@@ -673,7 +731,7 @@ Share with</span>
     <footer id="footer">
   <div class="container has-padding is-flex">
     <ul class="links">
-      <a rel="me" href="https://me.ns.ci/@ExistingPixles">Fediverse(Mastodon)</a>
+      <a rel="me" href="https://me.ns.ci/@ExistingPixles">Mastodon(Fediverse)</a>
       
       <li>
         
@@ -694,20 +752,27 @@ Share with</span>
         <a rel="nofollow" target="_blank" href="https://gohugo.io" title="Built with hugo">Built with Hugo</a>
       </li>
     </ul>
+    
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+   <center><span id="run-time"></span></center>
     <div class="copyright">
        &copy; 2024 绝对概括的切面
       
+
+
     </div>
+
   </div>
+
 </footer>
 
-</li>
 
-<div class="footer-line"><center>
-
-  <span id="run-time"></span>
-
-</div></center>
 
 <script>
     window.FluencyCopyIcon = '\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u003csvg xmlns=\u0027http:\/\/www.w3.org\/2000\/svg\u0027 class=\u0027ionicon\u0027 viewBox=\u00270 0 512 512\u0027\u003e\u003crect x=\u0027128\u0027 y=\u0027128\u0027 width=\u0027336\u0027 height=\u0027336\u0027 rx=\u002757\u0027 ry=\u002757\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003cpath d=\u0027M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24\u0027 stroke-linecap=\u0027round\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003c\/svg\u003e\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n'
@@ -789,7 +854,7 @@ Share with</span>
   }
 
    
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 952px) {
     #back-to-top {
       bottom: 20px;
       right: 20px;
@@ -799,28 +864,8 @@ Share with</span>
     }
   }
 
-   
-  @media screen and (min-width: 1024px) {
-    #back-to-top {
-      bottom: 20px;
-      right: 40px;
-    }
-  }
 
-   
-  @media screen and (min-width: 1280px) {
-    #back-to-top {
-      bottom: 20px;
-      right: 55px;
-    }
-  }
 
-   
-  @media screen and (min-width: 1536px) {
-    #back-to-top {
-      visibility: hidden;
-    }
-  }
 </style>
 
 

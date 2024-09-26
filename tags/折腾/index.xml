@@ -6,13 +6,121 @@
     <description>Recent content in 折腾 on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Apr 2024 18:08:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 23:31:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【折腾】因为又想写东西了终于又爬回来开始修整博客 ②</title>
+      <link>https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/</link>
+      <pubDate>Thu, 26 Sep 2024 23:31:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/</guid>
+      <description>&lt;p&gt;但是只能成为LLM重度依赖的形状&lt;/p&gt;
+&lt;p&gt;无关杂谈：其实从一年前开始渐渐新养成了每天私下写日记记录情绪的习惯，结果就开始觉得再往博客这里特意抛月记季度总结等东西似乎会增加没啥必要且很累的总结归纳流程，于是懒了，以后可能就不怎么想写了。但是起码之前花了一个月给&lt;a href=&#34;https://plumdebris.eu.org/posts/introduction-about-freeform--nrg-scene-freeform-part/&#34; target=&#34;_blank&#34; &gt;Freeform Hardcore&lt;/a&gt;这东西的整个音乐场景归纳了一通，比起乱丢日记碎片可能多写点类似的观察物含金量才更高些就是（？）同时还挖了个更大的坑至今没填。总之因为一些原因最近终于有点开始想填坑了，所以首先就得把这小破网站之前攒的一堆奇怪问题集中弄一下&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;首先要意识到的事情是网页的日间与夜间模式元素存在于不同的css区域里&#34;&gt;首先要意识到的事情是：网页的日间与夜间模式元素存在于不同的CSS区域里&amp;hellip;&lt;/h1&gt;
+&lt;p&gt;嗯&amp;hellip;如题。很晚才发觉自己的主题有个专属的CSS文件是拿来控制主题部分元素日间模式和夜间模式的不同颜色的，所以很多之前纠结的比如Waline评论系统的夜间模式颜色不生效这个问题就是因为修改的部分没丢到控制相应地方CSS颜色变量的那个框里。后续也就这么顺便微调了很多网页元素的颜色&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;如&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@mixin theme-light &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 内含相关可更改颜色的元素 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --theme-background: white;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --theme-text: #171717;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@mixin theme-dark &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; /* 如果有别的想改颜色的元素把名字按原样复制过来，按不同情况用不同方法表现，不过或许有些情况本应该在其他的地方就可以设置好吧... */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; #toc-toggle &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;color: #000000;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; --waline-theme-color: #797da5;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  a[rel=&amp;#34;me&amp;#34;][href=&amp;#34;https://random.link&amp;#34;] &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;color: #e3e3e3;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;在使用fancybox插件的情况下将图片居中显示并添加alt文本&#34;&gt;在使用Fancybox插件的情况下将图片居中显示并添加Alt文本&lt;/h1&gt;
+&lt;p&gt;之前给站里加了Fancybox图片查看器方便看图，但是仍然有很多让人难受的问题比如：&lt;/p&gt;
+&lt;p&gt;①大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&amp;hellip;&amp;hellip;也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）&lt;/p&gt;
+&lt;p&gt;②：直接插入的图片如果太大它就会占掉全屏。&lt;/p&gt;
+&lt;p&gt;所以纠结了好久到底是markdown插入还是html插入才能搞定这些问题并和ChatGPT斗智斗勇了好几回后，GPT给我丢来的短代码终于完美解决了这些&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;在\layouts\shortcodes目录中创建名为 fancybox_figure.html 的 Shortcode 文件，并添加以下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;center&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;figure class=&amp;#34;figure&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;a href=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;src&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34; data-fancybox=&amp;#34;gallery&amp;#34;&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;lt;img src=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;src&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34; alt=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;alt&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34; width=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;width&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;/a&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; if .Get &amp;#34;alt&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;figcaption class=&amp;#34;figure-caption&amp;#34;&amp;gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;alt&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;lt;/figcaption&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;/figure&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/center&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后就可以使用这样的代码来插入图片顺便一并把描述文字写了（请把单个的大括号换成双括号以使用）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&amp;lt; fancybox&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;figure src=&amp;#34;/images/图片.png&amp;#34; width=&amp;#34;90&lt;span class=&#34;c&#34;&gt;%&amp;#34;alt=&amp;#34;要写进去的描述文字&amp;#34; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;（width如果是100%好像会出现图片位置异常的问题，并且实际上还莫名会出现移动端如果滑到图片区域会导致无法滑动屏幕的问题，但是问LLM后看这结果感觉会把事情越搞越复杂所以已放弃折腾）&lt;/p&gt;
+&lt;p&gt;（是的我已经注意到这个代码颜色的问题了下次再看是怎么回事吧（瀑布汗了&lt;/p&gt;
+&lt;h1 id=&#34;增加了文章目录跳转导航&#34;&gt;增加了文章目录跳转导航&lt;/h1&gt;
+&lt;p&gt;真正写了长文章后才缓慢意识到小标题跳转功能好像确实还是很重要的，但是不会写码人想手搓这个东西还是得靠问AI，最后效果应该还行不至于会太突兀吧&amp;hellip;？（这个主题设计本身就只能让人做浮动小按钮的形式了）&lt;/p&gt;
+&lt;p&gt;因为代码真的全部都是手抄AI再微调的（而且详细设定略多）感觉没有放出来的必要就纯记录一下做了这个事吧（&amp;hellip;&lt;/p&gt;
+&lt;p&gt;之后把一些帖子的结构也修改了一下方便定位。&lt;/p&gt;
+&lt;h1 id=&#34;增加站点运行时间调整底部信息电脑端和移动端的不同排版&#34;&gt;增加站点运行时间+调整底部信息电脑端和移动端的不同排版&lt;/h1&gt;
+&lt;p&gt;其实好几个月前就加了站点运行时间但是觉得效果不太对劲也没写进上次的更新贴了，现在顺带放一下&lt;s&gt;已经忘了从哪里抄来的&lt;/s&gt;代码&lt;/p&gt;
+&lt;p&gt;在\assets\js\main.js文件里添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function runtime() &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	window.setTimeout(&amp;#34;runtime()&amp;#34;, 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let startTime = new Date(&amp;#39;04/12/2023 19:31:00&amp;#39;); 	/* 按照博客建立日期修改这里的起始时间 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let endTime = new Date();
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let usedTime = endTime - startTime;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let days = Math.floor(usedTime / (24 * 3600 * 1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let leavel = usedTime &lt;span class=&#34;c&#34;&gt;% (24 * 3600 * 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;    let hours = Math.floor(leavel / (3600 * 1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let leavel2 = leavel &lt;span class=&#34;c&#34;&gt;% (3600 * 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;    let minutes = Math.floor(leavel2 / (60 * 1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let leavel3 = leavel2 &lt;span class=&#34;c&#34;&gt;% (60 * 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;    let seconds = Math.floor(leavel3 / (1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let runbox = document.getElementById(&amp;#39;run-time&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    runbox.innerHTML = &amp;#39;已风化&amp;lt;i class=&amp;#34;far fa-clock fa-fw&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;#39;	/* 可以随便修改这行的文字 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((days &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + days + &amp;#39; 天 &amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((hours &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + hours + &amp;#39; 时 &amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((minutes &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + minutes + &amp;#39; 分 &amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((seconds &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + seconds + &amp;#39; 秒 &amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;runtime();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在\layouts\partials\footer.html合适位置添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;span id=&amp;#34;run-time&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;至于这个合适位置&amp;hellip;&amp;hellip;开始不知道咋的直接放在了底部文字的下面，移动端看着可能还行但电脑端这绝对是不对劲的，于是现在想在保持移动端的样子下把字与右边的copyright放在一起。调试的过程暂且省略，中间遇到插进来后想调整距离但又怎么都移不动的问题结果最后是用了十分抽象的方法才做到至少在外观上看着还行（小心死脑筋谱系人,,,,,）&lt;/p&gt;
+&lt;p&gt;移动端的话本来是没有电脑端左侧的链接的我又给加回来居中显示了，顺便调调插入位置把字体大小和行间距也弄一致了。&lt;/p&gt;
+&lt;p&gt;总之要涉及到的是主要CSS文件里的#footer区域和移动端显示模式下的#footer区，过程很混乱也不想放了总之控制到一定分辨率切换移动端模式的地方长这样↓&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/* 按照主题排版更改数据，并不止这么一项还有很多用于微调细节 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@media screen and (max-width: 952px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  #footer &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  很多数据：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;终于把日间黑夜模式切换按钮加到了移动端&#34;&gt;终于把日间黑夜模式切换按钮加到了移动端&lt;/h1&gt;
+&lt;p&gt;如果不用这个神秘主题大概也不会有这种问题需要解决吧，为什么真的会有人觉得做了电脑端切换按钮移动端就不需要了只要用自带系统主题色切换就行了（恼）&lt;/p&gt;
+&lt;p&gt;并且他甚至其实真的放了这个按钮的显示选项在移动端调试区那里（虽然需要花九牛二虎之力调到合适位置），心情是（脏话）。&lt;/p&gt;
+&lt;p&gt;总之还是在那个区域找到相应代码（然后问了半天gpt才知道该怎么调省略bug各种）调好了，心情很感人。&lt;/p&gt;
+&lt;h1 id=&#34;暂时性的安顿完毕吗&#34;&gt;暂时性的安顿完毕&amp;hellip;吗&lt;/h1&gt;
+&lt;p&gt;于是&amp;hellip;大概确实处理了很多诡异的问题吧&lt;s&gt;（如果不用这个主题大概有些问题根本是没有必要考虑的 x2）&lt;/s&gt;。因为目的其实是为了可以安心开始写新东西所以即便已经连续折腾了好几天但实际上要做的事情大概才真正开始💀&lt;/p&gt;
+&lt;p&gt;不过还是有没解决的问题在堆积以及甚至发现了新的问题，暂时先放着吧&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;比如上面代码加了百分号后怎么就突然有颜色了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比如评论区表情面板在没有评论的时候打开会导致选择区显示不全&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比如顺便调整了页面切到移动端模式的宽度后发现在刁钻的宽度下展开的菜单栏出现边缘空白&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;。。。比如我换的自定义博客字体在移动端好像显示不出来&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（不行了该歇了&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 ①</title>
-      <link>https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/</link>
+      <link>https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/</link>
       <pubDate>Tue, 30 Apr 2024 18:08:00 +0800</pubDate>
       
-      <guid>https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/</guid>
+      <guid>https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/</guid>
       <description>&lt;p&gt;这东西怎么全是偷的.jpg&lt;/p&gt;
 &lt;h1 id=&#34;给博客添加回到顶部按钮&#34;&gt;给博客添加回到顶部按钮&lt;/h1&gt;
 &lt;p&gt;（参考&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）按照自己博客主题的结构在/layouts/partials/footer.html下添加&lt;/p&gt;
@@ -133,10 +241,10 @@
 &lt;p&gt;搜索功能：以前试着配了，不懂代码不知道搜索框放哪好，摸索到位置后移动端好像又显示不了（跟这个主题只能在pc端看见的夜间模式一样神秘，但我真不会修），还搜不了中文干脆还是删了。不知道以后还有没有新的教程能让我抄一下，至少今天是没有力气弄了（&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/s&gt; (2024.9.24已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久)&lt;/p&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/s&gt; (&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/s&gt; (2024.9.24已修)&lt;/p&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/s&gt; (&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;已修)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;随便废话一些&#34;&gt;随便废话一些&lt;/h1&gt;
@@ -178,7 +286,7 @@
 &lt;h2 id=&#34;fluent-reader客户端--github下载页httpsgithubcomyang991178fluent-readerreleases&#34;&gt;Fluent Reader（客户端）  &lt;a href=&#34;https://github.com/yang991178/fluent-reader/releases&#34; target=&#34;_blank&#34; &gt;Github下载页&lt;/a&gt;&lt;/h2&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/fluent_reader.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/fluent_reader.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/fluent_reader.png&#34; alt=&#34;Fluent Reader&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -194,7 +302,7 @@
 &lt;h2 id=&#34;webfollow-网页端支持多端同步--httpswebfollowcc&#34;&gt;Webfollow （网页端）（支持多端同步）  &lt;a href=&#34;https://webfollow.cc/&#34; target=&#34;_blank&#34; &gt;https://webfollow.cc/&lt;/a&gt;&lt;/h2&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/webfollow.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/webfollow.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/webfollow.png&#34; alt=&#34;Webfollow&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -211,7 +319,7 @@
 &lt;h2 id=&#34;plenary--谷歌商店下载httpsplaygooglecomstoreappsdetailsidcomspiansplenary&#34;&gt;Plenary  &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.spians.plenary&#34; target=&#34;_blank&#34; &gt;谷歌商店下载&lt;/a&gt;&lt;/h2&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/plenary.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/plenary.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/plenary.jpg&#34; alt=&#34;Plenary&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -244,7 +352,7 @@
 &lt;h3 id=&#34;feeder--f-droid下载httpsf-droidorgzh_hanspackagescomnononsenseappsfeeder&#34;&gt;Feeder  &lt;a href=&#34;https://f-droid.org/zh_Hans/packages/com.nononsenseapps.feeder/&#34; target=&#34;_blank&#34; &gt;F-Droid下载&lt;/a&gt;&lt;/h3&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/feeder.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/feeder.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/feeder.jpg&#34; alt=&#34;Feeder&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -273,7 +381,7 @@
 &lt;h3 id=&#34;netnewswire-官网下载httpsnetnewswirecom-iosmac&#34;&gt;NetNewsWire &lt;a href=&#34;https://netnewswire.com/&#34; target=&#34;_blank&#34; &gt;官网下载&lt;/a&gt; （IOS+MAC）&lt;/h3&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/NetNewsWire.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/NetNewsWire.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/NetNewsWire.PNG&#34; alt=&#34;横屏模式&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -286,7 +394,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/NetNewsWire1.Jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/NetNewsWire1.Jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/NetNewsWire1.Jpg&#34; alt=&#34;竖屏模式&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -343,7 +451,7 @@
 &lt;p&gt;基础体验和ui展示就直接引一些网上现有的文章了，如上或者此文章→&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;。只在这放一下pc端软件的基础界面图&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/RaindropPC%e5%ae%a2%e6%88%b7%e7%ab%af%e5%9f%ba%e7%a1%80%e7%95%8c%e9%9d%a2.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/RaindropPC%e5%ae%a2%e6%88%b7%e7%ab%af%e5%9f%ba%e7%a1%80%e7%95%8c%e9%9d%a2.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/RaindropPC%e5%ae%a2%e6%88%b7%e7%ab%af%e5%9f%ba%e7%a1%80%e7%95%8c%e9%9d%a2.png&#34; alt=&#34;Raindrop PC客户端基础界面&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -392,7 +500,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%b8%80.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%b8%80.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%b8%80.jpg&#34; alt=&#34;悲伤的例子其一，然而就算是英文版也未能幸免是怎么回事（一个嵌套收藏夹功能的十万种描述方法）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -405,7 +513,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%ba%8c.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%ba%8c.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%ba%8c.jpg&#34; alt=&#34;悲伤的例子其二&#34; width=&#34;80%&#34;&gt;
         &lt;/a&gt;
         

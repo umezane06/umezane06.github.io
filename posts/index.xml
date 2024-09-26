@@ -6,7 +6,115 @@
     <description>Recent content in Posts on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Sep 2024 19:27:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 23:31:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【折腾】因为又想写东西了终于又爬回来开始修整博客 ②</title>
+      <link>https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/</link>
+      <pubDate>Thu, 26 Sep 2024 23:31:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/</guid>
+      <description>&lt;p&gt;但是只能成为LLM重度依赖的形状&lt;/p&gt;
+&lt;p&gt;无关杂谈：其实从一年前开始渐渐新养成了每天私下写日记记录情绪的习惯，结果就开始觉得再往博客这里特意抛月记季度总结等东西似乎会增加没啥必要且很累的总结归纳流程，于是懒了，以后可能就不怎么想写了。但是起码之前花了一个月给&lt;a href=&#34;https://plumdebris.eu.org/posts/introduction-about-freeform--nrg-scene-freeform-part/&#34; target=&#34;_blank&#34; &gt;Freeform Hardcore&lt;/a&gt;这东西的整个音乐场景归纳了一通，比起乱丢日记碎片可能多写点类似的观察物含金量才更高些就是（？）同时还挖了个更大的坑至今没填。总之因为一些原因最近终于有点开始想填坑了，所以首先就得把这小破网站之前攒的一堆奇怪问题集中弄一下&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;首先要意识到的事情是网页的日间与夜间模式元素存在于不同的css区域里&#34;&gt;首先要意识到的事情是：网页的日间与夜间模式元素存在于不同的CSS区域里&amp;hellip;&lt;/h1&gt;
+&lt;p&gt;嗯&amp;hellip;如题。很晚才发觉自己的主题有个专属的CSS文件是拿来控制主题部分元素日间模式和夜间模式的不同颜色的，所以很多之前纠结的比如Waline评论系统的夜间模式颜色不生效这个问题就是因为修改的部分没丢到控制相应地方CSS颜色变量的那个框里。后续也就这么顺便微调了很多网页元素的颜色&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;如&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@mixin theme-light &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  /* 内含相关可更改颜色的元素 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --theme-background: white;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --theme-text: #171717;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@mixin theme-dark &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; /* 如果有别的想改颜色的元素把名字按原样复制过来，按不同情况用不同方法表现，不过或许有些情况本应该在其他的地方就可以设置好吧... */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; #toc-toggle &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;color: #000000;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; --waline-theme-color: #797da5;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  a[rel=&amp;#34;me&amp;#34;][href=&amp;#34;https://random.link&amp;#34;] &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;color: #e3e3e3;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;在使用fancybox插件的情况下将图片居中显示并添加alt文本&#34;&gt;在使用Fancybox插件的情况下将图片居中显示并添加Alt文本&lt;/h1&gt;
+&lt;p&gt;之前给站里加了Fancybox图片查看器方便看图，但是仍然有很多让人难受的问题比如：&lt;/p&gt;
+&lt;p&gt;①大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&amp;hellip;&amp;hellip;也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）&lt;/p&gt;
+&lt;p&gt;②：直接插入的图片如果太大它就会占掉全屏。&lt;/p&gt;
+&lt;p&gt;所以纠结了好久到底是markdown插入还是html插入才能搞定这些问题并和ChatGPT斗智斗勇了好几回后，GPT给我丢来的短代码终于完美解决了这些&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;在\layouts\shortcodes目录中创建名为 fancybox_figure.html 的 Shortcode 文件，并添加以下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;center&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;figure class=&amp;#34;figure&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;a href=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;src&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34; data-fancybox=&amp;#34;gallery&amp;#34;&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;lt;img src=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;src&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34; alt=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;alt&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34; width=&amp;#34;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;width&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;/a&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; if .Get &amp;#34;alt&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;figcaption class=&amp;#34;figure-caption&amp;#34;&amp;gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; .Get &amp;#34;alt&amp;#34; &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;&amp;lt;/figcaption&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;/figure&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/center&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后就可以使用这样的代码来插入图片顺便一并把描述文字写了（请把单个的大括号换成双括号以使用）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&amp;lt; fancybox&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;figure src=&amp;#34;/images/图片.png&amp;#34; width=&amp;#34;90&lt;span class=&#34;c&#34;&gt;%&amp;#34;alt=&amp;#34;要写进去的描述文字&amp;#34; &amp;gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;（width如果是100%好像会出现图片位置异常的问题，并且实际上还莫名会出现移动端如果滑到图片区域会导致无法滑动屏幕的问题，但是问LLM后看这结果感觉会把事情越搞越复杂所以已放弃折腾）&lt;/p&gt;
+&lt;p&gt;（是的我已经注意到这个代码颜色的问题了下次再看是怎么回事吧（瀑布汗了&lt;/p&gt;
+&lt;h1 id=&#34;增加了文章目录跳转导航&#34;&gt;增加了文章目录跳转导航&lt;/h1&gt;
+&lt;p&gt;真正写了长文章后才缓慢意识到小标题跳转功能好像确实还是很重要的，但是不会写码人想手搓这个东西还是得靠问AI，最后效果应该还行不至于会太突兀吧&amp;hellip;？（这个主题设计本身就只能让人做浮动小按钮的形式了）&lt;/p&gt;
+&lt;p&gt;因为代码真的全部都是手抄AI再微调的（而且详细设定略多）感觉没有放出来的必要就纯记录一下做了这个事吧（&amp;hellip;&lt;/p&gt;
+&lt;p&gt;之后把一些帖子的结构也修改了一下方便定位。&lt;/p&gt;
+&lt;h1 id=&#34;增加站点运行时间调整底部信息电脑端和移动端的不同排版&#34;&gt;增加站点运行时间+调整底部信息电脑端和移动端的不同排版&lt;/h1&gt;
+&lt;p&gt;其实好几个月前就加了站点运行时间但是觉得效果不太对劲也没写进上次的更新贴了，现在顺带放一下&lt;s&gt;已经忘了从哪里抄来的&lt;/s&gt;代码&lt;/p&gt;
+&lt;p&gt;在\assets\js\main.js文件里添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function runtime() &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	window.setTimeout(&amp;#34;runtime()&amp;#34;, 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let startTime = new Date(&amp;#39;04/12/2023 19:31:00&amp;#39;); 	/* 按照博客建立日期修改这里的起始时间 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let endTime = new Date();
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let usedTime = endTime - startTime;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let days = Math.floor(usedTime / (24 * 3600 * 1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let leavel = usedTime &lt;span class=&#34;c&#34;&gt;% (24 * 3600 * 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;    let hours = Math.floor(leavel / (3600 * 1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let leavel2 = leavel &lt;span class=&#34;c&#34;&gt;% (3600 * 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;    let minutes = Math.floor(leavel2 / (60 * 1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let leavel3 = leavel2 &lt;span class=&#34;c&#34;&gt;% (60 * 1000);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;    let seconds = Math.floor(leavel3 / (1000));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    let runbox = document.getElementById(&amp;#39;run-time&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    runbox.innerHTML = &amp;#39;已风化&amp;lt;i class=&amp;#34;far fa-clock fa-fw&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;#39;	/* 可以随便修改这行的文字 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((days &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + days + &amp;#39; 天 &amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((hours &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + hours + &amp;#39; 时 &amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((minutes &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + minutes + &amp;#39; 分 &amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        + ((seconds &amp;lt; 10) ? &amp;#39;0&amp;#39; : &amp;#39;&amp;#39;) + seconds + &amp;#39; 秒 &amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;runtime();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在\layouts\partials\footer.html合适位置添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;span id=&amp;#34;run-time&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;至于这个合适位置&amp;hellip;&amp;hellip;开始不知道咋的直接放在了底部文字的下面，移动端看着可能还行但电脑端这绝对是不对劲的，于是现在想在保持移动端的样子下把字与右边的copyright放在一起。调试的过程暂且省略，中间遇到插进来后想调整距离但又怎么都移不动的问题结果最后是用了十分抽象的方法才做到至少在外观上看着还行（小心死脑筋谱系人,,,,,）&lt;/p&gt;
+&lt;p&gt;移动端的话本来是没有电脑端左侧的链接的我又给加回来居中显示了，顺便调调插入位置把字体大小和行间距也弄一致了。&lt;/p&gt;
+&lt;p&gt;总之要涉及到的是主要CSS文件里的#footer区域和移动端显示模式下的#footer区，过程很混乱也不想放了总之控制到一定分辨率切换移动端模式的地方长这样↓&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/* 按照主题排版更改数据，并不止这么一项还有很多用于微调细节 */
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@media screen and (max-width: 952px) &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  #footer &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  很多数据：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;终于把日间黑夜模式切换按钮加到了移动端&#34;&gt;终于把日间黑夜模式切换按钮加到了移动端&lt;/h1&gt;
+&lt;p&gt;如果不用这个神秘主题大概也不会有这种问题需要解决吧，为什么真的会有人觉得做了电脑端切换按钮移动端就不需要了只要用自带系统主题色切换就行了（恼）&lt;/p&gt;
+&lt;p&gt;并且他甚至其实真的放了这个按钮的显示选项在移动端调试区那里（虽然需要花九牛二虎之力调到合适位置），心情是（脏话）。&lt;/p&gt;
+&lt;p&gt;总之还是在那个区域找到相应代码（然后问了半天gpt才知道该怎么调省略bug各种）调好了，心情很感人。&lt;/p&gt;
+&lt;h1 id=&#34;暂时性的安顿完毕吗&#34;&gt;暂时性的安顿完毕&amp;hellip;吗&lt;/h1&gt;
+&lt;p&gt;于是&amp;hellip;大概确实处理了很多诡异的问题吧&lt;s&gt;（如果不用这个主题大概有些问题根本是没有必要考虑的 x2）&lt;/s&gt;。因为目的其实是为了可以安心开始写新东西所以即便已经连续折腾了好几天但实际上要做的事情大概才真正开始💀&lt;/p&gt;
+&lt;p&gt;不过还是有没解决的问题在堆积以及甚至发现了新的问题，暂时先放着吧&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;比如上面代码加了百分号后怎么就突然有颜色了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比如评论区表情面板在没有评论的时候打开会导致选择区显示不全&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比如顺便调整了页面切到移动端模式的宽度后发现在刁钻的宽度下展开的菜单栏出现边缘空白&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;。。。比如我换的自定义博客字体在移动端好像显示不出来&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（不行了该歇了&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【综合随记】收集一些平时的支离破碎发言（音乐相关）</title>
       <link>https://plumdebris.eu.org/posts/broken-minds-about-music/</link>
@@ -24,7 +132,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/security_Screenshot_20220903-124738_EDIT_1.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/security_Screenshot_20220903-124738_EDIT_1.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/security_Screenshot_20220903-124738_EDIT_1.png&#34; alt=&#34;瞎说&#34; width=&#34;80%&#34;&gt;
         &lt;/a&gt;
         
@@ -113,7 +221,7 @@
 &lt;/details&gt;
 &lt;h1 id=&#34;其余杂项&#34;&gt;其余杂项&lt;/h1&gt;
 &lt;details&gt;
-&lt;p&gt;  &lt;summary&gt;就算不freeform痴了你也是音乐痴啊！&lt;/summary&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;summary&gt;就算不freeform痴了你也是电子音乐痴啊！&lt;/summary&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;ul&gt;
 &lt;li&gt;2022.8.15 on mastodon&lt;/li&gt;
@@ -310,7 +418,7 @@
   &lt;p&gt;
 &lt;center&gt;
      &lt;figure class=&#34;figure&#34;&gt;
-         &lt;a href=&#34;../images/%e9%9b%b7%e5%8f%a4.jpeg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+         &lt;a href=&#34;../images/%e9%9b%b7%e5%8f%a4.jpeg&#34; data-fancybox=&#34;gallery&#34;&gt;
              &lt;img src=&#34;../images/%e9%9b%b7%e5%8f%a4.jpeg&#34; alt=&#34;雷古&#34; width=&#34;80%&#34;&gt;
          &lt;/a&gt;
          
@@ -514,7 +622,7 @@
 &lt;p&gt;  &lt;p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_0627%281%29.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_0627%281%29.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_0627%281%29.PNG&#34; alt=&#34;Nanosecond Eternity&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -527,7 +635,7 @@
 &lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_0628%281%29.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_0628%281%29.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_0628%281%29.PNG&#34; alt=&#34;Nanosecond Eternity2&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -544,7 +652,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1368.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1368.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1368.PNG&#34; alt=&#34;RIP B&amp;amp;B&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -561,7 +669,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1941.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1941.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1941.PNG&#34; alt=&#34;間&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -578,7 +686,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_2035.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_2035.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_2035.PNG&#34; alt=&#34;Impression of &amp;#39;City of Solitude&amp;#39;?&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -595,7 +703,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_2037.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_2037.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_2037.PNG&#34; alt=&#34;Random Betwixt&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -612,7 +720,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_2109.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_2109.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_2109.PNG&#34; alt=&#34;Nanosecond Chan&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -632,7 +740,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_2193.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_2193.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_2193.PNG&#34; alt=&#34;12 Years later&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -659,7 +767,7 @@
 &lt;p&gt;  &lt;p&gt;&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_0227.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_0227.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_0227.PNG&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -674,7 +782,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_0936.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_0936.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_0936.PNG&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -686,7 +794,7 @@
 &lt;p&gt;[2022.12.29]&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1640.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1640.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1640.PNG&#34; alt=&#34;Psychedelic Sensation&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -703,7 +811,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1645.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1645.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1645.PNG&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -721,7 +829,7 @@
 &lt;p&gt;  &lt;p&gt;&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1517.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1517.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1517.PNG&#34; alt=&#34;Nu energy&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -734,7 +842,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/export202310141420476981.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/export202310141420476981.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/export202310141420476981.png&#34; alt=&#34;Relentless Vinyl&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -757,7 +865,7 @@
 &lt;p&gt;  &lt;p&gt;&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1086.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1086.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1086.PNG&#34; alt=&#34;Afternoon Owl&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -774,7 +882,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1600.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1600.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1600.PNG&#34; alt=&#34;Unicorn Grove&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -791,7 +899,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1602.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1602.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1602.PNG&#34; alt=&#34;Alek &amp;amp; Randoom Deer&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -808,7 +916,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1614.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1614.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1614.PNG&#34; alt=&#34;Alek on christmas&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -830,7 +938,7 @@
 &lt;p&gt;  &lt;p&gt;&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1564.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1564.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1564.PNG&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -845,7 +953,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1572.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1572.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1572.PNG&#34; alt=&#34;Freeformers?&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -871,7 +979,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1601.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1601.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1601.PNG&#34; alt=&#34;Alek &amp;amp; Guld&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -888,7 +996,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1664.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1664.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1664.PNG&#34; alt=&#34;制品用（Anime萌妹）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -901,7 +1009,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1663.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1663.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1663.PNG&#34; alt=&#34;制品用（制作人）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -918,7 +1026,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1940.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1940.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1940.PNG&#34; alt=&#34;Ephemanent&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -947,7 +1055,7 @@
 &lt;p&gt;虽然因为流派的新鲜血液近年严重不足爱好者圈子也十分有限&lt;s&gt;（并且网友其实也没什么朋友会在意这些）&lt;/s&gt;，所以其实也不指望真的能有很多人看到。但起码算是把自己近年来对于这些玩意的全部理解都释放了出来，感觉当作什么毕生遗产都是可以的（？）。总之也是为了能让更多人了解到这些流派吧。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_2017.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_2017.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_2017.PNG&#34; alt=&#34;为了至少添加一个封面图片唐突把自己的OC拉过来&#34; width=&#34;100%&#34;&gt;
         &lt;/a&gt;
         
@@ -975,7 +1083,7 @@
 &lt;p&gt;（由于根植于&lt;strong&gt;Hardcore&lt;/strong&gt;，所以后人称呼的时候也会使用&lt;strong&gt;Freeform Hardcore&lt;/strong&gt;这样的名字。）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Ultraworld5.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Ultraworld5.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Ultraworld5.jpg&#34; alt=&#34;在Bonkers Records发行的Ultraworld 5 &amp;amp; Energize&#34; width=&#34;&#34;&gt;
         &lt;/a&gt;
         
@@ -989,7 +1097,7 @@
 &lt;p&gt;早期的&lt;strong&gt;UK Freeform&lt;/strong&gt;（Nu Energy/Bonkers等厂牌的作品）大致都是由&lt;strong&gt;Trancecore&lt;/strong&gt;演变而来，Trancecore这种东西基本就是当时非碎拍系&lt;strong&gt;Happy Hardcore&lt;/strong&gt;加入了更多Trancy元素的版本，有很多在当时的发展过程中也会被同时定义为Happy Hardcore。也有说法称Trancecore其实是这些融合了Trance音色的曲子被称作Freeform之前的普遍代称&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;（顺便一说荷兰那边也有&lt;strong&gt;Gabber&lt;/strong&gt;为基调的“&lt;strong&gt;Trancecore&lt;/strong&gt;”，一些地方的写法倒感觉和Freeform也有些相像&amp;hellip;），总之都充斥着迷幻的氛围和酸性的音色，两者的边界就开始显得有些模糊不清，可能一定程度的区分点还是在音色的Twisted感的加入比重上。但这些时候占据曲子的主要特征其实更多是&lt;strong&gt;酸&lt;/strong&gt;和&lt;strong&gt;Trancy&lt;/strong&gt;感而不是“Twisted”过的合成器（但也有一定比重），&lt;strong&gt;Sharkey&lt;/strong&gt;、&lt;strong&gt;Kevin Energy&lt;/strong&gt;以及其他如&lt;a href=&#34;https://www.discogs.com/artist/216448-K-Complex&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;K Complex&lt;/strong&gt;&lt;/a&gt;、&lt;a href=&#34;https://www.discogs.com/artist/113945-AMS&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;AMS&lt;/strong&gt;&lt;/a&gt;等人的曲子基本奠定了这些种感觉。凯文后来自己开的&lt;em&gt;&lt;strong&gt;Nu Energy&lt;/strong&gt;&lt;/em&gt;厂牌也成了此类曲目的代名词之一。（例：&lt;a href=&#34;https://www.bilibili.com/video/BV1Xy411q7bZ/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Kevin Energy - Crescendos Of Ecstacy (Full On Mix) (2003)”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;）但到了&lt;em&gt;&lt;strong&gt;Electronica Exposed&lt;/strong&gt;&lt;/em&gt;时代出现的新制作人们制作的Freeform就已经开始有了一定的舍弃&lt;strong&gt;Trancy&lt;/strong&gt;氛围向&lt;strong&gt;Twist&lt;/strong&gt;派大转变的倾向（很大概率是FINRG系音乐人在此发行曲子带来的同期影响，下面会说明）。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Nu%20Energy.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Nu%20Energy.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Nu%20Energy.jpg&#34; alt=&#34;Nu Energy&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1003,7 +1111,7 @@
 &lt;p&gt;所以随着一些老牌厂牌渐渐不再活跃（比如凯文的Nu Energy曾一度出现各种财务问题）和时代的变迁，老UK Freeform的风格也开始往现代方向转变。&lt;a href=&#34;https://www.discogs.com/artist/1388380-AB&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;A.B&lt;/strong&gt;&lt;/a&gt;开的&lt;em&gt;&lt;strong&gt;Stamina Records&lt;/strong&gt;&lt;/em&gt;算是一定程度上接过了Nu Energy的UK Freeform接力棒。但实际上呈现出的成果却不是太尽人意（*此处为个人意见）。他们发行的曲子有些&amp;hellip;&amp;hellip;让一些主流的味道把原先存在的特征给压没了的倾向。虽然也创造出过一些新东西，比如催生出了一些被叫做“&lt;strong&gt;UpliftingForm&lt;/strong&gt;”的东西，实际上的听感也是略显微妙。但他们仍在继续发行这种感觉的曲子。不过A.B目前已经在&lt;a href=&#34;https://www.facebook.com/The.One.And.Only.A.B/posts/pfbid02L1Wz9vRbMSD1PHkJinUvrFmwpa2HZYfT6gTHoB2qQQxgZRkByKh2Gc8cGML3d6Efl&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;2023.9.22&lt;/strong&gt;&lt;/a&gt;的时候表示将退出Freeform的制作，虽然厂牌还囤着一些发行，但这样的事情依然是一个会影响到厂牌本身甚至&lt;strong&gt;UK Freeform&lt;/strong&gt;场景的信号。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/A.B%e7%9a%84%e9%80%80%e5%87%ba%e5%ae%a3%e8%a8%80.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/A.B%e7%9a%84%e9%80%80%e5%87%ba%e5%ae%a3%e8%a8%80.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/A.B%e7%9a%84%e9%80%80%e5%87%ba%e5%ae%a3%e8%a8%80.png&#34; alt=&#34;A.B的退出宣言&#34; width=&#34;50%&#34;&gt;
         &lt;/a&gt;
         
@@ -1030,7 +1138,7 @@
 &lt;p&gt;于此同时，在芬兰的另一侧，一位知名的Hard Dance DJ &lt;a href=&#34;https://www.discogs.com/artist/229310-DJ-Proteus&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Proteus&lt;/strong&gt;&lt;/a&gt;也注意到了&lt;strong&gt;Carbon Based&lt;/strong&gt;等人的曲子和FINRG厂牌。专注着&lt;strong&gt;Hard NRG&lt;/strong&gt;系音乐的他发现了这些人的曲子，也开始逐渐在舞池中播放起它们。同期，一位名叫&lt;strong&gt;Alek Száhala&lt;/strong&gt;的年轻人的曲目也收获了如Proteus这样的NRG DJ的青睐，如03年间发在&lt;em&gt;&lt;strong&gt;Electronica Exposed&lt;/strong&gt;&lt;/em&gt;上的&lt;a href=&#34;https://www.bilibili.com/video/BV1dz42187q3/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Superstition”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;和&lt;a href=&#34;https://www.bilibili.com/video/BV17T411u7ov/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Tlaloc”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;。Alek曲子中深邃黑暗且富有侵略性的氛围、用不同频段疯狂刺激听者耳膜的扭曲合成器声响、曲目平均170~180BPM的高速度等特征迅速使他声名大噪，这让他很快就被邀请到了Proteus和其朋友创办的芬兰NRG硬舞派对&lt;a href=&#34;https://www.facebook.com/sadetekno?locale=zh_HK&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Säde”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;上（&lt;a href=&#34;https://archive.org/details/alek-szahala-live-at-sade-nrg-2003-09-26-helsinki&#34; target=&#34;_blank&#34; &gt;2003.9.26&lt;/a&gt;）。在本土有了一定的知名度之后，Alek也被&lt;em&gt;&lt;strong&gt;FINRG Recordings&lt;/strong&gt;&lt;/em&gt;注意到，成为了FINRG的常驻演出艺术家。他的很多曲子也都发行在了英国厂牌&lt;em&gt;&lt;strong&gt;Electronica Exposed&lt;/strong&gt;&lt;/em&gt;上，值得一提的是早期这几位芬兰人他们的曲子有很多其实都是最先发行在这边的，EE还特地有为这些人发行过专门的合辑&lt;a href=&#34;https://www.bilibili.com/video/BV1Zh411P7K3/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Electronic Exclusives 1 - Finrg Allstars”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;，创办人&lt;a href=&#34;https://www.discogs.com/artist/55011-Shanty&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Shanty / Alias A.K.A&lt;/strong&gt;&lt;/a&gt;与这些芬兰制作人长期建立联系成为他们曲目发行的跳板，厂牌本身也成为了一定年份里能够稳定输出Freeform等类型曲目的英国大型厂牌。FINRG这边也于04年开设了&lt;em&gt;&lt;strong&gt;FINRG HARD&lt;/strong&gt;&lt;/em&gt;子厂牌，第一张的发行也是Alek的曲目（&lt;a href=&#34;https://www.bilibili.com/video/BV1Ej421Q7ju/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Man Eaten”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt; / &lt;a href=&#34;https://www.bilibili.com/video/BV1y64y1N7HG/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Invitation”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;）。他们的声音从地下派对向全国传播着的同时，也随着这些发行慢慢地输出到了国外，这些人也就此成为了FINRG的代表人物。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Electronic_Exclusives_1_-_Finrg_Allstars_%28Front%29.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Electronic_Exclusives_1_-_Finrg_Allstars_%28Front%29.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Electronic_Exclusives_1_-_Finrg_Allstars_%28Front%29.jpg&#34; alt=&#34;Electronic Exclusives 1 - Finrg Allstars&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1044,7 +1152,7 @@
 &lt;p&gt;虽然其实他们的曲子特征现在看来更多源自于&lt;strong&gt;NRG&lt;/strong&gt;系曲子的Twisted sounds而不是&lt;strong&gt;UK Freeform&lt;/strong&gt;，其中的&lt;strong&gt;Re-Form&lt;/strong&gt;这个组合制作的部分曲子那就更是纯粹的又硬又黑暗的&lt;strong&gt;Hard NRG&lt;/strong&gt;感觉的东西（虽然听感比起老NRG已经有些非典型了，例：&lt;a href=&#34;https://www.bilibili.com/video/BV1eM4m1X7P6/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Schizophrenic (2005)”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;，也存在一些有些接近常规认知中的高速&lt;strong&gt;FINRG&lt;/strong&gt;的东西如&lt;a href=&#34;https://www.bilibili.com/video/BV14C411L747/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Sunstroke (Headache Mix) （2005）”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;）（俩曲子都最先在2004的一个Party上最先放出，收录于08年发行的&lt;a href=&#34;https://www.bilibili.com/video/BV1eq421F7Ej/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Movement 2004 Mixed CD1”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;）。但似乎也有人因为他们音乐中普遍的高速度而也将这些曲子称之为了&amp;quot;&lt;strong&gt;Finnish Freeform&lt;/strong&gt;&amp;quot;，但更多的人还是选择了作为这个芬兰本土厂牌名称的“&lt;strong&gt;FINRG&lt;/strong&gt;”作为这些声音的代名词（这就将串出一系列因为这些地域发展特色产生的关于&amp;quot;&lt;strong&gt;NRG&lt;/strong&gt;&amp;ldquo;概念的混乱，这就是之后要说的事情了）。随着影响的扩大，更多受到上述等人启发开始制作相似的声音的本土音乐制作人也都纷纷开始发行曲子并也都加入了&lt;em&gt;&lt;strong&gt;FINRG Recordings&lt;/strong&gt;&lt;/em&gt;成为了厂牌的艺术家。到了后面（05年往后）大家基本都是在EE和FINRG Recordings间串着发东西，偶有也会去其他知名英国厂牌发曲子的。&lt;em&gt;&lt;strong&gt;FINRG Digital&lt;/strong&gt;&lt;/em&gt;也重发了很多EE那边发行过的曲子的电子版音频。作为芬兰本土的厂牌，“&lt;strong&gt;FINRG&lt;/strong&gt;”这个称呼很好地诠释了什么是属于芬兰的&lt;strong&gt;NRG&lt;/strong&gt;，即便&lt;em&gt;&lt;strong&gt;FINRG Recordings&lt;/strong&gt;&lt;/em&gt;本身关于Freeform的原创发行基本都是后期才渐渐多起来的（影响力可能更多来自开办的各种派对），但厂牌本身倒确确实实地成为了所有这些芬兰艺术家的&lt;strong&gt;中继站&lt;/strong&gt;一样的存在。因此众人至今都用着这个词来概括他们的这些声音，他们的声音也持续影响着以后的所有人，包括上面提到的一些英国制作人和接下来将要提及的日本等国的人。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/FINRG%20Recordings.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/FINRG%20Recordings.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/FINRG%20Recordings.jpg&#34; alt=&#34;FINRG Recordings&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1067,7 +1175,7 @@
 &lt;p&gt;（注：关于B&amp;amp;B，他在&lt;strong&gt;Hard NRG&lt;/strong&gt;这一侧也有着一些相应的作品，基本是和&lt;strong&gt;Hase&lt;/strong&gt;合作的曲子。在专做Makina的&lt;strong&gt;RaverRose&lt;/strong&gt;之外，他们还成立了一个社团并发行了一张同名的基本以NRG/Freeform为主题的专辑&lt;a href=&#34;https://www.bilibili.com/video/BV1sT411z7Zq/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Khaotic Dimension”(2006)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;。这个大概会在NRG Part里再正式提起。另外他后期还开了自己的一个社团&lt;em&gt;&lt;strong&gt;TOTAL DISCOMMUNICATION&lt;/strong&gt;&lt;/em&gt;，这个社团也只发行了唯一一张以工业硬核为主题的专辑&lt;a href=&#34;https://www.bilibili.com/video/BV1gY411H7zf/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“PURE EXISTENCE”(2009)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;，也是很值得一听的。可惜这里并不是专门讨论他的文章，所以最多也就只能提到这么些了。）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Betwixt%20&amp;amp;%20Between.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Betwixt%20&amp;amp;%20Between.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Betwixt%20&amp;amp;%20Between.jpg&#34; alt=&#34;Betwixt &amp;amp; Between&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1081,7 +1189,7 @@
 &lt;p&gt;与B&amp;amp;B同样参与过同个社团(Tano*c)的&lt;strong&gt;Alabaster&lt;/strong&gt;也是主写Freeform的同人音乐制作人，除了Tanoc外还在其个人社团&lt;a href=&#34;https://www.discogs.com/label/86653-Monochrome-Colored-Records?page=1&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Monochrome &amp;amp; Colored Records&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;发布过各种基本以Freeform风格为主的同人音乐专辑。Alabaster的风格就非常明显地是受到FINRG系的影响了，于2007年发布的“&lt;em&gt;&lt;strong&gt;Hardcore Syndroom&lt;/strong&gt;&lt;/em&gt;”系列首张专辑里的&lt;a href=&#34;https://www.bilibili.com/video/BV1G7411i787?p=12&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Forgotten Ancient”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;大概是个比较容易理解的例子，正好曲子本身氛围也是比较黑暗的也很符合很多FINRG曲目给人带来的感觉，Alabaster在此基础上也做出了非常有他个人特色的音色，使听感更加尖锐新鲜。在之后他也参与了很多关于Freeform的DJ活动，活跃于各大Event，也受邀去英国的&lt;em&gt;&lt;strong&gt;ReBuild Music&lt;/strong&gt;&lt;/em&gt;发行过两首Freeform曲目。不过最后也慢慢淡出了音乐制作活动，开了家自己的居酒屋，就这么平平淡淡生活下去了。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Rust%20World.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Rust%20World.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Rust%20World.jpg&#34; alt=&#34;Alabaster于个人社团2009年发布的“Rust World”中有收录“Forgotten Ancient”的Remix版本&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1101,7 +1209,7 @@
 &lt;p&gt;不过社团本身就只运营到到2013年，最后的作品为&lt;a href=&#34;https://www.bilibili.com/video/BV1Yc411m7ko/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Chaos Regeneration”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;，里面也充斥着很多充满了日本人作曲特色的Freeform/NRG和其他Hardcore作品。之后&lt;strong&gt;Lv.4&lt;/strong&gt;也就只是在自己的个人社团&lt;a href=&#34;https://www.discogs.com/label/105016-Code-49?page=1&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Code-49&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;上发布作品了，除了做了好几版的“&lt;em&gt;&lt;strong&gt;Angel dust&lt;/strong&gt;&lt;/em&gt;”重制版之外也会发行一些Trance作品。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Angel_dust_jacket.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Angel_dust_jacket.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Angel_dust_jacket.jpg&#34; alt=&#34;Lv.4的“Angel dust” BMS封面，角色立绘与Crimson Meditation的封面相同，同时也成为了Druggy&amp;#39;s Acid Rack长久以来的社团专辑封面角色&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1116,7 +1224,7 @@
 &lt;p&gt;之后的2008年，他们发行了新的系列作品，除了收录了部分Buzzmasta的老曲目外也含有新曲：&lt;a href=&#34;https://www.bilibili.com/video/BV1ar4y117P4/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Full Circle Recordings – Volume 1 – Psychadelic New Rose”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;和&lt;a href=&#34;https://www.bilibili.com/video/BV1SQ4y1b7YX/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Full Circle Recordings - Volume 2 - Big Kisses And Darkness”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;。但不一样的是，这些专辑都发行在了&lt;em&gt;&lt;strong&gt;Electronica Exposed&lt;/strong&gt;&lt;/em&gt;上。在这个时间点的EE也确实算是个很重要的Freeform厂牌了，同一年的时候，DJ Yousuke正好也发行过一个Mix专辑：&lt;a href=&#34;https://www.bilibili.com/video/BV1yx421D7jG/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Hardcore Baby&amp;rsquo;s Revenge”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;，Disc 1就基本上混了许多EE发行的Freeform &amp;amp; Hardcore。这大概也能说明他们为什么会选择跟EE搭上关系去这边发行专辑吧。总之他们是带来了很多新的别有特色的Freeform作品，在Vol 2专辑中也有其他制作人Remix了他们的曲子，他们也在EE的其他发行中Remix了别人的曲子(&lt;a href=&#34;https://www.bilibili.com/video/BV1ea4y1D7Sa/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Epyx &amp;amp; Cyrez - Frozen Abyss (Full Circle DJs Remix) 2008”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;)。如此搭起来的桥梁让一切看起来都如此美好，直到&lt;strong&gt;Buzzmasta&lt;/strong&gt;于&lt;strong&gt;2012.11.3&lt;/strong&gt;突然逝去&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/fcr.jpeg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/fcr.jpeg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/fcr.jpeg&#34; alt=&#34;FCR Vol 1 &amp;amp; 2&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1130,7 +1238,7 @@
 &lt;p&gt;两位新时代下的Freeform制作人的离去，无疑给整个场景都带来了不小的打击，但时间却仍在流逝。在这个时间段附近，名叫&lt;strong&gt;Le Dos-On&lt;/strong&gt;的创作者也接触到了Freeform，他给一些同人社团投过好些其他风格的曲子后，自己开了个&lt;a href=&#34;https://www.discogs.com/label/309536-Splash-Energy-Recordings?page=1&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Splash Energy Recordings&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;的厂牌（社团）开始专注做Freeform。他的风格算是真正学习到了FINRG系（尤其是&lt;strong&gt;Alek Száhala&lt;/strong&gt;）的那种黑暗凶狠Twisted sounds和忧郁感。2012年的两场日本&lt;a href=&#34;https://thwiki.cc/M3&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;M3&lt;/strong&gt;&lt;/a&gt;同人音乐展会中其发布的&lt;a href=&#34;https://www.bilibili.com/video/BV1794y1c7vN/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“ENERGY”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;和&lt;a href=&#34;https://www.bilibili.com/video/BV1Ur421t7Nk/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Crying Beauty”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;可以说是他的巅峰之作了，之后他还在&lt;em&gt;&lt;strong&gt;Nu Energy&lt;/strong&gt;&lt;/em&gt;旗下的&lt;a href=&#34;https://www.discogs.com/label/49685-Relentless-Digital&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Relentless Digital&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;厂牌下也发过一些曲子。他当时对Freeform还是十分狂热的，甚至试图开过一个&lt;a href=&#34;https://www.tumblr.com/freeformjp&#34; target=&#34;_blank&#34; &gt;Tumblr博客&lt;/a&gt;来作为日本本地的Freeform制作人信息库&amp;amp;新作品发布新闻窗口之类的东西（早已停更），不过更多还是在抒发个人感想。就是后来他的作曲活动频率也随着他对Freeform的动力慢慢弱下来了，艺名也改为了&lt;strong&gt;Hyphen&lt;/strong&gt;，目前过得十分安定。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/le%20dos%20on%e7%9f%a5%e5%90%8d%e4%bd%9c%e5%93%81.jpeg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/le%20dos%20on%e7%9f%a5%e5%90%8d%e4%bd%9c%e5%93%81.jpeg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/le%20dos%20on%e7%9f%a5%e5%90%8d%e4%bd%9c%e5%93%81.jpeg&#34; alt=&#34;“ENERGY”与“Crying Beauty”&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1144,7 +1252,7 @@
 &lt;p&gt;这些年来，似乎有很长的一段时间里全世界的Freeform场景都多少有些陷入寒冬期，英国方面&lt;em&gt;&lt;strong&gt;Nu Energy&lt;/strong&gt;&lt;/em&gt;早已不复当日，只能炒炒冷饭了，&lt;em&gt;&lt;strong&gt;Electronica Exposed&lt;/strong&gt;&lt;/em&gt;发布完“&lt;em&gt;&lt;strong&gt;Freeform Exposed&lt;/strong&gt;&lt;/em&gt;”系列也差不多没新作品了，&lt;em&gt;&lt;strong&gt;ReBuild Music&lt;/strong&gt;&lt;/em&gt;也于2016年关闭，虽然也有其他新兴厂牌出现，如&lt;a href=&#34;https://www.discogs.com/label/351238-Watchtower-Records?page=1&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Watchtower Records&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;和&lt;a href=&#34;https://www.discogs.com/label/80097-Smiling-Corpse?page=1&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Smiling Corpse&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;，但是现在我们也都知道它们开了没几年就全都没什么声音了（&lt;em&gt;&lt;strong&gt;Smiling Corpse&lt;/strong&gt;&lt;/em&gt;在今年年初的时候其实突然有了动静，把他们的&lt;a href=&#34;https://www.smilingcorpse.com&#34; target=&#34;_blank&#34; &gt;主页&lt;/a&gt;更新成了一个倒计时界面，看似是要推出“&lt;em&gt;&lt;strong&gt;Smiling Corpse&lt;/strong&gt;&lt;/em&gt;”系列第三张的样子，但是网站倒计时的计数都已经归为0了甚至直到现在他们都依然没个声音&amp;hellip;&amp;hellip;）；芬兰方面那些新老制作人也都没怎么发过新作品。也就集中在2017~18正好挨上EE和FINRG Recordings开办周年祭才有些新东西。不过这个时候日本那边也终于又有一批新的创作者出现了。比如17年开了&lt;a href=&#34;https://genkai-records.bandcamp.com/music&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Genkai Records&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;会往里头投些Freeform作品还会去别处投些制作的Hard NRG（Hard House侧）的&lt;s&gt;Nomic激推し&lt;/s&gt;&lt;strong&gt;Ri-nergy/Risa&lt;/strong&gt;，和同年也开始制作Freeform还开设了&lt;a href=&#34;https://artificialworldrecords.bandcamp.com&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Artificial World Records&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;的&lt;strong&gt;Kokomochi&lt;/strong&gt;以及其他各种因为Freeform聚集在这里的创作者。他们仍然在试图延续这些风格的存在。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Artificial%20World%20Records.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Artificial%20World%20Records.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Artificial%20World%20Records.jpg&#34; alt=&#34;Artificial World Records&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1158,7 +1266,7 @@
 &lt;p&gt;在小同人作者之外，日本的主流商业音乐游戏领域如&lt;strong&gt;Beatmania IIDX&lt;/strong&gt;早期也存在一些知名创作者写过的Freeform相关的东西。但这些创作者所认识到的Freeform或许很多都偏向于UK Freeform &amp;amp; Trancecore的方向，比如&lt;a href=&#34;https://www.discogs.com/artist/314695-DJ-Technorch&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;DJ Technorch&lt;/strong&gt;&lt;/a&gt;的&lt;a href=&#34;https://www.bilibili.com/video/BV1pW411S7MX/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“KAMAITACHI”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;和&lt;a href=&#34;https://www.discogs.com/artist/586141-kors-k&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;kors k/teranoid&lt;/strong&gt;&lt;/a&gt;的&lt;a href=&#34;https://www.bilibili.com/video/BV1eW411N7jY/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“tripping contact”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;。不过&lt;a href=&#34;https://www.discogs.com/artist/1333043-Hommarju&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Hommarju&lt;/strong&gt;&lt;/a&gt;2012年给IIDX 19投的&lt;a href=&#34;https://www.bilibili.com/video/BV1us421N74B/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Phoenix”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;倒是呈现了一些FINRG倾向的元素（然而他Genre写的Hard NRG&amp;hellip;&amp;hellip;好吧，NRG的回旋镖它又回来了！）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/phoenix.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/phoenix.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/phoenix.png&#34; alt=&#34;截图来自Youtube唯一的“Phoenix”实机游玩视频&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1172,7 +1280,7 @@
 &lt;p&gt;至于为什么日本依然被看作是一个非常重要的Freeform/NRG场景，除了上述这些创作者的作品外，那便是音乐派对的生态。除了&lt;em&gt;&lt;strong&gt;NRGetic Romancer&lt;/strong&gt;&lt;/em&gt;这个主NRG的派对扩大了这些音乐在日本的影响力之外，新时代下也又出现了想要开办新的Freeform/NRG专属派对的人。&lt;a href=&#34;https://x.com/raqhow&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;raqhow&lt;/strong&gt;&lt;/a&gt;是一位从2011年起就开始活动的DJ，从活动初期开始就倾向于播放Freeform Hardcore/Hard NRG风格的曲目。为了在日本国内普及这些音乐，他就这么在&lt;strong&gt;2013.8.24&lt;/strong&gt;开办了以Freeform/Hard NRG为主役的聚会——“&lt;em&gt;&lt;strong&gt;CODEX&lt;/strong&gt;&lt;/em&gt;”（感觉很大概率是在Neta &lt;strong&gt;DJ Rx&lt;/strong&gt;的同名Mix系列）。聚会上的DJ除了很多日本本土的知名人新人和他自己之外，还有&lt;a href=&#34;https://www.thankyouforthehorse.net/?page_id=2&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;PlasmaDancer&lt;/strong&gt;&lt;/a&gt;这位居住在日本，从2006年就开始接触Freeform和NRG并一直在给它们做Mix的DJ。也有请来过&lt;strong&gt;Alek Száhala&lt;/strong&gt;和&lt;a href=&#34;https://www.discogs.com/artist/964934-Substanced&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Substanced&lt;/strong&gt;&lt;/a&gt;这两位芬兰制作人。这系列的活动一共办了7场，到2016年CODEX7结束的时候便已长期陷入停止状态。在最后的活动上他们还同时推出了&lt;a href=&#34;https://www.discogs.com/release/9499421-Various-Codex-Compilation-EP-Vol1&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Codex Compilation EP Vol.1”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;这张小EP（同年份发行的&lt;strong&gt;Plasmadancer&lt;/strong&gt;自家厂牌的“&lt;em&gt;&lt;strong&gt;In Praise of Shadows&lt;/strong&gt;&lt;/em&gt;”Dark Freeform合辑也有在活动中售卖）。时至今日，其主催&lt;strong&gt;raqhow&lt;/strong&gt;也依然维持着他“&lt;strong&gt;Freeform Hardcore &amp;amp; Hard NRG传教士&lt;/strong&gt;”的身份，享受着这些音乐的同时也在试图拉更多人入坑。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/codex.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/codex.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/codex.png&#34; alt=&#34;2014.1.11举办的第二场CODEX，第一场的海报似乎只能在Plasmadancer的博客上找到图，但是被图床的水印覆盖了所以暂时用这张了...&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1191,7 +1299,7 @@
 &lt;p&gt;这些时间里写Freeform的各国制作人基本都已经将FINRG发扬光大的声音处理技术或多或少地成功融入了自己的风格之中，虽然或许仍存在各种争议，但这些东西也确实慢慢和原先的UK系Freeform并行成为了“&lt;strong&gt;Freeform Hardcore&lt;/strong&gt;”声音的一部分。但如今还在制作这些声音的人实话说比起其他风格来说依然挺少的，整个场景基本是隔上几年才能稍微回光返照一下的程度。不过还是不乏一直喜爱这些声音的人们的。如&lt;strong&gt;PlasmaDancer&lt;/strong&gt;，他也同时有开设名叫&lt;em&gt;&lt;strong&gt;Thank You For The Horse&lt;/strong&gt;&lt;/em&gt;的厂牌&lt;s&gt;来存放一点别人或许写出来压了很久都没想找地方正式发出来的曲子&lt;/s&gt;。厂牌于2016年发行的&lt;a href=&#34;https://www.bilibili.com/video/BV1Su4y1173N/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“In Praise of Shadows”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;也集合到了各地Freeform制作人呈现出了这么一个关于“&lt;strong&gt;Dark Freeform &amp;amp; NRG&lt;/strong&gt;”主题的专辑（&lt;s&gt;然后依然有那么几首是N年前的压曲&lt;/s&gt;）。直到今天他都还会时不时制作一些Freeform Mix并通过Twitch直播的方式播放出来。同样也有&lt;a href=&#34;https://shimohisae.moe&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Shimotsukei/Shimo Hisae（霜久愛）&lt;/strong&gt;&lt;/a&gt;等DJ会一直关注并播放着这些新旧声音，Shimo也同样曾运营过一个网络厂牌&lt;a href=&#34;https://luckylotus.bandcamp.com&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Lucky Lotus Records&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;，意外地拉到了很多Freeform制作人和日本同人音乐人来这里发曲子，也举办过很多线上电台活动。现在她在当VTuber，时不时会进行一些DJ直播，除了Freeform&amp;amp;NRG曲目也会播放其他的日本同人音乐等东西。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/In%20Praise%20Of%20Shadows.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/In%20Praise%20Of%20Shadows.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/In%20Praise%20Of%20Shadows.jpg&#34; alt=&#34;In Praise Of Shadows&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1205,7 +1313,7 @@
 &lt;p&gt;然后就是写下这篇文章的今年，中国的同人音乐社团&lt;a href=&#34;https://space.bilibili.com/2004994075/dynamic&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;Thoughost&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;也关注到这个领域，发行了一张以Freeform为主题的专辑&lt;a href=&#34;https://www.dizzylab.net/d/THGO-006/&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;“Ephemanent”&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;。在中国的各位能认识到Freeform与相似的Trancecore等风格很大程度上都是因为接触到了日本的同人音乐和音乐游戏。这张专辑的主题也毫无悬念地是对于日本场景里最为知名的&lt;strong&gt;Betwixt &amp;amp; Between&lt;/strong&gt;的一种致敬。从专辑命名到封面设计，无一不体现出这些小巧思。听了这些东西也有四年的我能够看见国内也有相关作品的发布那自然是会非常激动的。这也是我为什么如此突然地就想要将自己这些年来所看到的这片领域的所有都记录下来并试图吸引更多人了解这些东西的一部分原因。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Ephemanent.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Ephemanent.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Ephemanent.png&#34; alt=&#34;Ephemanent&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1282,7 +1390,7 @@
 &lt;p&gt;虽然记不清楚当时是怎么发掘到这些不知名翻唱合辑的，但却突然想起了当时顺藤摸瓜似乎看见了更加鬼畜的一种韩国本土塑料音乐：관광 디스코（旅游Disco）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Screenshot_20240506-152907_EDIT_1.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Screenshot_20240506-152907_EDIT_1.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Screenshot_20240506-152907_EDIT_1.png&#34; alt=&#34;大概就是这种样子的东西...因为有些专辑莫名自带翻译才让人起了好奇心&#34; width=&#34;80%&#34;&gt;
         &lt;/a&gt;
         
@@ -1298,7 +1406,7 @@
 &lt;p&gt;于是问了一下，得到了这样的结果&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/20240506_173044_950.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/20240506_173044_950.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/20240506_173044_950.jpg&#34; alt=&#34;但是pi老师你什么时候才能学会把话说完&#34; width=&#34;80%&#34;&gt;
         &lt;/a&gt;
         
@@ -1314,7 +1422,7 @@
 &lt;p&gt;在我查资料的中途发现了一位从今年开始突然有些热度的韩国艺人김홍남（金红男），光是关于他本人我还是没查着什么资料，只知道他今年好像也已经50+了，在开始做这些整活Project前也是有好好发过正常的歌的（能在一些流媒体平台看见），近期也有上过一些韩综。（怎么以前还搞过&lt;a href=&#34;https://www.youtube.com/watch?v=lNKLdLmdJn0&#34; target=&#34;_blank&#34; &gt;如龙Damedane的翻唱&lt;/a&gt;好崩溃，上个月他还搞了个&lt;a href=&#34;https://www.youtube.com/watch?v=u2MzSylesWk&#34; target=&#34;_blank&#34; &gt;EVA OP的土味版本&lt;/a&gt;）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-54-03.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-54-03.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Snipaste_2024-05-06_18-54-03.png&#34; alt=&#34;如网易云，但是怎么除了整活专其他全要vip才能听&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1328,7 +1436,7 @@
 &lt;p&gt;总之&amp;hellip;..他近几个月制作了一些知名K-POP韩团名曲的这种80年代塑料disco风的曲子改编+演唱视频（我不听现在kpop来的所以不太熟具体的团如果感兴趣可以自行搜一下我就放下改版链接（如果感受到了毁原曲的因素请去找他清算啦！！&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-56-29.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-56-29.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Snipaste_2024-05-06_18-56-29.png&#34; alt=&#34;一些比对1&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1342,7 +1450,7 @@
 &lt;center&gt;https://www.youtube.com/watch?v=VyTYuPty4DM&lt;/center&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-56-42.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-56-42.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Snipaste_2024-05-06_18-56-42.png&#34; alt=&#34;一些比对2&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1356,7 +1464,7 @@
 &lt;center&gt;https://www.youtube.com/watch?v=B2BCOkNfRkw&lt;/center&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-56-52.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Snipaste_2024-05-06_18-56-52.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Snipaste_2024-05-06_18-56-52.png&#34; alt=&#34;一些比对3&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1401,10 +1509,10 @@
     
     <item>
       <title>【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 ①</title>
-      <link>https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/</link>
+      <link>https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/</link>
       <pubDate>Tue, 30 Apr 2024 18:08:00 +0800</pubDate>
       
-      <guid>https://plumdebris.eu.org/posts/blog-update-log-2024.4.30-/</guid>
+      <guid>https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/</guid>
       <description>&lt;p&gt;这东西怎么全是偷的.jpg&lt;/p&gt;
 &lt;h1 id=&#34;给博客添加回到顶部按钮&#34;&gt;给博客添加回到顶部按钮&lt;/h1&gt;
 &lt;p&gt;（参考&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）按照自己博客主题的结构在/layouts/partials/footer.html下添加&lt;/p&gt;
@@ -1525,10 +1633,10 @@
 &lt;p&gt;搜索功能：以前试着配了，不懂代码不知道搜索框放哪好，摸索到位置后移动端好像又显示不了（跟这个主题只能在pc端看见的夜间模式一样神秘，但我真不会修），还搜不了中文干脆还是删了。不知道以后还有没有新的教程能让我抄一下，至少今天是没有力气弄了（&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/s&gt; (2024.9.24已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久)&lt;/p&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/s&gt; (&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/s&gt; (2024.9.24已修)&lt;/p&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/s&gt; (&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;已修)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;随便废话一些&#34;&gt;随便废话一些&lt;/h1&gt;
@@ -1562,7 +1670,7 @@
 &lt;p&gt;其实还是比较自娱自乐性质（并不知道被编辑进去的人会不会介意这回事（&amp;hellip;..&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1939.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1939.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1939.PNG&#34; alt=&#34;Freeform&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1575,7 +1683,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1937.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1937.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1937.PNG&#34; alt=&#34;FreeformFreeform&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1607,7 +1715,7 @@
 &lt;p&gt;最后好像只在Pi那里得到了一些或许对个人有点帮助的东西&amp;hellip;?&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1852.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1852.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1852.PNG&#34; alt=&#34;我有障碍.png&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1621,7 +1729,7 @@
 &lt;p&gt;（虽然其实有看到说法讲自我投射这事已经是不可避免的了&amp;hellip;&amp;hellip;但莫名还是有点微妙的膈应。不知道什么时候能好些。）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_1851.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_1851.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_1851.PNG&#34; alt=&#34;其实列表这个法子好像还挺好的&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1664,7 +1772,7 @@
 &lt;p&gt;不过还是会有在心中比重较大的事情的，比如四月份建了这个博客试图存放自己的游荡记录和思绪，和十一月自己为喜欢的freeform/nrg场景的关键人物/作品做了同人制品。（↓）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_20231125_133739183_HDR.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_20231125_133739183_HDR.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_20231125_133739183_HDR.jpg&#34; alt=&#34;非常好制品&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1677,7 +1785,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/IMG_20231121_125314220_HDR.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/IMG_20231121_125314220_HDR.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/IMG_20231121_125314220_HDR.jpg&#34; alt=&#34;非常好制品111&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1696,16 +1804,16 @@
     
     <item>
       <title>【随记】久违地又有了思考的空间...</title>
-      <link>https://plumdebris.eu.org/posts/2023.11.2-log/</link>
+      <link>https://plumdebris.eu.org/posts/2023-11-2-log/</link>
       <pubDate>Thu, 02 Nov 2023 17:38:00 +0800</pubDate>
       
-      <guid>https://plumdebris.eu.org/posts/2023.11.2-log/</guid>
+      <guid>https://plumdebris.eu.org/posts/2023-11-2-log/</guid>
       <description>&lt;p&gt;其实又对于自我认知有了些困惑，但意外地引发了一连串的思维奔逸（感觉像躁期&amp;hellip;.）总之随便记点东西。&lt;/p&gt;
 &lt;h1 id=&#34;让博客通过了mastodon的认证&#34;&gt;让博客通过了mastodon的认证！&lt;/h1&gt;
 &lt;p&gt;昨天上网冲浪看见一位博主提及便试着捣鼓了一下，看着绿勾感觉有点小自豪感（？）（虽然 neodb 直接就可以有认证页了，以因为对书影音目前仍没有什么特别的追求就和交流欲望就只是私底下用用&amp;hellip;）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; alt=&#34;关于认证的地方&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1719,7 +1827,7 @@
 &lt;p&gt;不知道是 4.0 版本更新后就改了还是 4.2 更新的，认证这栏现在成为了一个单独的明显的页面，确实让人更好找和理解了。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png&#34; alt=&#34;在这之前...&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1745,7 +1853,7 @@
 &lt;p&gt;&lt;a href=&#34;https://g0v.social/@jimmyorz/110535801182540603&#34; target=&#34;_blank&#34; &gt;https://g0v.social/@jimmyorz/110535801182540603&lt;/a&gt;（圖&amp;amp;翻譯via魚漿夫婦）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/8b2d1d51a425ac21.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/8b2d1d51a425ac21.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/8b2d1d51a425ac21.png&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1778,7 +1886,7 @@
 &lt;h1 id=&#34;1-bandcamp&#34;&gt;1. Bandcamp&lt;/h1&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Bandcamp.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Bandcamp.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Bandcamp.png&#34; alt=&#34;Bandcamp&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1793,7 +1901,7 @@
 &lt;h1 id=&#34;2soundcloud&#34;&gt;2.SoundCloud&lt;/h1&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/SoundCloud.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/SoundCloud.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/SoundCloud.png&#34; alt=&#34;SoundCloud&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1808,7 +1916,7 @@
 &lt;h1 id=&#34;3discogs&#34;&gt;3.Discogs&lt;/h1&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Discogs.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Discogs.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Discogs.png&#34; alt=&#34;Discogs&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1824,7 +1932,7 @@
 &lt;h1 id=&#34;4soulseek&#34;&gt;4.Soulseek&lt;/h1&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Soulseek.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Soulseek.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Soulseek.png&#34; alt=&#34;Soulseek&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1839,7 +1947,7 @@
 &lt;h1 id=&#34;5dizzylab&#34;&gt;5.Dizzylab&lt;/h1&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/Dizzylab.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/Dizzylab.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/Dizzylab.png&#34; alt=&#34;Dizzylab&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1949,7 +2057,7 @@
 &lt;p&gt;这阵子在乱看东西的时候突然知道了以前用过的可以用来捏角色的纸娃娃机软件默认自带的立绘作者名字（緋龍華 麒麟）&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，便顺着这个名字搜了搜这个软件想再返璞归真一下（？）（问就是很久以前其实也下来怀旧过但不小心删了&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e7%95%8c%e9%9d%a2.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e7%95%8c%e9%9d%a2.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e7%95%8c%e9%9d%a2.png&#34; alt=&#34;界面&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -1986,7 +2094,7 @@
 &lt;p&gt;自己还在查询阿斯伯格 *&lt;em&gt;现已并入ASD (Autism Spectrum Disorder) 成为孤独症谱系内一部分&lt;/em&gt;* 的资料时，也相应地了解到了述情障碍&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的概念与谱系人士的关系。而自己也着实地与其特征做了一一对应也试着做了相关量表测试&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;，确定了自己大致是拥有着这种障碍的&amp;hellip;&amp;hellip;虽然后期也渐渐发现实际上我对于情感的感知（接收）方面好像没什么问题，反而还是容易因为接收到的情感过于浓郁而整个人产生各种过载反应的那种类型，但自己在对个人情感的描述和理解上大概还是，有点障碍。。不过近期发现了一种名叫情绪轮盘的东西（例如这种↓），觉得还挺有意思的。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae3.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae3.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae3.png&#34; alt=&#34;例如这种&#34; width=&#34;80%&#34;&gt;
         &lt;/a&gt;
         
@@ -2003,7 +2111,7 @@
 &lt;p&gt;（&lt;a href=&#34;https://www.zhihu.com/question/22981680/answer/23558777&#34; target=&#34;_blank&#34; &gt;图片来源1,原图来自新浪博客但已无法访问&lt;/a&gt;） （&lt;a href=&#34;https://www.douban.com/group/topic/226028851/?_i=8893204fBAE5iV&#34; target=&#34;_blank&#34; &gt;图片来源2&lt;/a&gt;）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae1.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae1.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae1.png&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2014,7 +2122,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae2.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae2.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e6%83%85%e7%bb%aa%e8%89%b2%e8%bd%ae2.jpg&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2215,7 +2323,7 @@
 &lt;h2 id=&#34;fluent-reader客户端--github下载页httpsgithubcomyang991178fluent-readerreleases&#34;&gt;Fluent Reader（客户端）  &lt;a href=&#34;https://github.com/yang991178/fluent-reader/releases&#34; target=&#34;_blank&#34; &gt;Github下载页&lt;/a&gt;&lt;/h2&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/fluent_reader.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/fluent_reader.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/fluent_reader.png&#34; alt=&#34;Fluent Reader&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2231,7 +2339,7 @@
 &lt;h2 id=&#34;webfollow-网页端支持多端同步--httpswebfollowcc&#34;&gt;Webfollow （网页端）（支持多端同步）  &lt;a href=&#34;https://webfollow.cc/&#34; target=&#34;_blank&#34; &gt;https://webfollow.cc/&lt;/a&gt;&lt;/h2&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/webfollow.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/webfollow.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/webfollow.png&#34; alt=&#34;Webfollow&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2248,7 +2356,7 @@
 &lt;h2 id=&#34;plenary--谷歌商店下载httpsplaygooglecomstoreappsdetailsidcomspiansplenary&#34;&gt;Plenary  &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.spians.plenary&#34; target=&#34;_blank&#34; &gt;谷歌商店下载&lt;/a&gt;&lt;/h2&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/plenary.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/plenary.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/plenary.jpg&#34; alt=&#34;Plenary&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2281,7 +2389,7 @@
 &lt;h3 id=&#34;feeder--f-droid下载httpsf-droidorgzh_hanspackagescomnononsenseappsfeeder&#34;&gt;Feeder  &lt;a href=&#34;https://f-droid.org/zh_Hans/packages/com.nononsenseapps.feeder/&#34; target=&#34;_blank&#34; &gt;F-Droid下载&lt;/a&gt;&lt;/h3&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/feeder.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/feeder.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/feeder.jpg&#34; alt=&#34;Feeder&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2310,7 +2418,7 @@
 &lt;h3 id=&#34;netnewswire-官网下载httpsnetnewswirecom-iosmac&#34;&gt;NetNewsWire &lt;a href=&#34;https://netnewswire.com/&#34; target=&#34;_blank&#34; &gt;官网下载&lt;/a&gt; （IOS+MAC）&lt;/h3&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/NetNewsWire.PNG&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/NetNewsWire.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/NetNewsWire.PNG&#34; alt=&#34;横屏模式&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2323,7 +2431,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/NetNewsWire1.Jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/NetNewsWire1.Jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/NetNewsWire1.Jpg&#34; alt=&#34;竖屏模式&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2404,7 +2512,7 @@
       <description>&lt;p&gt;也是因为最近东方兽王园体验版发布了，这个弹幕对战的游戏模式也又给盘活引起讨论了呢。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/R.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/R.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/R.png&#34; alt=&#34;配图来自《ADK魂》游戏合辑&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2425,7 +2533,7 @@
 &lt;p&gt;游戏的剧情是非常标准的某个 xx 大陆被黑暗笼罩，作为主角的妖精国公主ロードラン（Load Ran）去寻找&amp;quot;Twinkle Star&amp;quot;拯救这片地方的日式幻想世界风故事线。在最初的街机作中有着 13 组不同的可操作角色（在后来的世嘉土星平台新作中添加了一位中华风老师的新角色），在梦时空中，有好些个角色的攻击方式和形象多多少少都（非常明显地）受到了这些人物的影响。在下面我会放些对比 gif 来让人更好地观察这些可能的相似点。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e4%b8%bb%e8%a7%92%e5%92%8c%e9%ad%94%e7%90%86%e6%b2%99.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e4%b8%bb%e8%a7%92%e5%92%8c%e9%ad%94%e7%90%86%e6%b2%99.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e4%b8%bb%e8%a7%92%e5%92%8c%e9%ad%94%e7%90%86%e6%b2%99.png&#34; alt=&#34;首先是主角与魔理沙的骑扫把点阵图对比&#34; width=&#34;&#34;&gt;
         &lt;/a&gt;
         
@@ -2438,7 +2546,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e9%ad%94%e7%90%86%e6%b2%99.gif&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e9%ad%94%e7%90%86%e6%b2%99.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e9%ad%94%e7%90%86%e6%b2%99.gif&#34; alt=&#34;游戏中的アーサー・シュミット（Arthur Schmitt）与梦时空魔理沙的Charge Attack对比（看见熟悉的火箭背包了吗？）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2451,7 +2559,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e7%81%b5%e6%a2%a6.gif&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e7%81%b5%e6%a2%a6.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e7%81%b5%e6%a2%a6.gif&#34; alt=&#34;メヴィウス（Mevious，此作魔王）親衛隊三人与灵梦&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2464,7 +2572,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e5%b0%8f%e5%85%94%e5%a7%ac.gif&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e5%b0%8f%e5%85%94%e5%a7%ac.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e5%b0%8f%e5%85%94%e5%a7%ac.gif&#34; alt=&#34;ヤン・ヤンヤン（Yan Yanyang，名字同样也是此角色经常发出的声音。。）与小兔姬（没有算上花的妖梦是因为妖梦的斩击c1是近距离的）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2477,7 +2585,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e7%8c%ab%e5%a8%98%e5%92%8c%e5%85%94%e5%a8%98.gif&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e7%8c%ab%e5%a8%98%e5%92%8c%e5%85%94%e5%a8%98.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e7%8c%ab%e5%a8%98%e5%92%8c%e5%85%94%e5%a8%98.gif&#34; alt=&#34;マッキー&amp;amp;ペンテル(Macky &amp;amp; Pentell)（猫娘和兔娘）&#34; width=&#34;&#34;&gt;
         &lt;/a&gt;
         
@@ -2490,7 +2598,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e6%a2%a6%e7%be%8e%e5%92%8c%e9%93%83%e4%bb%99.gif&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e6%a2%a6%e7%be%8e%e5%92%8c%e9%93%83%e4%bb%99.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e6%a2%a6%e7%be%8e%e5%92%8c%e9%93%83%e4%bb%99.gif&#34; alt=&#34;以及梦美和铃仙（意外地延伸到了花映塚的设计）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2503,7 +2611,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e7%90%86%e9%a6%99%e5%ad%90.gif&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e7%90%86%e9%a6%99%e5%ad%90.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e7%90%86%e9%a6%99%e5%ad%90.gif&#34; alt=&#34;メモリー（memory）女王与理香子（可能有些牵强？）（火箭背包拥有者来啦）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2516,7 +2624,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e5%a6%96%e7%b2%be%e5%8f%8c%e5%ad%90%e7%9a%84%e9%ad%94%e7%82%ae.gif&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e5%a6%96%e7%b2%be%e5%8f%8c%e5%ad%90%e7%9a%84%e9%ad%94%e7%82%ae.gif&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e5%a6%96%e7%b2%be%e5%8f%8c%e5%ad%90%e7%9a%84%e9%ad%94%e7%82%ae.gif&#34; alt=&#34;最后就放一个妖精双子ティンカー&amp;amp;リンカー（Tinker &amp;amp; Linker）的广域激光即魔炮bomb吧！（虽然这个可能算是很多STG都有的设计了）&#34; width=&#34;&#34;&gt;
         &lt;/a&gt;
         
@@ -2535,7 +2643,7 @@
   &lt;p&gt;不过还有个地方值得一提的是，主角打败黑暗魔王获得了Twinkle Star之后后会进行一段变身动画转换形象成为有着“光之公主”称号的精灵形象。在官方设定中&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;主角ran是5000年前从同样危机中拯救了世界的这样的魔法战士的转世呢，而这个变身之后的战士的形象&amp;hellip;&amp;hellip;.就很让人容易想起隔壁美少女战士的水手v兼爱野美奈子不是嘛！&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e4%bd%a0%e5%a5%bd%e5%83%8f%e7%be%8e%e5%a5%88%e5%ad%90%e5%95%8a.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e4%bd%a0%e5%a5%bd%e5%83%8f%e7%be%8e%e5%a5%88%e5%ad%90%e5%95%8a.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e4%bd%a0%e5%a5%bd%e5%83%8f%e7%be%8e%e5%a5%88%e5%ad%90%e5%95%8a.jpg&#34; alt=&#34;你好像美奈子啊&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2549,7 +2657,7 @@
 &lt;p&gt;（土星的这个封面图就&amp;hellip;更像了&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e8%bf%99%e5%9b%be%e6%9b%b4%e5%83%8f%e4%ba%86%e5%95%8a.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e8%bf%99%e5%9b%be%e6%9b%b4%e5%83%8f%e4%ba%86%e5%95%8a.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e8%bf%99%e5%9b%be%e6%9b%b4%e5%83%8f%e4%ba%86%e5%95%8a.jpg&#34; alt=&#34;这图更像了啊&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2592,7 +2700,7 @@
 &lt;p&gt;&lt;s&gt;（但是这么一看就可以解释，求的紫发设计，或许确实也代表着其的身份性。作为旧作和新作相互连接的接口，此系列作品的历史的永远的观测者&amp;hellip;&amp;hellip;&lt;/s&gt;&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e5%8e%9f%e6%9d%a5%e5%85%a8%e6%98%afneta.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e5%8e%9f%e6%9d%a5%e5%85%a8%e6%98%afneta.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e5%8e%9f%e6%9d%a5%e5%85%a8%e6%98%afneta.jpg&#34; alt=&#34;一个欧美网友做的东方梦时空等其余作品 neta 合集的图片，但仍未找到来源&#34; width=&#34;80%&#34;&gt;
         &lt;/a&gt;
         
@@ -2646,7 +2754,7 @@
 &lt;p&gt;基础体验和ui展示就直接引一些网上现有的文章了，如上或者此文章→&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;。只在这放一下pc端软件的基础界面图&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/RaindropPC%e5%ae%a2%e6%88%b7%e7%ab%af%e5%9f%ba%e7%a1%80%e7%95%8c%e9%9d%a2.png&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/RaindropPC%e5%ae%a2%e6%88%b7%e7%ab%af%e5%9f%ba%e7%a1%80%e7%95%8c%e9%9d%a2.png&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/RaindropPC%e5%ae%a2%e6%88%b7%e7%ab%af%e5%9f%ba%e7%a1%80%e7%95%8c%e9%9d%a2.png&#34; alt=&#34;Raindrop PC客户端基础界面&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2695,7 +2803,7 @@
 &lt;/ul&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%b8%80.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%b8%80.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%b8%80.jpg&#34; alt=&#34;悲伤的例子其一，然而就算是英文版也未能幸免是怎么回事（一个嵌套收藏夹功能的十万种描述方法）&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
@@ -2708,7 +2816,7 @@
 
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%ba%8c.jpg&#34; data-fancybox=&#34;gallery&#34; data-touch=&#34;false&#34;&gt;
+        &lt;a href=&#34;../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%ba%8c.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
             &lt;img src=&#34;../images/%e6%82%b2%e4%bc%a4%e7%9a%84%e4%be%8b%e5%ad%90%e5%85%b6%e4%ba%8c.jpg&#34; alt=&#34;悲伤的例子其二&#34; width=&#34;80%&#34;&gt;
         &lt;/a&gt;
         

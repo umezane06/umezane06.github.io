@@ -79,7 +79,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;runtime();
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在\layouts\partials\footer.html合适位置添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;span id=&amp;#34;run-time&amp;#34;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;至于这个合适位置&amp;hellip;&amp;hellip;开始不知道咋的直接放在了底部文字的下面，移动端看着可能还行但电脑端这绝对是不对劲的，于是现在想在保持移动端的样子下把字与右边的copyright放在一起。调试的过程暂且省略，中间遇到插进来后想调整距离但又怎么都移不动的问题结果最后是用了十分抽象的方法才做到至少在外观上看着还行（小心死脑筋谱系人,,,,,）&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;至于这个合适位置&amp;hellip;&amp;hellip;开始不知道咋的直接放在了底部文字的下面，移动端看着可能还行但电脑端这绝对是不对劲的，于是现在想在保持移动端的样子下把字与右边的copyright放在一起。调试的过程暂且省略，中间遇到插进来后想调整距离但又怎么都移不动的问题结果最后是用了十分抽象的方法才做到至少在外观上看着还行（求不要看源代码啊啊啊）（小心死脑筋谱系人,,,,,）&lt;/p&gt;
 &lt;p&gt;移动端的话本来是没有电脑端左侧的链接的我又给加回来居中显示了，顺便调调插入位置把字体大小和行间距也弄一致了。&lt;/p&gt;
 &lt;p&gt;总之要涉及到的是主要CSS文件里的#footer区域和移动端显示模式下的#footer区，过程很混乱也不想放了总之控制到一定分辨率切换移动端模式的地方长这样↓&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/* 按照主题排版更改数据，并不止这么一项还有很多用于微调细节 */
@@ -100,10 +100,10 @@
 &lt;p&gt;不过还是有没解决的问题在堆积以及甚至发现了新的问题，暂时先放着吧&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;比如上面代码加了百分号后怎么就突然有颜色了（喷了才发现手机端代码块怎么连竖的滚动条都没有，感觉还得加个横的之后再做吧啊啊啊啊我说你们做主题的能不能测试完所有情况再发布啊我服了&lt;/p&gt;
+&lt;p&gt;比如上面代码加了百分号后怎么就突然有颜色了&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;比如评论区表情面板在没有评论的时候打开会导致选择区显示不全&lt;/p&gt;
+&lt;p&gt;比如评论区表情面板在没有评论和回复别人的时候打开会导致选择区被前景挡掉显示不全&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;比如顺便调整了页面切到移动端模式的宽度后发现在刁钻的宽度下展开的菜单栏出现边缘空白&lt;/p&gt;

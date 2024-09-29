@@ -497,7 +497,7 @@ umezane</span>
 <p>修着修着零点了（&hellip;</p>
 <p>缓慢发觉原来代码块Markdown标记法这三个点```后面加的文字是要让你自行写上语法名字以做到确定语法（之前从其他哪些诡异地方复制来了含有其他语法的标识一直没改也没发现不对劲），不写自然就没有高亮，写错了的话那有奇怪的地方会被高亮也是正常的（嗯</p>
 <p>于是又折腾一通终于能够看到代码高亮正常的样子了（泪）。但是因为默认主题设置原因颜色看起来还是有点难顶，想换一下。</p>
-<p>参考这位朋友的文章<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后看见了这样的网页<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的在得先在config文件里把pygmentsCodefences: true（这是yaml格式）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&hellip;）</p>
+<p>参考这位朋友的文章<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后看见了这样的网页<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（这是yaml格式）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&hellip;）</p>
 <p>之后就是也参照博主的流程，使用这个命令</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Hugo gen chromastyles --style=[相应的style名字] <span class="p">&gt;</span> [相应的style名字]. Css
 </span></span></code></pre></div><p>生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 [assets\css\highlight.scss] 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。</p>
@@ -812,8 +812,8 @@ Share with</span>
       emoji: [
       '//unpkg.com/@waline/emojis@1.1.0/alus',
       '//cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
-      '//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
-      '//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
+      'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
+      'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
      
     ],
     

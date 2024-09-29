@@ -480,15 +480,15 @@ umezane</span>
 <p>主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情</p>
 <p><a href="https://github.com/norevi/blob-emoji-for-waline" target="_blank" >https://github.com/norevi/blob-emoji-for-waline</a></p>
 <p><a href="https://github.com/norevi/waline-blobcatemojis" target="_blank" >https://github.com/norevi/waline-blobcatemojis</a></p>
-<p>把github简介放的cdn链接塞到emoji选项里就行了</p>
+<p>把github简介放的cdn链接塞到emoji选项里就行了（blob的为什么前头没加https引入会在墙内加载不出来&hellip;？不能是我网的问题吧</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"> <span class="nx">init</span><span class="p">({</span>
 </span></span><span class="line"><span class="cl">      <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#waline&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">      <span class="nx">emoji</span><span class="o">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">      <span class="s1">&#39;//unpkg.com/@waline/emojis@1.1.0/alus&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="s1">&#39;//cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="s1">&#39;//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="s1">&#39;//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;https:///unpkg.com/@waline/emojis@1.1.0/alus&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">     
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
 </span></span><span class="line"><span class="cl">      <span class="p">});</span>
@@ -810,8 +810,8 @@ Share with</span>
       search: false,
       serverURL: 'https://waline1-j5qfrnueb-umezane06.vercel.app/',
       emoji: [
-      '//unpkg.com/@waline/emojis@1.1.0/alus',
-      '//cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+      'https://unpkg.com/@waline/emojis@1.1.0/alus',
+      'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
       'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
       'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
      

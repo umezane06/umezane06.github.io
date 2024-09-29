@@ -71,7 +71,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.eebbceb261142efe57f8bc57b40866faf6025c9162313e30f3914aa411da329a.css" integrity="sha256-7rvOsmEULv5X&#43;LxXtAhm&#43;vYCXJFiMT4w85FKpBHaMpo=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.489f96831ae7021802b932dfe04bbbf99a6696f50dac031ab4c75471dd4b62cb.css" integrity="sha256-SJ&#43;WgxrnAhgCuTLf4Eu7&#43;ZpmlvUNrAMatMdUcd1LYss=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -337,114 +337,112 @@ umezane</span>
       <article class="post-entry content">
         <p>这东西怎么全是偷的.jpg</p>
 <h1 id="给博客添加回到顶部按钮">给博客添加回到顶部按钮</h1>
-<p>（参考<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>）按照自己博客主题的结构在/layouts/partials/footer.html下添加</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl">&lt;!--返回顶部按钮 --&gt;
-</span></span><span class="line"><span class="cl">&lt;a href=&#34;#&#34; id=&#34;back-to-top&#34; title=&#34;返回顶部&#34;&gt;&lt;/a&gt;
+<p>（参考<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>）按照自己博客主题的结构在 [/layouts/partials/footer.html] 下添加</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!--返回顶部按钮 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;back-to-top&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;返回顶部&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;!--返回顶部CSS --&gt;
-</span></span><span class="line"><span class="cl">&lt;style&gt;
-</span></span><span class="line"><span class="cl">  #back-to-top <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">    display: none;
-</span></span><span class="line"><span class="cl">    position: fixed;
-</span></span><span class="line"><span class="cl">    bottom: 20px;
-</span></span><span class="line"><span class="cl">    right: 55px;
-</span></span><span class="line"><span class="cl">    width: 55px;
-</span></span><span class="line"><span class="cl">    height: 55px;
-</span></span><span class="line"><span class="cl">    border-radius: 7px;
-</span></span><span class="line"><span class="cl">    background-color: rgba(64, 158, 255, 0.5);
-</span></span><span class="line"><span class="cl">    box-shadow: var(--shadow-l2);
-</span></span><span class="line"><span class="cl">    font-size: 30px;
-</span></span><span class="line"><span class="cl">    text-align: center;
-</span></span><span class="line"><span class="cl">    line-height: 50px;
-</span></span><span class="line"><span class="cl">    cursor: pointer;
-</span></span><span class="line"><span class="cl">  <span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!--返回顶部CSS --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">#</span><span class="nn">back-to-top</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">bottom</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">right</span><span class="p">:</span> <span class="mi">55</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">55</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">55</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">7</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">158</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">box-shadow</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow</span><span class="o">-</span><span class="n">l2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">line-height</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  #back-to-top:before <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">    content: &#39; &#39;;
-</span></span><span class="line"><span class="cl">    display: inline-block;
-</span></span><span class="line"><span class="cl">    position: relative;
-</span></span><span class="line"><span class="cl">    top: 0;
-</span></span><span class="line"><span class="cl">    transform: rotate(135deg);
-</span></span><span class="line"><span class="cl">    height: 10px;
-</span></span><span class="line"><span class="cl">    width: 10px;
-</span></span><span class="line"><span class="cl">    border-width: 0 0 2px 2px;
-</span></span><span class="line"><span class="cl">    border-color: var(--back-to-top-color);
-</span></span><span class="line"><span class="cl">    border-style: solid;
-</span></span><span class="line"><span class="cl">  <span class="nb">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">#</span><span class="nn">back-to-top</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">135</span><span class="kt">deg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-width</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">back</span><span class="o">-</span><span class="kc">to</span><span class="o">-</span><span class="kc">top</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-style</span><span class="p">:</span> <span class="kc">solid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  #back-to-top:hover:before <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">    border-color: #2674e0;
-</span></span><span class="line"><span class="cl">  <span class="nb">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">#</span><span class="nn">back-to-top</span><span class="p">:</span><span class="nd">hover</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-color</span><span class="p">:</span> <span class="mh">#2674e0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  /* 在屏幕宽度小于相应像素时调整按钮大小 */
-</span></span><span class="line"><span class="cl">  @media screen and (max-width: 转换成移动端时的网页宽度) <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">    #back-to-top <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">      bottom: 20px;
-</span></span><span class="line"><span class="cl">      right: 20px;
-</span></span><span class="line"><span class="cl">      width: 40px;
-</span></span><span class="line"><span class="cl">      height: 40px;
-</span></span><span class="line"><span class="cl">      font-size: 10px;
-</span></span><span class="line"><span class="cl">    <span class="nb">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">}</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/* 在屏幕宽度小于相应像素时调整按钮大小 */</span>
+</span></span><span class="line"><span class="cl">  <span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">转换成移动端时的网页宽度</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">#</span><span class="nn">back-to-top</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">bottom</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">right</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">width</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">height</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">font-size</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/style&gt;
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c">&lt;!--</span><span class="nx">返回顶部JS</span> <span class="o">--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nx">backToTop</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollIntoView</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">behavior</span><span class="o">:</span> <span class="s1">&#39;smooth&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;!--返回顶部JS --&gt;
-</span></span><span class="line"><span class="cl">&lt;script&gt;
-</span></span><span class="line"><span class="cl">  function backToTop() <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">    document.documentElement.scrollIntoView(<span class="nb">{</span>
-</span></span><span class="line"><span class="cl">      behavior: &#39;smooth&#39;,
-</span></span><span class="line"><span class="cl">    <span class="nb">}</span>)
-</span></span><span class="line"><span class="cl">  <span class="nb">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">scrollTop</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">      <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollTop</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">totopBtn</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;back-to-top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">scrollTop</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">totopBtn</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;inline&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">totopBtn</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  window.onload = function () <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">    let scrollTop =
-</span></span><span class="line"><span class="cl">      this.document.documentElement.scrollTop || this.document.body.scrollTop
-</span></span><span class="line"><span class="cl">    let totopBtn = this.document.getElementById(&#39;back-to-top&#39;)
-</span></span><span class="line"><span class="cl">    if (scrollTop &gt; 0) <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">      totopBtn.style.display = &#39;inline&#39;
-</span></span><span class="line"><span class="cl">    <span class="nb">}</span> else <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">      totopBtn.style.display = &#39;none&#39;
-</span></span><span class="line"><span class="cl">    <span class="nb">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  window.onscroll = function () <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">    let scrollTop =
-</span></span><span class="line"><span class="cl">      this.document.documentElement.scrollTop || this.document.body.scrollTop
-</span></span><span class="line"><span class="cl">    let totopBtn = this.document.getElementById(&#39;back-to-top&#39;)
-</span></span><span class="line"><span class="cl">    if (scrollTop &lt; 200) <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">      totopBtn.style.display = &#39;none&#39;
-</span></span><span class="line"><span class="cl">    <span class="nb">}</span> else <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">      totopBtn.style.display = &#39;inline&#39;
-</span></span><span class="line"><span class="cl">      totopBtn.addEventListener(&#39;click&#39;, backToTop, false)
-</span></span><span class="line"><span class="cl">    <span class="nb">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">}</span>
-</span></span><span class="line"><span class="cl">&lt;/script&gt;
-</span></span></code></pre></div><p>按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色（自己的路径是/assets/css/theme.scss）</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl">  #back-to-top <span class="nb">{</span>--background-color: rgba(116, 116, 116, 0.5);<span class="nb">}</span> /* 按钮背景 */
-</span></span><span class="line"><span class="cl">  #back-to-top:before <span class="nb">{</span>border-color: #000000;<span class="nb">}</span> /* 光标接触到按钮前的箭头颜色 */
-</span></span><span class="line"><span class="cl">   #back-to-top:hover:before <span class="nb">{</span>border-color: var(--accent-color);<span class="nb">}</span> /* 光标接触到按钮后的箭头颜色 */
+</span></span><span class="line"><span class="cl">  <span class="nb">window</span><span class="p">.</span><span class="nx">onscroll</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">scrollTop</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">      <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollTop</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">totopBtn</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;back-to-top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">scrollTop</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">totopBtn</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">totopBtn</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;inline&#39;</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">totopBtn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">backToTop</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></div><p>按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色，自己的路径是 [/assets/css/theme.scss]。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">  <span class="p">#</span><span class="nn">back-to-top</span> <span class="p">{</span><span class="nv">--background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">116</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);}</span> <span class="c">/* 按钮背景 */</span>
+</span></span><span class="line"><span class="cl">  <span class="p">#</span><span class="nn">back-to-top</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span><span class="k">border-color</span><span class="p">:</span> <span class="mh">#000000</span><span class="p">;}</span> <span class="c">/* 光标接触到按钮前的箭头颜色 */</span>
+</span></span><span class="line"><span class="cl">   <span class="p">#</span><span class="nn">back-to-top</span><span class="p">:</span><span class="nd">hover</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span><span class="k">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accent</span><span class="o">-</span><span class="kc">color</span><span class="p">);}</span> <span class="c">/* 光标接触到按钮后的箭头颜色 */</span>
 </span></span></code></pre></div><h1 id="限制代码块高度">限制代码块高度</h1>
 <p>就在复制粘贴上面内容的时候才发现这主题并没有限制代码块高度你写多长就是多长，很碍事很影响阅读，于是又现折腾了半天</p>
-<p>在用来显示代码块的css/scss文件（本主题为/assets/css/main.scss）里添加</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl">.highlight <span class="nb">{</span>
-</span></span><span class="line"><span class="cl">  max-height: 300px; /* 这里设置代码块的最大高度为300像素 */
-</span></span><span class="line"><span class="cl">  overflow: auto; /* 如果代码块超出了最大高度，启用垂直滚动条 */
-</span></span><span class="line"><span class="cl"><span class="nb">}</span>
+<p>在用来显示代码块的css/scss文件（本主题为[/assets/css/main.scss]）里添加</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">highlight</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">max-height</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* 这里设置代码块的最大高度为300像素 */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span> <span class="c">/* 如果代码块超出了最大高度，启用垂直滚动条 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p><s>想顺便给代码块加上代码高亮但是试了很多方法死活不生效也不知道问题出在哪于是放弃了</s></p>
+<p>（↑<a href="https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/" target="_blank" >2024.9.29</a>已修，，）</p>
 <h1 id="给网站加个cloudflare代理">给网站加个Cloudflare代理</h1>
 <p>把网站本地库迁移到新电脑上后发现站子在墙内突然访问不了了，拖了好一阵时间后看见这位友友的帖子<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>就也想着给自己网站上个代理试试</p>
 <p>踩坑：按照帖子说明把域名服务商的nameserver改成cloudflare给的，待几分钟连接成功也把SSL/TLS 加密模式勾选为 “完全”后浅测试一下发现国内能访问就兴高采烈地跑去修其他东西了，结果后来才发现光这样搞国外ip就访问不了了果然还是得添加A记录(&hellip;)（*原先的CNAME记录需删除）不过我的站不是像原博主一样拿vercel部署的就随便猜了一个github的ip（如185.199.108.153）结果居然就成了，挺好（</p>
 <h1 id="修改博客的rss输出">修改博客的Rss输出</h1>
 <p>也是迁移后出现的问题，测试后发现rss输出不显示文章内章节小标题了</p>
 <p>按照这个方法<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>顺手把rss输出改成全文输出了。</p>
-<p>主要是在主题路径里：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl">/theme/&lt;your theme here&gt;/layouts/<span class="nb">_</span>default/
-</span></span></code></pre></div><p>创建一个名为 rss.xml 的文件。（不知道有的主题会不会自带） （将 your theme here 替换为相应主题名称）</p>
+<p>主要是在主题路径里 [/theme/主题名字/layouts/_default/] 创建一个名为 rss.xml 的文件。（不知道有的主题会不会自带）</p>
 <p>把相关代码</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl">&lt;description&gt;<span class="nb">{{</span>- .Summary | html -<span class="nb">}}</span>&lt;/description&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;description&gt;</span>{{- .Summary | html -}}<span class="nt">&lt;/description&gt;</span>
 </span></span></code></pre></div><p>改成</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="line"><span class="cl">&lt;description&gt;<span class="nb">{{</span>- .Content | html -<span class="nb">}}</span>&lt;/description&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;description&gt;</span>{{- .Content | html -}}<span class="nt">&lt;/description&gt;</span>
 </span></span></code></pre></div><p>原文提到可能有时候可能会因为博客语言设置不是中文报错，但是我并没有遇到就暂时不管了。</p>
 <h1 id="一些修废了和至今都没能实现没力气弄的功能可能算是在挖坑">一些修废了和至今都没能实现/没力气弄的功能（可能算是在挖坑</h1>
 <ul>
@@ -455,12 +453,14 @@ umezane</span>
 <p>搜索功能：以前试着配了，不懂代码不知道搜索框放哪好，摸索到位置后移动端好像又显示不了（跟这个主题只能在pc端看见的夜间模式一样神秘，但我真不会修），还搜不了中文干脆还是删了。不知道以后还有没有新的教程能让我抄一下，至少今天是没有力气弄了（&hellip;&hellip;</p>
 </li>
 <li>
-<p><input checked="" disabled="" type="checkbox"> <s>给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义</s> (<a href="https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/" target="_blank" >2024.9.24</a>已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久)</p>
-</li>
-<li>
-<p><input checked="" disabled="" type="checkbox"> <s>给waline多加点萌表情比如blob之类的：没精力了下次吧</s> (<a href="https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/" target="_blank" >2024.9.24</a>已修)</p>
+<p><input checked="" disabled="" type="checkbox"> <s>给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义</s></p>
 </li>
 </ul>
+<p><a href="https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/" target="_blank" >2024.9.24</a>（虽然到了26号才水出帖子）已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <s>给waline多加点萌表情比如blob之类的：没精力了下次吧</s></li>
+</ul>
+<p><a href="https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/" target="_blank" >2024.9.24</a>已添加（然后把默认的微博表情去掉了，现在网友的精神表情只剩下aru和blob大家族,感觉微博表情现在的使用场景只剩下了阴阳怪气所以感觉没什么使用的必要了（。。</p>
 <h1 id="随便废话一些">随便废话一些</h1>
 <p>本来是想给网络友人看我的同人图顺便就想大装修一下网站但一不小心就修了一整天好累啊.jpg</p>
 <p>不懂代码人建站真的就是缝缝补补又一年</p>
@@ -518,40 +518,60 @@ umezane</span>
       } else {
         tocContainer.style.display = 'block'; 
       }
-  
-      
-      const h1 = document.querySelector('.post-content h1');
-      if (h1) {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = '#' + h1.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-        a.textContent = '• ' + h1.textContent; 
-        li.appendChild(a);
-        toc.appendChild(li);
-      } 
-  
-      
+        let h1Count = 0; 
+      let h2Count = 0; 
       headers.forEach(header => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         
-        
         header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-        
-        a.href = '#' + header.id;
-        a.textContent = '• ' + header.textContent; 
-        li.appendChild(a);
+
+if (header.tagName.toLowerCase() === 'h1') {
+      h1Count++; 
+      h2Count = 0; 
+      a.textContent = h1Count + '. ' + header.textContent; 
+    } else if (header.tagName.toLowerCase() === 'h2') {
+      h2Count++; 
+      a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+    } else if (header.tagName.toLowerCase() === 'h3') {
+      a.textContent = h1Count + '.' + h2Count + '.' + (parseInt(header.dataset.index) + 1) + ' ' + header.textContent; 
+    }
+
+    a.href = '#' + header.id;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+
+let h3Count = 0; 
+
+headers.forEach(header => {
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+
   
-        
-        if (header.tagName.toLowerCase() === 'h2') {
-          li.style.paddingLeft = '10px';
-        } else if (header.tagName.toLowerCase() === 'h3') {
-          li.style.paddingLeft = '20px';
-        }
-        
-        toc.appendChild(li);
-      });
-    });
+  header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+
+  if (header.tagName.toLowerCase() === 'h1') {
+    h1Count++;
+    h2Count = 0; 
+    h3Count = 0; 
+    a.textContent = h1Count + '. ' + header.textContent; 
+  } else if (header.tagName.toLowerCase() === 'h2') {
+    h2Count++;
+    h3Count = 0; 
+    a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+  } else if (header.tagName.toLowerCase() === 'h3') {
+    h3Count++; 
+    header.dataset.index = h3Count; 
+    a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
+  }
+
+  a.href = '#' + header.id;
+  li.appendChild(a);
+  toc.appendChild(li);
+});
+
   </script>
   
 
@@ -754,10 +774,13 @@ Share with</span>
 
     init({
       el: '#waline',
+      search: false,
       serverURL: 'https://waline1-j5qfrnueb-umezane06.vercel.app/',
       emoji: [
       '//unpkg.com/@waline/emojis@1.1.0/alus',
       '//cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+      '//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
+      '//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
      
     ],
     
@@ -767,38 +790,25 @@ Share with</span>
   
 
   <style>
-    .waline-container {
-      background-color: var(--card-background);
-      border-radius: var(--card-border-radius);
-      box-shadow: var(--shadow-l1);
-      padding: 2%;
-    }
-    .waline-container .vcount {
-      color: var(--card-text-color-main);
-    }
-    .v[data-class=v] .vcard {
-      flex: 1;
-      width: 0;
-      padding-bottom: 0.5em;
-  }
-  
-      .v[data-class="v"] .vcontent .vemoji {
-        width: 2.5em;  
-        margin: 0.25em;}
-    
-      .v[data-class=v] .vheader {
-        border-bottom: 1px solid rgba(237,237,237,.8);   
-          }
-      .v[data-class=v] .vpanel {
-        border-radius: 8px;  
-  
-  
-  }
-  
+    .wl-emoji-popup {
+  position: absolute;
+  inset-inline-start: 3.5em;
 
-  
-  
-  
+}
+
+.wl-emoji-popup.display {
+
+    position: absolute;  
+    top: -100px;           
+    overflow-y: auto;
+    z-index: 10;
+  inset-inline-start: 3.5em;
+
+}
+
+.wl-loading {
+height: 55px;
+}
   </style>
   
 </body>
@@ -981,5 +991,8 @@ Share with</span>
   }
 </script>
 
+
   </body>
 </html>
+
+<link rel="stylesheet" href="../../css/highlight.scss" integrity="" crossorigin="anonymous">

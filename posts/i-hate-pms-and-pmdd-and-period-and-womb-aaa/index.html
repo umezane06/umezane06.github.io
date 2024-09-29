@@ -73,7 +73,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.eebbceb261142efe57f8bc57b40866faf6025c9162313e30f3914aa411da329a.css" integrity="sha256-7rvOsmEULv5X&#43;LxXtAhm&#43;vYCXJFiMT4w85FKpBHaMpo=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.489f96831ae7021802b932dfe04bbbf99a6696f50dac031ab4c75471dd4b62cb.css" integrity="sha256-SJ&#43;WgxrnAhgCuTLf4Eu7&#43;ZpmlvUNrAMatMdUcd1LYss=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -401,40 +401,60 @@ umezane</span>
       } else {
         tocContainer.style.display = 'block'; 
       }
-  
-      
-      const h1 = document.querySelector('.post-content h1');
-      if (h1) {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = '#' + h1.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-        a.textContent = '• ' + h1.textContent; 
-        li.appendChild(a);
-        toc.appendChild(li);
-      } 
-  
-      
+        let h1Count = 0; 
+      let h2Count = 0; 
       headers.forEach(header => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         
-        
         header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-        
-        a.href = '#' + header.id;
-        a.textContent = '• ' + header.textContent; 
-        li.appendChild(a);
+
+if (header.tagName.toLowerCase() === 'h1') {
+      h1Count++; 
+      h2Count = 0; 
+      a.textContent = h1Count + '. ' + header.textContent; 
+    } else if (header.tagName.toLowerCase() === 'h2') {
+      h2Count++; 
+      a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+    } else if (header.tagName.toLowerCase() === 'h3') {
+      a.textContent = h1Count + '.' + h2Count + '.' + (parseInt(header.dataset.index) + 1) + ' ' + header.textContent; 
+    }
+
+    a.href = '#' + header.id;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+
+let h3Count = 0; 
+
+headers.forEach(header => {
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+
   
-        
-        if (header.tagName.toLowerCase() === 'h2') {
-          li.style.paddingLeft = '10px';
-        } else if (header.tagName.toLowerCase() === 'h3') {
-          li.style.paddingLeft = '20px';
-        }
-        
-        toc.appendChild(li);
-      });
-    });
+  header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+
+  if (header.tagName.toLowerCase() === 'h1') {
+    h1Count++;
+    h2Count = 0; 
+    h3Count = 0; 
+    a.textContent = h1Count + '. ' + header.textContent; 
+  } else if (header.tagName.toLowerCase() === 'h2') {
+    h2Count++;
+    h3Count = 0; 
+    a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+  } else if (header.tagName.toLowerCase() === 'h3') {
+    h3Count++; 
+    header.dataset.index = h3Count; 
+    a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
+  }
+
+  a.href = '#' + header.id;
+  li.appendChild(a);
+  toc.appendChild(li);
+});
+
   </script>
   
 
@@ -639,10 +659,13 @@ Share with</span>
 
     init({
       el: '#waline',
+      search: false,
       serverURL: 'https://waline1-j5qfrnueb-umezane06.vercel.app/',
       emoji: [
       '//unpkg.com/@waline/emojis@1.1.0/alus',
       '//cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+      '//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
+      '//cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
      
     ],
     
@@ -652,38 +675,25 @@ Share with</span>
   
 
   <style>
-    .waline-container {
-      background-color: var(--card-background);
-      border-radius: var(--card-border-radius);
-      box-shadow: var(--shadow-l1);
-      padding: 2%;
-    }
-    .waline-container .vcount {
-      color: var(--card-text-color-main);
-    }
-    .v[data-class=v] .vcard {
-      flex: 1;
-      width: 0;
-      padding-bottom: 0.5em;
-  }
-  
-      .v[data-class="v"] .vcontent .vemoji {
-        width: 2.5em;  
-        margin: 0.25em;}
-    
-      .v[data-class=v] .vheader {
-        border-bottom: 1px solid rgba(237,237,237,.8);   
-          }
-      .v[data-class=v] .vpanel {
-        border-radius: 8px;  
-  
-  
-  }
-  
+    .wl-emoji-popup {
+  position: absolute;
+  inset-inline-start: 3.5em;
 
-  
-  
-  
+}
+
+.wl-emoji-popup.display {
+
+    position: absolute;  
+    top: -100px;           
+    overflow-y: auto;
+    z-index: 10;
+  inset-inline-start: 3.5em;
+
+}
+
+.wl-loading {
+height: 55px;
+}
   </style>
   
 </body>
@@ -866,5 +876,8 @@ Share with</span>
   }
 </script>
 
+
   </body>
 </html>
+
+<link rel="stylesheet" href="../../css/highlight.scss" integrity="" crossorigin="anonymous">

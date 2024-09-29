@@ -115,7 +115,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;（不行了该歇了&lt;/p&gt;
-&lt;h1 id=&#34;929的延续修理-修理waline评论区表情面板被博客主题前景元素覆盖档住的问题&#34;&gt;(9.29的延续修理) 修理waline评论区表情面板被博客主题前景元素覆盖档住的问题&lt;/h1&gt;
+&lt;h1 id=&#34;929的延续修理-修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题&#34;&gt;(9.29的延续修理) 修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题&lt;/h1&gt;
 &lt;p&gt;哎呀这个事情终于解决了。。。我这主题在帖子页帖子部分&amp;amp;评论区部分似乎都做成了那种嵌入式的观感，外面灰色的其他部分是置顶的（？），结果就导致评论这块waline默认向下方弹出的表情选项卡完全被外面的部分挡住了，切不了不同种类的表情。&lt;/p&gt;
 &lt;p&gt;不知道评论区的各种部分都是哪个元素在控制，瞎问LLM问了半天终于想起来应该问这个事&amp;hellip;&amp;hellip;于是GPT也终于向我发来了用右键菜单「开发者工具」里的「检查」功能查询页面元素的提醒（抓墙）。用了后会短时间显示各元素的名称，就像下面拼的图左侧贴图部分。&lt;/p&gt;
 &lt;p&gt;负责评论区表情选项卡的具体元素是 [.wl-emoji-popup]，但因为这个东西其实是由如图的 [.wl-tab-wrapper] 和 [.wl-tabs]（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）&lt;/p&gt;
@@ -158,12 +158,12 @@
 &lt;p&gt;主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/norevi/blob-emoji-for-waline&#34; target=&#34;_blank&#34; &gt;https://github.com/norevi/blob-emoji-for-waline&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/norevi/waline-blobcatemojis&#34; target=&#34;_blank&#34; &gt;https://github.com/norevi/waline-blobcatemojis&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;把github简介放的cdn链接塞到emoji选项里就行了（blob的为什么前头没加https引入会在墙内加载不出来&amp;hellip;？不能是我网的问题吧&lt;/p&gt;
+&lt;p&gt;把github简介放的cdn链接塞到emoji选项里就行了&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;module&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nx&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;({&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nx&#34;&gt;el&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;#waline&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nx&#34;&gt;emoji&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s1&#34;&gt;&amp;#39;https:///unpkg.com/@waline/emojis@1.1.0/alus&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s1&#34;&gt;&amp;#39;https://unpkg.com/@waline/emojis@1.1.0/alus&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s1&#34;&gt;&amp;#39;https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s1&#34;&gt;&amp;#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s1&#34;&gt;&amp;#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;

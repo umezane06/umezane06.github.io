@@ -437,7 +437,7 @@ umezane</span>
 </li>
 </ul>
 <p>（不行了该歇了</p>
-<h1 id="929的延续修理-修理waline评论区表情面板被博客主题前景元素覆盖档住的问题">(9.29的延续修理) 修理waline评论区表情面板被博客主题前景元素覆盖档住的问题</h1>
+<h1 id="929的延续修理-修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题">(9.29的延续修理) 修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题</h1>
 <p>哎呀这个事情终于解决了。。。我这主题在帖子页帖子部分&amp;评论区部分似乎都做成了那种嵌入式的观感，外面灰色的其他部分是置顶的（？），结果就导致评论这块waline默认向下方弹出的表情选项卡完全被外面的部分挡住了，切不了不同种类的表情。</p>
 <p>不知道评论区的各种部分都是哪个元素在控制，瞎问LLM问了半天终于想起来应该问这个事&hellip;&hellip;于是GPT也终于向我发来了用右键菜单「开发者工具」里的「检查」功能查询页面元素的提醒（抓墙）。用了后会短时间显示各元素的名称，就像下面拼的图左侧贴图部分。</p>
 <p>负责评论区表情选项卡的具体元素是 [.wl-emoji-popup]，但因为这个东西其实是由如图的 [.wl-tab-wrapper] 和 [.wl-tabs]（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）</p>
@@ -480,12 +480,12 @@ umezane</span>
 <p>主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情</p>
 <p><a href="https://github.com/norevi/blob-emoji-for-waline" target="_blank" >https://github.com/norevi/blob-emoji-for-waline</a></p>
 <p><a href="https://github.com/norevi/waline-blobcatemojis" target="_blank" >https://github.com/norevi/waline-blobcatemojis</a></p>
-<p>把github简介放的cdn链接塞到emoji选项里就行了（blob的为什么前头没加https引入会在墙内加载不出来&hellip;？不能是我网的问题吧</p>
+<p>把github简介放的cdn链接塞到emoji选项里就行了</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"> <span class="nx">init</span><span class="p">({</span>
 </span></span><span class="line"><span class="cl">      <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#waline&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">      <span class="nx">emoji</span><span class="o">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">      <span class="s1">&#39;https:///unpkg.com/@waline/emojis@1.1.0/alus&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;https://unpkg.com/@waline/emojis@1.1.0/alus&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">      <span class="s1">&#39;https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">      <span class="s1">&#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">      <span class="s1">&#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png&#39;</span><span class="p">,</span>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>障碍与无障碍之间 on 绝对概括的切面</title>
+    <link>https://plumdebris.eu.org/tags/%E9%9A%9C%E7%A2%8D%E4%B8%8E%E6%97%A0%E9%9A%9C%E7%A2%8D%E4%B9%8B%E9%97%B4/</link>
+    <description>Recent content in 障碍与无障碍之间 on 绝对概括的切面</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Oct 2024 19:40:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/%E9%9A%9C%E7%A2%8D%E4%B8%8E%E6%97%A0%E9%9A%9C%E7%A2%8D%E4%B9%8B%E9%97%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想</title>
+      <link>https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/</link>
+      <pubDate>Thu, 10 Oct 2024 19:40:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/</guid>
+      <description>&lt;p&gt;虽然因为各种原因还是没能做到实地诊断，但网友依然实打实的从幼年阶段就有点子&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%B8%8D%E8%B6%B3%E9%81%8E%E5%8B%95%E7%97%87&#34; target=&#34;_blank&#34; &gt;ADHD&lt;/a&gt;倾向，最近突然又被此特性殴打后怨念地看起相关资料又看着了ADHD &amp;amp; 阅读障碍友好字体和排版相关，然后想起了些之前因为一些视觉小说游戏的中文文字显示问题产生的奇怪想法。&lt;/p&gt;
+&lt;h1 id=&#34;英文方面现有的阅读辅助工具&#34;&gt;英文方面现有的阅读辅助工具&lt;/h1&gt;
+&lt;p&gt;首先关于字体这方面能被拿来说的其实目前只有英文（或者说表音文字）方面的，设计初衷是辅助&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%A4%B1%E8%AE%80%E7%97%87&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;读写障碍&lt;/strong&gt;&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;群体的字体。有&lt;a href=&#34;https://dyslexiefont.com/en/&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Dyslexie&lt;/strong&gt;&lt;/a&gt;和&lt;a href=&#34;https://opendyslexic.org&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;OpenDyslexic&lt;/strong&gt;&lt;/a&gt;之类的。通过特殊的设计比如调整了部分字母的笔画重心和一些细小的线条方向区别以改善相关群体识别字母笔画的状况和提高阅读速度，对注意力涣散人群也能起到一定阅读辅助作用。&lt;/p&gt;
+&lt;p&gt;（我自己倒是觉得OpenDyslexic字形里重的部分和轻的部分差距太大了看着还是有些吃力了，Dyslexie大概更舒服一些&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;（其实还莫名看见了有人试图按照这些字体给中文也做成这种底部更重的显示方式的&lt;a href=&#34;https://blog.csdn.net/emu/article/details/120646435&#34; target=&#34;_blank&#34; &gt;帖子&lt;/a&gt;，但是就光这么把整个字符底部笔画加重的方式到底是不是真的能通用到表意文字上我暂且还是持一个怀疑态度&amp;hellip;&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;还有一种比较流行的东西是叫&lt;a href=&#34;https://bionic-reading.com&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Bionic Reading&lt;/strong&gt;&lt;/a&gt;的应用/插件，跟前面提到的读写障碍就没什么强关联了这个单纯就是把每个单词的头几个字母加粗的这么一种阅读辅助方式。对于我这种看字注意力严重乱飘就算一目十行都没有东西真正会进脑子的人来说，这个东西所谓的「加快阅读速度」的体验，其实应该是靠词头部分字母的加粗强调起到了强行吸引你目光让你&lt;strong&gt;下意识地把注意力真正放在每个词块上&lt;/strong&gt;，这样让脑子也能更早识别出词汇与意思与各种接下来的联系等。之前有看到其他网友讲了个很恰当的形容：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;平常的阅读体验像是坐滑梯一溜到底，这样做像是给滑梯装上了缓冲带。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;差不多是这种感觉。&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/ZWJxDZs/20241009-220310-654.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/ZWJxDZs/20241009-220310-654.jpg&#34; alt=&#34;上述各种东西的效果展示&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;上述各种东西的效果展示&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;h1 id=&#34;由早年汉化版视觉小说游戏的字体显示方式所联想到的&#34;&gt;由早年汉化版视觉小说游戏的字体显示方式所联想到的&lt;/h1&gt;
+&lt;p&gt;其余辅助阅读的工具（比如只把阅读视线限制在一行里的尺子之类的）在这里就暂且先不谈，但就Bionic Reading这个东西的辅助方式倒是让我突然就想起了自己之前玩一些汉化的日文视觉小说AVG或ADV等游戏时的体验。&lt;/p&gt;
+&lt;p&gt;以前一些游戏汉化过后经常会因为一些谜之问题导致使用的字体实际上总是不能完全显示一部分文字，于是就会被其他的字体替换，经常会是无衬线体为主+零星衬线体&lt;s&gt;（默认宋体吧大概）&lt;/s&gt;的组合，如下面一些例子。&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/Svbk4mS/image.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/Svbk4mS/image.jpg&#34; alt=&#34;游戏：《海猫鸣泣之时》/《うみねこのなく頃に》&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;游戏：《海猫鸣泣之时》/《うみねこのなく頃に》&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/KL6cC9B/image.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/KL6cC9B/image.jpg&#34; alt=&#34;游戏：《离开的人们》/《去人たち》&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;游戏：《离开的人们》/《去人たち》&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;但是现在回过头看来这种显示方式构成的一种文字凹凸不平的观感，好像和Bionic Reading插件起到的增加对文字注意力的作用有点相似&amp;hellip;？至少我个人是觉得这种感觉的文字会比全是同一个字体的文章更好读一些的样子？&lt;/p&gt;
+&lt;p&gt;于是试着做了一些*&lt;strong&gt;过于粗略不严谨&lt;/strong&gt;*的测试，随便找了一段文本随机抽了点字出来用于更改各种衬线字体和无衬线字体，每个读一遍，想看看各种情况下到底哪种组合读起来可能更舒服一些&amp;hellip;，路过的朋友也可以试着看看可能哪个看起来更好（虽然我评论区还没修回墙内对不起！）。&lt;/p&gt;
+&lt;p&gt;（但是粗略不严谨：电脑上现有字体衬线体和装饰体压倒性地多但完全没下无衬线体，乱选字体翻来覆去只有那么几个能选还要避免太花哨的；很多字体默认字重也不一样加粗了也不一样不知道该怎么比较&amp;hellip;&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;（并且我也知道我这么拼图大概会让人直接进行一个晕字，以及电脑端fancybox看图器这个默认缩放数值我调不太来放长图的话大概会更没法看。。不是移动端的话大概只能眯着眼看or存下来看了&amp;hellip;&amp;hellip;（对不起&lt;/s&gt;&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/kJC1Qyh/20241009-192641-134.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/kJC1Qyh/20241009-192641-134.jpg&#34; alt=&#34;粗体文字为主穿插各种普通字重文字的情况&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;粗体文字为主穿插各种普通字重文字的情况&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/chrs47X/20241009-192523-053.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/chrs47X/20241009-192523-053.jpg&#34; alt=&#34;普通字重文字为主穿插各种粗体文字的情况&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;普通字重文字为主穿插各种粗体文字的情况&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;结果到最后自己比了半天因为&lt;strong&gt;无衬线+加粗无衬线&lt;/strong&gt;字体那里两个字体甚至连文字基线都不一样了所以其实最终觉得这个例子是读起来最舒适的？？次之是底下的&lt;strong&gt;衬线字+加粗无衬线字&lt;/strong&gt;，甚至和视觉小说那边的例子是反过来的，在白底黑字的情况下默认加粗文本是主文本的话好像读起来并不舒服。&lt;/p&gt;
+&lt;p&gt;所以其实还是觉得真的要做到像英文那样只要加粗几个开头字母就能提高注意程度的效果，在中文里可能还得更多考虑到字的大小、字的水平线、以及字的颜色（视觉小说那的例子里文字都是白底加了黑投影的，更容易打造出「&lt;strong&gt;凹凸不平&lt;/strong&gt;」的感觉，可能这种情况下反而是看起来「&lt;strong&gt;凹进去&lt;/strong&gt;」的普通衬线字更为吸睛&amp;hellip;）等各种条件&amp;hellip;&amp;hellip;还是挺复杂的。&lt;/p&gt;
+&lt;h1 id=&#34;所以最终想法是&#34;&gt;所以最终想法是&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;有无国内研究者想一想中文方面的解决方案做个相关的阅读辅助插件什么的呢&lt;/strong&gt;（弱弱），，我的不负责任迷思也只能到这里了，但还是会觉得如果真的按照这些记录来弄一个&lt;strong&gt;随机抽出文章部分文字换成其他字体，这些部分与主要文字也都一起能自由调整上述甚至是字体基线的细节&lt;/strong&gt;的插件的话说不定是能成的&amp;hellip;？但问题就是这个事情一没有研究根据二网友不会写代码（&amp;hellip;），所以也就只能成为暂且记在这里也不知道有没有人能看到的神秘笔记惹&amp;hellip;&lt;/p&gt;
+&lt;p&gt;以及依然需要向上述那些英文方面辅助方案的作者们致敬，感谢他们做了这些东西。障碍的程度仍然是一个连续的谱，一些更为细小的，未能到「社会标准种肉眼可见意义上的严重」的情况对部分人群来说也仍然会是一种障碍，我们仍然需要更多能够注意到这些细小的情况并试图做出改善和分享经验的人&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;（国内的称呼甚至引的中文wiki称呼都还只强调了阅读的部分，其实还是有包含书写方面的障碍&amp;hellip;只能说信息还是有点跟不上且这边还有表意文字使用区的特殊性）&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,110 @@
     <description>Recent content on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://plumdebris.eu.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Oct 2024 19:40:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想</title>
+      <link>https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/</link>
+      <pubDate>Thu, 10 Oct 2024 19:40:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/</guid>
+      <description>&lt;p&gt;虽然因为各种原因还是没能做到实地诊断，但网友依然实打实的从幼年阶段就有点子&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%B8%8D%E8%B6%B3%E9%81%8E%E5%8B%95%E7%97%87&#34; target=&#34;_blank&#34; &gt;ADHD&lt;/a&gt;倾向，最近突然又被此特性殴打后怨念地看起相关资料又看着了ADHD &amp;amp; 阅读障碍友好字体和排版相关，然后想起了些之前因为一些视觉小说游戏的中文文字显示问题产生的奇怪想法。&lt;/p&gt;
+&lt;h1 id=&#34;英文方面现有的阅读辅助工具&#34;&gt;英文方面现有的阅读辅助工具&lt;/h1&gt;
+&lt;p&gt;首先关于字体这方面能被拿来说的其实目前只有英文（或者说表音文字）方面的，设计初衷是辅助&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%A4%B1%E8%AE%80%E7%97%87&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;读写障碍&lt;/strong&gt;&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;群体的字体。有&lt;a href=&#34;https://dyslexiefont.com/en/&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Dyslexie&lt;/strong&gt;&lt;/a&gt;和&lt;a href=&#34;https://opendyslexic.org&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;OpenDyslexic&lt;/strong&gt;&lt;/a&gt;之类的。通过特殊的设计比如调整了部分字母的笔画重心和一些细小的线条方向区别以改善相关群体识别字母笔画的状况和提高阅读速度，对注意力涣散人群也能起到一定阅读辅助作用。&lt;/p&gt;
+&lt;p&gt;（我自己倒是觉得OpenDyslexic字形里重的部分和轻的部分差距太大了看着还是有些吃力了，Dyslexie大概更舒服一些&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;（其实还莫名看见了有人试图按照这些字体给中文也做成这种底部更重的显示方式的&lt;a href=&#34;https://blog.csdn.net/emu/article/details/120646435&#34; target=&#34;_blank&#34; &gt;帖子&lt;/a&gt;，但是就光这么把整个字符底部笔画加重的方式到底是不是真的能通用到表意文字上我暂且还是持一个怀疑态度&amp;hellip;&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;还有一种比较流行的东西是叫&lt;a href=&#34;https://bionic-reading.com&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Bionic Reading&lt;/strong&gt;&lt;/a&gt;的应用/插件，跟前面提到的读写障碍就没什么强关联了这个单纯就是把每个单词的头几个字母加粗的这么一种阅读辅助方式。对于我这种看字注意力严重乱飘就算一目十行都没有东西真正会进脑子的人来说，这个东西所谓的「加快阅读速度」的体验，其实应该是靠词头部分字母的加粗强调起到了强行吸引你目光让你&lt;strong&gt;下意识地把注意力真正放在每个词块上&lt;/strong&gt;，这样让脑子也能更早识别出词汇与意思与各种接下来的联系等。之前有看到其他网友讲了个很恰当的形容：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;平常的阅读体验像是坐滑梯一溜到底，这样做像是给滑梯装上了缓冲带。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;差不多是这种感觉。&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/ZWJxDZs/20241009-220310-654.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/ZWJxDZs/20241009-220310-654.jpg&#34; alt=&#34;上述各种东西的效果展示&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;上述各种东西的效果展示&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;h1 id=&#34;由早年汉化版视觉小说游戏的字体显示方式所联想到的&#34;&gt;由早年汉化版视觉小说游戏的字体显示方式所联想到的&lt;/h1&gt;
+&lt;p&gt;其余辅助阅读的工具（比如只把阅读视线限制在一行里的尺子之类的）在这里就暂且先不谈，但就Bionic Reading这个东西的辅助方式倒是让我突然就想起了自己之前玩一些汉化的日文视觉小说AVG或ADV等游戏时的体验。&lt;/p&gt;
+&lt;p&gt;以前一些游戏汉化过后经常会因为一些谜之问题导致使用的字体实际上总是不能完全显示一部分文字，于是就会被其他的字体替换，经常会是无衬线体为主+零星衬线体&lt;s&gt;（默认宋体吧大概）&lt;/s&gt;的组合，如下面一些例子。&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/Svbk4mS/image.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/Svbk4mS/image.jpg&#34; alt=&#34;游戏：《海猫鸣泣之时》/《うみねこのなく頃に》&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;游戏：《海猫鸣泣之时》/《うみねこのなく頃に》&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/KL6cC9B/image.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/KL6cC9B/image.jpg&#34; alt=&#34;游戏：《离开的人们》/《去人たち》&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;游戏：《离开的人们》/《去人たち》&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;但是现在回过头看来这种显示方式构成的一种文字凹凸不平的观感，好像和Bionic Reading插件起到的增加对文字注意力的作用有点相似&amp;hellip;？至少我个人是觉得这种感觉的文字会比全是同一个字体的文章更好读一些的样子？&lt;/p&gt;
+&lt;p&gt;于是试着做了一些*&lt;strong&gt;过于粗略不严谨&lt;/strong&gt;*的测试，随便找了一段文本随机抽了点字出来用于更改各种衬线字体和无衬线字体，每个读一遍，想看看各种情况下到底哪种组合读起来可能更舒服一些&amp;hellip;，路过的朋友也可以试着看看可能哪个看起来更好（虽然我评论区还没修回墙内对不起！）。&lt;/p&gt;
+&lt;p&gt;（但是粗略不严谨：电脑上现有字体衬线体和装饰体压倒性地多但完全没下无衬线体，乱选字体翻来覆去只有那么几个能选还要避免太花哨的；很多字体默认字重也不一样加粗了也不一样不知道该怎么比较&amp;hellip;&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;（并且我也知道我这么拼图大概会让人直接进行一个晕字，以及电脑端fancybox看图器这个默认缩放数值我调不太来放长图的话大概会更没法看。。不是移动端的话大概只能眯着眼看or存下来看了&amp;hellip;&amp;hellip;（对不起&lt;/s&gt;&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/kJC1Qyh/20241009-192641-134.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/kJC1Qyh/20241009-192641-134.jpg&#34; alt=&#34;粗体文字为主穿插各种普通字重文字的情况&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;粗体文字为主穿插各种普通字重文字的情况&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/chrs47X/20241009-192523-053.jpg&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/chrs47X/20241009-192523-053.jpg&#34; alt=&#34;普通字重文字为主穿插各种粗体文字的情况&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;普通字重文字为主穿插各种粗体文字的情况&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;结果到最后自己比了半天因为&lt;strong&gt;无衬线+加粗无衬线&lt;/strong&gt;字体那里两个字体甚至连文字基线都不一样了所以其实最终觉得这个例子是读起来最舒适的？？次之是底下的&lt;strong&gt;衬线字+加粗无衬线字&lt;/strong&gt;，甚至和视觉小说那边的例子是反过来的，在白底黑字的情况下默认加粗文本是主文本的话好像读起来并不舒服。&lt;/p&gt;
+&lt;p&gt;所以其实还是觉得真的要做到像英文那样只要加粗几个开头字母就能提高注意程度的效果，在中文里可能还得更多考虑到字的大小、字的水平线、以及字的颜色（视觉小说那的例子里文字都是白底加了黑投影的，更容易打造出「&lt;strong&gt;凹凸不平&lt;/strong&gt;」的感觉，可能这种情况下反而是看起来「&lt;strong&gt;凹进去&lt;/strong&gt;」的普通衬线字更为吸睛&amp;hellip;）等各种条件&amp;hellip;&amp;hellip;还是挺复杂的。&lt;/p&gt;
+&lt;h1 id=&#34;所以最终想法是&#34;&gt;所以最终想法是&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;有无国内研究者想一想中文方面的解决方案做个相关的阅读辅助插件什么的呢&lt;/strong&gt;（弱弱），，我的不负责任迷思也只能到这里了，但还是会觉得如果真的按照这些记录来弄一个&lt;strong&gt;随机抽出文章部分文字换成其他字体，这些部分与主要文字也都一起能自由调整上述甚至是字体基线的细节&lt;/strong&gt;的插件的话说不定是能成的&amp;hellip;？但问题就是这个事情一没有研究根据二网友不会写代码（&amp;hellip;），所以也就只能成为暂且记在这里也不知道有没有人能看到的神秘笔记惹&amp;hellip;&lt;/p&gt;
+&lt;p&gt;以及依然需要向上述那些英文方面辅助方案的作者们致敬，感谢他们做了这些东西。障碍的程度仍然是一个连续的谱，一些更为细小的，未能到「社会标准种肉眼可见意义上的严重」的情况对部分人群来说也仍然会是一种障碍，我们仍然需要更多能够注意到这些细小的情况并试图做出改善和分享经验的人&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;（国内的称呼甚至引的中文wiki称呼都还只强调了阅读的部分，其实还是有包含书写方面的障碍&amp;hellip;只能说信息还是有点跟不上且这边还有表意文字使用区的特殊性）&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://plumdebris.eu.org/about/</link>
@@ -1991,7 +2094,7 @@
       <guid>https://plumdebris.eu.org/posts/2023-11-2-log/</guid>
       <description>&lt;p&gt;其实又对于自我认知有了些困惑，但意外地引发了一连串的思维奔逸（感觉像躁期&amp;hellip;.）总之随便记点东西。&lt;/p&gt;
 &lt;h1 id=&#34;让博客通过了mastodon的认证&#34;&gt;让博客通过了mastodon的认证！&lt;/h1&gt;
-&lt;p&gt;昨天上网冲浪看见一位博主提及便试着捣鼓了一下，看着绿勾感觉有点小自豪感（？）（虽然 neodb 直接就可以有认证页了，以因为对书影音目前仍没有什么特别的追求就和交流欲望就只是私底下用用&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;昨天上网冲浪看见一位博主提及便试着捣鼓了一下，看着绿勾感觉有点小自豪感（？）（虽然 neodb 链接直接就可以有认证页了，以因为对书影音目前仍没有什么特别的追求就和交流欲望就只是私底下用用&amp;hellip;）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
         &lt;a href=&#34;./images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; data-fancybox=&#34;gallery&#34;&gt;
@@ -2022,7 +2125,7 @@
 &lt;p&gt;还特地去找了版本更老的象站小号看看，原来以前只是在这个不起眼的小角落&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;于是具体要做的事情就是把 mastodon 提供的代码复制到你自己的网页代码里（在网页里会形成一个指向你 mastodon 界面的超链接），再重新更新一遍个人资料页的链接就成了。自己这边用的是 hugo 我就复制在主题里本来就让人放个人链接的地方了，就是链接莫名还是带颜色的版本和自己的主题不搭配，便改了一下 css &lt;s&gt;（然而其实完全不懂各种代码语言就连这么一小步都得求助一下 AI ，对我这样的小白真友好啊，，）&lt;/s&gt;&lt;/p&gt;
 &lt;h1 id=&#34;关于社交的郁闷&#34;&gt;关于社交的郁闷&lt;/h1&gt;
-&lt;p&gt;前日感觉是生理期激素波动的原因又狠狠地崩溃了，其基本问题似乎还是觉得自己喜欢的东西太边缘无人问津找不到同好&amp;amp;喜欢一件东西的方式和其他人根本不一样可能不被他人理解&amp;hellip;&amp;hellip;就又回到了神经发展的问题上。加上自己挖掘互联网远古音乐的一些经验，得到的结论是，人类作为社会动物构建成的一个又一个或大或小的社交圈总是有着一定的排外趋势，几乎所有都建立在运转着的社交圈上&amp;hellip;&amp;hellip;想要寻找一些失传媒体（联想至此视频：&lt;a href=&#34;https://www.bilibili.com/video/BV1fG411y72f/&#34; target=&#34;_blank&#34; &gt;【中字】什么是失传媒体？&lt;/a&gt;），在有些情况下说白了就是试图想要介入那些曾经存在或仍然存在着的社交小圈子&amp;hellip;在此之下也存在着各种会选择无私分享那些成果物的人，但这绝对不是全部人的思维。在“同人”的这个范围内更甚。现在我们都知道了同人作为一种志同道合的活动形式基本都是靠着各自的社交行为组成的小型圈子圈而发展起来的，但当这种文化有名到了一定程度，那些小而散的圈就会被整合成一种整体性的东西，被归纳成一个集合。彼时那些处在内里的小型关系链就会变得不再那么重要了。不禁让人思考起，那些专门关注“同人”这个概念的人们，其实在关注的又是些什么？经过了同人体系的那些不同的表达体裁，所产生的作品本身？还是在这个过程中产生的社交性？&amp;hellip;&amp;hellip;从我自己的角度真的只能这么僵硬地去理解了，或许这些本该就是自然而然就会同时产生的东西，为什么到了我这里就会产生需要硬去理解的成本呢&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;前日感觉是生理期激素波动的原因又狠狠地崩溃了，其基本问题似乎还是觉得自己喜欢的东西太边缘无人问津找不到同好&amp;amp;喜欢一件东西的方式和其他人根本不一样可能不被他人理解&amp;hellip;&amp;hellip;就又回到了神经发展的问题上。加上自己挖掘互联网远古音乐的一些经验，得到的结论是，人类作为社会动物构建成的一个又一个或大或小的社交圈总是有着一定的排外趋势，几乎所有都建立在运转着的社交圈上&amp;hellip;&amp;hellip;想要寻找一些失传媒体（联想至此视频：&lt;a href=&#34;https://www.bilibili.com/video/BV1fG411y72f/&#34; target=&#34;_blank&#34; &gt;【中字】什么是失传媒体？&lt;/a&gt;），在有些情况下说白了就是试图想要介入那些曾经存在或仍然存在着的社交小圈子&amp;hellip;在此之下也存在着各种会选择无私分享那些成果物的人，但这绝对不是全部人的思维。在“同人”的这个范围内更甚。现在我们都知道了同人作为一种志同道合的活动形式基本都是靠着各自的社交行为组成的小型圈子圈而发展起来的，但当这种文化有名到了一定程度，那些小而散的圈就会被整合成一种整体性的东西，被归纳成一个集合。彼时那些处在内里的小型关系链（在仅是从浅滩走入观看作品产出这种结果性的东西的人眼里来说）就会变得不再那么重要了。不禁让人思考起，那些专门关注“同人”这个概念的人们，其实在关注的又是些什么？经过了同人体系的那些不同的表达体裁，所产生的作品本身？还是在这个过程中产生的社交性？&amp;hellip;&amp;hellip;从我自己的角度真的只能这么僵硬地去理解了，或许这些本该就是自然而然就会同时产生的东西，为什么到了我这里就会产生需要硬去理解的成本呢&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;h1 id=&#34;内容摄入&#34;&gt;内容摄入&lt;/h1&gt;
 &lt;p&gt;突然吐了这么多东西也不知该如何是好，决定发发近期都看了些什么&lt;/p&gt;
 &lt;p&gt;文章：&lt;/p&gt;
@@ -2209,7 +2312,7 @@
       <guid>https://plumdebris.eu.org/posts/2023-8-20-log-/</guid>
       <description>&lt;p&gt;打转的每一日&lt;/p&gt;
 &lt;h1 id=&#34;近期音乐摄入&#34;&gt;近期音乐摄入：&lt;/h1&gt;
-&lt;p&gt;大致听完了&lt;a href=&#34;https://www.discogs.com/label/3016-Noom-Records&#34; target=&#34;_blank&#34; &gt;Noom Records&lt;/a&gt;这个厂牌的曲子（就当&lt;a href=&#34;https://music.163.com/playlist?id=4925703613&amp;amp;userid=67300238&#34; target=&#34;_blank&#34; &gt;网易云那边的歌单&lt;/a&gt;有把歌收集齐了吧）,主要风格为世纪末那会的古早Acid Hard Trance之类的，由于之前被推荐了似乎跟早期&lt;a href=&#34;https://https://plumdebris.eu.org/posts/what-is-freeform--nrg/&#34; target=&#34;_blank&#34; &gt;NRG&lt;/a&gt;有关联的曲子便去挖了一挖。还蛮多不错玩意的。就是实际上关于我想要的NRG向曲子其实好像不超过十位数&amp;hellip;&amp;hellip;（sad，追着几百首曲子薅已经够累&lt;/p&gt;
+&lt;p&gt;大致听完了&lt;a href=&#34;https://www.discogs.com/label/3016-Noom-Records&#34; target=&#34;_blank&#34; &gt;Noom Records&lt;/a&gt;这个厂牌的曲子（就当&lt;a href=&#34;https://music.163.com/playlist?id=4925703613&amp;amp;userid=67300238&#34; target=&#34;_blank&#34; &gt;网易云那边的歌单&lt;/a&gt;有把歌收集齐了吧）,主要风格为世纪末那会德国这边的古早Acid Hard Trance之类的，由于之前被推荐了似乎跟早期&lt;a href=&#34;https://https://plumdebris.eu.org/posts/what-is-freeform--nrg/&#34; target=&#34;_blank&#34; &gt;NRG&lt;/a&gt;有关联的曲子便去挖了一挖。还蛮多不错玩意的。就是实际上关于我想要的NRG向曲子其实好像不超过十位数&amp;hellip;&amp;hellip;（sad，追着几百首曲子薅已经够累&lt;/p&gt;
 &lt;h1 id=&#34;至少也断断续续地看了些书吧&#34;&gt;至少也断断续续地看了些书吧：&lt;/h1&gt;
 &lt;p&gt;（本来试着用了Neodb短代码卡片来呈现，但是不知道是不是neodb在2024四月份这阵子被墙了还是什么关系，换电脑迁移本地库的时候一直显示API连不上就去掉了&amp;hellip;）&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://neodb.social/book/3Lellbdoz8yNGMnWIUHGjS&#34; target=&#34;_blank&#34; &gt;&lt;em&gt;&lt;strong&gt;《工作、消费主义和新穷人》&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
@@ -2222,7 +2325,7 @@
 &lt;p&gt;我仍然是无法完全地对这些东西释怀的。&lt;/p&gt;
 &lt;p&gt;就像我现在也仍然不清楚，从书本中补充了我曾经未拥有过的各种“应当拥有”的认知后，我真的又能胜任这些文字所描述的一切行为动作吗。&lt;/p&gt;
 &lt;h1 id=&#34;发散式碎片&#34;&gt;发散式碎片：&lt;/h1&gt;
-&lt;p&gt;七月底到八月初，发现了&lt;a href=&#34;https://firewood.news&#34; target=&#34;_blank&#34; &gt;积薪&lt;/a&gt;和&lt;a href=&#34;https://www.zhubai.wiki/?utm_source=bestxtools.com&#34; target=&#34;_blank&#34; &gt;竹白百科&lt;/a&gt;两个可以收获更多个体的个人思考的站点（一个是独立博客收集站，一个是汇总竹白这个平台的newsletter内容的）&lt;/p&gt;
+&lt;p&gt;七月底到八月初，发现了&lt;a href=&#34;https://firewood.news&#34; target=&#34;_blank&#34; &gt;积薪&lt;/a&gt;（2024八月期间已关闭，详见链接跳转至的作者Newsletter放的其博客文章）和&lt;a href=&#34;https://www.zhubai.wiki/?utm_source=bestxtools.com&#34; target=&#34;_blank&#34; &gt;竹白百科&lt;/a&gt;两个可以收获更多个体的个人思考的站点（一个是独立博客收集站，一个是汇总竹白这个平台的newsletter内容的）&lt;/p&gt;
 &lt;p&gt;但仍然觉得疲累，往脑子里猛灌知识是一回事，事实上的这具肉体根本没有与此相符的体验记忆也是一回事。“不知道自己该做什么”这样的一种状态，真的是贯穿了自己一生的。但是反而回过头来真的试图规划，又会看到无穷无尽止不住的那些个效率逼，把自己的人生量化得透明无比&amp;hellip;&amp;hellip;但这也显然不是我想要的。&lt;/p&gt;
 &lt;p&gt;依然蹲在各种不同生活方式的夹缝里，看着面对不了的那些阴影覆盖处和大面积的体验空白————这就是当下那无边际的痛苦了&lt;/p&gt;
 &lt;p&gt;果然还是不能操之过急的吧&amp;hellip;&amp;hellip;&lt;/p&gt;</description>

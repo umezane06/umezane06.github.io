@@ -258,7 +258,7 @@
 &lt;p&gt;比如顺便调整了页面切到移动端模式的宽度后发现在刁钻的宽度下展开的菜单栏出现边缘空白&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 。。。比如我换的自定义博客字体在移动端好像显示不出来&lt;/p&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;。。。比如我换的自定义博客字体在移动端好像显示不出来&lt;/s&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2024.10.16修理完毕，见下&lt;/p&gt;

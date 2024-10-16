@@ -920,8 +920,8 @@ body:not(.theme-dark),
   --theme-red: #838eb8;
   --theme-purple: #603e8a;
   --theme-cyan: #53acc0; }
-  body:not(.theme-dark) a[rel="me"][href="https://me.ns.ci/@ExistingPixles"],
-  .theme-light a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
+  body:not(.theme-dark) a[rel="me"][href="https://pari.cafe/@circuits"],
+  .theme-light a[rel="me"][href="https://pari.cafe/@circuits"] {
     color: #171717; }
   body:not(.theme-dark) #back-to-top,
   .theme-light #back-to-top {
@@ -1045,8 +1045,8 @@ body:not(.theme-dark),
   /* 其他颜色 */
   --waline-info-bgcolor: #acc6e0;
   --waline-info-color: #9b9c9c; }
-  .theme-dark a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
-    color: #e3e3e3; }
+  .theme-dark a[rel="me"][href="https://pari.cafe/@circuits"] {
+    color: #cacaca; }
   .theme-dark #share-to-fediverse {
     color: #c7c7c7; }
   .theme-dark #back-to-top {
@@ -1165,8 +1165,8 @@ body:not(.theme-dark),
     /* 其他颜色 */
     --waline-info-bgcolor: #acc6e0;
     --waline-info-color: #9b9c9c; }
-    body:not(.theme-light) a[rel="me"][href="https://me.ns.ci/@ExistingPixles"] {
-      color: #e3e3e3; }
+    body:not(.theme-light) a[rel="me"][href="https://pari.cafe/@circuits"] {
+      color: #cacaca; }
     body:not(.theme-light) #share-to-fediverse {
       color: #c7c7c7; }
     body:not(.theme-light) #back-to-top {

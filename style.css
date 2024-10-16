@@ -2218,9 +2218,9 @@ div.content img {
   height: auto; }
 
 body {
-  font-family: "Source Han Serif SC", "serif" !important;
+  font-family: "Source Han Serif CN for Display", "serif" !important;
   font-size: auto;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0; }

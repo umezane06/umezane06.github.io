@@ -333,7 +333,14 @@
 &lt;h1 id=&#34;1016更换自定义字体&#34;&gt;(10.16)更换自定义字体&lt;/h1&gt;
 &lt;p&gt;本来是想用本地字体的结果除了电脑端其他移动端全部都没生效，最后还是换成了&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/&#34; target=&#34;_blank&#34; &gt;中文网字计划&lt;/a&gt;里提供的免费字体cdn&amp;hellip;（中间还好几次引入引不对，现在终于弄好了）&lt;/p&gt;
 &lt;p&gt;本来其实也只是想换个思源宋体而已但是这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&amp;hellip;）结果换成了观感差不多的&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B&#34; target=&#34;_blank&#34; &gt;思源屏显臻宋&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;10.26: 因为上面这字体粗体实在太粗了又去翻了翻看见了又有&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/&#34; target=&#34;_blank&#34; &gt;ZeoSeven Fonts&lt;/a&gt;这样的站在提供免费字体CDN可供嵌入，换成了&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/font/cn/s/310/&#34; target=&#34;_blank&#34; &gt;纳米丰宋&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;10.26: 
+&lt;img
+    src=&#34;./images/emoji/meow_astonished.png&#34;
+    title=&#34;meow_astonished&#34;
+    alt=&#34;meow_astonished&#34;
+     width=&#34;40&#34;
+     height=&#34;40&#34;
+/&gt;因为上面这字体粗体实在太粗了又去翻了翻看见了又有&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/&#34; target=&#34;_blank&#34; &gt;ZeoSeven Fonts&lt;/a&gt;这样的站在提供免费字体CDN可供嵌入，换成了&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/font/cn/s/310/&#34; target=&#34;_blank&#34; &gt;纳米丰宋&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;于是也是直接把它给的引入链接扔head.html（@import这个形式的要套个&amp;lt;style&amp;gt;，因为好像是CSS的引入法），然后在css文件设置一下就行了。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;NanoFullSong&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;serif&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;

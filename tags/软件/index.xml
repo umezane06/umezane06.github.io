@@ -108,7 +108,7 @@
 &lt;p&gt;特点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;可以将文章备份成本地页面离线查看，支持google Drive &amp;amp; Dropbox云同步（需购买高级版）&lt;/p&gt;
+&lt;p&gt;可以将文章备份成本地页面离线查看，支持Google Drive &amp;amp; Dropbox云同步（需购买高级版）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;内里自带一些国家的新闻rss源（当然，并没有大陆的，不过有香港那边的）&lt;/p&gt;
@@ -223,7 +223,7 @@
 &lt;p&gt;&lt;s&gt;（重要的是它免费版没有收藏条数限制啊啊啊这不是直接就暴捶其余一众同类软件（又拉踩&lt;/s&gt;&lt;/p&gt;
 &lt;p&gt;(它与其他一些同类产品的对比在上面提到的文章中已经给出了很多，可以从那里参考)&lt;/p&gt;
 &lt;h1 id=&#34;使用体验&#34;&gt;使用体验&lt;/h1&gt;
-&lt;p&gt;基础体验和ui展示就直接引一些网上现有的文章了，如上或者此文章→&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;。只在这放一下pc端软件的基础界面图&lt;/p&gt;
+&lt;p&gt;基础体验和ui展示就直接引一些网上现有的文章了，如上或者此文章→&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;。只在这放一下pc端软件的基础界面图。&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
         &lt;a href=&#34;../../images/RaindropPC%e5%ae%a2%e6%88%b7%e7%ab%af%e5%9f%ba%e7%a1%80%e7%95%8c%e9%9d%a2.png&#34; data-fancybox=&#34;gallery&#34;&gt;
@@ -237,25 +237,39 @@
 &lt;/center&gt;
 
 
+&lt;p&gt;2024.10.26: 补充一下如果用的是&lt;a href=&#34;https://vivaldi.com/&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Vivaldi&lt;/strong&gt;&lt;/a&gt;浏览器的话，安装了浏览器插件后右边侧边栏的网页快捷工具面板好像会自动添加一个插件自带的书签页快捷入口，比起网页端软件端来说应该只是没有了网页预览（阅读器模式）的功能，纯看书签的话只是这样就挺方便了，倾情推荐.jpg&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;https://i.ibb.co/ZNCDPSp/Snipaste-2024-10-26-15-48-26.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://i.ibb.co/ZNCDPSp/Snipaste-2024-10-26-15-48-26.png&#34; alt=&#34;Raindrop在Vivaldi浏览器侧边工具栏里的样子&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;Raindrop在Vivaldi浏览器侧边工具栏里的样子&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
 &lt;h2 id=&#34;个人喜欢的一些地方&#34;&gt;个人喜欢的一些地方&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;全平台适配（Windows,macOS,Linux,Iphone &amp;amp; Ipad,Android)&lt;/p&gt;
+&lt;p&gt;全平台适配（Windows,macOS,Linux,Iphone &amp;amp; Ipad,Android）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;免费版没有书签收藏条数限制！！（看之前的文章说创建书签子文件夹免费版好像有限制，现在实测发现也没有了可以自由叠中叠，挺好）&lt;/p&gt;
+&lt;p&gt;免费版没有书签收藏条数限制！！（看之前的文章说创建书签子文件夹免费版好像有限制，现在实测发现也没有了可以自由叠中叠，挺好）可以加很多标签来详细分类，应用还自带一些筛选的条件（如是否有添加备注或高亮、内容主体是文章的或者里面含有媒体文件的等）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;有网页内容预览，可加标签&lt;/p&gt;
+&lt;p&gt;有网页内容预览纯文字转换&lt;s&gt;（省流模式）&lt;/s&gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;可以自由在网页内保存高亮标记（需装pc端或其他端可支持安装的浏览器插件，如果没有办法安装也可以在软件内打开网页来实现标记功能）（需要付费和登录限制才能查看的文章还是不行的，同时也没法抓取网页预览。不过在软件内的浏览器登录后好像也可以划线），在付费版中可给高亮添加备注笔记。&lt;/p&gt;
+&lt;p&gt;可以自由在网页内保存高亮标记（需装pc端或其他端可支持安装的浏览器插件，如果没有办法安装也可以在软件内打开网页来实现标记功能）（需要付费和登录限制才能查看的文章还是不行的，同时也没法抓取网页预览。不过在软件内的浏览器登录后好像也可以划线&amp;hellip;），在付费版中可给高亮添加备注笔记。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;拥有收藏网页全文检索功能（为付费套餐功能，付费版每月22元一年205元，按需求选择订不订吧）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;在付费版中每个月可以上传10g的文件（是每个月都会给你这么多额度而不是总共，不付费的话每个月只能100mb。可支持上传视频，但为啥没有音频？）（*但是查看方面需要梯）&lt;/p&gt;
+&lt;p&gt;在付费版中每个月可以上传10g的文件（是每个月都会给你这么多额度而不是总共，不付费的话每个月只能100mb。可支持上传视频，但为啥没有音频？）（*但是查看方面似乎不能直连需要梯&amp;hellip;）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;可以将书签页面公开分享和多人管理，并用rss的方式让别人订阅你的书签（甚至可以将其嵌入网页）。&lt;/p&gt;
@@ -267,7 +281,7 @@
 &lt;p&gt;是完全基于网络环境的线上书签服务，没有本地可看的备份功能，断了网就没法看了。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;大陆网络服务流畅度其实还算可以了但有时候还是会抽风。（如上面说的传文件的情况似乎没办法直连）&lt;/p&gt;
+&lt;p&gt;大陆网络服务流畅度其实还算可以了但有时候还是会抽风。（如上面说的传文件的情况似乎因为各种原因还是没办法直连）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;本地化上有些许bug，并且官方自己也觉得其他语言本地化质量太拉了正准备把除了英语版的其他语言都移除掉。。拉胯例子如下，除了翻译错误外，同一个功能下每一个端每一版同语言的翻译甚至都不一样。。。（ios上只有英文版）&lt;/p&gt;
@@ -314,7 +328,7 @@
 &lt;p&gt;&lt;a href=&#34;https://sspai.com/post/67399#!&#34; target=&#34;_blank&#34; &gt;Obsidian是什么以及它能用来做什么 - 少数派&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/547912720&#34; target=&#34;_blank&#34; &gt;花一星期折腾后，我劝你好好考虑下书签同步这个问题 - 知乎（目录 Raindrop部分）&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/0pC4bsuUJY9NXDj-vUfuOA&#34; target=&#34;_blank&#34; &gt;花一星期折腾后，我劝你好好考虑下书签同步这个问题 - 知乎（Raindrop部分在将近结尾）&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://sspai.com/post/63209&#34; target=&#34;_blank&#34; &gt;全能、全平台书签管理工具：Raindrop.io - 少数派&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;

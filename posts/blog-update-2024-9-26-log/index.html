@@ -71,7 +71,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.0fdc5ec3cf61e9ae2013f5eddd5e60b8c3bf687272bece905dcde86aa81ca7cd.css" integrity="sha256-D9xew89h6a4gE/Xt3V5guMO/aHJyvs6QXc3oaqgcp80=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.b82a032520ed51f5aa5f552869d88dfc46147959e90d5da51be2e9e51286226e.css" integrity="sha256-uCoDJSDtUfWqX1UoadiN/EYUeVnpDV2lG&#43;Lp5RKGIm4=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -96,7 +96,11 @@
 <link rel="icon" type="image/png" href="../../path/to/favicon.png">
 <link rel="apple-touch-icon" href="../../path/to/apple-touch-icon.png">
 
-<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/sypxzs/dist/思源屏显臻宋/result.css' /> 
+<style>
+
+@import url('https://static.zeoseven.com/cn/310/main/result.css');
+
+  </style>
 
   <body>
     <script>
@@ -328,6 +332,9 @@ umezane</span>
       </div>
       <article class="post-entry content">
         <p>但是只能成为LLM重度依赖的形状</p>
+<ul>
+<li><a href="https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/" target="_blank" >装修记录① 2024.4.30</a></li>
+</ul>
 <p>无关杂谈：其实从一年前开始渐渐新养成了每天私下写日记记录情绪的习惯，结果就开始觉得再往博客这里特意抛月记季度总结等东西似乎会增加没啥必要且很累的总结归纳流程，于是懒了，以后可能就不怎么想写了。但是起码之前花了一个月给<a href="https://plumdebris.eu.org/posts/introduction-about-freeform--nrg-scene-freeform-part/" target="_blank" >Freeform Hardcore</a>这东西的整个音乐场景归纳了一通，比起乱丢日记碎片可能多写点类似的观察物含金量才更高些就是（？）同时还挖了个更大的坑至今没填。总之因为一些原因最近终于有点开始想填坑了，所以首先就得把这小破网站之前攒的一堆奇怪问题集中弄一下&hellip;</p>
 <h1 id="首先要意识到的事情是网页的日间与夜间模式元素存在于不同的css区域里">首先要意识到的事情是：网页的日间与夜间模式元素存在于不同的CSS区域里&hellip;</h1>
 <p>嗯&hellip;如题。很晚才发觉自己的主题有个专属的CSS文件是拿来控制主题部分元素日间模式和夜间模式的不同颜色的，所以很多之前纠结的比如Waline评论系统的夜间模式颜色不生效这个问题就是因为修改的部分没丢到控制相应地方CSS颜色变量的那个框里。后续也就这么顺便微调了很多网页元素的颜色&hellip;&hellip;</p>
@@ -346,7 +353,7 @@ umezane</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span></code></pre></div><h1 id="在使用fancybox插件的情况下将图片居中显示并添加alt文本">在使用Fancybox插件的情况下将图片居中显示并添加Alt文本</h1>
 <p>之前给站里加了Fancybox图片查看器方便看图，但是仍然有很多让人难受的问题比如：</p>
-<p>①大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&hellip;&hellip;并且这样做了似乎会让图片没办法跟其他图并入同一个可翻阅的列表里会变成只能单独点开放大的样子。也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）</p>
+<p>①：大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&hellip;&hellip;并且这样做了似乎会让图片没办法跟其他图并入同一个可翻阅的列表里会变成只能单独点开放大的样子。也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）</p>
 <p>②：直接插入的图片如果太大它就会占掉全屏。</p>
 <p>所以纠结了好久到底是markdown插入还是html插入才能搞定这些问题并和ChatGPT斗智斗勇了好几回后，GPT给我丢来的短代码终于完美解决了这些&hellip;&hellip;</p>
 <p>在 [\layouts\shortcodes] 目录中创建名为 [fancybox_figure.html] 的 Shortcode 文件，并添加以下内容：</p>
@@ -490,19 +497,19 @@ umezane</span>
 <p>修着修着零点了（&hellip;</p>
 <p>缓慢发觉原来代码块Markdown标记法这三个点```后面加的文字是要让你自行写上语法名字以做到确定语法（之前从其他哪些诡异地方复制来了含有其他语法的标识一直没改也没发现不对劲），不写自然就没有高亮，写错了的话那有奇怪的地方会被高亮也是正常的（嗯</p>
 <p>于是又折腾一通终于能够看到代码高亮正常的样子了（泪）。但是因为默认主题设置原因颜色看起来还是有点难顶，想换一下。</p>
-<p>参考这位朋友的文章<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后看见了这样的网页<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（这是yaml格式）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&hellip;）</p>
+<p>参考这位朋友的文章<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后看见了这样的网页<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（yaml格式是加冒号，隔壁那个toml应该是用等号&hellip;）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&hellip;）</p>
 <p>之后就是也参照博主的流程，使用这个命令</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Hugo gen chromastyles --style=[相应的style名字] <span class="p">&gt;</span> [相应的style名字]. Css
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Hugo gen chromastyles --style=改成相应的style名字 <span class="p">&gt;</span> 改成相应的style名字. Css
 </span></span></code></pre></div><p>生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 [assets\css\highlight.scss] 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。</p>
 <h1 id="1016更换自定义字体">(10.16)更换自定义字体</h1>
 <p>本来是想用本地字体的结果除了电脑端其他移动端全部都没生效，最后还是换成了<a href="https://chinese-font.netlify.app/zh-cn/" target="_blank" >中文网字计划</a>里提供的免费字体cdn&hellip;（中间还好几次引入引不对，现在终于弄好了）</p>
-<p>本来其实也只是想换个思源宋体而已但是和这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&hellip;）结果换成了观感差不多的<a href="https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B" target="_blank" >思源屏显臻宋</a>（就是粗体好像还是有点粗&hellip;）。</p>
-<p>直接把它给的html形式的引入链接扔head.html，然后在css文件设置一下就行了（换了字体后字距有点挤也调调）。</p>
-<p>就是为什么即便自己能加载出来了各端字体的字重渲染还是不太一样&hellip;</p>
+<p>本来其实也只是想换个思源宋体而已但是这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&hellip;）结果换成了观感差不多的<a href="https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B" target="_blank" >思源屏显臻宋</a>。</p>
+<p>10.26: 因为上面这字体粗体实在太粗了又去翻了翻看见了又有<a href="https://fonts.zeoseven.com/zh-CN/" target="_blank" >ZeoSeven Fonts</a>这样的站在提供免费字体CDN可供嵌入，换成了<a href="https://fonts.zeoseven.com/zh-CN/font/cn/s/310/" target="_blank" >纳米丰宋</a>。</p>
+<p>于是也是直接把它给的引入链接扔head.html（@import这个形式的要套个&lt;style&gt;，因为好像是CSS的引入法），然后在css文件设置一下就行了。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">body</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;Source Han Serif CN for Display&#34;</span><span class="p">,</span> <span class="s2">&#34;serif&#34;</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;NanoFullSong&#34;</span><span class="p">,</span> <span class="s2">&#34;serif&#34;</span> <span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">letter-spacing</span><span class="p">:</span> <span class="mf">0.8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">letter-spacing</span><span class="p">:</span> <span class="mf">0.6</span><span class="kt">px</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">400</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>

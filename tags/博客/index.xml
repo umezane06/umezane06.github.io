@@ -14,6 +14,9 @@
       
       <guid>https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/</guid>
       <description>&lt;p&gt;但是只能成为LLM重度依赖的形状&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/&#34; target=&#34;_blank&#34; &gt;装修记录① 2024.4.30&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;无关杂谈：其实从一年前开始渐渐新养成了每天私下写日记记录情绪的习惯，结果就开始觉得再往博客这里特意抛月记季度总结等东西似乎会增加没啥必要且很累的总结归纳流程，于是懒了，以后可能就不怎么想写了。但是起码之前花了一个月给&lt;a href=&#34;https://plumdebris.eu.org/posts/introduction-about-freeform--nrg-scene-freeform-part/&#34; target=&#34;_blank&#34; &gt;Freeform Hardcore&lt;/a&gt;这东西的整个音乐场景归纳了一通，比起乱丢日记碎片可能多写点类似的观察物含金量才更高些就是（？）同时还挖了个更大的坑至今没填。总之因为一些原因最近终于有点开始想填坑了，所以首先就得把这小破网站之前攒的一堆奇怪问题集中弄一下&amp;hellip;&lt;/p&gt;
 &lt;h1 id=&#34;首先要意识到的事情是网页的日间与夜间模式元素存在于不同的css区域里&#34;&gt;首先要意识到的事情是：网页的日间与夜间模式元素存在于不同的CSS区域里&amp;hellip;&lt;/h1&gt;
 &lt;p&gt;嗯&amp;hellip;如题。很晚才发觉自己的主题有个专属的CSS文件是拿来控制主题部分元素日间模式和夜间模式的不同颜色的，所以很多之前纠结的比如Waline评论系统的夜间模式颜色不生效这个问题就是因为修改的部分没丢到控制相应地方CSS颜色变量的那个框里。后续也就这么顺便微调了很多网页元素的颜色&amp;hellip;&amp;hellip;&lt;/p&gt;
@@ -32,7 +35,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;在使用fancybox插件的情况下将图片居中显示并添加alt文本&#34;&gt;在使用Fancybox插件的情况下将图片居中显示并添加Alt文本&lt;/h1&gt;
 &lt;p&gt;之前给站里加了Fancybox图片查看器方便看图，但是仍然有很多让人难受的问题比如：&lt;/p&gt;
-&lt;p&gt;①大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&amp;hellip;&amp;hellip;并且这样做了似乎会让图片没办法跟其他图并入同一个可翻阅的列表里会变成只能单独点开放大的样子。也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）&lt;/p&gt;
+&lt;p&gt;①：大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&amp;hellip;&amp;hellip;并且这样做了似乎会让图片没办法跟其他图并入同一个可翻阅的列表里会变成只能单独点开放大的样子。也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）&lt;/p&gt;
 &lt;p&gt;②：直接插入的图片如果太大它就会占掉全屏。&lt;/p&gt;
 &lt;p&gt;所以纠结了好久到底是markdown插入还是html插入才能搞定这些问题并和ChatGPT斗智斗勇了好几回后，GPT给我丢来的短代码终于完美解决了这些&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;在 [\layouts\shortcodes] 目录中创建名为 [fancybox_figure.html] 的 Shortcode 文件，并添加以下内容：&lt;/p&gt;
@@ -176,19 +179,19 @@
 &lt;p&gt;修着修着零点了（&amp;hellip;&lt;/p&gt;
 &lt;p&gt;缓慢发觉原来代码块Markdown标记法这三个点```后面加的文字是要让你自行写上语法名字以做到确定语法（之前从其他哪些诡异地方复制来了含有其他语法的标识一直没改也没发现不对劲），不写自然就没有高亮，写错了的话那有奇怪的地方会被高亮也是正常的（嗯&lt;/p&gt;
 &lt;p&gt;于是又折腾一通终于能够看到代码高亮正常的样子了（泪）。但是因为默认主题设置原因颜色看起来还是有点难顶，想换一下。&lt;/p&gt;
-&lt;p&gt;参考这位朋友的文章&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;后看见了这样的网页&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（这是yaml格式）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;参考这位朋友的文章&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;后看见了这样的网页&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（yaml格式是加冒号，隔壁那个toml应该是用等号&amp;hellip;）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&amp;hellip;）&lt;/p&gt;
 &lt;p&gt;之后就是也参照博主的流程，使用这个命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hugo gen chromastyles --style=[相应的style名字] &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; [相应的style名字]. Css
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hugo gen chromastyles --style=改成相应的style名字 &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 改成相应的style名字. Css
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 [assets\css\highlight.scss] 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。&lt;/p&gt;
 &lt;h1 id=&#34;1016更换自定义字体&#34;&gt;(10.16)更换自定义字体&lt;/h1&gt;
 &lt;p&gt;本来是想用本地字体的结果除了电脑端其他移动端全部都没生效，最后还是换成了&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/&#34; target=&#34;_blank&#34; &gt;中文网字计划&lt;/a&gt;里提供的免费字体cdn&amp;hellip;（中间还好几次引入引不对，现在终于弄好了）&lt;/p&gt;
-&lt;p&gt;本来其实也只是想换个思源宋体而已但是和这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&amp;hellip;）结果换成了观感差不多的&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B&#34; target=&#34;_blank&#34; &gt;思源屏显臻宋&lt;/a&gt;（就是粗体好像还是有点粗&amp;hellip;）。&lt;/p&gt;
-&lt;p&gt;直接把它给的html形式的引入链接扔head.html，然后在css文件设置一下就行了（换了字体后字距有点挤也调调）。&lt;/p&gt;
-&lt;p&gt;就是为什么即便自己能加载出来了各端字体的字重渲染还是不太一样&amp;hellip;&lt;/p&gt;
+&lt;p&gt;本来其实也只是想换个思源宋体而已但是这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&amp;hellip;）结果换成了观感差不多的&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B&#34; target=&#34;_blank&#34; &gt;思源屏显臻宋&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;10.26: 因为上面这字体粗体实在太粗了又去翻了翻看见了又有&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/&#34; target=&#34;_blank&#34; &gt;ZeoSeven Fonts&lt;/a&gt;这样的站在提供免费字体CDN可供嵌入，换成了&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/font/cn/s/310/&#34; target=&#34;_blank&#34; &gt;纳米丰宋&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;于是也是直接把它给的引入链接扔head.html（@import这个形式的要套个&amp;lt;style&amp;gt;，因为好像是CSS的引入法），然后在css文件设置一下就行了。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Source Han Serif CN for Display&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;serif&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;NanoFullSong&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;serif&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;auto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;letter-spacing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.8&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;letter-spacing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.6&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;400&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;line-height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -214,6 +217,9 @@
       
       <guid>https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/</guid>
       <description>&lt;p&gt;这东西怎么全是偷的.jpg&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-9-26-/&#34; target=&#34;_blank&#34; &gt;装修记录② 2024.9.26&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id=&#34;给博客添加回到顶部按钮&#34;&gt;给博客添加回到顶部按钮&lt;/h1&gt;
 &lt;p&gt;（参考&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）按照自己博客主题的结构在 [/layouts/partials/footer.html] 下添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--返回顶部按钮 --&amp;gt;&lt;/span&gt;

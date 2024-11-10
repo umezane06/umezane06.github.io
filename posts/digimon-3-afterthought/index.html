@@ -73,7 +73,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.0190f99e1faa5e09f39d8baad6ba3815ed75c2b0a9219a29fe3e8442880c84fa.css" integrity="sha256-AZD5nh&#43;qXgnznYuq1ro4Fe11wrCpIZop/j6EQogMhPo=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.acd274803af8ccddbe40ef24a38716b09c354789a763dabf569dc04d7b224610.css" integrity="sha256-rNJ0gDr4zN2&#43;QO8ko4cWsJw1R4mnY9q/Vp3ATXsiRhA=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -447,6 +447,43 @@ headers.forEach(header => {
 
   </script>
   
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toctoggle = document.getElementById('toc-toggle');
+  let inactivityTimer;
+
+  
+  function shrinkButton() {
+    toctoggle.classList.add('shrinked');
+  }
+
+  
+  function expandButton() {
+    toctoggle.classList.remove('shrinked');
+    startInactivityTimer(); 
+  }
+
+  
+  function startInactivityTimer() {
+    clearTimeout(inactivityTimer); 
+    inactivityTimer = setTimeout(shrinkButton, 5000); 
+  }
+
+  
+  toctoggle.addEventListener('click', function () {
+    if (toctoggle.classList.contains('shrinked')) {
+      expandButton(); 
+    } else {
+      shrinkButton(); 
+    }
+  });
+
+  
+  startInactivityTimer();
+});
+
+  
+</script>
 
       </article>
     </div>

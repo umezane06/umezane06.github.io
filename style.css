@@ -1977,6 +1977,15 @@ li.hashed-tag {
 @media screen and (max-width: 952px) {
   .nav.container {
     flex-direction: row; }
+  #toc-toggle {
+    right: -30px;
+    /* 仅露出部分按钮 */
+    bottom: 20px;
+    transition: transform 0.3s ease, right 0.3s ease;
+    /* 动画过渡效果 */ }
+  #toc-toggle.shrinked {
+    transform: translateX(80%);
+    /* 将按钮偏移到屏幕外，仅显示一小部分 */ }
   #header {
     height: auto;
     max-height: max-content; }

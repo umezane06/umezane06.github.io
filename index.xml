@@ -349,7 +349,7 @@
      width=&#34;40&#34;
      height=&#34;40&#34;
 /&gt;因为上面这字体粗体实在太粗了又去翻了翻看见了又有&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/&#34; target=&#34;_blank&#34; &gt;ZeoSeven Fonts&lt;/a&gt;这样的站在提供免费字体CDN可供嵌入，换成了&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/font/cn/s/310/&#34; target=&#34;_blank&#34; &gt;纳米丰宋&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;12.3:&amp;hellip;&amp;hellip;呃于是原因在&lt;a href=&#34;https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/&#34; target=&#34;_blank&#34; &gt;《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》&lt;/a&gt;里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上有点让人看得想死（。。）于是换成&lt;a href=&#34;https://fonts.zeoseven.com/items/207/&#34; target=&#34;_blank&#34; &gt;更纱黑体&lt;/a&gt;了
+&lt;p&gt;12.3:&amp;hellip;&amp;hellip;呃于是原因在&lt;a href=&#34;https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/&#34; target=&#34;_blank&#34; &gt;《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》&lt;/a&gt;里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上确实还是有点让人看得想死（。。）于是换成了&lt;a href=&#34;https://fonts.zeoseven.com/items/207/&#34; target=&#34;_blank&#34; &gt;更纱黑体 Mono CL&lt;/a&gt;了
 &lt;img
     src=&#34;./images/emoji/0171.png&#34;
     title=&#34;aru_0171&#34;
@@ -359,7 +359,7 @@
 /&gt;&lt;/p&gt;
 &lt;p&gt;于是也是直接把它给的引入链接扔head.html（@import这个形式的要套个&amp;lt;style&amp;gt;，因为好像是CSS的引入法），然后在css文件设置一下就行了。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Sarasa Mono TC&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;serif&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;更纱黑体 Mono CL&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;serif&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;auto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;letter-spacing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.6&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;400&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;

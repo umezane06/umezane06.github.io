@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://plumdebris.eu.org/posts/</loc>
-    <lastmod>2024-10-24T14:41:00+08:00</lastmod>
+    <loc>https://plumdebris.eu.org/music/</loc>
+    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/</loc>
+    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://plumdebris.eu.org/posts/</loc>
     <lastmod>2024-10-24T14:41:00+08:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/</loc>
@@ -58,9 +61,6 @@
   </url><url>
     <loc>https://plumdebris.eu.org/tags/%E7%BB%98%E5%9B%BE/</loc>
     <lastmod>2024-09-25T17:51:03+08:00</lastmod>
-  </url><url>
-    <loc>https://plumdebris.eu.org/music/</loc>
-    <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://plumdebris.eu.org/posts/introduction-about-freeform--nrg-scene-freeform-part/</loc>
     <lastmod>2024-06-18T21:16:00+08:00</lastmod>

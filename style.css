@@ -2203,7 +2203,9 @@ div.content img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1em auto; }
+  margin: 1em auto;
+  text-align: center;
+  /* 图片容器居中 */ }
 
 .figure a {
   display: inline-block;
@@ -2304,7 +2306,15 @@ body {
   margin: 0; }
 
 #toc ul li {
-  margin: 10px; }
+  margin: 0px; }
+
+.h2-level {
+  margin-left: 10px;
+  /* H2 标题缩进量 */ }
+
+.h3-level {
+  margin-left: 20px;
+  /* H3 标题缩进量 */ }
 
 #toc ul li a {
   text-decoration: none;

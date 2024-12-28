@@ -73,7 +73,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.60b2695c964501f83531b816fbfa779a63fd4cb2ef9a8ae56de86301203277bf.css" integrity="sha256-YLJpXJZFAfg1MbgW&#43;/p3mmP9TLLvmorlbehjASAyd78=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.905cb9cdc84550bb0645c00b6b401780fb1d68de4460b63ecb39bc1590b84f49.css" integrity="sha256-kFy5zchFULsGRcALa0AXgPsdaN5EYLY&#43;yzm8FZC4T0k=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -499,56 +499,45 @@ umezane</span>
       }
         let h1Count = 0; 
       let h2Count = 0; 
+      let h3Count = 0; 
       headers.forEach(header => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         
         header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
 
+
+
+if (header.tagName.toLowerCase() === 'h1') {
+  li.classList.add('h1-level');
+} else if (header.tagName.toLowerCase() === 'h2') {
+  li.classList.add('h2-level');
+} else if (header.tagName.toLowerCase() === 'h3') {
+  li.classList.add('h3-level');
+}
+
+
 if (header.tagName.toLowerCase() === 'h1') {
       h1Count++; 
       h2Count = 0; 
+      h3Count = 0; 
       a.textContent = h1Count + '. ' + header.textContent; 
+      li.classList.add('h1-level');
     } else if (header.tagName.toLowerCase() === 'h2') {
       h2Count++; 
+      h3Count = 0; 
       a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+      li.classList.add('h2-level');
     } else if (header.tagName.toLowerCase() === 'h3') {
-      a.textContent = h1Count + '.' + h2Count + '.' + (parseInt(header.dataset.index) + 1) + ' ' + header.textContent; 
+      h3Count++; 
+      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
+      li.classList.add('h3-level');
     }
 
     a.href = '#' + header.id;
     li.appendChild(a);
     toc.appendChild(li);
   });
-});
-
-let h3Count = 0; 
-
-headers.forEach(header => {
-  const li = document.createElement('li');
-  const a = document.createElement('a');
-
-  
-  header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-
-  if (header.tagName.toLowerCase() === 'h1') {
-    h1Count++;
-    h2Count = 0; 
-    h3Count = 0; 
-    a.textContent = h1Count + '. ' + header.textContent; 
-  } else if (header.tagName.toLowerCase() === 'h2') {
-    h2Count++;
-    h3Count = 0; 
-    a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
-  } else if (header.tagName.toLowerCase() === 'h3') {
-    h3Count++; 
-    header.dataset.index = h3Count; 
-    a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
-  }
-
-  a.href = '#' + header.id;
-  li.appendChild(a);
-  toc.appendChild(li);
 });
 
   </script>
@@ -684,7 +673,7 @@ Share with</span>
         title="share to fediverse"
         rel="noopener noreferrer"
         aria-label="share 【杂物推荐】全平台书签管理&#43;稍后再看工具 - Raindrop.io on fediverse"
-        href="https://beta.s2f.kytta.dev/?text=%E3%80%90%E6%9D%82%E7%89%A9%E6%8E%A8%E8%8D%90%E3%80%91%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B9%A6%E7%AD%BE%E7%AE%A1%E7%90%86%2B%E7%A8%8D%E5%90%8E%E5%86%8D%E7%9C%8B%E5%B7%A5%E5%85%B7&#43;-&#43;Raindrop.io&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2Fabout-raindrop-io%2F&amp;title=%E3%80%90%E6%9D%82%E7%89%A9%E6%8E%A8%E8%8D%90%E3%80%91%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B9%A6%E7%AD%BE%E7%AE%A1%E7%90%86%2B%E7%A8%8D%E5%90%8E%E5%86%8D%E7%9C%8B%E5%B7%A5%E5%85%B7&#43;-&#43;Raindrop.io">
+        href="https://beta.s2f.kytta.dev/share.php?text=%E3%80%90%E6%9D%82%E7%89%A9%E6%8E%A8%E8%8D%90%E3%80%91%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B9%A6%E7%AD%BE%E7%AE%A1%E7%90%86%2B%E7%A8%8D%E5%90%8E%E5%86%8D%E7%9C%8B%E5%B7%A5%E5%85%B7&#43;-&#43;Raindrop.io&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2Fabout-raindrop-io%2F&amp;title=%E3%80%90%E6%9D%82%E7%89%A9%E6%8E%A8%E8%8D%90%E3%80%91%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B9%A6%E7%AD%BE%E7%AE%A1%E7%90%86%2B%E7%A8%8D%E5%90%8E%E5%86%8D%E7%9C%8B%E5%B7%A5%E5%85%B7&#43;-&#43;Raindrop.io">
         
 
 

@@ -71,7 +71,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.60b2695c964501f83531b816fbfa779a63fd4cb2ef9a8ae56de86301203277bf.css" integrity="sha256-YLJpXJZFAfg1MbgW&#43;/p3mmP9TLLvmorlbehjASAyd78=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.905cb9cdc84550bb0645c00b6b401780fb1d68de4460b63ecb39bc1590b84f49.css" integrity="sha256-kFy5zchFULsGRcALa0AXgPsdaN5EYLY&#43;yzm8FZC4T0k=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -523,56 +523,45 @@ umezane</span>
       }
         let h1Count = 0; 
       let h2Count = 0; 
+      let h3Count = 0; 
       headers.forEach(header => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         
         header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
 
+
+
+if (header.tagName.toLowerCase() === 'h1') {
+  li.classList.add('h1-level');
+} else if (header.tagName.toLowerCase() === 'h2') {
+  li.classList.add('h2-level');
+} else if (header.tagName.toLowerCase() === 'h3') {
+  li.classList.add('h3-level');
+}
+
+
 if (header.tagName.toLowerCase() === 'h1') {
       h1Count++; 
       h2Count = 0; 
+      h3Count = 0; 
       a.textContent = h1Count + '. ' + header.textContent; 
+      li.classList.add('h1-level');
     } else if (header.tagName.toLowerCase() === 'h2') {
       h2Count++; 
+      h3Count = 0; 
       a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+      li.classList.add('h2-level');
     } else if (header.tagName.toLowerCase() === 'h3') {
-      a.textContent = h1Count + '.' + h2Count + '.' + (parseInt(header.dataset.index) + 1) + ' ' + header.textContent; 
+      h3Count++; 
+      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
+      li.classList.add('h3-level');
     }
 
     a.href = '#' + header.id;
     li.appendChild(a);
     toc.appendChild(li);
   });
-});
-
-let h3Count = 0; 
-
-headers.forEach(header => {
-  const li = document.createElement('li');
-  const a = document.createElement('a');
-
-  
-  header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-
-  if (header.tagName.toLowerCase() === 'h1') {
-    h1Count++;
-    h2Count = 0; 
-    h3Count = 0; 
-    a.textContent = h1Count + '. ' + header.textContent; 
-  } else if (header.tagName.toLowerCase() === 'h2') {
-    h2Count++;
-    h3Count = 0; 
-    a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
-  } else if (header.tagName.toLowerCase() === 'h3') {
-    h3Count++; 
-    header.dataset.index = h3Count; 
-    a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
-  }
-
-  a.href = '#' + header.id;
-  li.appendChild(a);
-  toc.appendChild(li);
 });
 
   </script>
@@ -706,7 +695,7 @@ Share with</span>
         title="share to fediverse"
         rel="noopener noreferrer"
         aria-label="share 【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 ① on fediverse"
-        href="https://beta.s2f.kytta.dev/?text=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95&#43;%E2%91%A0&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2Fblog-update-log-2024-4-30-%2F&amp;title=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95&#43;%E2%91%A0">
+        href="https://beta.s2f.kytta.dev/share.php?text=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95&#43;%E2%91%A0&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2Fblog-update-log-2024-4-30-%2F&amp;title=%E3%80%90%E6%8A%98%E8%85%BE%E3%80%91%E8%99%BD%E7%84%B6%E4%B8%8D%E6%80%8E%E4%B9%88%E5%86%99%E4%BD%86%E8%BF%98%E6%98%AF%E7%AA%81%E7%84%B6%E6%83%B3%E6%B0%B4%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95&#43;%E2%91%A0">
         
 
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>博客 on 绝对概括的切面</title>
-    <link>https://plumdebris.eu.org/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <link>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in 博客 on 绝对概括的切面</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Sep 2024 23:31:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 23:31:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>【折腾】因为又想写东西了终于又爬回来开始修整博客 ②</title>
-      <link>https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/</link>
+      <title>【折腾博客】因为又想写东西了终于又爬回来开始修整博客 ②</title>
+      <link>http://localhost:1313/posts/blog-update-2024-9-26-log/</link>
       <pubDate>Thu, 26 Sep 2024 23:31:00 +0800</pubDate>
       
-      <guid>https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/</guid>
+      <guid>http://localhost:1313/posts/blog-update-2024-9-26-log/</guid>
       <description>&lt;p&gt;但是只能成为LLM重度依赖的形状&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/&#34; target=&#34;_blank&#34; &gt;装修记录① 2024.4.30&lt;/a&gt;&lt;/li&gt;
@@ -239,11 +239,11 @@
     </item>
     
     <item>
-      <title>【折腾】虽然不怎么写但还是突然想水一篇博客装修记录 ①</title>
-      <link>https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/</link>
+      <title>【折腾博客】虽然不怎么写但还是突然想水一篇博客装修记录 ①</title>
+      <link>http://localhost:1313/posts/blog-update-log-2024-4-30-/</link>
       <pubDate>Tue, 30 Apr 2024 18:08:00 +0800</pubDate>
       
-      <guid>https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/</guid>
+      <guid>http://localhost:1313/posts/blog-update-log-2024-4-30-/</guid>
       <description>&lt;p&gt;这东西怎么全是偷的.jpg&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-9-26-/&#34; target=&#34;_blank&#34; &gt;装修记录② 2024.9.26&lt;/a&gt;&lt;/li&gt;
@@ -395,11 +395,11 @@
     </item>
     
     <item>
-      <title>【折腾】建blog途中参考的各种资料</title>
-      <link>https://plumdebris.eu.org/posts/references-about-hugo-blog/</link>
+      <title>【折腾博客】建blog途中参考的各种资料</title>
+      <link>http://localhost:1313/posts/references-about-hugo-blog/</link>
       <pubDate>Tue, 16 May 2023 20:03:00 +0800</pubDate>
       
-      <guid>https://plumdebris.eu.org/posts/references-about-hugo-blog/</guid>
+      <guid>http://localhost:1313/posts/references-about-hugo-blog/</guid>
       <description>&lt;p&gt;救救代码白痴.jpg&lt;/p&gt;
 &lt;p&gt;为了维持这个缝缝补补又一年产物四处搜刮来的补丁。&lt;/p&gt;
 &lt;p&gt;试着把raindrop.io的收藏夹直接嵌入了进来，评论系统相关的子分类不知道为什么没跟主文件夹分开需要点more来看不然会很乱。。。&lt;/p&gt;

@@ -951,6 +951,10 @@ body:not(.theme-dark),
   body:not(.theme-dark) #toc-toggle,
   .theme-light #toc-toggle {
     box-shadow: 0 2px 10px #0000001a; }
+  body:not(.theme-dark) blockquote,
+  .theme-light blockquote {
+    background-color: #f6f6f6;
+    border-left: 0.25rem solid #d3d3d3; }
   body:not(.theme-dark) ::-webkit-scrollbar-track,
   .theme-light ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -991,7 +995,7 @@ body:not(.theme-dark),
   --theme-box-shadow-light: rgba(255, 255, 255, 0.09);
   --theme-box-shadow-medium: rgba(255, 255, 255, 0.108);
   --theme-box-shadow-heavy: rgba(255, 255, 255, 0.132);
-  --theme-body-background: #171717;
+  --theme-body-background: #222222;
   --theme-body-background-medium: #2e2e2e;
   --theme-body-background-dark: #242424;
   --theme-border: #454545;
@@ -1007,7 +1011,7 @@ body:not(.theme-dark),
   --theme-primary-dark: #a3d7ff;
   --theme-primary-hover: #94a1de;
   --theme-primary-active: #0065b3;
-  --theme-primary-box-shadow: rgba(0, 101, 179, 0.3);
+  --theme-primary-box-shadow: #0065b34d;
   --theme-primary-invert: black;
   --theme-secondary-base: #757575;
   --theme-secondary-background: #2e2e2e;
@@ -1047,14 +1051,19 @@ body:not(.theme-dark),
   --waline-info-color: #9b9c9c; }
   .theme-dark a[rel="me"][href="https://pari.cafe/@circuits"] {
     color: #cacaca; }
+  .theme-dark blockquote {
+    background-color: #292929;
+    border-left: 0.25rem solid #5d5d5d; }
   .theme-dark #share-to-fediverse {
     color: #c7c7c7; }
   .theme-dark #back-to-top {
-    --background-color: rgba(245, 245, 245, 0.5); }
+    --background-color: rgba(225, 225, 225, 0.5); }
   .theme-dark #back-to-top:before {
     border-color: #000000; }
   .theme-dark #back-to-top:hover:before {
     border-color: #000000; }
+  .theme-dark #toc-content {
+    border: 1px solid #494949; }
   .theme-dark #toc-content {
     background-color: #252525; }
   .theme-dark #toc-toggle {
@@ -1062,7 +1071,7 @@ body:not(.theme-dark),
   .theme-dark #toc-toggle {
     background-color: #323232; }
   .theme-dark #toc-toggle {
-    color: #e3e3e3; }
+    color: #cacaca; }
   .theme-dark #toc-content {
     box-shadow: 0 2px 10px #494949; }
   .theme-dark #toc-toggle {
@@ -1070,9 +1079,33 @@ body:not(.theme-dark),
   .theme-dark #toc-content ul {
     border-top: 1px solid #555555;
     /* 在列表顶部加分隔线，延伸至整个宽度 */ }
+  .theme-dark .toc-header {
+    background-color: #252525; }
+    .theme-dark .toc-header:before {
+      background-color: #252525; }
   .theme-dark .highlight {
     --theme-blue: #569cd6;
     --theme-green: #57a64a; }
+  .theme-dark [data-theme="dark"] .notice.notice-warning {
+    background: rgba(112, 67, 67, 0.753);
+    border-left: 5px solid #bc5c5c; }
+    .theme-dark [data-theme="dark"] .notice.notice-warning .notice-title {
+      color: #bc5c5c; }
+  .theme-dark [data-theme="dark"] .notice.notice-info {
+    background: rgba(112, 89, 67, 0.15);
+    border-left: 5px solid #bc8c5c; }
+    .theme-dark [data-theme="dark"] .notice.notice-info .notice-title {
+      color: #bc8c5c; }
+  .theme-dark [data-theme="dark"] .notice.notice-note {
+    background: rgba(67, 97, 112, 0.15);
+    border-left: 5px solid #5c9cbc; }
+    .theme-dark [data-theme="dark"] .notice.notice-note .notice-title {
+      color: #5c9cbc; }
+  .theme-dark [data-theme="dark"] .notice.notice-tip {
+    background: rgba(67, 112, 82, 0.15);
+    border-left: 5px solid #5cbc7c; }
+    .theme-dark [data-theme="dark"] .notice.notice-tip .notice-title {
+      color: #5cbc7c; }
   .theme-dark ::-webkit-scrollbar-track {
     background: #2c2c2c;
     /* 滚动条轨道背景颜色 */ }
@@ -1111,7 +1144,7 @@ body:not(.theme-dark),
     --theme-box-shadow-light: rgba(255, 255, 255, 0.09);
     --theme-box-shadow-medium: rgba(255, 255, 255, 0.108);
     --theme-box-shadow-heavy: rgba(255, 255, 255, 0.132);
-    --theme-body-background: #171717;
+    --theme-body-background: #222222;
     --theme-body-background-medium: #2e2e2e;
     --theme-body-background-dark: #242424;
     --theme-border: #454545;
@@ -1127,7 +1160,7 @@ body:not(.theme-dark),
     --theme-primary-dark: #a3d7ff;
     --theme-primary-hover: #94a1de;
     --theme-primary-active: #0065b3;
-    --theme-primary-box-shadow: rgba(0, 101, 179, 0.3);
+    --theme-primary-box-shadow: #0065b34d;
     --theme-primary-invert: black;
     --theme-secondary-base: #757575;
     --theme-secondary-background: #2e2e2e;
@@ -1167,14 +1200,19 @@ body:not(.theme-dark),
     --waline-info-color: #9b9c9c; }
     body:not(.theme-light) a[rel="me"][href="https://pari.cafe/@circuits"] {
       color: #cacaca; }
+    body:not(.theme-light) blockquote {
+      background-color: #292929;
+      border-left: 0.25rem solid #5d5d5d; }
     body:not(.theme-light) #share-to-fediverse {
       color: #c7c7c7; }
     body:not(.theme-light) #back-to-top {
-      --background-color: rgba(245, 245, 245, 0.5); }
+      --background-color: rgba(225, 225, 225, 0.5); }
     body:not(.theme-light) #back-to-top:before {
       border-color: #000000; }
     body:not(.theme-light) #back-to-top:hover:before {
       border-color: #000000; }
+    body:not(.theme-light) #toc-content {
+      border: 1px solid #494949; }
     body:not(.theme-light) #toc-content {
       background-color: #252525; }
     body:not(.theme-light) #toc-toggle {
@@ -1182,7 +1220,7 @@ body:not(.theme-dark),
     body:not(.theme-light) #toc-toggle {
       background-color: #323232; }
     body:not(.theme-light) #toc-toggle {
-      color: #e3e3e3; }
+      color: #cacaca; }
     body:not(.theme-light) #toc-content {
       box-shadow: 0 2px 10px #494949; }
     body:not(.theme-light) #toc-toggle {
@@ -1190,9 +1228,33 @@ body:not(.theme-dark),
     body:not(.theme-light) #toc-content ul {
       border-top: 1px solid #555555;
       /* 在列表顶部加分隔线，延伸至整个宽度 */ }
+    body:not(.theme-light) .toc-header {
+      background-color: #252525; }
+      body:not(.theme-light) .toc-header:before {
+        background-color: #252525; }
     body:not(.theme-light) .highlight {
       --theme-blue: #569cd6;
       --theme-green: #57a64a; }
+    body:not(.theme-light) [data-theme="dark"] .notice.notice-warning {
+      background: rgba(112, 67, 67, 0.753);
+      border-left: 5px solid #bc5c5c; }
+      body:not(.theme-light) [data-theme="dark"] .notice.notice-warning .notice-title {
+        color: #bc5c5c; }
+    body:not(.theme-light) [data-theme="dark"] .notice.notice-info {
+      background: rgba(112, 89, 67, 0.15);
+      border-left: 5px solid #bc8c5c; }
+      body:not(.theme-light) [data-theme="dark"] .notice.notice-info .notice-title {
+        color: #bc8c5c; }
+    body:not(.theme-light) [data-theme="dark"] .notice.notice-note {
+      background: rgba(67, 97, 112, 0.15);
+      border-left: 5px solid #5c9cbc; }
+      body:not(.theme-light) [data-theme="dark"] .notice.notice-note .notice-title {
+        color: #5c9cbc; }
+    body:not(.theme-light) [data-theme="dark"] .notice.notice-tip {
+      background: rgba(67, 112, 82, 0.15);
+      border-left: 5px solid #5cbc7c; }
+      body:not(.theme-light) [data-theme="dark"] .notice.notice-tip .notice-title {
+        color: #5cbc7c; }
     body:not(.theme-light) ::-webkit-scrollbar-track {
       background: #2c2c2c;
       /* 滚动条轨道背景颜色 */ }
@@ -2254,13 +2316,29 @@ body {
   overflow-y: auto;
   border-radius: 5px; }
 
+.toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 10;
+  border-bottom: 1px solid #c0c0c0; }
+  .toc-header:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: #f9f9f9;
+    z-index: 11; }
+
 /* 目录标题与顶部的距离 */
 #toc-content p {
   margin: 5px;
   /* 设置上下边距 */ }
-
-#toc-content li {
-  padding: 5px; }
 
 #toc-content ul {
   padding-top: 10px;
@@ -2283,11 +2361,6 @@ body {
   float: right;
   color: #cbcbcb;
   /* 可调整颜色 */ }
-
-.toc-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
 
 /* 展开目录时的样式 */
 .toc-expanded #toc-content {
@@ -2340,45 +2413,21 @@ body {
       height: 1.2em; }
   .notice.notice-warning {
     background: rgba(224, 108, 108, 0.15);
-    border-left: 5px solid #e06c6c; }
+    border-left: 5px solid #c85f5f; }
     .notice.notice-warning .notice-title {
-      color: #e06c6c; }
+      color: #c85f5f; }
   .notice.notice-info {
     background: rgba(240, 179, 117, 0.15);
-    border-left: 5px solid #f0b375; }
+    border-left: 5px solid #c8945f; }
     .notice.notice-info .notice-title {
-      color: #f0b375; }
+      color: #c8945f; }
   .notice.notice-note {
     background: rgba(108, 185, 224, 0.15);
-    border-left: 5px solid #6cb9e0; }
+    border-left: 5px solid #5fa5c8; }
     .notice.notice-note .notice-title {
-      color: #6cb9e0; }
+      color: #5fa5c8; }
   .notice.notice-tip {
     background: rgba(108, 224, 146, 0.15);
-    border-left: 5px solid #6ce092; }
+    border-left: 5px solid #5fc882; }
     .notice.notice-tip .notice-title {
-      color: #6ce092; }
-
-[data-theme="dark"] .notice.notice-warning {
-  background: rgba(112, 67, 67, 0.15);
-  border-left: 5px solid #704343; }
-  [data-theme="dark"] .notice.notice-warning .notice-title {
-    color: rgba(224, 108, 108, 0.5); }
-
-[data-theme="dark"] .notice.notice-info {
-  background: rgba(112, 89, 67, 0.15);
-  border-left: 5px solid #705943; }
-  [data-theme="dark"] .notice.notice-info .notice-title {
-    color: rgba(240, 178, 117, 0.5); }
-
-[data-theme="dark"] .notice.notice-note {
-  background: rgba(67, 97, 112, 0.15);
-  border-left: 5px solid #436170; }
-  [data-theme="dark"] .notice.notice-note .notice-title {
-    color: rgba(108, 185, 224, 0.5); }
-
-[data-theme="dark"] .notice.notice-tip {
-  background: rgba(67, 112, 82, 0.15);
-  border-left: 5px solid #437052; }
-  [data-theme="dark"] .notice.notice-tip .notice-title {
-    color: rgba(108, 224, 147, 0.5); }
+      color: #5fc882; }

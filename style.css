@@ -1577,6 +1577,8 @@ li.hashed-tag {
   display: block;
   margin: 1em 0 1.2em;
   padding: 0 0.8em;
+  border-radius: 5px;
+  /* 可选：圆角 */
   border-left: 0.25rem solid var(--theme-border); }
   .post .content blockquote p:first-of-type {
     margin-top: 0; }

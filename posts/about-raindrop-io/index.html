@@ -765,61 +765,52 @@ Share with</span>
 
 
 
-<head>
-  
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
-  />
-  
-</head>
-<body>
-  
-  <div id="waline"></div>
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-    init({
-      el: '#waline',
-      search: false,
-      serverURL: 'https://www.fluid-skins.top',
-      emoji: [
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+/>
+
+
+<div id="waline"></div>
+
+
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+  init({
+    el: '#waline',
+    search: false,
+    serverURL: 'https://www.fluid-skins.top',  
+    emoji: [
       'https://unpkg.com/@waline/emojis@1.1.0/alus',
       'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
       'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
       'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
-     
     ],
-    
-      visitor: false
-    });
-  </script>
-  
+    visitor: false
+  });
+</script>
 
-  <style>
-    .wl-emoji-popup {
-  position: absolute;
-  inset-inline-start: 3.5em;
 
-}
+<style>
+  .wl-emoji-popup {
+    position: absolute;
+    inset-inline-start: 3.5em;
+  }
 
-.wl-emoji-popup.display {
-
+  .wl-emoji-popup.display {
     position: absolute;  
     top: -100px;           
     overflow-y: auto;
     z-index: 10;
-  inset-inline-start: 3.5em;
+    inset-inline-start: 3.5em;
+  }
 
-}
-
-.wl-loading {
-height: 55px;
-}
-  </style>
-  
-</body>
-
+  .wl-loading {
+    height: 55px;
+  }
+</style>
 
       </div>
     

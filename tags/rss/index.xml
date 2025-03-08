@@ -39,21 +39,7 @@
 &lt;p&gt;看了半天好像pc端上相对好用限制不大的客户端向阅读器也就fluent reader了。虽然它声称全平台支持但是要特别注意，只有电脑端上的客户端（其余系统不清楚，我是windows），才支持导入本地rss源！！！其他移动端均无法自由导入其他订阅源，只能从现有的几个主流rss客户端账号里导入并同步&amp;hellip;&amp;hellip;（吃过ios的亏）&lt;/p&gt;
 &lt;p&gt;其他感觉就没啥好说的了，毕竟电脑端看网页比移动端舒服多了也不用思考什么乱七八糟的，用就是了，缺点就是配置不太行的话它的动效会有些卡卡的。&lt;/p&gt;
 &lt;h2 id=&#34;webfollow-网页端支持多端同步--httpswebfollowcc&#34;&gt;Webfollow （网页端）（支持多端同步）  &lt;a href=&#34;https://webfollow.cc/&#34; target=&#34;_blank&#34; &gt;https://webfollow.cc/&lt;/a&gt;&lt;/h2&gt;
-&lt;center&gt;
-    &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;../../images/webfollow.png&#34; data-fancybox=&#34;gallery&#34;&gt;
-            &lt;img src=&#34;../../images/webfollow.png&#34; alt=&#34;Webfollow&#34; width=&#34;90%&#34;&gt;
-        &lt;/a&gt;
-        
-        &lt;figcaption class=&#34;figure-caption&#34;&gt;Webfollow&lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-    
-&lt;/center&gt;
-
-
-&lt;p&gt;多端同步果然是个问题，所以在找客户端是同时也有在试着找一些网页上的RSS阅读器服务，感觉这个用起来算是还可以的，但似乎因为这还是个非常近期才出现的项目所以还是有挺多地方用起来有些毛病（如，经常很短时间内就需要重新登录，登录后的网络访问情况不稳定，以及界面排序时间有些混乱的问题），但值得展望一下。&lt;/p&gt;
-&lt;p&gt;除了订阅功能外站内还配有其他用户的订阅流以及一些热门订阅源的探索功能，在看自己的之外也可以看到其他的内容。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2025.3.8：呃这个东西不知道啥时候就一声不吭地大修改了整个站点还把之前的用户系统似乎都整没了现在改成买订阅才能用？？？就算价钱其实还行但我不敢问我也不敢用了，怎么连通知和解释都不给一个的&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;安卓端&#34;&gt;安卓端&lt;/h1&gt;
 &lt;h2 id=&#34;plenary--谷歌商店下载httpsplaygooglecomstoreappsdetailsidcomspiansplenary&#34;&gt;Plenary  &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.spians.plenary&#34; target=&#34;_blank&#34; &gt;谷歌商店下载&lt;/a&gt;&lt;/h2&gt;
 &lt;center&gt;

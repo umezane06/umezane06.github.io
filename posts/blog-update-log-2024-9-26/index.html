@@ -36,7 +36,7 @@
 
   
     <meta property="article:published_time" content="2024-09-26" />
-    <meta property="article:modified_time" content="2025-01-30" />
+    <meta property="article:modified_time" content="2025-03-31" />
      
       <meta property="article:tag" content="【折腾】" />
     
@@ -71,7 +71,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.e94151aab0068579dd1f0090872771c4a71c2ccfb55ddf5b4bd5ae9a0b644199.css" integrity="sha256-6UFRqrAGhXndHwCQhydxxKccLM&#43;1Xd9bS9WumgtkQZk=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.75bb913487d3ca9530ff04d169d5aecad6a340142950b78bd60ae7d1a8731a79.css" integrity="sha256-dbuRNIfTypUw/wTRadWuytajQBQpULeL1grn0ahzGnk=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -354,7 +354,7 @@ umezane</span>
 <p>①：大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&hellip;&hellip;并且这样做了似乎会让图片没办法跟其他图并入同一个可翻阅的列表里会变成只能单独点开放大的样子。也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）</p>
 <p>②：直接插入的图片如果太大它就会占掉全屏。</p>
 <p>所以纠结了好久到底是markdown插入还是html插入才能搞定这些问题并和ChatGPT斗智斗勇了好几回后，GPT给我丢来的短代码终于完美解决了这些&hellip;&hellip;</p>
-<p>在 [\layouts\shortcodes] 目录中创建名为 [fancybox_figure.html] 的 Shortcode 文件，并添加以下内容：</p>
+<p>在 <code>\layouts\shortcodes</code> 目录中创建名为 <code>fancybox_figure.html</code> 的 Shortcode 文件，并添加以下内容：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">center</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">figure</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;figure&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Get &#34;</span><span class="na">src</span><span class="err">&#34;</span> <span class="err">}}&#34;</span> <span class="na">data-fancybox</span><span class="o">=</span><span class="s">&#34;gallery&#34;</span><span class="err">&#34;</span><span class="p">&gt;</span>
@@ -365,7 +365,7 @@ umezane</span>
 </span></span><span class="line"><span class="cl">        {{ end }}
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">center</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>之后就可以使用这样的代码来插入图片顺便一并把描述文字写在图片的下面了（请把单个的大括号换成双括号以使用）</p>
+</span></span></code></pre></div><p>之后就可以使用这样的代码来插入图片顺便一并把描述文字写在图片的下面了（短代码的大括号是双括号记得添加一下）</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{<span class="p">&lt;</span> <span class="nt">fancybox_figure</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/images/图片.png&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;90%&#34;</span><span class="na">alt</span><span class="o">=</span><span class="s">&#34;要写进去的描述文字&#34;</span> <span class="p">&gt;</span>}
 </span></span></code></pre></div><p>（width如果是100%好像会出现图片位置异常的问题，并且实际上还莫名会出现移动端如果滑到图片区域会导致无法滑动屏幕的问题，但是问LLM后看这结果感觉会把事情越搞越复杂所以已放弃折腾）</p>
 <h1 id="增加了文章目录跳转导航">增加了文章目录跳转导航</h1>
@@ -374,7 +374,7 @@ umezane</span>
 <p>之后把一些帖子的结构也修改了一下方便定位。</p>
 <h1 id="增加站点运行时间调整底部信息电脑端和移动端的不同排版">增加站点运行时间+调整底部信息电脑端和移动端的不同排版</h1>
 <p>其实好几个月前就加了站点运行时间但是觉得效果不太对劲也没写进上次的更新贴了，现在顺带放一下<s>已经忘了从哪里抄来的</s>代码</p>
-<p>在 [\assets\js\main.js] 文件里添加</p>
+<p>在 <code>\assets\js\main.js</code> 文件里添加</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">runtime</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="s2">&#34;runtime()&#34;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
@@ -396,7 +396,7 @@ umezane</span>
 </span></span><span class="line"><span class="cl">        <span class="o">+</span> <span class="p">((</span><span class="nx">seconds</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="o">?</span> <span class="s1">&#39;0&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="nx">seconds</span> <span class="o">+</span> <span class="s1">&#39; 秒 &#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="nx">runtime</span><span class="p">();</span>
-</span></span></code></pre></div><p>在 [\layouts\partials\footer.html] 合适位置添加</p>
+</span></span></code></pre></div><p>在 <code>\layouts\partials\footer.html</code> 合适位置添加</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;run-time&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p>至于这个合适位置&hellip;&hellip;开始不知道咋的直接放在了底部文字的下面，移动端看着可能还行但电脑端这绝对是不对劲的，于是现在想在保持移动端的样子下把字与右边的copyright放在一起。调试的过程暂且省略，中间遇到插进来后想调整距离但又怎么都移不动的问题结果最后是用了十分抽象的方法才做到至少在外观上看着还行（求不要看源代码啊啊啊）（小心死脑筋谱系人,,,,,）</p>
 <p>移动端的话本来是没有电脑端左侧的链接的我又给加回来居中显示了，顺便调调插入位置把字体大小和行间距也弄一致了。（但是手机端看排版三个链接放一块的效果还是略微妙以后再调调</p>
@@ -437,8 +437,8 @@ umezane</span>
 <p>（不行了该歇了</p>
 <h1 id="929的延续修理-修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题">(9.29的延续修理) 修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题</h1>
 <p>哎呀这个事情终于解决了。。。我这主题在帖子页帖子部分&amp;评论区部分似乎都做成了那种嵌入式的观感，外面灰色的其他部分是置顶的（？），结果就导致评论这块waline默认向下方弹出的表情选项卡完全被外面的部分挡住了，切不了不同种类的表情。</p>
-<p>不知道评论区的各种部分都是哪个元素在控制，瞎问LLM问了半天终于想起来应该问这个事&hellip;&hellip;于是GPT也终于向我发来了用右键菜单「开发者工具」里的「检查」功能查询页面元素的提醒（抓墙）。用了后会短时间显示各元素的名称，就像下面拼的图左侧贴图部分。</p>
-<p>负责评论区表情选项卡的具体元素是 [.wl-emoji-popup]，但因为这个东西其实是由如图的 [.wl-tab-wrapper] 和 [.wl-tabs]（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）</p>
+<p>不知道评论区的各种部分都是哪个元素在控制，瞎问LLM问了半天终于想起来应该问这个事&hellip;&hellip;于是GPT也终于向我发来了用右键菜单<code>开发者工具</code>里的<code>检查</code>功能查询页面元素的提醒（抓墙）。用了后会短时间显示各元素的名称，就像下面拼的图左侧贴图部分。</p>
+<p>负责评论区表情选项卡的具体元素是 <code>.wl-emoji-popup</code>，但因为这个东西其实是由如图的 <code>.wl-tab-wrapper</code> 和 <code>.wl-tabs</code>（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）</p>
 <center>
     <figure class="figure">
         <a href="../../images/Snipaste_2024-09-29_22-05-47.png" data-fancybox="gallery">
@@ -452,8 +452,8 @@ umezane</span>
 </center>
 
 
-<p>于是终于知道名字叫啥后需要在代码编辑器里搜索找到相应元素所在的css文件以获取可以修改的属性值。这个地方的css属性在博客路径下的 [\waline\packages\client\src\styles\emoji.scss] 里，不过调整不能在这调需要在自己博客的评论区css文件里新增需要修改的部分。路径大概都不太一样，我的 [layouts\partials] 下直接现有一个 [comments.html] 所以相关配置就全放这了，调css相关的东西外面还需要打个style标签。</p>
-<p>在评论别人的时候这个面板竟然又有另一套属性了（是后加.display的条目），需要注意。</p>
+<p>于是终于知道名字叫啥后需要在代码编辑器里搜索找到相应元素所在的css文件以获取可以修改的属性值。这个地方的css属性在博客路径下的 <code>\waline\packages\client\src\styles\emoji.scss</code> 里，不过调整不能在这调需要在自己博客的评论区css文件里新增需要修改的部分。路径大概都不太一样，我的 <code>layouts\partials</code> 下直接现有一个 <code>comments.html</code> 所以相关配置就全放这了，调css相关的东西外面还需要打个style标签。</p>
+<p>在评论别人的时候这个面板竟然又有另一套属性了（是后加<code>.display</code>的条目），需要注意。</p>
 <p>于是最后主要修改了的部分↓</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="c">/* 评论区主要的表情面板 */</span>
@@ -475,7 +475,7 @@ umezane</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h1 id="929-waline评论区添加blob系萌表情">(9.29) waline评论区添加blob系萌表情</h1>
-<p>主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情</p>
+<p>主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情（感谢）</p>
 <p><a href="https://github.com/norevi/blob-emoji-for-waline" target="_blank" >https://github.com/norevi/blob-emoji-for-waline</a></p>
 <p><a href="https://github.com/norevi/waline-blobcatemojis" target="_blank" >https://github.com/norevi/waline-blobcatemojis</a></p>
 <p>把github简介放的cdn链接塞到emoji选项里就行了</p>
@@ -495,10 +495,10 @@ umezane</span>
 <p>修着修着零点了（&hellip;</p>
 <p>缓慢发觉原来代码块Markdown标记法这三个点```后面加的文字是要让你自行写上语法名字以做到确定语法（之前从其他哪些诡异地方复制来了含有其他语法的标识一直没改也没发现不对劲），不写自然就没有高亮，写错了的话那有奇怪的地方会被高亮也是正常的（嗯</p>
 <p>于是又折腾一通终于能够看到代码高亮正常的样子了（泪）。但是因为默认主题设置原因颜色看起来还是有点难顶，想换一下。</p>
-<p>参考这位朋友的文章<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后看见了这样的网页<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（yaml格式是加冒号，隔壁那个toml应该是用等号&hellip;）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&hellip;）</p>
+<p>参考这位朋友的文章<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后看见了这样的网页<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把<code>pygmentsCodefences: true</code>（yaml格式是加冒号，隔壁那个toml应该是用等号&hellip;）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&hellip;）</p>
 <p>之后就是也参照博主的流程，使用这个命令</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Hugo gen chromastyles --style=改成相应的style名字 <span class="p">&gt;</span> 改成相应的style名字. Css
-</span></span></code></pre></div><p>生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 [assets\css\highlight.scss] 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。</p>
+</span></span></code></pre></div><p>生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 <code>assets\css\highlight.scss</code> 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。</p>
 <h1 id="1016-更换自定义字体">(10.16) 更换自定义字体</h1>
 <p>本来是想用本地字体的结果除了电脑端其他移动端全部都没生效，最后还是换成了<a href="https://chinese-font.netlify.app/zh-cn/" target="_blank" >中文网字计划</a>里提供的免费字体cdn&hellip;（中间还好几次引入引不对，现在终于弄好了）</p>
 <p>本来其实也只是想换个思源宋体而已但是这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&hellip;）结果换成了观感差不多的<a href="https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B" target="_blank" >思源屏显臻宋</a>。</p>
@@ -510,7 +510,7 @@ umezane</span>
      width="40"
      height="40"
 />因为上面这字体粗体实在太粗了又去翻了翻看见了又有<a href="https://fonts.zeoseven.com/zh-CN/" target="_blank" >ZeoSeven Fonts</a>这样的站在提供免费字体CDN可供嵌入，换成了<a href="https://fonts.zeoseven.com/zh-CN/font/cn/s/310/" target="_blank" >纳米丰宋</a>。</p>
-<p>12.3:&hellip;&hellip;呃于是原因在<a href="https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/" target="_blank" >《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》</a>里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上确实还是有点让人看得想死（。。）于是换成了<a href="https://fonts.zeoseven.com/items/207/" target="_blank" >更纱黑体 Mono CL</a>了
+<p>12.3:&hellip;&hellip;呃于是原因在<a href="https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/" target="_blank" >《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》</a>里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上确实还是有点让人看得想死（。。）于是换成了<a href="https://fonts.zeoseven.com/items/158/" target="_blank" >更纱黑体 Mono CL</a>了
 <img
     src="../../images/emoji/0171.png"
     title="aru_0171"
@@ -699,7 +699,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 Published At</span><time>2024-09-26 23:31 CST</time>
-      (Updated At <time>2025-01-30 03:26 CST</time>)
+      (Updated At <time>2025-03-31 21:31 CST</time>)
     </div>
 
     
@@ -852,7 +852,7 @@ Share with</span>
       <div id="comments" class="article-card">
         
 
-  (评论回复邮箱提醒实在配不好了看回复会不及时)（😭啊啊为了省事给新站点用了配好的同一个评论区，结果设置了一下网站回复分区这边的旧评论全没了我只能在后台看到但现在不知道怎么弄回来，非常对不起之前回复的朋友......）
+  (评论回复邮箱提醒实在配不好了看回复会不及时)（😭啊啊为了省事给新站点用了配好的同一个评论区后台，结果设置网站回复分区后这边本就不多的旧评论一大半都没了，我只能在后台看到但现在好像数据对不上弄不回来了。。给之前来回复的朋友们谢罪了......）
 
 
 

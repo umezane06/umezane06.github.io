@@ -985,6 +985,15 @@ body:not(.theme-dark),
   .theme-light .toc-content::-webkit-scrollbar-thumb:hover {
     background: #a8a8a8;
     /* 滚动条悬停时的颜色 */ }
+  body:not(.theme-dark) .aplayer,
+  .theme-light .aplayer {
+    background: #f5f4f8 !important; }
+  body:not(.theme-dark) .aplayer .aplayer-lrc::before,
+  .theme-light .aplayer .aplayer-lrc::before {
+    display: none !important; }
+  body:not(.theme-dark) .aplayer .aplayer-lrc::after,
+  .theme-light .aplayer .aplayer-lrc::after {
+    display: none !important; }
 
 .theme-dark {
   --theme-background: black;
@@ -1127,6 +1136,63 @@ body:not(.theme-dark),
   .theme-dark .toc-content::-webkit-scrollbar-thumb:hover {
     background: #777;
     /* 滚动条悬停时的颜色 */ }
+  .theme-dark .aplayer {
+    background: #545055 !important; }
+  .theme-dark .aplayer.aplayer-withlist .aplayer-info {
+    border-bottom-color: #5c5c5c !important; }
+  .theme-dark .aplayer.aplayer-fixed .aplayer-list {
+    border-color: #5c5c5c !important; }
+  .theme-dark .aplayer .aplayer-body {
+    background-color: #222b34 !important; }
+  .theme-dark .aplayer .aplayer-info {
+    border-top-color: #212121 !important; }
+  .theme-dark .aplayer .aplayer-info .aplayer-music .aplayer-title {
+    color: #fff !important; }
+  .theme-dark .aplayer .aplayer-info .aplayer-music .aplayer-author {
+    color: #fff !important; }
+  .theme-dark .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+    color: #eee !important; }
+  .theme-dark .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+    fill: #eee !important; }
+  .theme-dark .aplayer .aplayer-list {
+    background-color: #212121 !important; }
+  .theme-dark .aplayer .aplayer-list::-webkit-scrollbar-thumb {
+    background-color: #999 !important; }
+  .theme-dark .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb; }
+  .theme-dark .aplayer .aplayer-list li {
+    color: #fff;
+    border-top-color: #666; }
+  .theme-dark .aplayer .aplayer-list li:hover {
+    background: #4e4e4e !important; }
+  .theme-dark .aplayer .aplayer-list li.aplayer-list-light {
+    background: #6c6c6c !important; }
+  .theme-dark .aplayer .aplayer-list li .aplayer-list-index {
+    color: #ddd !important; }
+  .theme-dark .aplayer .aplayer-list li .aplayer-list-author {
+    color: #ddd !important; }
+  .theme-dark .aplayer .aplayer-lrc {
+    text-shadow: -1px -1px 0 #666 !important; }
+  .theme-dark .aplayer .aplayer-lrc:before {
+    background: -moz-linear-gradient(top, #212121 0%, rgba(33, 33, 33, 0) 100%);
+    background: -webkit-linear-gradient(top, #212121 0%, rgba(33, 33, 33, 0) 100%);
+    background: linear-gradient(to bottom, #212121 0%, rgba(33, 33, 33, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#00212121',GradientType=0 ); }
+  .theme-dark .aplayer .aplayer-lrc:after {
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212121', endColorstr='#cc212121',GradientType=0 ); }
+  .theme-dark .aplayer .aplayer-lrc p {
+    color: #ababab !important; }
+  .theme-dark .aplayer .aplayer-miniswitcher {
+    background: #484848; }
+  .theme-dark .aplayer .aplayer-miniswitcher .aplayer-icon path {
+    fill: #eee; }
+  .theme-dark .aplayer .aplayer-lrc::before {
+    display: none !important; }
+  .theme-dark .aplayer .aplayer-lrc::after {
+    display: none !important; }
   .theme-dark .content img:not([src*='.svg']) {
     filter: brightness(0.9) contrast(1.1); }
   .theme-dark .ionicon {
@@ -1274,6 +1340,63 @@ body:not(.theme-dark),
     body:not(.theme-light) .toc-content::-webkit-scrollbar-thumb:hover {
       background: #777;
       /* 滚动条悬停时的颜色 */ }
+    body:not(.theme-light) .aplayer {
+      background: #545055 !important; }
+    body:not(.theme-light) .aplayer.aplayer-withlist .aplayer-info {
+      border-bottom-color: #5c5c5c !important; }
+    body:not(.theme-light) .aplayer.aplayer-fixed .aplayer-list {
+      border-color: #5c5c5c !important; }
+    body:not(.theme-light) .aplayer .aplayer-body {
+      background-color: #222b34 !important; }
+    body:not(.theme-light) .aplayer .aplayer-info {
+      border-top-color: #212121 !important; }
+    body:not(.theme-light) .aplayer .aplayer-info .aplayer-music .aplayer-title {
+      color: #fff !important; }
+    body:not(.theme-light) .aplayer .aplayer-info .aplayer-music .aplayer-author {
+      color: #fff !important; }
+    body:not(.theme-light) .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+      color: #eee !important; }
+    body:not(.theme-light) .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+      fill: #eee !important; }
+    body:not(.theme-light) .aplayer .aplayer-list {
+      background-color: #212121 !important; }
+    body:not(.theme-light) .aplayer .aplayer-list::-webkit-scrollbar-thumb {
+      background-color: #999 !important; }
+    body:not(.theme-light) .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover {
+      background-color: #bbb; }
+    body:not(.theme-light) .aplayer .aplayer-list li {
+      color: #fff;
+      border-top-color: #666; }
+    body:not(.theme-light) .aplayer .aplayer-list li:hover {
+      background: #4e4e4e !important; }
+    body:not(.theme-light) .aplayer .aplayer-list li.aplayer-list-light {
+      background: #6c6c6c !important; }
+    body:not(.theme-light) .aplayer .aplayer-list li .aplayer-list-index {
+      color: #ddd !important; }
+    body:not(.theme-light) .aplayer .aplayer-list li .aplayer-list-author {
+      color: #ddd !important; }
+    body:not(.theme-light) .aplayer .aplayer-lrc {
+      text-shadow: -1px -1px 0 #666 !important; }
+    body:not(.theme-light) .aplayer .aplayer-lrc:before {
+      background: -moz-linear-gradient(top, #212121 0%, rgba(33, 33, 33, 0) 100%);
+      background: -webkit-linear-gradient(top, #212121 0%, rgba(33, 33, 33, 0) 100%);
+      background: linear-gradient(to bottom, #212121 0%, rgba(33, 33, 33, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#00212121',GradientType=0 ); }
+    body:not(.theme-light) .aplayer .aplayer-lrc:after {
+      background: -moz-linear-gradient(top, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 100%);
+      background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 100%);
+      background: linear-gradient(to bottom, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212121', endColorstr='#cc212121',GradientType=0 ); }
+    body:not(.theme-light) .aplayer .aplayer-lrc p {
+      color: #ababab !important; }
+    body:not(.theme-light) .aplayer .aplayer-miniswitcher {
+      background: #484848; }
+    body:not(.theme-light) .aplayer .aplayer-miniswitcher .aplayer-icon path {
+      fill: #eee; }
+    body:not(.theme-light) .aplayer .aplayer-lrc::before {
+      display: none !important; }
+    body:not(.theme-light) .aplayer .aplayer-lrc::after {
+      display: none !important; }
     body:not(.theme-light) .content img:not([src*='.svg']) {
       filter: brightness(0.9) contrast(1.1); }
     body:not(.theme-light) .ionicon {

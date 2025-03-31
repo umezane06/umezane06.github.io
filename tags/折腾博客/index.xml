@@ -38,7 +38,7 @@
 &lt;p&gt;①：大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&amp;hellip;&amp;hellip;并且这样做了似乎会让图片没办法跟其他图并入同一个可翻阅的列表里会变成只能单独点开放大的样子。也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）&lt;/p&gt;
 &lt;p&gt;②：直接插入的图片如果太大它就会占掉全屏。&lt;/p&gt;
 &lt;p&gt;所以纠结了好久到底是markdown插入还是html插入才能搞定这些问题并和ChatGPT斗智斗勇了好几回后，GPT给我丢来的短代码终于完美解决了这些&amp;hellip;&amp;hellip;&lt;/p&gt;
-&lt;p&gt;在 [\layouts\shortcodes] 目录中创建名为 [fancybox_figure.html] 的 Shortcode 文件，并添加以下内容：&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;\layouts\shortcodes&lt;/code&gt; 目录中创建名为 &lt;code&gt;fancybox_figure.html&lt;/code&gt; 的 Shortcode 文件，并添加以下内容：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;center&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;figure&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;figure&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{{ .Get &amp;#34;&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;}}&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;data-fancybox&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;gallery&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -49,7 +49,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {{ end }}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;figure&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;center&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后就可以使用这样的代码来插入图片顺便一并把描述文字写在图片的下面了（请把单个的大括号换成双括号以使用）&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后就可以使用这样的代码来插入图片顺便一并把描述文字写在图片的下面了（短代码的大括号是双括号记得添加一下）&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;fancybox_figure&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/images/图片.png&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;90%&amp;#34;&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;要写进去的描述文字&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;（width如果是100%好像会出现图片位置异常的问题，并且实际上还莫名会出现移动端如果滑到图片区域会导致无法滑动屏幕的问题，但是问LLM后看这结果感觉会把事情越搞越复杂所以已放弃折腾）&lt;/p&gt;
 &lt;h1 id=&#34;增加了文章目录跳转导航&#34;&gt;增加了文章目录跳转导航&lt;/h1&gt;
@@ -58,7 +58,7 @@
 &lt;p&gt;之后把一些帖子的结构也修改了一下方便定位。&lt;/p&gt;
 &lt;h1 id=&#34;增加站点运行时间调整底部信息电脑端和移动端的不同排版&#34;&gt;增加站点运行时间+调整底部信息电脑端和移动端的不同排版&lt;/h1&gt;
 &lt;p&gt;其实好几个月前就加了站点运行时间但是觉得效果不太对劲也没写进上次的更新贴了，现在顺带放一下&lt;s&gt;已经忘了从哪里抄来的&lt;/s&gt;代码&lt;/p&gt;
-&lt;p&gt;在 [\assets\js\main.js] 文件里添加&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;\assets\js\main.js&lt;/code&gt; 文件里添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;runtime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;runtime()&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -80,7 +80,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;seconds&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;seconds&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39; 秒 &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;runtime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在 [\layouts\partials\footer.html] 合适位置添加&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在 &lt;code&gt;\layouts\partials\footer.html&lt;/code&gt; 合适位置添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;run-time&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;至于这个合适位置&amp;hellip;&amp;hellip;开始不知道咋的直接放在了底部文字的下面，移动端看着可能还行但电脑端这绝对是不对劲的，于是现在想在保持移动端的样子下把字与右边的copyright放在一起。调试的过程暂且省略，中间遇到插进来后想调整距离但又怎么都移不动的问题结果最后是用了十分抽象的方法才做到至少在外观上看着还行（求不要看源代码啊啊啊）（小心死脑筋谱系人,,,,,）&lt;/p&gt;
 &lt;p&gt;移动端的话本来是没有电脑端左侧的链接的我又给加回来居中显示了，顺便调调插入位置把字体大小和行间距也弄一致了。（但是手机端看排版三个链接放一块的效果还是略微妙以后再调调&lt;/p&gt;
@@ -121,8 +121,8 @@
 &lt;p&gt;（不行了该歇了&lt;/p&gt;
 &lt;h1 id=&#34;929的延续修理-修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题&#34;&gt;(9.29的延续修理) 修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题&lt;/h1&gt;
 &lt;p&gt;哎呀这个事情终于解决了。。。我这主题在帖子页帖子部分&amp;amp;评论区部分似乎都做成了那种嵌入式的观感，外面灰色的其他部分是置顶的（？），结果就导致评论这块waline默认向下方弹出的表情选项卡完全被外面的部分挡住了，切不了不同种类的表情。&lt;/p&gt;
-&lt;p&gt;不知道评论区的各种部分都是哪个元素在控制，瞎问LLM问了半天终于想起来应该问这个事&amp;hellip;&amp;hellip;于是GPT也终于向我发来了用右键菜单「开发者工具」里的「检查」功能查询页面元素的提醒（抓墙）。用了后会短时间显示各元素的名称，就像下面拼的图左侧贴图部分。&lt;/p&gt;
-&lt;p&gt;负责评论区表情选项卡的具体元素是 [.wl-emoji-popup]，但因为这个东西其实是由如图的 [.wl-tab-wrapper] 和 [.wl-tabs]（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）&lt;/p&gt;
+&lt;p&gt;不知道评论区的各种部分都是哪个元素在控制，瞎问LLM问了半天终于想起来应该问这个事&amp;hellip;&amp;hellip;于是GPT也终于向我发来了用右键菜单&lt;code&gt;开发者工具&lt;/code&gt;里的&lt;code&gt;检查&lt;/code&gt;功能查询页面元素的提醒（抓墙）。用了后会短时间显示各元素的名称，就像下面拼的图左侧贴图部分。&lt;/p&gt;
+&lt;p&gt;负责评论区表情选项卡的具体元素是 &lt;code&gt;.wl-emoji-popup&lt;/code&gt;，但因为这个东西其实是由如图的 &lt;code&gt;.wl-tab-wrapper&lt;/code&gt; 和 &lt;code&gt;.wl-tabs&lt;/code&gt;（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）&lt;/p&gt;
 &lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
         &lt;a href=&#34;../../images/Snipaste_2024-09-29_22-05-47.png&#34; data-fancybox=&#34;gallery&#34;&gt;
@@ -136,8 +136,8 @@
 &lt;/center&gt;
 
 
-&lt;p&gt;于是终于知道名字叫啥后需要在代码编辑器里搜索找到相应元素所在的css文件以获取可以修改的属性值。这个地方的css属性在博客路径下的 [\waline\packages\client\src\styles\emoji.scss] 里，不过调整不能在这调需要在自己博客的评论区css文件里新增需要修改的部分。路径大概都不太一样，我的 [layouts\partials] 下直接现有一个 [comments.html] 所以相关配置就全放这了，调css相关的东西外面还需要打个style标签。&lt;/p&gt;
-&lt;p&gt;在评论别人的时候这个面板竟然又有另一套属性了（是后加.display的条目），需要注意。&lt;/p&gt;
+&lt;p&gt;于是终于知道名字叫啥后需要在代码编辑器里搜索找到相应元素所在的css文件以获取可以修改的属性值。这个地方的css属性在博客路径下的 &lt;code&gt;\waline\packages\client\src\styles\emoji.scss&lt;/code&gt; 里，不过调整不能在这调需要在自己博客的评论区css文件里新增需要修改的部分。路径大概都不太一样，我的 &lt;code&gt;layouts\partials&lt;/code&gt; 下直接现有一个 &lt;code&gt;comments.html&lt;/code&gt; 所以相关配置就全放这了，调css相关的东西外面还需要打个style标签。&lt;/p&gt;
+&lt;p&gt;在评论别人的时候这个面板竟然又有另一套属性了（是后加&lt;code&gt;.display&lt;/code&gt;的条目），需要注意。&lt;/p&gt;
 &lt;p&gt;于是最后主要修改了的部分↓&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c&#34;&gt;/* 评论区主要的表情面板 */&lt;/span&gt;
@@ -159,7 +159,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;929-waline评论区添加blob系萌表情&#34;&gt;(9.29) waline评论区添加blob系萌表情&lt;/h1&gt;
-&lt;p&gt;主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情&lt;/p&gt;
+&lt;p&gt;主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情（感谢）&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/norevi/blob-emoji-for-waline&#34; target=&#34;_blank&#34; &gt;https://github.com/norevi/blob-emoji-for-waline&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/norevi/waline-blobcatemojis&#34; target=&#34;_blank&#34; &gt;https://github.com/norevi/waline-blobcatemojis&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;把github简介放的cdn链接塞到emoji选项里就行了&lt;/p&gt;
@@ -179,10 +179,10 @@
 &lt;p&gt;修着修着零点了（&amp;hellip;&lt;/p&gt;
 &lt;p&gt;缓慢发觉原来代码块Markdown标记法这三个点```后面加的文字是要让你自行写上语法名字以做到确定语法（之前从其他哪些诡异地方复制来了含有其他语法的标识一直没改也没发现不对劲），不写自然就没有高亮，写错了的话那有奇怪的地方会被高亮也是正常的（嗯&lt;/p&gt;
 &lt;p&gt;于是又折腾一通终于能够看到代码高亮正常的样子了（泪）。但是因为默认主题设置原因颜色看起来还是有点难顶，想换一下。&lt;/p&gt;
-&lt;p&gt;参考这位朋友的文章&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;后看见了这样的网页&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（yaml格式是加冒号，隔壁那个toml应该是用等号&amp;hellip;）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;参考这位朋友的文章&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;后看见了这样的网页&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把&lt;code&gt;pygmentsCodefences: true&lt;/code&gt;（yaml格式是加冒号，隔壁那个toml应该是用等号&amp;hellip;）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&amp;hellip;）&lt;/p&gt;
 &lt;p&gt;之后就是也参照博主的流程，使用这个命令&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hugo gen chromastyles --style=改成相应的style名字 &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 改成相应的style名字. Css
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 [assets\css\highlight.scss] 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 &lt;code&gt;assets\css\highlight.scss&lt;/code&gt; 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。&lt;/p&gt;
 &lt;h1 id=&#34;1016-更换自定义字体&#34;&gt;(10.16) 更换自定义字体&lt;/h1&gt;
 &lt;p&gt;本来是想用本地字体的结果除了电脑端其他移动端全部都没生效，最后还是换成了&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/&#34; target=&#34;_blank&#34; &gt;中文网字计划&lt;/a&gt;里提供的免费字体cdn&amp;hellip;（中间还好几次引入引不对，现在终于弄好了）&lt;/p&gt;
 &lt;p&gt;本来其实也只是想换个思源宋体而已但是这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&amp;hellip;）结果换成了观感差不多的&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B&#34; target=&#34;_blank&#34; &gt;思源屏显臻宋&lt;/a&gt;。&lt;/p&gt;
@@ -194,7 +194,7 @@
      width=&#34;40&#34;
      height=&#34;40&#34;
 /&gt;因为上面这字体粗体实在太粗了又去翻了翻看见了又有&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/&#34; target=&#34;_blank&#34; &gt;ZeoSeven Fonts&lt;/a&gt;这样的站在提供免费字体CDN可供嵌入，换成了&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/font/cn/s/310/&#34; target=&#34;_blank&#34; &gt;纳米丰宋&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;12.3:&amp;hellip;&amp;hellip;呃于是原因在&lt;a href=&#34;https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/&#34; target=&#34;_blank&#34; &gt;《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》&lt;/a&gt;里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上确实还是有点让人看得想死（。。）于是换成了&lt;a href=&#34;https://fonts.zeoseven.com/items/207/&#34; target=&#34;_blank&#34; &gt;更纱黑体 Mono CL&lt;/a&gt;了
+&lt;p&gt;12.3:&amp;hellip;&amp;hellip;呃于是原因在&lt;a href=&#34;https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/&#34; target=&#34;_blank&#34; &gt;《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》&lt;/a&gt;里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上确实还是有点让人看得想死（。。）于是换成了&lt;a href=&#34;https://fonts.zeoseven.com/items/158/&#34; target=&#34;_blank&#34; &gt;更纱黑体 Mono CL&lt;/a&gt;了
 &lt;img
     src=&#34;../../images/emoji/0171.png&#34;
     title=&#34;aru_0171&#34;
@@ -249,7 +249,7 @@
 &lt;li&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-9-26/&#34; target=&#34;_blank&#34; &gt;装修记录② 2024.9.26&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;给博客添加回到顶部按钮&#34;&gt;给博客添加回到顶部按钮&lt;/h1&gt;
-&lt;p&gt;（参考&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）按照自己博客主题的结构在 [/layouts/partials/footer.html] 下添加&lt;/p&gt;
+&lt;p&gt;（参考&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）按照自己博客主题的结构在 &lt;code&gt;/layouts/partials/footer.html&lt;/code&gt; 下添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--返回顶部按钮 --&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;back-to-top&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;返回顶部&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -331,13 +331,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/script&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色，自己的路径是 [/assets/css/theme.scss]。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色，自己的路径是 &lt;code&gt;/assets/css/theme.scss&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c&#34;&gt;/* 按钮背景的设置是background-color，但是不知为何在夜间模式怎么调透明度都会失效所以改不了颜色，本来的全局背景颜色如果在footer代码里去掉整个背景也都会没了...最后还是没设置了（这主题到底咋回事） */&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;back-to-top&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;before&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;border-color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mh&#34;&gt;#000000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;}&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* 光标接触到按钮前的箭头颜色 */&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;p&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;back-to-top&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;hover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;before&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;border-color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;accent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);}&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* 光标接触到按钮后的箭头颜色 */&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;限制代码块高度&#34;&gt;限制代码块高度&lt;/h1&gt;
 &lt;p&gt;就在复制粘贴上面内容的时候才发现这主题并没有限制代码块高度你写多长就是多长，很碍事很影响阅读，于是又现折腾了半天&lt;/p&gt;
-&lt;p&gt;在用来显示代码块的css/scss文件（本主题为[/assets/css/main.scss]）里添加&lt;/p&gt;
+&lt;p&gt;在用来显示代码块的css/scss文件（本主题为&lt;code&gt;/assets/css/main.scss&lt;/code&gt;）里添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;highlight&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;max-height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;300&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* 这里设置代码块的最大高度为300像素 */&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;overflow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;auto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* 如果代码块超出了最大高度，启用垂直滚动条 */&lt;/span&gt;
@@ -350,7 +350,7 @@
 &lt;h1 id=&#34;修改博客的rss输出&#34;&gt;修改博客的Rss输出&lt;/h1&gt;
 &lt;p&gt;也是迁移后出现的问题，测试后发现rss输出不显示文章内章节小标题了&lt;/p&gt;
 &lt;p&gt;按照这个方法&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;顺手把rss输出改成全文输出了。&lt;/p&gt;
-&lt;p&gt;主要是在主题路径里 [/theme/主题名字/layouts/_default/] 创建一个名为 rss.xml 的文件。（不知道有的主题会不会自带）&lt;/p&gt;
+&lt;p&gt;主要是在主题路径里 &lt;code&gt;/theme/主题名字/layouts/_default/&lt;/code&gt; 创建一个名为 &lt;code&gt;rss.xml&lt;/code&gt; 的文件。（不知道有的主题会不会自带）&lt;/p&gt;
 &lt;p&gt;把相关代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;description&amp;gt;&lt;/span&gt;{{- .Summary | html -}}&lt;span class=&#34;nt&#34;&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;改成&lt;/p&gt;

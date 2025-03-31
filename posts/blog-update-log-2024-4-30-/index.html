@@ -36,7 +36,7 @@
 
   
     <meta property="article:published_time" content="2024-04-30" />
-    <meta property="article:modified_time" content="2025-02-07" />
+    <meta property="article:modified_time" content="2025-03-31" />
      
       <meta property="article:tag" content="【折腾】" />
     
@@ -71,7 +71,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.e94151aab0068579dd1f0090872771c4a71c2ccfb55ddf5b4bd5ae9a0b644199.css" integrity="sha256-6UFRqrAGhXndHwCQhydxxKccLM&#43;1Xd9bS9WumgtkQZk=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.75bb913487d3ca9530ff04d169d5aecad6a340142950b78bd60ae7d1a8731a79.css" integrity="sha256-dbuRNIfTypUw/wTRadWuytajQBQpULeL1grn0ahzGnk=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -334,7 +334,7 @@ umezane</span>
 <li><a href="https://plumdebris.eu.org/posts/blog-update-log-2024-9-26/" target="_blank" >装修记录② 2024.9.26</a></li>
 </ul>
 <h1 id="给博客添加回到顶部按钮">给博客添加回到顶部按钮</h1>
-<p>（参考<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>）按照自己博客主题的结构在 [/layouts/partials/footer.html] 下添加</p>
+<p>（参考<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>）按照自己博客主题的结构在 <code>/layouts/partials/footer.html</code> 下添加</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!--返回顶部按钮 --&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;back-to-top&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;返回顶部&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">
@@ -416,13 +416,13 @@ umezane</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
-</span></span></code></pre></div><p>按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色，自己的路径是 [/assets/css/theme.scss]。</p>
+</span></span></code></pre></div><p>按理来说可以直接在footer下的设置里修改以下参数就可以改动按钮颜色不过对于有黑夜模式的主题需要在相应css文件里再添加一遍才能修改颜色，自己的路径是 <code>/assets/css/theme.scss</code>。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">  <span class="c">/* 按钮背景的设置是background-color，但是不知为何在夜间模式怎么调透明度都会失效所以改不了颜色，本来的全局背景颜色如果在footer代码里去掉整个背景也都会没了...最后还是没设置了（这主题到底咋回事） */</span>
 </span></span><span class="line"><span class="cl">  <span class="p">#</span><span class="nn">back-to-top</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span><span class="k">border-color</span><span class="p">:</span> <span class="mh">#000000</span><span class="p">;}</span> <span class="c">/* 光标接触到按钮前的箭头颜色 */</span>
 </span></span><span class="line"><span class="cl">   <span class="p">#</span><span class="nn">back-to-top</span><span class="p">:</span><span class="nd">hover</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span><span class="k">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accent</span><span class="o">-</span><span class="kc">color</span><span class="p">);}</span> <span class="c">/* 光标接触到按钮后的箭头颜色 */</span>
 </span></span></code></pre></div><h1 id="限制代码块高度">限制代码块高度</h1>
 <p>就在复制粘贴上面内容的时候才发现这主题并没有限制代码块高度你写多长就是多长，很碍事很影响阅读，于是又现折腾了半天</p>
-<p>在用来显示代码块的css/scss文件（本主题为[/assets/css/main.scss]）里添加</p>
+<p>在用来显示代码块的css/scss文件（本主题为<code>/assets/css/main.scss</code>）里添加</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">highlight</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">max-height</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* 这里设置代码块的最大高度为300像素 */</span>
 </span></span><span class="line"><span class="cl">  <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span> <span class="c">/* 如果代码块超出了最大高度，启用垂直滚动条 */</span>
@@ -435,7 +435,7 @@ umezane</span>
 <h1 id="修改博客的rss输出">修改博客的Rss输出</h1>
 <p>也是迁移后出现的问题，测试后发现rss输出不显示文章内章节小标题了</p>
 <p>按照这个方法<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>顺手把rss输出改成全文输出了。</p>
-<p>主要是在主题路径里 [/theme/主题名字/layouts/_default/] 创建一个名为 rss.xml 的文件。（不知道有的主题会不会自带）</p>
+<p>主要是在主题路径里 <code>/theme/主题名字/layouts/_default/</code> 创建一个名为 <code>rss.xml</code> 的文件。（不知道有的主题会不会自带）</p>
 <p>把相关代码</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;description&gt;</span>{{- .Summary | html -}}<span class="nt">&lt;/description&gt;</span>
 </span></span></code></pre></div><p>改成</p>
@@ -624,7 +624,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 Published At</span><time>2024-04-30 18:08 CST</time>
-      (Updated At <time>2025-02-07 21:39 CST</time>)
+      (Updated At <time>2025-03-31 21:25 CST</time>)
     </div>
 
     
@@ -777,7 +777,7 @@ Share with</span>
       <div id="comments" class="article-card">
         
 
-  (评论回复邮箱提醒实在配不好了看回复会不及时)（😭啊啊为了省事给新站点用了配好的同一个评论区，结果设置了一下网站回复分区这边的旧评论全没了我只能在后台看到但现在不知道怎么弄回来，非常对不起之前回复的朋友......）
+  (评论回复邮箱提醒实在配不好了看回复会不及时)（😭啊啊为了省事给新站点用了配好的同一个评论区后台，结果设置网站回复分区后这边本就不多的旧评论一大半都没了，我只能在后台看到但现在好像数据对不上弄不回来了。。给之前来回复的朋友们谢罪了......）
 
 
 

@@ -20,7 +20,7 @@
   <meta name="color-scheme" content="dark light">
   <meta name="description" content="有一种本就非常低频的网站更新频率和重心马上就要朝着那边一边倒了的预感,,," />
   <meta name="author" content="umezane">
-  <meta name="keywords" content="【随记】, 【折腾】">
+  <meta name="keywords" content="【随记】, 【折腾】, 【折腾博客】">
   <title>【随记】于是把隔壁的扯音乐站点差不多做好了... | 绝对概括的切面</title>
   <link rel="canonical" href="https://plumdebris.eu.org/posts/2025-3-8-log/" />
   
@@ -41,6 +41,8 @@
       <meta property="article:tag" content="【随记】" />
     
       <meta property="article:tag" content="【折腾】" />
+    
+      <meta property="article:tag" content="【折腾博客】" />
      
   
 
@@ -349,7 +351,7 @@ umezane</span>
 <p>还有一个事情是这个插件导出的网页虽然支持显示那个关系图但是好像没有笔记内双链的（比较直观的）专门汇总页&hellip;？如果是纯发布笔记可能还是换一个工具比较好&hellip;（这种关系图东西多了还容易卡）</p>
 <p>中间还看见有人修改了一个能更方便把obsidian当博客使的插件版本<a href="https://forum-zh.obsidian.md/t/topic/33406" target="_blank" >ebpage html export优化版 + vercel搭建博客教程 - 经验分享 - Obsidian 中文论坛
 </a>，虽然可以解决部分上面的奇怪问题，但是到了白板文件的部分不知道为啥会出问题显示不出来，所以还是放弃了&hellip;</p>
-<h1 id="我博客评论咋给整没了">我博客评论咋给整没了</h1>
+<h1 id="想弄评论分区结果我博客评论咋给整没了">想弄评论分区结果我博客评论咋给整没了</h1>
 <p>中间还有个挺崩溃的事是&hellip;&hellip;waline评论区默认部署的方案（vercel）不是给墙了吗所以得整个域名再转回墙里（就算有其他什么可以不用被墙的方案我的大脑也已经开始记忆不了你们这些服务啥都是啥了所以就懒得搞其他的&hellip;），但是就像括号里说的懒+记性差我实在不想搞更多东西就开始想着能不能用现有的这一个部署好的东西与多个网站共用（主要是区分一下后台的评论显示链接），虽然最后实现是实现了但是&hellip;这旧评论的对应链接数据不知道是不是就是和新的链接对不上了，无论是在waline管理端还是leancloud后端怎么改这些东西似乎都没法重新在这边的评论区底下显示了。。。
 <img
     src="../../images/emoji/aru_0220_2.gif"
@@ -358,6 +360,15 @@ umezane</span>
      width="40"
      height="40"
 />虽然也没有几位朋友来这里回复但还是对不起各位我实在不知道怎么折腾了（，，，）所以把这个事先在评论区挂上个个把月吧。。。（这还能救吗</p>
+<p>2025.4.3: 👆救好了，结果竟然真的只是之前不知道什么时候动了文件名导致链接有几个符号没对上，我好绝望。但没改评论区之前我好像就把文件名改了耶,为什么之前还能显示来着&hellip;（摸不着头脑）</p>
+<p>都说到这个份上了还是把问各种LLM兜了几个圈子最后发现挑捡出来就两行代码（&hellip;）的这个方法贴上来一下吧，先在自己本地的引入waline的地方加上一行<code>path: window.location.href,</code>（应该是为了获取当前页面的完整网页链接用的&hellip;）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">  <span class="nx">init</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#waline&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">path</span><span class="o">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span></code></pre></div><p>然后再去Vercel的环境变量设置下加入<code>SITE_NAME</code>变量，里面填上需要分区的不同站点的域名（用逗号分割）重部署一下这样就可以了。</p>
+<p>但是突然又发现之前弄网站时遗留了一个坑：Cloudflare SSL/TLS 加密的那个项开错设置了，网页还没能强制跳转去https&hellip;（改成<code>完全</code>就可以了）http的网站下肯定还是显示不出https网页的评论的（后台数据如此&hellip;），发出去的评论在后端也是用http的链接来存的(&hellip;&hellip;)。赶紧修了一下，怕后来人不小心进错链接突然就看不见自己之前的评论了&hellip;（<del>虽然最先对此感到懵圈的是发现这个事的我就是了</del>）</p>
+<p>太神秘了以至于我需要给这个帖子补上一个折腾博客的tag。</p>
 <h1 id="填了一坑但它坑仍然未平">填了一坑但它坑仍然未平</h1>
 <p>🥲不过中途拐弯去做这个东西除了心态的问题ADHD的问题（。。）主要其实还是想让未来想表达的东西和想整理的东西能有一个集中的去处。总之弄完了这个后其他放置的坑也又得恢复填了嗯&hellip;&hellip;这些音乐仍然是我在挂念的东西（编不出抒情环节了下集再见</p>
 <p>*未经大脑过滤的思维组织出的文字这个节奏基本就等于没有，毫无停顿（汗</p>
@@ -508,7 +519,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 Published At</span><time>2025-03-08 19:00 CST</time>
-      (Updated At <time>2025-04-03 15:27 CST</time>)
+      (Updated At <time>2025-04-03 23:46 CST</time>)
     </div>
 
     
@@ -538,6 +549,8 @@ Tagged with</span>
           <li class="hashed-tag"><a href="https://plumdebris.eu.org/tags/%E9%9A%8F%E8%AE%B0">【随记】</a></li>
         
           <li class="hashed-tag"><a href="https://plumdebris.eu.org/tags/%E6%8A%98%E8%85%BE">【折腾】</a></li>
+        
+          <li class="hashed-tag"><a href="https://plumdebris.eu.org/tags/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2">【折腾博客】</a></li>
         
         </ul>
       </div>
@@ -573,7 +586,7 @@ Share with</span>
         title="share to fediverse"
         rel="noopener noreferrer"
         aria-label="share 【随记】于是把隔壁的扯音乐站点差不多做好了... on fediverse"
-        href="https://beta.s2f.kytta.dev/share.php?text=%E3%80%90%E9%9A%8F%E8%AE%B0%E3%80%91%E4%BA%8E%E6%98%AF%E6%8A%8A%E9%9A%94%E5%A3%81%E7%9A%84%E6%89%AF%E9%9F%B3%E4%B9%90%E7%AB%99%E7%82%B9%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%81%9A%E5%A5%BD%E4%BA%86...&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2F2025-3-8-log%2F&amp;title=%E3%80%90%E9%9A%8F%E8%AE%B0%E3%80%91%E4%BA%8E%E6%98%AF%E6%8A%8A%E9%9A%94%E5%A3%81%E7%9A%84%E6%89%AF%E9%9F%B3%E4%B9%90%E7%AB%99%E7%82%B9%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%81%9A%E5%A5%BD%E4%BA%86...">
+        href="https://s2f.kytta.dev/share.php?text=%E3%80%90%E9%9A%8F%E8%AE%B0%E3%80%91%E4%BA%8E%E6%98%AF%E6%8A%8A%E9%9A%94%E5%A3%81%E7%9A%84%E6%89%AF%E9%9F%B3%E4%B9%90%E7%AB%99%E7%82%B9%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%81%9A%E5%A5%BD%E4%BA%86...&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2F2025-3-8-log%2F&amp;title=%E3%80%90%E9%9A%8F%E8%AE%B0%E3%80%91%E4%BA%8E%E6%98%AF%E6%8A%8A%E9%9A%94%E5%A3%81%E7%9A%84%E6%89%AF%E9%9F%B3%E4%B9%90%E7%AB%99%E7%82%B9%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%81%9A%E5%A5%BD%E4%BA%86...">
         
 
 
@@ -661,7 +674,7 @@ Share with</span>
       <div id="comments" class="article-card">
         
 
-  (评论回复邮箱提醒实在配不好了看回复会不及时)（😭啊啊为了省事给新站点用了配好的同一个评论区后台，结果设置网站回复分区后这边本就不多的旧评论一大半都没了，我只能在后台看到但现在好像数据对不上弄不回来了。。给之前来回复的朋友们谢罪了......）
+  (评论回复邮箱提醒实在配不好了看回复会不及时)
 
 
 

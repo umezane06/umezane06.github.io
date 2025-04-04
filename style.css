@@ -51,7 +51,7 @@ li {
 
 code {
   direction: ltr;
-  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+  font-family: SFMono-Regular, Sarasa Mono CL, 'Liberation Mono', Menlo, Courier, monospace; }
 
 a > code {
   font-family: Segoe UI, SegoeUI, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -660,7 +660,7 @@ li {
 
 code {
   direction: ltr;
-  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+  font-family: SFMono-Regular, Sarasa Mono CL, 'Liberation Mono', Menlo, Courier, monospace; }
 
 a > code {
   font-family: Segoe UI, SegoeUI, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -893,7 +893,7 @@ body:not(.theme-dark),
   --theme-border-white-high-contrast: rgba(255, 255, 255, 0);
   --theme-border-black-high-contrast: rgba(0, 0, 0, 0.05);
   --theme-code-highlight-background: rgb(250, 249, 248);
-  --theme-inline-code: #e6e6e6;
+  --theme-inline-code: #e9e5f3;
   --theme-visited: #9c69b5;
   --theme-primary-base: #6170a7;
   --theme-primary-background: #e0f2ff;
@@ -1013,7 +1013,7 @@ body:not(.theme-dark),
   --theme-table-border-dark: #5e5e5e;
   --theme-border-white-high-contrast: rgba(255, 255, 255, 0);
   --theme-code-highlight-background: #2d2d2d;
-  --theme-inline-code: #454545;
+  --theme-inline-code: #494450;
   --theme-visited: #a98bb9;
   --theme-primary-base: #798bca;
   --theme-primary-background: #002b4d;
@@ -1217,7 +1217,7 @@ body:not(.theme-dark),
     --theme-table-border-dark: #5e5e5e;
     --theme-border-white-high-contrast: rgba(255, 255, 255, 0);
     --theme-code-highlight-background: #2d2d2d;
-    --theme-inline-code: #454545;
+    --theme-inline-code: #494450;
     --theme-visited: #a98bb9;
     --theme-primary-base: #798bca;
     --theme-primary-background: #002b4d;

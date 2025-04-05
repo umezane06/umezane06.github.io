@@ -394,7 +394,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;overflow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;auto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* 如果代码块超出了最大高度，启用垂直滚动条 */&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;s&gt;想顺便给代码块加上代码高亮但是试了很多方法死活不生效也不知道问题出在哪于是放弃了&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;（↑&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/&#34; target=&#34;_blank&#34; &gt;2024.9.29&lt;/a&gt;已修，，）&lt;/p&gt;
+&lt;p&gt;（↑&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-9-26/&#34; target=&#34;_blank&#34; &gt;2024.9.29&lt;/a&gt;已修，，）&lt;/p&gt;
 &lt;h1 id=&#34;给网站加个cloudflare代理&#34;&gt;给网站加个Cloudflare代理&lt;/h1&gt;
 &lt;p&gt;把网站本地库迁移到新电脑上后发现站子在墙内突然访问不了了，拖了好一阵时间后看见这位友友的帖子&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;就也想着给自己网站上个代理试试&lt;/p&gt;
 &lt;p&gt;踩坑：按照帖子说明把域名服务商的nameserver改成cloudflare给的，待几分钟连接成功也把SSL/TLS 加密模式勾选为 “完全”后浅测试一下发现国内能访问就兴高采烈地跑去修其他东西了，结果后来才发现光这样搞国外ip就访问不了了果然还是得添加A记录(&amp;hellip;)（*原先的CNAME记录需删除）不过我的站不是像原博主一样拿vercel部署的就随便猜了一个github的ip（如185.199.108.153）结果居然就成了，挺好（&lt;/p&gt;
@@ -419,11 +419,11 @@
 &lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline弄夜间模式适配：找不着代码在哪一直没修，况且移动端目前并没有夜间模式看也不知道修了有啥意义&lt;/s&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;（虽然到了26号才水出帖子）已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-9-26/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;（虽然到了26号才水出帖子）已修顺便把夜间模式按钮也弄出来了,到底为什么写这个主题的人明明就有把夜间模式切换按钮的显示放在移动端适配那里但就是不顺便一起做出来呢。。搞得我调好久&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;s&gt;给waline多加点萌表情比如blob之类的：没精力了下次吧&lt;/s&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-2024-9-26-log/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;已添加（然后把默认的微博表情去掉了，现在网友的精神表情只剩下aru和blob大家族,感觉微博表情现在的使用场景只剩下了阴阳怪气所以感觉没什么使用的必要了（。。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-9-26/&#34; target=&#34;_blank&#34; &gt;2024.9.24&lt;/a&gt;已添加（然后把默认的微博表情去掉了，现在网友的精神表情只剩下aru和blob大家族,感觉微博表情现在的使用场景只剩下了阴阳怪气所以感觉没什么使用的必要了（。。&lt;/p&gt;
 &lt;h1 id=&#34;随便废话一些&#34;&gt;随便废话一些&lt;/h1&gt;
 &lt;p&gt;本来是想给网络友人看我的同人图顺便就想大装修一下网站但一不小心就修了一整天好累啊.jpg&lt;/p&gt;
 &lt;p&gt;不懂代码人建站真的就是缝缝补补又一年&lt;/p&gt;

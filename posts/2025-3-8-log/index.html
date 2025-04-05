@@ -360,7 +360,8 @@ umezane</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#waline&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">path</span><span class="o">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="p">});</span>
-</span></span></code></pre></div><p>然后再去Vercel的环境变量设置下加入<code>SITE_NAME</code>变量，里面填上需要分区的不同站点的域名（用逗号分割）重部署一下这样就可以了。</p>
+</span></span></code></pre></div><p>（坏事：结果因为隔壁站点的ssl/tls证书设置有点奇怪的问题没法强制访问https，还是能访问进http的站点，结果包含完整链接的评论区数据自然也对不上了&hellip;&hellip;因为<del>没有什么信心能折腾好</del>结果最后还是添加了移除http/https的数值先拆东墙补西墙一下：<code>path: window.location.href.replace(/^https?:\/\//, ''),</code>）</p>
+<p>然后再去Vercel的环境变量设置下加入<code>SITE_NAME</code>变量，里面填上需要分区的不同站点的域名（用逗号分割）重部署一下这样就可以了。</p>
 <p>但是突然又发现之前弄网站时遗留了一个坑：Cloudflare SSL/TLS 加密的那个项开错设置了，网页还没能强制跳转去https&hellip;（改成<code>完全</code>就可以了）http的网站下肯定还是显示不出https网页的评论的（后台数据如此&hellip;），发出去的评论在后端也是用http的链接来存的(&hellip;&hellip;)。赶紧修了一下，怕后来人不小心进错链接突然就看不见自己之前的评论了&hellip;（<del>虽然最先对此感到懵圈的是发现这个事的我就是了</del>）</p>
 <p>以及最后一定要记得去Leancloud把原来评论指向的链接都给修改成完整的相应链接，不然评论是显示不出来的&hellip;&hellip;（在<code>数据存储</code>→<code>结构化数据</code>→<code>Comment</code>→<code>url</code>这里）</p>
 <p>太神秘了以至于我需要给这个帖子补上一个折腾博客的tag。</p>
@@ -514,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 Published At</span><time>2025-03-08 19:00 CST</time>
-      (Updated At <time>2025-04-05 00:32 CST</time>)
+      (Updated At <time>2025-04-05 20:13 CST</time>)
     </div>
 
     
@@ -690,7 +691,7 @@ Share with</span>
     el: '#waline',
     search: false,
     serverURL: 'https://www.fluid-skins.top',  
-    path: window.location.href,
+    path: window.location.href.replace(/^https?:\/\//, ''),
     reaction: true,
       
       locale: {

@@ -768,7 +768,7 @@ Share with</span>
     el: '#waline',
     search: false,
     serverURL: 'https://www.fluid-skins.top',  
-    path: window.location.href,
+    path: window.location.href.replace(/^https?:\/\//, ''),
     reaction: true,
       
       locale: {

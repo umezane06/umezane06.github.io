@@ -269,7 +269,7 @@
      height=&#34;40&#34;
 /&gt;，于是折腾了一阵子觉得还是。。等把该搞完的搞完了再回来弄这些玩意吧&amp;hellip;&lt;/p&gt;
 &lt;p&gt;还有一个事情是这个插件导出的网页虽然支持显示那个双链关系图，但是好像没有更直观些的大纲形式的双链专门汇总页&amp;hellip;？如果是纯发布笔记可能还是换一个工具比较好&amp;hellip;（这种关系图东西多了还容易卡&amp;amp;看标题困难，感觉还是跟大纲一起用好一些）&lt;/p&gt;
-&lt;p&gt;中间还看见有人修改了一个能更方便把obsidian当博客使的插件版本&lt;a href=&#34;https://forum-zh.obsidian.md/t/topic/33406&#34; target=&#34;_blank&#34; &gt;ebpage html export优化版 + vercel搭建博客教程 - 经验分享 - Obsidian 中文论坛
+&lt;p&gt;中间还看见有人修改了一个能更方便把obsidian当博客使的插件版本&lt;a href=&#34;https://forum-zh.obsidian.md/t/topic/33406&#34; target=&#34;_blank&#34; &gt;（ebpage html export优化版 + vercel搭建博客教程 - 经验分享 - Obsidian 中文论坛）
 &lt;/a&gt;，虽然可以解决部分上面的奇怪问题，但是到了白板文件的部分不知道为啥会出问题显示不出来，所以还是放弃了&amp;hellip;&lt;/p&gt;
 &lt;h1 id=&#34;想弄评论分区结果我博客评论咋给整没了&#34;&gt;想弄评论分区结果我博客评论咋给整没了&lt;/h1&gt;
 &lt;p&gt;中间还有个挺崩溃的事是&amp;hellip;&amp;hellip;waline评论区默认部署的方案（vercel）不是给墙了吗所以得整个域名再转回墙里（就算有其他什么可以不用被墙的方案我的大脑也已经开始记忆不了你们这些服务啥都是啥了所以就懒得搞其他的&amp;hellip;），但是就像括号里说的懒+记性差我实在不想搞更多东西就开始想着能不能用现有的这一个部署好的东西与多个网站共用（主要是区分一下后台的评论显示链接），虽然最后实现是实现了但是&amp;hellip;这旧评论的对应链接数据不知道是不是就是和新的链接对不上了，无论是在waline管理端还是leancloud后端怎么改这些东西似乎都没法重新在这边的评论区底下显示了。。。
@@ -288,7 +288,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后再去Vercel的环境变量设置下加入&lt;code&gt;SITE_NAME&lt;/code&gt;变量，里面填上需要分区的不同站点的域名（用逗号分割）重部署一下这样就可以了。&lt;/p&gt;
 &lt;p&gt;但是突然又发现之前弄网站时遗留了一个坑：Cloudflare SSL/TLS 加密的那个项开错设置了，网页还没能强制跳转去https&amp;hellip;（改成&lt;code&gt;完全&lt;/code&gt;就可以了）http的网站下肯定还是显示不出https网页的评论的（后台数据如此&amp;hellip;），发出去的评论在后端也是用http的链接来存的(&amp;hellip;&amp;hellip;)。赶紧修了一下，怕后来人不小心进错链接突然就看不见自己之前的评论了&amp;hellip;（&lt;del&gt;虽然最先对此感到懵圈的是发现这个事的我就是了&lt;/del&gt;）&lt;/p&gt;
-&lt;p&gt;（突发坏事：结果上面的ssl/tls证书设置还是有点奇怪的问题依然没法强制访问https，在有些浏览器还是能访问进http的站点，结果包含完整链接的评论区数据自然也对不上了&amp;hellip;&amp;hellip;因为&lt;del&gt;没有什么信心能折腾好&lt;/del&gt;结果最后还是添加了移除http/https的数值先拆东墙补西墙一下，真的要按着设置的话还是用这个数据比较好&amp;hellip;：&lt;code&gt;path: window.location.href.replace(/^https?:\/\//, &#39;&#39;),&lt;/code&gt;）&lt;/p&gt;
+&lt;p&gt;（2025.4.5 突发坏事：结果上面的ssl/tls证书设置还是有点奇怪的问题依然没法强制访问https，在有些浏览器还是能访问进http的站点，结果包含完整链接的评论区数据自然也对不上了&amp;hellip;&amp;hellip;因为&lt;del&gt;没有什么信心能折腾好&lt;/del&gt;结果最后还是添加了移除http/https的数值先拆东墙补西墙一下，真的要按着设置的话还是用这个数据比较好&amp;hellip;：&lt;code&gt;path: window.location.href.replace(/^https?:\/\//, &#39;&#39;),&lt;/code&gt;）&lt;/p&gt;
 &lt;p&gt;总之最后一定要记得去Leancloud把原来评论指向的链接都给修改成完整的相应链接，不然评论是显示不出来的&amp;hellip;&amp;hellip;（在&lt;code&gt;数据存储&lt;/code&gt;→&lt;code&gt;结构化数据&lt;/code&gt;→&lt;code&gt;Comment&lt;/code&gt;→&lt;code&gt;url&lt;/code&gt;这里）&lt;/p&gt;
 &lt;p&gt;太神秘了以至于我需要给这个帖子补上一个折腾博客的tag。&lt;/p&gt;
 &lt;h1 id=&#34;填了一坑但它坑仍然未平&#34;&gt;填了一坑但它坑仍然未平&lt;/h1&gt;

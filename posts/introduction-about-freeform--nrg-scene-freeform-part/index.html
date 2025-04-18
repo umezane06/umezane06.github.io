@@ -81,7 +81,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.dcd73755a3811f291a618c60908bebabbc51d940034e44b48b210974762334d3.css" integrity="sha256-3Nc3VaOBHykaYYxgkIvrq7xR2UADTkS0iyEJdHYjNNM=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.39e2b496aa7ca9eef729dc95dad41aeeead249b72a729695d0468067de7b164c.css" integrity="sha256-OeK0lqp8qe73KdyV2tQa7urSSbcqcpaV0EaAZ957Fkw=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -403,11 +403,11 @@ if (header.tagName.toLowerCase() === 'h1') {
     } else if (header.tagName.toLowerCase() === 'h2') {
       h2Count++; 
       h3Count = 0; 
-      a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+      a.textContent = h1Count + '.' + h2Count + '. ' + header.textContent; 
       li.classList.add('h2-level');
     } else if (header.tagName.toLowerCase() === 'h3') {
       h3Count++; 
-      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
+      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + '. ' + header.textContent; 
       li.classList.add('h3-level');
     }
 
@@ -673,6 +673,7 @@ Share with</span>
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatheart2.png',
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatthink.png',
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatscream.png',
+    'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatcry2.png',
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_ablobcatfloofpat.gif',
   ],
     
@@ -719,15 +720,21 @@ margin: 10px;
 
     <footer id="footer">
   <div class="container has-padding is-flex">
+
+    <li class="me-link-mobile-only">
+      <a rel="me" href="https://pari.cafe/@circuits">Misskey (Fediverse)</a>
+    </li>
+    
     <ul class="links">
-      <a rel="me" href="https://pari.cafe/@circuits">Misskey(Fediverse)</a>
       
-      <li>
-        
-        <a  href="../../" title=""></a>
-      </li>
       
 
+
+      
+      <li class="me-link-desktop-only">
+        <a rel="me" href="https://pari.cafe/@circuits">Misskey (Fediverse)</a>
+      </li>
+      
       <li>
         <a
           rel="nofollow"
@@ -737,11 +744,17 @@ margin: 10px;
           Theme Fluency
         </a>
       </li>
+      
       <li>
         <a rel="nofollow" target="_blank" href="https://gohugo.io" title="Built with hugo">Built with Hugo</a>
       </li>
     </ul>
+
+        
+
+
     
+     
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
@@ -749,6 +762,7 @@ margin: 10px;
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
+
    <center><span id="run-time"></span></center>
     <div class="copyright">
        &copy; 2025 绝对概括的切面
@@ -768,7 +782,7 @@ margin: 10px;
 </script>
 
 
-<script defer src="https://plumdebris.eu.org/js/main.min.51748f66d15f9df96db88b88bb7d7f96e6b4574017751e4282d2e39660b370b8.js" integrity="sha256-UXSPZtFfnfltuIuIu31/lua0V0AXdR5CgtLjlmCzcLg=" crossorigin="anonymous" async></script>
+<script defer src="https://plumdebris.eu.org/js/main.min.b2807e0e1ca4b35bf1a3ca0ba6657a8806843aa5844a380f205109ec68da3ccc.js" integrity="sha256-soB+Dhyks1vxo8oLpmV6iAaEOqWESjgPIFEJ7GjaPMw=" crossorigin="anonymous" async></script>
 
 
     <link

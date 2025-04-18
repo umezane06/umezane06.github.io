@@ -14,7 +14,7 @@
       
       <guid>https://plumdebris.eu.org/posts/2025-3-8-log/</guid>
       <description>&lt;p&gt;有一种本就非常低频的网站更新频率和重心马上就要朝着那边一边倒了的预感,,,&lt;/p&gt;
-&lt;p&gt;一月的情绪垃圾话帖子还是删掉了（&amp;hellip;）（结果负面情绪相关的事情有时候还是自己看不见了才会让相关记忆离远一点&amp;hellip;），不过说着要做的Freeform/NRG主题博客也终于还是弄完了。天啊这玩意咋就又折腾了我一个来月，，也是正好遇见什么Deepseek之类的玩意突然爆火让人有了更多可尝试的修代码工具（省略中间的精神崩溃若干），最后三四个LLM之间来回转了半天终于是把站子缝成了我觉着可能还行的样子&amp;hellip;虽然最后的工作量却是落在了一些&lt;del&gt;风格完全无法统一&lt;/del&gt;的装饰网站和文章分类的图片上&amp;hellip;&lt;/p&gt;
+&lt;p&gt;一月的情绪垃圾话帖子还是删掉了（&amp;hellip;）（结果负面情绪相关的事情有时候如果太尖锐了的话还是自己看不见了才会让相关记忆离远一点&amp;hellip;），不过说着要做的Freeform/NRG主题博客也终于还是弄完了。天啊这玩意咋就又折腾了我一个来月，，也是正好遇见什么Deepseek之类的玩意突然爆火让人有了更多可尝试的修代码工具（省略中间的精神崩溃若干），最后三四个LLM之间来回转了半天终于是把站子缝成了我觉着可能还行的样子&amp;hellip;虽然最后的工作量却是落在了一些&lt;del&gt;风格完全无法统一&lt;/del&gt;的装饰网站和文章分类的图片上&amp;hellip;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;高情商：这个站点的画风也许会掺杂一些web1.0时代的感觉；低情商：这些东西到底哪里有关联性&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;于是这里是新站：&lt;a href=&#34;https://nrgmaze.org&#34; title=&#34;Energy in our heart.&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;NRGmaze&lt;/strong&gt;&lt;/a&gt;，之后一些关于Freeform Hardcore/Hard NRG/Nu-NRG/UK Hard House或者什么什么的东西的个人想法和资料都会丢到这里了。&lt;/p&gt;
 &lt;p&gt;虽然现在这里这个博客也把这个子站（&lt;del&gt;小心以后这边反而成为子站&lt;/del&gt;）链上了，但是因为各种原因那边的网页就不想和很多个人身份关联上了（虽然其实也完全没有在藏&amp;hellip;），一些很神秘的考量&amp;hellip;&amp;hellip;&lt;/p&gt;
@@ -723,18 +723,6 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>【折腾博客】建blog途中参考的各种资料</title>
-      <link>https://plumdebris.eu.org/posts/references-about-hugo-blog/</link>
-      <pubDate>Tue, 16 May 2023 20:03:00 +0800</pubDate>
-      
-      <guid>https://plumdebris.eu.org/posts/references-about-hugo-blog/</guid>
-      <description>&lt;p&gt;救救代码白痴.jpg&lt;/p&gt;
-&lt;p&gt;为了维持这个缝缝补补又一年产物四处搜刮来的补丁。&lt;/p&gt;
-&lt;p&gt;试着把raindrop.io的收藏夹直接嵌入了进来，评论系统相关的子分类不知道为什么没跟主文件夹分开需要点more来看不然会很乱。。。&lt;/p&gt;
-&lt;center&gt;&lt;iframe style=&#34;border: 0; width: 95%; height: 550px;&#34; allowfullscreen frameborder=&#34;0&#34; src=&#34;https://raindrop.io/umezane/hugo-34155805/embed/theme=auto&#34;&gt;&lt;/iframe&gt;&lt;/center&gt;</description>
     </item>
     
   </channel>

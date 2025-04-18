@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  
+
+
+
+  
+  
+
+
+<head lang="en">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="可怜的代码白痴仍在胡乱寻找砌墙补丁&hellip;&hellip;" />
+  <meta name="author" content="umezane">
+  <meta name="keywords" content="【随记】">
+  <title>只是博客的第一条帖子 | 绝对概括的切面</title>
+  <link rel="canonical" href="https://plumdebris.eu.org/posts/just-the-first-post/" />
+  
+
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="可怜的代码白痴仍在胡乱寻找砌墙补丁&hellip;&hellip;" />
+  <meta property="og:title" content="只是博客的第一条帖子" />
+  <meta property="og:site_name" content="绝对概括的切面" />
+  <meta property="og:image" content="/images/favicon.png">
+  <meta property="og:url" content="https://plumdebris.eu.org/posts/just-the-first-post/" />
+  <meta property="og:locale" content="en" />
+
+  
+    <meta property="article:published_time" content="2023-05-16" />
+    <meta property="article:modified_time" content="2025-04-18" />
+     
+      <meta property="article:tag" content="【随记】" />
+     
+  
+
+  
+  <meta name="twitter:card"  content="summary_large_image" />
+  <meta name="twitter:title" content="只是博客的第一条帖子 | 绝对概括的切面" />
+  <meta name="twitter:description" content="可怜的代码白痴仍在胡乱寻找砌墙补丁&hellip;&hellip;" />
+  <meta name="twitter:domain" content="https://plumdebris.eu.org/posts/just-the-first-post/" />
+  <meta name="twitter:image" content="/images/favicon.png">
+
+
+  
+  
+    <link rel="icon" href="https://plumdebris.eu.org/favicon.ico">
+  
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css">
+
+  
+  
+  
+
+  
+
+  
+    
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.39e2b496aa7ca9eef729dc95dad41aeeead249b72a729695d0468067de7b164c.css" integrity="sha256-OeK0lqp8qe73KdyV2tQa7urSSbcqcpaV0EaAZ957Fkw=" rel="preload stylesheet" as="style"/>
+  
+
+  
+  
+    
+  
+</head>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<link rel="icon" type="image/png" href="../../path/to/favicon.png">
+<link rel="apple-touch-icon" href="../../path/to/apple-touch-icon.png">
+
+<style>
+
+@import url('https://static.zeoseven.com/zsft/158/main/result.css');
+
+body {
+   font-family: "Sarasa Mono CL";
+   font-weight: normal;
+}
+  </style>
+ 
+  <body>
+    <script>
+  const currentTheme = window.localStorage.getItem('theme')
+  if (currentTheme === "dark") {
+    document.body.classList.toggle("theme-dark");
+  } else if (currentTheme == "light") {
+    document.body.classList.toggle("theme-light");
+  }
+</script>
+<header id="header">
+  <div class="row">
+    <div class="container has-padding nav">
+      <button id="navbar-toggler" class="navbar-button" aria-hidden="true">
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z'/></svg>
+
+
+
+
+
+
+</button>
+      <div class="navbar-brand">
+        <a class="logo navbar-button" href="https://plumdebris.eu.org/" title="绝对概括的切面">
+          <span>绝对概括的切面</span>
+        </a>
+      </div>  
+
+      <nav class="navbar" role="navigation">
+        <ul>
+          
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="../../tags/" title="tags">
+                <span>tags</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="../../archives/" title="archives">
+                <span>archives</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="../../about/" title="about">
+                <span>about</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="../../music/" title="music">
+                <span>music</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="../../index.xml" title="RSS">
+                <span>rss</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+      <div class="theme-selector">
+
+        <button class="button is-text" id="theme-selector-button" title="toggle theme">
+          <span class="label icon">
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M256 32C132.29 32 32 132.29 32 256s100.29 224 224 224 224-100.29 224-224S379.71 32 256 32zM128.72 383.28A180 180 0 01256 76v360a178.82 178.82 0 01-127.28-52.72z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+
+</span>
+        </button>
+      </div>
+    </div>
+    <div class="container has-padding">
+      <div class="breadcrumb">
+        
+<ol  class="breadcrumb-nav">
+  
+
+  
+
+  
+
+<li >
+  <a href="https://plumdebris.eu.org/">Home</a>
+</li>
+
+
+<li >
+  <a href="https://plumdebris.eu.org/posts/">Posts</a>
+</li>
+
+
+<li class="active">
+  <a href="https://plumdebris.eu.org/posts/just-the-first-post/">只是博客的第一条帖子</a>
+</li>
+
+</ol>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    
+
+<main id="main">
+  <div class="container has-padding">
+    <div class="article-card post single">
+      <h1 class="title">只是博客的第一条帖子</h1>
+      <div class="post-info">
+        <span>
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M32 456a24 24 0 0024 24h400a24 24 0 0024-24V176H32zm320-244a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zM456 64h-55.92V32h-48v32H159.92V32h-48v32H56a23.8 23.8 0 00-24 23.77V144h448V87.77A23.8 23.8 0 00456 64z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<time datetime=2023-05-16T20:03:00&#43;0800 class="date">May 16, 2023</time></span>
+   
+        
+          <span>
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M256 256a112 112 0 10-112-112 112 112 0 00112 112zm0 32c-69.42 0-208 42.88-208 128v64h416v-64c0-85.12-138.58-128-208-128z'/></svg>
+
+
+
+
+
+umezane</span>
+        
+        
+          <span>
+            
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M456 48H56a24 24 0 00-24 24v288a24 24 0 0024 24h72v80l117.74-80H456a24 24 0 0024-24V72a24 24 0 00-24-24zM160 248a32 32 0 1132-32 32 32 0 01-32 32zm96 0a32 32 0 1132-32 32 32 0 01-32 32zm96 0a32 32 0 1132-32 32 32 0 01-32 32zM456 80z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <a href="#comments">
+              comment
+            </a>
+          </span>
+        
+        
+          <span>posts </span>
+        
+      </div>
+      <article class="post-entry content">
+        <p>可怜的代码白痴仍在胡乱寻找砌墙补丁&hellip;&hellip;</p>
+<p>但这里只剩下了2025.4.17重写的内容：</p>
+<p>（实际上按照页面底部的时间其实可以推断出（我自己决定下的）这地方真的刚建出来的时间是2023.4.12。一个月里全拿来折腾各种东西的报错了呃&hellip;）</p>
+<p>本来这个页面放置的是用来装其他人的折腾博客经验的Raindrop公开收藏夹，但是因为近年看见了各种关于网页存档和个人内容边界的争议话题，让人觉得在个人博客这个载体下的收集分享行为可能也会给一些不想被更多人看见和转载内容的人带来困扰，所以还是不放出来了。在相应的装修帖子里再放相应的东西吧（好像也得试着看看能不能放&hellip;）。</p>
+<p>虽然实话说也不是所有人都一定能够掌握一定程度上阻断内容传播的能力，况且现在这个好像各种爬虫已经满天飞了的情形下似乎也仍然无法保证你真的能在公开互联网上圈出一块只属于自己的地&hellip;</p>
+<p>总之这个地方只是一些杂乱思维和捡到的各种互联网东西的存档处。内含大量肉眼可见的精神不佳的内容，其实仍然会想要避免这种内容过多出现（但或许很长时间内都无法避免），结果我能做的可能只有尽量不更新这个网站而去其他地方发泄&hellip;（可能很难有什么真正生活上的记录只有脑子打架&hellip;&hellip;）</p>
+        <div id="toc-container" class="toc">
+    <div id="toc-toggle" class="toc-toggle">目录</div> 
+    <div id="toc-content" class="toc-content">
+      <div class="toc-header">
+        <p>目录</p>
+        <span id="toc-close" class="toc-close">-</span> 
+      </div>
+      <ul id="toc"></ul>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tocContainer = document.getElementById('toc-container');
+      const tocToggle = document.getElementById('toc-toggle');
+      const tocContent = document.getElementById('toc-content');
+      const tocClose = document.getElementById('toc-close');
+      const toc = document.getElementById('toc');
+
+
+    tocToggle.addEventListener('click', function () {
+    tocContainer.classList.add('toc-expanded');
+  });
+
+  
+    tocClose.addEventListener('click', function () {
+    tocContainer.classList.remove('toc-expanded');
+  });
+
+  
+      
+      const headers = document.querySelectorAll('h1:not(.title), h2, h3');
+      
+      if (headers.length === 0) {
+        tocContainer.style.display = 'none'; 
+      } else {
+        tocContainer.style.display = 'block'; 
+      }
+        let h1Count = 0; 
+      let h2Count = 0; 
+      let h3Count = 0; 
+      headers.forEach(header => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        
+        header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+
+
+
+if (header.tagName.toLowerCase() === 'h1') {
+  li.classList.add('h1-level');
+} else if (header.tagName.toLowerCase() === 'h2') {
+  li.classList.add('h2-level');
+} else if (header.tagName.toLowerCase() === 'h3') {
+  li.classList.add('h3-level');
+}
+
+
+if (header.tagName.toLowerCase() === 'h1') {
+      h1Count++; 
+      h2Count = 0; 
+      h3Count = 0; 
+      a.textContent = h1Count + '. ' + header.textContent; 
+      li.classList.add('h1-level');
+    } else if (header.tagName.toLowerCase() === 'h2') {
+      h2Count++; 
+      h3Count = 0; 
+      a.textContent = h1Count + '.' + h2Count + '. ' + header.textContent; 
+      li.classList.add('h2-level');
+    } else if (header.tagName.toLowerCase() === 'h3') {
+      h3Count++; 
+      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + '. ' + header.textContent; 
+      li.classList.add('h3-level');
+    }
+
+    a.href = '#' + header.id;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+
+  </script>
+  
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toctoggle = document.getElementById('toc-toggle');
+  let inactivityTimer;
+
+  
+  function shrinkButton() {
+    toctoggle.classList.add('shrinked');
+  }
+
+  
+  function expandButton() {
+    toctoggle.classList.remove('shrinked');
+    startInactivityTimer(); 
+  }
+
+  
+  function startInactivityTimer() {
+    clearTimeout(inactivityTimer); 
+    inactivityTimer = setTimeout(shrinkButton, 5000); 
+  }
+
+  
+  toctoggle.addEventListener('click', function () {
+    if (toctoggle.classList.contains('shrinked')) {
+      expandButton(); 
+    } else {
+      shrinkButton(); 
+    }
+  });
+
+  
+  startInactivityTimer();
+});
+
+  
+</script>
+
+      </article>
+    </div>
+
+    
+      <div class="meta article-card">
+    <div class="row">
+      <span class="label">
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M32 456a24 24 0 0024 24h400a24 24 0 0024-24V176H32zm320-244a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zM456 64h-55.92V32h-48v32H159.92V32h-48v32H56a23.8 23.8 0 00-24 23.77V144h448V87.77A23.8 23.8 0 00456 64z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Published At</span><time>2023-05-16 20:03 CST</time>
+      (Updated At <time>2025-04-18 22:13 CST</time>)
+    </div>
+
+    
+      <div class="row">
+        <span class="label">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M288 16L0 304l176 176 288-288V16zm80 128a32 32 0 1132-32 32 32 0 01-32 32z'/><path d='M480 64v144L216.9 471.1 242 496l270-272V64h-32z'/></svg>
+
+
+
+
+Tagged with</span>
+        <ul class="tags">
+        
+          <li class="hashed-tag"><a href="https://plumdebris.eu.org/tags/%E9%9A%8F%E8%AE%B0">【随记】</a></li>
+        
+        </ul>
+      </div>
+    
+
+    <div class="row social-share">
+      <span class="label">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M272 176v161h-32V176H92a12 12 0 00-12 12v280a12 12 0 0012 12h328a12 12 0 0012-12V188a12 12 0 00-12-12zM272 92.63l64 64L358.63 134 256 31.37 153.37 134 176 156.63l64-64V176h32V92.63z'/></svg>
+
+
+Share with</span>
+      
+      
+        
+      
+      <a
+        target="_blank"
+        title="share to fediverse"
+        rel="noopener noreferrer"
+        aria-label="share 只是博客的第一条帖子 on fediverse"
+        href="https://s2f.kytta.dev/share.php?text=%E5%8F%AA%E6%98%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%B8%96%E5%AD%90&amp;url=https%3A%2F%2Fplumdebris.eu.org%2Fposts%2Fjust-the-first-post%2F&amp;title=%E5%8F%AA%E6%98%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%B8%96%E5%AD%90">
+        
+
+
+
+
+
+
+
+
+
+<svg viewBox="0 0 1034 1034" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M539 176q-32 0 -55 22t-25 55t20.5 58t56 27t58.5 -20.5t27 -56t-20.5 -59t-56.5 -26.5h-5zM452 271l-232 118q20 20 25 48l231 -118q-19 -20 -24 -48zM619 298q-13 25 -38 38l183 184q13 -25 39 -38zM477 320l-135 265l40 40l143 -280q-28 -5 -48 -25zM581 336 q-22 11 -46 10l-8 -1l21 132l56 9zM155 370q-32 0 -55 22.5t-25 55t20.5 58t56.5 27t59 -21t26.5 -56t-21 -58.5t-55.5 -27h-6zM245 438q1 9 1 18q-1 19 -10 35l132 21l26 -50zM470 474l-26 51l311 49q-1 -8 -1 -17q1 -19 10 -36zM842 480q-32 1 -55 23t-24.5 55t21 58 t56 27t58.5 -20.5t27 -56.5t-20.5 -59t-56.5 -27h-6zM236 493q-13 25 -39 38l210 210l51 -25zM196 531q-21 11 -44 10l-9 -1l40 256q21 -10 45 -9l8 1zM560 553l48 311q21 -10 44 -9l10 1l-46 -294zM755 576l-118 60l8 56l135 -68q-20 -20 -25 -48zM781 625l-119 231 q28 5 48 25l119 -231q-28 -5 -48 -25zM306 654l-68 134q28 5 48 25l60 -119zM568 671l-281 143q19 20 24 48l265 -135zM513 771l-51 25l106 107q13 -25 39 -38zM222 795q-32 0 -55.5 22.5t-25 55t21 57.5t56 27t58.5 -20.5t27 -56t-20.5 -58.5t-56.5 -27h-5zM311 863 q2 9 1 18q-1 19 -9 35l256 41q-1 -9 -1 -18q1 -18 10 -35zM646 863q-32 0 -55 22.5t-24.5 55t20.5 58t56 27t59 -21t27 -56t-20.5 -58.5t-56.5 -27h-6z"></path> </g></svg>
+
+
+
+
+
+
+
+
+
+      </a>
+      <a
+        target="_blank" 
+        title="share to twitter"
+        rel="noopener noreferrer"
+        aria-label="share 只是博客的第一条帖子 on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e5%8f%aa%e6%98%af%e5%8d%9a%e5%ae%a2%e7%9a%84%e7%ac%ac%e4%b8%80%e6%9d%a1%e5%b8%96%e5%ad%90&amp;url=https%3a%2f%2fplumdebris.eu.org%2fposts%2fjust-the-first-post%2f">
+        
+
+
+
+
+
+
+
+
+
+
+<svg class="ionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:none;" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+
+
+
+
+
+
+
+
+      </a>
+      <a
+        target="_blank"
+        title="share to weibo"
+        rel="noopener noreferrer"
+        aria-label="share 只是博客的第一条帖子 on weibo"
+        href="https://service.weibo.com/share/share.php?text=%e5%8f%aa%e6%98%af%e5%8d%9a%e5%ae%a2%e7%9a%84%e7%ac%ac%e4%b8%80%e6%9d%a1%e5%b8%96%e5%ad%90&amp;url=https%3a%2f%2fplumdebris.eu.org%2fposts%2fjust-the-first-post%2f&title=%e5%8f%aa%e6%98%af%e5%8d%9a%e5%ae%a2%e7%9a%84%e7%ac%ac%e4%b8%80%e6%9d%a1%e5%b8%96%e5%ad%90">
+        
+
+
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg>
+
+
+
+
+
+
+
+
+
+
+      </a>
+    </div>
+
+    
+</div>
+
+
+    
+
+    
+      <div id="comments" class="article-card">
+        
+
+  <center>(评论回复邮箱提醒实在配不好了看回复会不及时)</center>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+/>
+
+
+<div id="waline"></div>
+
+
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+  init({
+    el: '#waline',
+    search: false,
+    serverURL: 'https://www.fluid-skins.top',  
+    path: window.location.href,
+    reaction: true,
+      
+      locale: {
+        reactionTitle: ' ',
+        placeholder: '石子的自由落体过程',
+        sofa: '*至少还有气流与你相伴*',
+  },
+      reaction: [
+    'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatheart2.png',
+    'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatthink.png',
+    'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatscream.png',
+    'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatcry2.png',
+    'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_ablobcatfloofpat.gif',
+  ],
+    
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/alus',
+      'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+      'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
+      'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
+    ],
+    visitor: false
+  });
+</script>
+
+
+<style>
+  .wl-emoji-popup {
+    position: absolute;
+    inset-inline-start: 3.5em;
+  }
+
+  .wl-emoji-popup.display {
+    position: absolute;  
+    top: -100px;           
+    overflow-y: auto;
+    z-index: 10;
+    inset-inline-start: 3.5em;
+  }
+
+  .wl-loading {
+    height: 55px;
+  }
+
+  div.wl-reaction{
+
+margin: 10px;
+}
+</style>
+
+      </div>
+    
+
+  </div>
+</main>
+
+    <footer id="footer">
+  <div class="container has-padding is-flex">
+
+    <li class="me-link-mobile-only">
+      <a rel="me" href="https://pari.cafe/@circuits">Misskey (Fediverse)</a>
+    </li>
+    
+    <ul class="links">
+      
+      
+
+
+      
+      <li class="me-link-desktop-only">
+        <a rel="me" href="https://pari.cafe/@circuits">Misskey (Fediverse)</a>
+      </li>
+      
+      <li>
+        <a
+          rel="nofollow"
+          target="_blank"
+          href="https://github.com/wayjam/hugo-theme-fluency"
+          title="using Hugo theme fluency">
+          Theme Fluency
+        </a>
+      </li>
+      
+      <li>
+        <a rel="nofollow" target="_blank" href="https://gohugo.io" title="Built with hugo">Built with Hugo</a>
+      </li>
+    </ul>
+
+        
+
+
+    
+     
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+   <center><span id="run-time"></span></center>
+    <div class="copyright">
+       &copy; 2025 绝对概括的切面
+      
+
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script>
+    window.FluencyCopyIcon = '\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u003csvg xmlns=\u0027http:\/\/www.w3.org\/2000\/svg\u0027 class=\u0027ionicon\u0027 viewBox=\u00270 0 512 512\u0027\u003e\u003crect x=\u0027128\u0027 y=\u0027128\u0027 width=\u0027336\u0027 height=\u0027336\u0027 rx=\u002757\u0027 ry=\u002757\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003cpath d=\u0027M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24\u0027 stroke-linecap=\u0027round\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003c\/svg\u003e\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n'
+</script>
+
+
+<script defer src="https://plumdebris.eu.org/js/main.min.b2807e0e1ca4b35bf1a3ca0ba6657a8806843aa5844a380f205109ec68da3ccc.js" integrity="sha256-soB+Dhyks1vxo8oLpmV6iAaEOqWESjgPIFEJ7GjaPMw=" crossorigin="anonymous" async></script>
+
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+  integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+  integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+  integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+
+<noscript>
+<style type=text/css>#theme-selector-button{display:none}</style>
+</noscript>
+
+
+
+
+
+<a href="#" id="back-to-top" title="返回顶部"></a>
+
+
+<style>
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 7px;
+    background-color: #c2c2d780;
+    box-shadow: var(--shadow-l2);
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+  #back-to-top:before {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transform: rotate(135deg);
+    height: 10px;
+    width: 10px;
+    border-width: 0 0 2px 2px;
+    border-color: #6d6471;
+    border-style: solid;
+  }
+
+
+   
+  @media screen and (max-width: 952px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+    }
+  }
+
+
+
+</style>
+
+
+<script>
+  function backToTop() {
+    document.documentElement.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
+  window.onload = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop > 0) {
+      totopBtn.style.display = 'inline'
+    } else {
+      totopBtn.style.display = 'none'
+    }
+  }
+
+  window.onscroll = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop < 200) {
+      totopBtn.style.display = 'none'
+    } else {
+      totopBtn.style.display = 'inline'
+      totopBtn.addEventListener('click', backToTop, false)
+    }
+  }
+</script>
+
+
+
+  </body>
+</html>
+
+<link rel="stylesheet" href="../../css/highlight.scss" integrity="" crossorigin="anonymous">

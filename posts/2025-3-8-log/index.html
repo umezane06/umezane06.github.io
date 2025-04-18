@@ -36,7 +36,7 @@
 
   
     <meta property="article:published_time" content="2025-03-08" />
-    <meta property="article:modified_time" content="2025-04-06" />
+    <meta property="article:modified_time" content="2025-04-18" />
      
       <meta property="article:tag" content="【随记】" />
     
@@ -73,7 +73,7 @@
 
   
     
-    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.dcd73755a3811f291a618c60908bebabbc51d940034e44b48b210974762334d3.css" integrity="sha256-3Nc3VaOBHykaYYxgkIvrq7xR2UADTkS0iyEJdHYjNNM=" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="https://plumdebris.eu.org/style.min.39e2b496aa7ca9eef729dc95dad41aeeead249b72a729695d0468067de7b164c.css" integrity="sha256-OeK0lqp8qe73KdyV2tQa7urSSbcqcpaV0EaAZ957Fkw=" rel="preload stylesheet" as="style"/>
   
 
   
@@ -326,7 +326,7 @@ umezane</span>
       </div>
       <article class="post-entry content">
         <p>有一种本就非常低频的网站更新频率和重心马上就要朝着那边一边倒了的预感,,,</p>
-<p>一月的情绪垃圾话帖子还是删掉了（&hellip;）（结果负面情绪相关的事情有时候还是自己看不见了才会让相关记忆离远一点&hellip;），不过说着要做的Freeform/NRG主题博客也终于还是弄完了。天啊这玩意咋就又折腾了我一个来月，，也是正好遇见什么Deepseek之类的玩意突然爆火让人有了更多可尝试的修代码工具（省略中间的精神崩溃若干），最后三四个LLM之间来回转了半天终于是把站子缝成了我觉着可能还行的样子&hellip;虽然最后的工作量却是落在了一些<del>风格完全无法统一</del>的装饰网站和文章分类的图片上&hellip;</p>
+<p>一月的情绪垃圾话帖子还是删掉了（&hellip;）（结果负面情绪相关的事情有时候如果太尖锐了的话还是自己看不见了才会让相关记忆离远一点&hellip;），不过说着要做的Freeform/NRG主题博客也终于还是弄完了。天啊这玩意咋就又折腾了我一个来月，，也是正好遇见什么Deepseek之类的玩意突然爆火让人有了更多可尝试的修代码工具（省略中间的精神崩溃若干），最后三四个LLM之间来回转了半天终于是把站子缝成了我觉着可能还行的样子&hellip;虽然最后的工作量却是落在了一些<del>风格完全无法统一</del>的装饰网站和文章分类的图片上&hellip;</p>
 <p><del>高情商：这个站点的画风也许会掺杂一些web1.0时代的感觉；低情商：这些东西到底哪里有关联性</del></p>
 <p>于是这里是新站：<a href="https://nrgmaze.org" title="Energy in our heart." target="_blank" ><strong>NRGmaze</strong></a>，之后一些关于Freeform Hardcore/Hard NRG/Nu-NRG/UK Hard House或者什么什么的东西的个人想法和资料都会丢到这里了。</p>
 <p>虽然现在这里这个博客也把这个子站（<del>小心以后这边反而成为子站</del>）链上了，但是因为各种原因那边的网页就不想和很多个人身份关联上了（虽然其实也完全没有在藏&hellip;），一些很神秘的考量&hellip;&hellip;</p>
@@ -435,11 +435,11 @@ if (header.tagName.toLowerCase() === 'h1') {
     } else if (header.tagName.toLowerCase() === 'h2') {
       h2Count++; 
       h3Count = 0; 
-      a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+      a.textContent = h1Count + '.' + h2Count + '. ' + header.textContent; 
       li.classList.add('h2-level');
     } else if (header.tagName.toLowerCase() === 'h3') {
       h3Count++; 
-      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
+      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + '. ' + header.textContent; 
       li.classList.add('h3-level');
     }
 
@@ -515,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 Published At</span><time>2025-03-08 19:00 CST</time>
-      (Updated At <time>2025-04-06 19:02 CST</time>)
+      (Updated At <time>2025-04-18 21:06 CST</time>)
     </div>
 
     
@@ -703,6 +703,7 @@ Share with</span>
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatheart2.png',
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatthink.png',
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatscream.png',
+    'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_blobcatcry2.png',
     'https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/04/emoji_ablobcatfloofpat.gif',
   ],
     
@@ -749,15 +750,21 @@ margin: 10px;
 
     <footer id="footer">
   <div class="container has-padding is-flex">
+
+    <li class="me-link-mobile-only">
+      <a rel="me" href="https://pari.cafe/@circuits">Misskey (Fediverse)</a>
+    </li>
+    
     <ul class="links">
-      <a rel="me" href="https://pari.cafe/@circuits">Misskey(Fediverse)</a>
       
-      <li>
-        
-        <a  href="../../" title=""></a>
-      </li>
       
 
+
+      
+      <li class="me-link-desktop-only">
+        <a rel="me" href="https://pari.cafe/@circuits">Misskey (Fediverse)</a>
+      </li>
+      
       <li>
         <a
           rel="nofollow"
@@ -767,11 +774,17 @@ margin: 10px;
           Theme Fluency
         </a>
       </li>
+      
       <li>
         <a rel="nofollow" target="_blank" href="https://gohugo.io" title="Built with hugo">Built with Hugo</a>
       </li>
     </ul>
+
+        
+
+
     
+     
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
@@ -779,6 +792,7 @@ margin: 10px;
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
+
    <center><span id="run-time"></span></center>
     <div class="copyright">
        &copy; 2025 绝对概括的切面
@@ -798,7 +812,7 @@ margin: 10px;
 </script>
 
 
-<script defer src="https://plumdebris.eu.org/js/main.min.51748f66d15f9df96db88b88bb7d7f96e6b4574017751e4282d2e39660b370b8.js" integrity="sha256-UXSPZtFfnfltuIuIu31/lua0V0AXdR5CgtLjlmCzcLg=" crossorigin="anonymous" async></script>
+<script defer src="https://plumdebris.eu.org/js/main.min.b2807e0e1ca4b35bf1a3ca0ba6657a8806843aa5844a380f205109ec68da3ccc.js" integrity="sha256-soB+Dhyks1vxo8oLpmV6iAaEOqWESjgPIFEJ7GjaPMw=" crossorigin="anonymous" async></script>
 
 
     <link

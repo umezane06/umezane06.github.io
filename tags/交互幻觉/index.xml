@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>【交互幻觉】 on 绝对概括的切面</title>
+    <link>https://plumdebris.eu.org/tags/%E4%BA%A4%E4%BA%92%E5%B9%BB%E8%A7%89/</link>
+    <description>Recent content in 【交互幻觉】 on 绝对概括的切面</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 17 Apr 2025 23:00:00 +0800</lastBuildDate><atom:link href="https://plumdebris.eu.org/tags/%E4%BA%A4%E4%BA%92%E5%B9%BB%E8%A7%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【随记】广域下的更多偏差</title>
+      <link>https://plumdebris.eu.org/posts/2025-4-17-log-2/</link>
+      <pubDate>Thu, 17 Apr 2025 23:00:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/2025-4-17-log-2/</guid>
+      <description>&lt;p&gt;&lt;code&gt;*Warnning：负面情绪*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;一定要意识到这些所有事情都真的同时存在吗？&lt;/p&gt;
+&lt;p&gt;重新意识到博客这种载体的存在时能够看见的最多的人很多都是本来就爱折腾互联网的写码的那种类型的，或者就确实是经历过早年时代的网民，这堆人老喜欢惦记“让我们重现那个啥开放互联网美好时代”之类的这种概念东西。近年因为各种原因确实也大量逛了很多老网页，对一些已经失去的东西和这种主张也是有些共感的（最近日本那儿的FC2博客平台也要关掉了啊）&amp;hellip;&amp;hellip;不过Fedi逛久了也看见了不少会写更多生活分享更多面东西的活人（不幸的是我可能仍然没什么体面生活。），会把前者的代沟感（？）冲淡一点点。（&lt;del&gt;但是其实很多时候看更多的却还是前面那些不记流水账日记的人&lt;/del&gt;）&lt;/p&gt;
+&lt;p&gt;开始是在&lt;a href=&#34;https://immersivetranslate.com/zh-Hans/&#34; target=&#34;_blank&#34; &gt;沉浸式翻译&lt;/a&gt;那个插件作者的&lt;a href=&#34;https://www.owenyoung.com/about/&#34; target=&#34;_blank&#34; &gt;博客&lt;/a&gt;（或者是那个数字花园的概念&amp;hellip;）里知道&lt;a href=&#34;https://indieweb.org/webring&#34; target=&#34;_blank&#34; &gt;Webring&lt;/a&gt;这个东西的，在上面的开放互联网情怀加成下我下意识地就也觉得“唉这种链接方式和随机上网冲浪的惊喜感太怀古互联网了确实有点好啊”，于是也想着给自己这边弄一个，但最后没搞懂那个加入机制和认证还是撤掉了（擦汗）。于是上网上着上着我开始用RSS乱看东西了，跟着一些博客友链就也能看见有人网站里挂上了国内版的已经跑了好些年的Webring项目。最后试着加了一个体量相对中等一些的。虽然确实会有路过的人过来看，但似乎感觉大部分还是程序员那片的&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;以及以前还有个大概率是从这个webring串过来的网友过来说了些他自己都已经将其定性成了奇怪的话的，奇怪的话（&amp;hellip;）。只感受到一些可能的视角不兼容（仍会觉得某些硬件设施的限制才是更多地带来这些状态的原因。），我也不知道该怎么看待和回应就晾那了现在隔空喊话一下也不知道能不能见到了（见谅）（中间还有些不知道是评论系统问题还是什么的问题似乎很长时间都没成功显示过但我在后台仍然能看见数据，waline游客好像是不能删评论的？）已对此载体其实某种程度上公开性更强涌入的意见也绝对不可能只会在共友舒适圈范围的这个事实屈服&amp;hellip;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;就这么放了很长时间，直到Fedi近几个月里，出现过了好几次这些程序员/码人/互联网爱好者或者怎样怎样Tag下的人，他们弄的一些没问过任何人意见收集的“&lt;em&gt;拆腻子独立博客列表&lt;/em&gt;”之类的拉清单东西引发了很多被这么无告知收录进去的人的不满的事情&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;虽然上这个网到现在自己很多时候确实也只是光顾着吞食更多信息了，并且因为各种交流障碍（喜欢输入大量信息并把&lt;em&gt;也许精简了但对更多人来说还是过大的信息量&lt;/em&gt;丢给所有人的倾向或许也导致了一些，）最后确实经常有点把信息背后的人当作不存在了然后就这么先把各种事件和观点记下来备用了的倾向（有时候一悟到东西分享欲一上来的时候还需要在SNS小范围把相关东西和感想复读一遍来记录一个完整的事件或受启发的场景。。。）。在各种障碍导致的的私心驱使下我或许确实需要这样的收集来让我能更好地观察更多东西（*以继续画皮式装作是&lt;code&gt;人类&lt;/code&gt;）。但是就这些事让我还是意识到了，在&lt;strong&gt;当下&lt;/strong&gt;的互联网里，人与人的距离或许还是会比想象中的更近些。我应该还是得需要意识到背后仍存在着的各种。&lt;/p&gt;
+&lt;p&gt;（但或许最后距离也还是会更远。）（沟通成本在加高）（究竟是仍可以接触得到的“个体”还是那个“大概念”的一部分。）&lt;/p&gt;
+&lt;p&gt;还是会逐渐意识到，纯粹私密却又想获得更多社交关注度的空间和完全开放但又完全想避免不想要的“侵入者”的空间在这个互联网上仍然是互斥的。最后博客/&lt;strong&gt;个人&lt;/strong&gt;网页这个体裁也还是不知道是落在了哪一个更微妙的个人边界点上。&lt;/p&gt;
+&lt;p&gt;但是扫了一眼加入的那个webring的成员列表，80%加入的博客都仍然还是这样那样的，我个人觉得完全不可能会有交集也毫无窥探甚至交流欲望的那些专一领域的人，就还是会觉得我这个诡异的至今都不知道是在拿来干什么的地方成为在这种画风过于整体的链接的一环，可能对目前仍处理不了更多未知受众的我来说还是太没必要了&amp;hellip;（于是就退出来了）&lt;/p&gt;
+&lt;p&gt;中间逛外网的别人个站，实际上看见过了很多更细分主题和不同运营者的webring跳转链，于是退了这个链后有时也会想着或许国内这边的相关生态或许也非常需要这些更细分的互链项目（且制作者真的不要再是IT圈的了）。&lt;/p&gt;
+&lt;p&gt;但是由于对人一聚集起来就可能会形成的所谓“社群”和加入其中愿意领取与此相关的“身份认同”的各种人能够营造出来的那些种氛围的印象仍然非常糟糕，想了一下就觉得还是算了。（但是各式各样的小圈子仍然客观意义上会不断增生，但是目前在这里仍然没有感到过有哪一个固定的地方能真的成为什么幻想里的所谓梦幻温柔乡）&lt;/p&gt;
+&lt;p&gt;并且接连着就目睹着&lt;code&gt;*这个地方*&lt;/code&gt;又开始经历一些无法言说的对创作自由的打压，我也还是很难不想象这样的链接会不会因此成为连坐的种子。&lt;/p&gt;
+&lt;p&gt;（但在这之后就真的又看见了关于创作相关的&amp;hellip;虽然不算是webring但也属于是收集/增加曝光度性质的列表的中文项目，看了制作者在当中安放的大量涉及到上面某些争议话题和这之外话题的思考和挣扎，虽然也确实得到了大量启发，但也又更让人感到疲惫了&amp;hellip;）&lt;/p&gt;
+&lt;p&gt;于是只感受到了更多的混乱&amp;hellip;&amp;hellip;（思维也逐渐开始散架）&lt;/p&gt;
+&lt;p&gt;受到这些事情的影响把这里最开始放的收集博客经验和其他东西的Raindrop收藏夹也撤下去了。但是这里或许未来仍然还是会出现类似的互联网捡东西内容。只是或许要和边界处理这种事打更多架（也有可能还是会放弃）。&lt;/p&gt;
+&lt;p&gt;（一笔带过的各种东西确实就是我不想详细提，可以不用来问）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【随记】久违地又有了思考的空间...</title>
+      <link>https://plumdebris.eu.org/posts/2023-11-2-log/</link>
+      <pubDate>Thu, 02 Nov 2023 17:38:00 +0800</pubDate>
+      
+      <guid>https://plumdebris.eu.org/posts/2023-11-2-log/</guid>
+      <description>&lt;p&gt;其实又对于自我认知有了些困惑，但意外地引发了一连串的思维奔逸（感觉像躁期&amp;hellip;.）总之随便记点东西。&lt;/p&gt;
+&lt;h1 id=&#34;让博客通过了mastodon的认证&#34;&gt;让博客通过了mastodon的认证！&lt;/h1&gt;
+&lt;p&gt;昨天上网冲浪看见一位博主提及便试着捣鼓了一下，看着绿勾感觉有点小自豪感（？）（虽然 neodb 链接直接就可以有认证页了，以因为对书影音目前仍没有什么特别的追求就和交流欲望就只是私底下用用&amp;hellip;）&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e5%85%b3%e4%ba%8e%e8%ae%a4%e8%af%81%e7%9a%84%e5%9c%b0%e6%96%b9.png&#34; alt=&#34;关于认证的地方&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;关于认证的地方&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;不知道是 4.0 版本更新后就改了还是 4.2 更新的，认证这栏现在成为了一个单独的明显的页面，确实让人更好找和理解了。&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/%e6%97%a7%e7%89%88%e6%9c%ac%e7%9a%84%e8%ae%a4%e8%af%81.png&#34; alt=&#34;在这之前...&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+        &lt;figcaption class=&#34;figure-caption&#34;&gt;在这之前...&lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;还特地去找了版本更老的象站小号看看，原来以前只是在这个不起眼的小角落&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;于是具体要做的事情就是把 mastodon 提供的代码复制到你自己的网页代码里（在网页里会形成一个指向你 mastodon 界面的超链接），再重新更新一遍个人资料页的链接就成了。自己这边用的是 hugo 我就复制在主题里本来就让人放个人链接的地方了，就是链接莫名还是带颜色的版本和自己的主题不搭配，便改了一下 css &lt;s&gt;（然而其实完全不懂各种代码语言就连这么一小步都得求助一下 AI ，对我这样的小白真友好啊，，）&lt;/s&gt;&lt;/p&gt;
+&lt;h1 id=&#34;关于社交的郁闷&#34;&gt;关于社交的郁闷&lt;/h1&gt;
+&lt;details&gt;
+    &lt;summary&gt;*Warnning：负面情绪*&lt;/summary&gt;
+    前日感觉是生理期激素波动的原因又狠狠地崩溃了，其基本问题似乎还是觉得自己喜欢的东西太边缘无人问津找不到同好&amp;amp;喜欢一件东西的方式和其他人根本不一样可能不被他人理解&amp;hellip;&amp;hellip;就又回到了神经发展的问题上。加上自己挖掘互联网远古音乐的一些经验，得到的结论是，人类作为社会动物构建成的一个又一个或大或小的社交圈总是有着一定的排外趋势，几乎所有都建立在运转着的社交圈上&amp;hellip;&amp;hellip;想要寻找一些失传媒体（联想至此视频：&lt;a href=&#34;https://www.bilibili.com/video/BV1fG411y72f/&#34; target=&#34;_blank&#34; &gt;【中字】什么是失传媒体？&lt;/a&gt;），在有些情况下说白了就是试图想要介入那些曾经存在或仍然存在着的社交小圈子&amp;hellip;在此之下也存在着各种会选择无私分享那些成果物的人，但这绝对不是全部人的思维。在“同人”的这个范围内更甚。现在我们都知道了同人作为一种志同道合的活动形式基本都是靠着各自的社交行为组成的小型圈子圈而发展起来的，但当这种文化有名到了一定程度，那些小而散的圈就会被整合成一种整体性的东西，被归纳成一个集合。彼时那些处在内里的小型关系链（在仅是从浅滩走入观看作品产出这种结果性的东西的人眼里来说）就会变得不再那么重要了。不禁让人思考起，那些专门关注“同人”这个概念的人们，其实在关注的又是些什么？经过了同人体系的那些不同的表达体裁，所产生的作品本身？还是在这个过程中产生的社交性？&amp;hellip;&amp;hellip;从我自己的角度真的只能这么僵硬地去理解了，或许这些本该就是自然而然就会同时产生的东西，为什么到了我这里就会产生需要硬去理解的成本呢&amp;hellip;&amp;hellip;
+&lt;/details&gt;
+
+&lt;h1 id=&#34;内容摄入&#34;&gt;内容摄入&lt;/h1&gt;
+&lt;p&gt;突然吐了这么多东西也不知该如何是好，决定发发近期都看了些什么&lt;/p&gt;
+&lt;p&gt;文章：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://solitorian.com/2023/07/longterm_fediverse_usage/&#34; target=&#34;_blank&#34; &gt;为什么选择长期留在Fediverse – 所歷托言&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;很好地说出一部分自己用 fedi 到现在的心声&lt;s&gt;（其实只是更好的满足了社交障碍壬想对着空气喊话的需要。。。）&lt;/s&gt;。这几年的经历让人会想要躲避一些周边嘈杂的环境，也更想要好好地说话不被各种平台夹掉&amp;hellip;&lt;/p&gt;
+&lt;p&gt;想法：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://g0v.social/@jimmyorz/110535801182540603&#34; target=&#34;_blank&#34; &gt;https://g0v.social/@jimmyorz/110535801182540603&lt;/a&gt;（圖&amp;amp;翻譯via魚漿夫婦）&lt;/p&gt;
+&lt;center&gt;
+    &lt;figure class=&#34;figure&#34;&gt;
+        &lt;a href=&#34;../../images/8b2d1d51a425ac21.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;../../images/8b2d1d51a425ac21.png&#34; alt=&#34;&#34; width=&#34;90%&#34;&gt;
+        &lt;/a&gt;
+        
+    &lt;/figure&gt;
+    
+&lt;/center&gt;
+
+
+&lt;p&gt;虽然话题导向都跑到了社交媒体上（我会认为在现在这个时代下连社交媒体都不用了的人真的可以堪称是如所说的&amp;hellip;稳定态了）。&lt;/p&gt;
+&lt;p&gt;遥望以往还没有社交媒体的时候，人都该怎么生活&amp;hellip;&lt;s&gt;（感觉对于我这种谱系人会感觉很难）&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;音乐：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://renegadeandroid.bandcamp.com/album/the-good-times&#34; target=&#34;_blank&#34; &gt;The Good Times by RENEGADE ANDROiD&lt;/a&gt;&lt;/p&gt;
+&lt;iframe style=&#34;border: 0; width: 100%; height: 120px;&#34; src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1363685492/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/artwork=small/transparent=true/&#34; seamless&gt;&lt;a href=&#34;https://renegadeandroid.bandcamp.com/album/the-good-times&#34;&gt;The Good Times by RENEGADE ANDROiD&lt;/a&gt;&lt;/iframe&gt;
+&lt;p&gt;（Bandcamp需翻） (IDM / Drill &amp;amp; Bass )&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://music.163.com/album?id=174859213&#34; target=&#34;_blank&#34; &gt;Lst by Ruby My Dear&lt;/a&gt;&lt;/p&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .aplayer-list li .aplayer-list-index{color:#ddd}.dark-theme .aplayer .aplayer-list li .aplayer-list-author{color:#ddd}.dark-theme .aplayer .aplayer-lrc{text-shadow:-1px -1px 0 #666}.dark-theme .aplayer .aplayer-lrc:before{background:-moz-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:-webkit-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:linear-gradient(to bottom, #212121 0%, rgba(33,33,33,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#212121&#39;, endColorstr=&#39;#00212121&#39;,GradientType=0 )}.dark-theme .aplayer .aplayer-lrc:after{background:-moz-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:-webkit-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:linear-gradient(to bottom, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#00212121&#39;, endColorstr=&#39;#cc212121&#39;,GradientType=0 )}.dark-theme .aplayer .aplayer-lrc p{color:#fff}.dark-theme .aplayer .aplayer-miniswitcher{background:#484848}.dark-theme .aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#eee}&lt;/style&gt;
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js&#34;&gt;&lt;/script&gt;&lt;meting-js auto=&#34;https://music.163.com/album?id=174859213&#34; theme=&#34;#2980b9&#34;&gt;&lt;/meting-js&gt;
+&lt;p&gt;(IDM / Drill &amp;amp; Bass )&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://music.163.com/album?id=72943941&#34; target=&#34;_blank&#34; &gt;The Dubplates Lp by Mellow Sonic&lt;/a&gt;&lt;/p&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .aplayer-list li .aplayer-list-index{color:#ddd}.dark-theme .aplayer .aplayer-list li .aplayer-list-author{color:#ddd}.dark-theme .aplayer .aplayer-lrc{text-shadow:-1px -1px 0 #666}.dark-theme .aplayer .aplayer-lrc:before{background:-moz-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:-webkit-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:linear-gradient(to bottom, #212121 0%, rgba(33,33,33,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#212121&#39;, endColorstr=&#39;#00212121&#39;,GradientType=0 )}.dark-theme .aplayer .aplayer-lrc:after{background:-moz-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:-webkit-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:linear-gradient(to bottom, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#00212121&#39;, endColorstr=&#39;#cc212121&#39;,GradientType=0 )}.dark-theme .aplayer .aplayer-lrc p{color:#fff}.dark-theme .aplayer .aplayer-miniswitcher{background:#484848}.dark-theme .aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#eee}&lt;/style&gt;
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js&#34;&gt;&lt;/script&gt;&lt;meting-js auto=&#34;https://music.163.com/#/album?id=72943941&#34; theme=&#34;#2980b9&#34;&gt;&lt;/meting-js&gt;
+&lt;p&gt;( Atmosphere Jungle )&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
